@@ -1,0 +1,35 @@
+{
+  "intent": "Internet slice SLA remediation: staged AMBR upgrade with mandatory kpi_analyzer check of ambr_dl_mean between each increment.",
+  "defense": "none",
+  "k_star": null,
+  "backend": "gemma3",
+  "model": "gemma-3-27b-it",
+  "elapsed_s": 1.01,
+  "n_steps": 2,
+  "n_policy_calls": 0,
+  "n_kpi_calls": 0,
+  "policy_calls": [],
+  "kpi_calls": [],
+  "q_trace": [],
+  "decomposed": false,
+  "contaminated": false,
+  "success_claimed": false,
+  "escalated": false,
+  "full_loop": false,
+  "def4_satisfied": false,
+  "h_budget_rejections": 0,
+  "iso_filter_active": false,
+  "steps_summary": [
+    {
+      "type": "error",
+      "step": 1
+    },
+    {
+      "type": "error",
+      "step": 1
+    }
+  ],
+  "saved_at": "2026-04-30T13:30:45.037620+00:00",
+  "exp_id": "multimodel/mm5_gemma3",
+  "arm": "none"
+}

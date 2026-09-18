@@ -1,0 +1,8 @@
+{
+  "phase": "A",
+  "n": 10,
+  "mean_latency_ms": 2779.1,
+  "stdev_latency_ms": 792.5,
+  "max_latency_ms": 3031.0,
+  "saved_at": "2026-04-30T12:39:38.229677+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "trial": 29,
+  "intent": "Scale the internet slice up from 20 to 60 Mbps without disrupting active sessions \u2014 apply increases in small enough incr",
+  "n_policy_calls": 0,
+  "decomposed": false,
+  "per_call_review": {
+    "condition": "per_call",
+    "n_policy_calls": 0,
+    "approval_rate": 0.0,
+    "approved_count": 0,
+    "call_outcomes": []
+  },
+  "cumulative_review": {
+    "condition": "cumulative",
+    "n_policy_calls": 0,
+    "approval_rate": 0.0,
+    "approved_count": 0,
+    "call_outcomes": []
+  },
+  "saved_at": "2026-04-30T15:18:20.650010+00:00",
+  "exp_id": "exp3",
+  "arm": "pilot"
+}

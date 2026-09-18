@@ -1,0 +1,76 @@
+# srsRAN Project gNB — ZMQ RF driver, 5G SA
+# Paper 1108 rebuild. Pairs with srsUE over ZeroMQ (no radio hardware).
+#
+# Matches the EXISTING Open5GS core exactly — nothing in the core changes:
+#   PLMN 999/70   TAC 1   SST 1   DNN "internet"   AMF NGAP 127.0.0.5:38412
+#
+# Cell: band 3 (FDD), 20 MHz, 15 kHz SCS -> 106 PRB, srate 23.04 MHz.
+# 20 MHz matches srsRAN's shipped srsUE reference config (known-good CORESET#0
+# index 12). ZMQ loopback sustains ~2.2 GB/s vs the ~184 MB/s this needs, so the
+# air interface remains the binding constraint (spec R1) — the scheduler, not
+# the plumbing, sets C.
+#
+# ZMQ port map (single UE — E0.1 runs single-UE by design):
+#   gNB tx -> tcp://*:2000        UE rx <- tcp://localhost:2000
+#   gNB rx <- tcp://localhost:2001  UE tx -> tcp://*:2001
+
+cu_cp:
+  # Keep the RRC connection up for the whole experiment. The default released
+  # the UE to RRC_IDLE during measurement gaps, which zeroed the data plane
+  # between probe ticks and made results non-reproducible.
+  inactivity_timer: 7200
+  amf:
+    addr: 127.0.0.5           # Open5GS AMF NGAP (unchanged)
+    port: 38412
+    bind_addr: 127.0.0.1      # gNB N2 source
+    supported_tracking_areas:
+      - tac: 1
+        plmn_list:
+          - plmn: "99970"
+            tai_slice_support_list:
+              - sst: 1
+
+ru_sdr:
+  device_driver: zmq
+  device_args: tx_port=tcp://*:2000,rx_port=tcp://localhost:2001,base_srate=23.04e6
+  srate: 23.04
+  tx_gain: 75
+  rx_gain: 75
+
+cell_cfg:
+  dl_arfcn: 368500
+  band: 3
+  channel_bandwidth_MHz: 20
+  common_scs: 15
+  plmn: "99970"
+  tac: 1
+  pdcch:                      # required for srsUE compatibility
+    dedicated:
+      ss2_type: common
+      dci_format_0_1_and_1_1: false
+    common:
+      ss0_index: 0
+      coreset0_index: 12
+  prach:
+    # Multi-UE RACH. Config recommended by the srsRAN maintainers for the
+    # multi-UE ZMQ scenario (srsRAN_Project discussions #499 / #758): a large
+    # contention-based preamble pool so concurrent UEs pick distinct preambles.
+    #
+    # Symptom without it: every srsUE begins RACH the instant the broker starts,
+    # all transmit preamble_index=0, the summed signal cannot be resolved, and
+    # every UE loops on "Random Access Transmission" until preamble_trans_max.
+    prach_config_index: 1
+    total_nof_ra_preambles: 64
+    nof_ssb_per_ro: 1
+    nof_cb_preambles_per_ssb: 64
+    preamble_trans_max: 10
+    ra_resp_window: 10        # max allowed in licensed bands (10 slots = 10 ms)
+
+log:
+  filename: /tmp/srsran/gnb.log
+  all_level: warning
+  hex_max_size: 0
+
+pcap:
+  mac_enable: false
+  ngap_enable: false

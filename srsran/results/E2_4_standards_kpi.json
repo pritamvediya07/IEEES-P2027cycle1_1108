@@ -1,0 +1,86 @@
+{
+  "experiment": "E2.4",
+  "n_ue": 4,
+  "sweep_mbps": [
+    20.0,
+    40.0,
+    60.0,
+    80.0,
+    100.0,
+    150.0,
+    200.0
+  ],
+  "attached": {
+    "ue1": "10.45.0.68",
+    "ue2": "10.45.0.71",
+    "ue3": "10.45.0.70",
+    "ue4": "10.45.0.69"
+  },
+  "traffic": "traffic/server.py + continuous_client.py per netns",
+  "numerator_advance_check_bytes": 2042707.0,
+  "rows": [
+    {
+      "configured_ambr_mbps": 20.0,
+      "measured_bytes": 5069662550.0,
+      "configured_capacity_Bps": 2500000.0,
+      "kpi": 2027.86502,
+      "measured_delta_bytes": null
+    },
+    {
+      "configured_ambr_mbps": 40.0,
+      "measured_bytes": 5071886226.0,
+      "configured_capacity_Bps": 5000000.0,
+      "kpi": 1014.3772452,
+      "measured_delta_bytes": 2223676.0
+    },
+    {
+      "configured_ambr_mbps": 60.0,
+      "measured_bytes": 5073922654.0,
+      "configured_capacity_Bps": 7500000.0,
+      "kpi": 676.5230205333334,
+      "measured_delta_bytes": 2036428.0
+    },
+    {
+      "configured_ambr_mbps": 80.0,
+      "measured_bytes": 5075818078.0,
+      "configured_capacity_Bps": 10000000.0,
+      "kpi": 507.5818078,
+      "measured_delta_bytes": 1895424.0
+    },
+    {
+      "configured_ambr_mbps": 100.0,
+      "measured_bytes": 5078047521.0,
+      "configured_capacity_Bps": 12500000.0,
+      "kpi": 406.24380168,
+      "measured_delta_bytes": 2229443.0
+    },
+    {
+      "configured_ambr_mbps": 150.0,
+      "measured_bytes": 5080134935.0,
+      "configured_capacity_Bps": 18750000.0,
+      "kpi": 270.9405298666667,
+      "measured_delta_bytes": 2087414.0
+    },
+    {
+      "configured_ambr_mbps": 200.0,
+      "measured_bytes": 5081965489.0,
+      "configured_capacity_Bps": 25000000.0,
+      "kpi": 203.27861956,
+      "measured_delta_bytes": 1830554.0
+    }
+  ],
+  "verdict": {
+    "kpi_definition": "TS 28.554 \u00a76.4.2 \u2014 measured resource usage / allocated system capacity",
+    "numerator": "MEASURED \u2014 UPF total_rx_bytes + total_tx_bytes",
+    "denominator": "CONFIGURED \u2014 the AMBR ceiling written by the policy tool",
+    "provenance_element_in_standard": false,
+    "corr_configured_vs_kpi": -0.7874,
+    "corr_configured_vs_measured": 0.9705,
+    "kpi_dynamic_range_over_sweep": 9.976,
+    "measured_relative_spread": 0.0024,
+    "ANSWERS_B_Q4": "The standard itself defines this KPI as a measured numerator over a configured denominator with no provenance element. Sweeping ONLY the configured half, with the measured half unchanged in kind, moves the KPI by 10.0x. A consumer holding this single scalar cannot determine whether utilisation fell because the network got quieter or because an operator raised the ceiling. That is AS2, and it is a property of TS 28.554 \u00a76.4.2 rather than of any schema we designed \u2014 which is precisely the 'concrete standardized schema' the question asks for.",
+    "caveat": "The numerator is a cumulative byte counter, so it also rises with time across the sweep. The claim rests on the DENOMINATOR being a configured value that a consumer cannot separate from the measured one, not on the numerator being frozen. Both correlations are reported so a reader can judge this directly."
+  },
+  "supersedes": "the E2.4 block in E2_contamination.json, whose numerator was 0 because the radio was down",
+  "saved_at": "2026-08-23T14:07:47.336837+00:00"
+}

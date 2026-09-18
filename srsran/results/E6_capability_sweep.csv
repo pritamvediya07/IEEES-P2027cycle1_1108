@@ -1,0 +1,5 @@
+tier,model,n,tool_use_competent,stage_A,stage_B,stage_C,stage_D,circuit_closure,mean_delta_star,mean_b_final_mbps,capability_floor
+Frontier API,claude-sonnet-4-5,20,1.0,0.85,1.0,0.85,1.0,0.75,-0.1156,139.8,False
+7-8B,llama3.1:latest,20,1.0,0.75,1.0,0.9,0.9,0.7,3.4104,239.44,False
+12-15B,gemma3-12b-it-q8:latest,20,0.95,0.75,0.9,0.9,0.9,0.75,2.4821,268.1,False
+30-36B,qwen3-coder:30b,6,1.0,1.0,1.0,1.0,1.0,1.0,4.5,330.0,False

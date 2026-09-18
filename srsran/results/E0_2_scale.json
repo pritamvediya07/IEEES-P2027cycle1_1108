@@ -1,0 +1,79 @@
+{
+  "experiment": "E0.2",
+  "question": "max concurrent srsUE in real time",
+  "pass_criterion": "n >= 4",
+  "multi_ue_mechanism": "srsran/gr_broker.py \u2014 GNU Radio flowgraph (srsRAN official; gNB ZMQ is REQ/REP, 1:1 only)",
+  "started_at": "2026-08-23T16:05:37.089344+00:00",
+  "trials": [
+    {
+      "n": 1,
+      "ok": true,
+      "attached": {
+        "ue1": "10.45.0.76"
+      },
+      "n_attached": 1,
+      "per_ue_dl_mbps_SOLO": {
+        "ue1": 29.46
+      },
+      "sum_of_solo_dl_mbps": 29.46,
+      "measurement_note": "each UE measured SEQUENTIALLY while the others idle; this is a sum of solo runs, NOT concurrent capacity. C is measured with simultaneous load in E0.3.",
+      "gnb_late_markers": 0,
+      "broker_last_stat": "[gr-broker] running",
+      "hold_s": 60,
+      "provenance": "re-measured in this session at slow_down 1, replacing an earlier slow_down-4 measurement so the whole curve is one configuration"
+    },
+    {
+      "n": 2,
+      "ok": true,
+      "attached": {
+        "ue1": "10.45.0.78",
+        "ue2": "10.45.0.77"
+      },
+      "n_attached": 2,
+      "per_ue_dl_mbps_SOLO": {
+        "ue1": 23.62,
+        "ue2": 27.68
+      },
+      "sum_of_solo_dl_mbps": 51.3,
+      "measurement_note": "each UE measured SEQUENTIALLY while the others idle; this is a sum of solo runs, NOT concurrent capacity. C is measured with simultaneous load in E0.3.",
+      "gnb_late_markers": 0,
+      "broker_last_stat": "[gr-broker] running",
+      "hold_s": 60,
+      "provenance": "re-measured in this session at slow_down 1, replacing an earlier slow_down-4 measurement so the whole curve is one configuration"
+    },
+    {
+      "n": 3,
+      "ok": true,
+      "n_attached": 3,
+      "per_ue_dl_mbps_SOLO": {
+        "ue1": 19.51,
+        "ue2": 22.82,
+        "ue3": 20.39
+      },
+      "sum_of_solo_dl_mbps": 62.72,
+      "gnb_late_markers": 0,
+      "hold_s": 60,
+      "provenance": "CARRIED FORWARD from the earlier slow_down-1 run; recorded in SRSRAN_RESULTS.md Appendix A.2. Not re-measured in this session."
+    },
+    {
+      "n": 4,
+      "ok": true,
+      "n_attached": 4,
+      "per_ue_dl_mbps_SOLO": {
+        "ue1": 21.12,
+        "ue2": 21.98,
+        "ue3": 21.85,
+        "ue4": 21.85
+      },
+      "sum_of_solo_dl_mbps": 86.8,
+      "gnb_late_markers": 0,
+      "hold_s": 60,
+      "provenance": "CARRIED FORWARD from the earlier slow_down-1 run; recorded in SRSRAN_RESULTS.md Appendix A.2. Not re-measured in this session."
+    }
+  ],
+  "max_n_ok": 4,
+  "gate_passed": true,
+  "finished_at": "2026-08-23T16:09:03.185954+00:00",
+  "reconstruction_note": "This file was overwritten by a run restricted to --min-n 1 --max-n 2, which dropped the n=3 and n=4 trials and left the file reading 'max_stable_n=2, GATE FAILED' \u2014 contradicting the n=4 that E0.3, E0.4, E1, E3, E5, E9 and E6 all use. The restricted run was deliberate: n=1 and n=2 had originally been taken at slow_down 4 while n=3 and n=4 were at slow_down 1, so the published curve mixed two configurations. n=1 and n=2 are therefore the NEW ratio-1 measurements; n=3 and n=4 are carried forward from the earlier ratio-1 run as recorded in Appendix A.2. Every row is now slow_down 1, which was the point of the re-record. Each trial carries its own provenance field.",
+  "slow_down_ratio": 1
+}

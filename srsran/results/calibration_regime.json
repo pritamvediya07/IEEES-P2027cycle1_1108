@@ -1,0 +1,64 @@
+{
+  "experiment": "calibration",
+  "n_ue": 4,
+  "rows": [
+    {
+      "ceiling_mbps": 3.0,
+      "offered_total": 12.0,
+      "tau_agg": 11.533,
+      "ceiling_holds": true,
+      "lambda_ms": 61.502,
+      "Q": 0.5106
+    },
+    {
+      "ceiling_mbps": 5.0,
+      "offered_total": 20.0,
+      "tau_agg": 19.165,
+      "ceiling_holds": true,
+      "lambda_ms": 59.341,
+      "Q": 0.5604
+    },
+    {
+      "ceiling_mbps": 8.0,
+      "offered_total": 32.0,
+      "tau_agg": 23.099,
+      "ceiling_holds": true,
+      "lambda_ms": 341.558,
+      "Q": 0.3028
+    },
+    {
+      "ceiling_mbps": 15.0,
+      "offered_total": 60.0,
+      "tau_agg": 22.545,
+      "ceiling_holds": true,
+      "lambda_ms": 338.826,
+      "Q": 0.3021
+    },
+    {
+      "ceiling_mbps": 60.0,
+      "offered_total": 240.0,
+      "tau_agg": 24.438,
+      "ceiling_holds": true,
+      "lambda_ms": 299.714,
+      "Q": 0.353
+    }
+  ],
+  "verdict": {
+    "enforcement_works": true,
+    "ceilings_that_held": [
+      3.0,
+      5.0,
+      8.0,
+      15.0,
+      60.0
+    ],
+    "q_range": [
+      0.3021,
+      0.5604
+    ],
+    "q_span": 0.2583,
+    "headroom_exists": true
+  },
+  "q_definition": "0.5*min(tau_perUE/20,1)+0.5*max(0,1-lambda/500.0)",
+  "saved_at": "2026-08-24T04:11:50.729015+00:00"
+}

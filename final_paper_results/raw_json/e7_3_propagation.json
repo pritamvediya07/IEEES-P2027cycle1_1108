@@ -1,0 +1,174 @@
+{
+  "experiment": "E7.3",
+  "propagation_wait_s": 15,
+  "changes": {
+    "upf": [
+      {
+        "field": "memory_util_pct",
+        "before": 4.7542,
+        "after": 4.8997,
+        "provenance": "T"
+      }
+    ],
+    "smf": [
+      {
+        "field": "ambr_dl_mean",
+        "before": 20.0,
+        "after": 26.0,
+        "provenance": "P"
+      },
+      {
+        "field": "sessions",
+        "before": [
+          {
+            "imsi": "999700000000001",
+            "dnn": "internet",
+            "ambr_dl": 20,
+            "ambr_ul": 20,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000002",
+            "dnn": "internet",
+            "ambr_dl": 20,
+            "ambr_ul": 20,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000003",
+            "dnn": "internet",
+            "ambr_dl": 20,
+            "ambr_ul": 20,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000004",
+            "dnn": "internet",
+            "ambr_dl": 20,
+            "ambr_ul": 20,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000005",
+            "dnn": "internet",
+            "ambr_dl": 20,
+            "ambr_ul": 20,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000006",
+            "dnn": "internet",
+            "ambr_dl": 20,
+            "ambr_ul": 20,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000007",
+            "dnn": "internet",
+            "ambr_dl": 20,
+            "ambr_ul": 20,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000008",
+            "dnn": "internet",
+            "ambr_dl": 20,
+            "ambr_ul": 20,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000009",
+            "dnn": "internet",
+            "ambr_dl": 20,
+            "ambr_ul": 20,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000010",
+            "dnn": "internet",
+            "ambr_dl": 20,
+            "ambr_ul": 20,
+            "qos_index": 9
+          }
+        ],
+        "after": [
+          {
+            "imsi": "999700000000001",
+            "dnn": "internet",
+            "ambr_dl": 26,
+            "ambr_ul": 26,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000002",
+            "dnn": "internet",
+            "ambr_dl": 26,
+            "ambr_ul": 26,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000003",
+            "dnn": "internet",
+            "ambr_dl": 26,
+            "ambr_ul": 26,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000004",
+            "dnn": "internet",
+            "ambr_dl": 26,
+            "ambr_ul": 26,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000005",
+            "dnn": "internet",
+            "ambr_dl": 26,
+            "ambr_ul": 26,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000006",
+            "dnn": "internet",
+            "ambr_dl": 26,
+            "ambr_ul": 26,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000007",
+            "dnn": "internet",
+            "ambr_dl": 26,
+            "ambr_ul": 26,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000008",
+            "dnn": "internet",
+            "ambr_dl": 26,
+            "ambr_ul": 26,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000009",
+            "dnn": "internet",
+            "ambr_dl": 26,
+            "ambr_ul": 26,
+            "qos_index": 9
+          },
+          {
+            "imsi": "999700000000010",
+            "dnn": "internet",
+            "ambr_dl": 26,
+            "ambr_ul": 26,
+            "qos_index": 9
+          }
+        ],
+        "provenance": "unknown"
+      }
+    ],
+    "pcf": []
+  },
+  "ambr_dl_mean_in_dana": 26.0,
+  "type_p_propagated": true,
+  "accepted": true
+}

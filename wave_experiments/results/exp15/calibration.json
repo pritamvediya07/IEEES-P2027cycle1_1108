@@ -1,0 +1,11 @@
+{
+  "n_star": 4,
+  "root_found": true,
+  "r_at_n1": -3.275722850653087e-07,
+  "r_at_nmax": 9.930853529564475e-07,
+  "bisection_interval": [
+    3.785,
+    3.793
+  ],
+  "note": "Interior root found; n* = 4 is the per-call BoN hacking threshold."
+}

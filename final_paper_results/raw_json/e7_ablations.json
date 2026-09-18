@@ -1,0 +1,35 @@
+{
+  "A7.5_timing": [
+    {
+      "wait_s": 1,
+      "actual_elapsed": 1.0249519348144531,
+      "new_docs_in_dana": 0,
+      "propagation_detected": false
+    },
+    {
+      "wait_s": 3,
+      "actual_elapsed": 3.026029348373413,
+      "new_docs_in_dana": 1,
+      "propagation_detected": true
+    },
+    {
+      "wait_s": 5,
+      "actual_elapsed": 5.025949001312256,
+      "new_docs_in_dana": 2,
+      "propagation_detected": true
+    },
+    {
+      "wait_s": 10,
+      "actual_elapsed": 10.024555921554565,
+      "new_docs_in_dana": 4,
+      "propagation_detected": true
+    },
+    {
+      "wait_s": 30,
+      "actual_elapsed": 30.027268171310425,
+      "new_docs_in_dana": 12,
+      "propagation_detected": true
+    }
+  ],
+  "circuit_latency_s": 3
+}

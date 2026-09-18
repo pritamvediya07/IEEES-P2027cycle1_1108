@@ -1,0 +1,24 @@
+{
+  "experiment": "E3.4",
+  "threshold": -0.5,
+  "per_N_results": {
+    "30": {
+      "r2_median": -0.48514851485148514,
+      "flagged": false
+    },
+    "50": {
+      "r2_median": -1.4124622615082947,
+      "flagged": true
+    },
+    "100": {
+      "r2_median": -0.9941520467836257,
+      "flagged": true
+    },
+    "200": {
+      "r2_median": -1.9882949635309588,
+      "flagged": true
+    }
+  },
+  "defended_false_positive_rate": 0.75,
+  "accepted": false
+}

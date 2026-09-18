@@ -1,0 +1,311 @@
+2026-04-29 02:47:54,887 [QUEUE] INFO  Queue has 13 items to run
+2026-04-29 02:47:54,887 [QUEUE] INFO  ============================================================
+2026-04-29 02:47:54,887 [QUEUE] INFO  Next: exp1_vulnerable
+2026-04-29 02:47:54,887 [QUEUE] INFO  ============================================================
+2026-04-29 02:47:54,887 [QUEUE] INFO  Starting: exp1_vulnerable
+2026-04-29 02:47:54,887 [QUEUE] INFO  Command:  experiments/exp1_end_to_end.py qwen2.5:72b vulnerable
+2026-04-29 02:47:54,887 [QUEUE] INFO  Log:      <repo>/experiments/queue_logs/exp1_vulnerable.log
+2026-04-29 02:47:54,887 [QUEUE] INFO  ============================================================
+2026-04-29 02:52:54,888 [QUEUE] INFO    [exp1_vulnerable] still running — 5 min elapsed
+2026-04-29 02:57:54,888 [QUEUE] INFO    [exp1_vulnerable] still running — 10 min elapsed
+2026-04-29 03:02:54,889 [QUEUE] INFO    [exp1_vulnerable] still running — 15 min elapsed
+2026-04-29 03:07:54,889 [QUEUE] INFO    [exp1_vulnerable] still running — 20 min elapsed
+2026-04-29 03:12:54,890 [QUEUE] INFO    [exp1_vulnerable] still running — 25 min elapsed
+2026-04-29 03:17:54,890 [QUEUE] INFO    [exp1_vulnerable] still running — 30 min elapsed
+2026-04-29 03:22:54,890 [QUEUE] INFO    [exp1_vulnerable] still running — 35 min elapsed
+2026-04-29 03:27:54,891 [QUEUE] INFO    [exp1_vulnerable] still running — 40 min elapsed
+2026-04-29 03:32:54,891 [QUEUE] INFO    [exp1_vulnerable] still running — 45 min elapsed
+2026-04-29 03:37:54,892 [QUEUE] INFO    [exp1_vulnerable] still running — 50 min elapsed
+2026-04-29 03:42:54,892 [QUEUE] INFO    [exp1_vulnerable] still running — 55 min elapsed
+2026-04-29 03:47:54,893 [QUEUE] INFO    [exp1_vulnerable] still running — 60 min elapsed
+2026-04-29 03:52:54,893 [QUEUE] INFO    [exp1_vulnerable] still running — 65 min elapsed
+2026-04-29 03:57:54,893 [QUEUE] INFO    [exp1_vulnerable] still running — 70 min elapsed
+2026-04-29 04:02:54,894 [QUEUE] INFO    [exp1_vulnerable] still running — 75 min elapsed
+2026-04-29 04:07:54,894 [QUEUE] INFO    [exp1_vulnerable] still running — 80 min elapsed
+2026-04-29 04:12:54,895 [QUEUE] INFO    [exp1_vulnerable] still running — 85 min elapsed
+2026-04-29 04:17:54,895 [QUEUE] INFO    [exp1_vulnerable] still running — 90 min elapsed
+2026-04-29 04:22:54,895 [QUEUE] INFO    [exp1_vulnerable] still running — 95 min elapsed
+2026-04-29 04:27:54,896 [QUEUE] INFO    [exp1_vulnerable] still running — 100 min elapsed
+2026-04-29 04:32:54,896 [QUEUE] INFO    [exp1_vulnerable] still running — 105 min elapsed
+2026-04-29 04:37:54,897 [QUEUE] INFO    [exp1_vulnerable] still running — 110 min elapsed
+2026-04-29 04:42:54,897 [QUEUE] INFO    [exp1_vulnerable] still running — 115 min elapsed
+2026-04-29 04:47:54,898 [QUEUE] INFO    [exp1_vulnerable] still running — 120 min elapsed
+2026-04-29 04:52:54,898 [QUEUE] INFO    [exp1_vulnerable] still running — 125 min elapsed
+2026-04-29 04:57:54,899 [QUEUE] INFO    [exp1_vulnerable] still running — 130 min elapsed
+2026-04-29 05:02:54,899 [QUEUE] INFO    [exp1_vulnerable] still running — 135 min elapsed
+2026-04-29 05:07:54,899 [QUEUE] INFO    [exp1_vulnerable] still running — 140 min elapsed
+2026-04-29 05:12:54,900 [QUEUE] INFO    [exp1_vulnerable] still running — 145 min elapsed
+2026-04-29 05:17:54,900 [QUEUE] INFO    [exp1_vulnerable] still running — 150 min elapsed
+2026-04-29 05:22:54,901 [QUEUE] INFO    [exp1_vulnerable] still running — 155 min elapsed
+2026-04-29 05:27:54,902 [QUEUE] INFO    [exp1_vulnerable] still running — 160 min elapsed
+2026-04-29 05:32:54,902 [QUEUE] INFO    [exp1_vulnerable] still running — 165 min elapsed
+2026-04-29 05:37:54,903 [QUEUE] INFO    [exp1_vulnerable] still running — 170 min elapsed
+2026-04-29 05:42:54,903 [QUEUE] INFO    [exp1_vulnerable] still running — 175 min elapsed
+2026-04-29 05:47:54,904 [QUEUE] INFO    [exp1_vulnerable] still running — 180 min elapsed
+2026-04-29 05:52:54,904 [QUEUE] INFO    [exp1_vulnerable] still running — 185 min elapsed
+2026-04-29 05:57:54,905 [QUEUE] INFO    [exp1_vulnerable] still running — 190 min elapsed
+2026-04-29 06:02:54,905 [QUEUE] INFO    [exp1_vulnerable] still running — 195 min elapsed
+2026-04-29 06:07:54,905 [QUEUE] INFO    [exp1_vulnerable] still running — 200 min elapsed
+2026-04-29 06:12:54,906 [QUEUE] INFO    [exp1_vulnerable] still running — 205 min elapsed
+2026-04-29 06:17:54,906 [QUEUE] INFO    [exp1_vulnerable] still running — 210 min elapsed
+2026-04-29 06:17:54,906 [QUEUE] INFO    [exp1_vulnerable] FINISHED OK in 210 min
+2026-04-29 06:17:54,909 [QUEUE] INFO  [EXP1/vulnerable] n=30 def4=100% zero_calls=0
+2026-04-29 06:17:54,909 [QUEUE] INFO  Health check [exp1_vulnerable] — OK
+2026-04-29 06:17:54,909 [QUEUE] INFO  
+2026-04-29 06:17:54,909 [QUEUE] INFO  ============================================================
+2026-04-29 06:17:54,909 [QUEUE] INFO  Next: group_A
+2026-04-29 06:17:54,909 [QUEUE] INFO  ============================================================
+2026-04-29 06:17:54,909 [QUEUE] INFO  [PARALLEL] Starting group: group_A
+2026-04-29 06:17:54,909 [QUEUE] INFO    >> exp11_posthoc: experiments/exp11_q_weight_sensitivity.py
+2026-04-29 06:17:54,909 [QUEUE] INFO    >> exp1_defended: experiments/exp1_end_to_end.py qwen2.5:72b defended
+2026-04-29 06:17:54,909 [QUEUE] INFO  ============================================================
+2026-04-29 06:17:54,910 [QUEUE] INFO    [exp11_posthoc] launched PID 1841995
+2026-04-29 06:17:54,910 [QUEUE] INFO    [exp1_defended] launched PID 1841996
+2026-04-29 06:18:54,911 [QUEUE] INFO    [exp11_posthoc] still running — 1 min
+2026-04-29 06:18:54,911 [QUEUE] INFO    [exp1_defended] still running — 1 min
+2026-04-29 06:18:54,911 [QUEUE] INFO    [exp11_posthoc] FINISHED OK in 1 min
+2026-04-29 06:19:54,912 [QUEUE] INFO    [exp1_defended] still running — 2 min
+2026-04-29 06:20:54,912 [QUEUE] INFO    [exp1_defended] still running — 3 min
+2026-04-29 06:21:54,912 [QUEUE] INFO    [exp1_defended] still running — 4 min
+2026-04-29 06:22:54,913 [QUEUE] INFO    [exp1_defended] still running — 5 min
+2026-04-29 06:23:54,913 [QUEUE] INFO    [exp1_defended] still running — 6 min
+2026-04-29 06:24:54,914 [QUEUE] INFO    [exp1_defended] still running — 7 min
+2026-04-29 06:25:54,914 [QUEUE] INFO    [exp1_defended] still running — 8 min
+2026-04-29 06:26:54,914 [QUEUE] INFO    [exp1_defended] still running — 9 min
+2026-04-29 06:27:54,915 [QUEUE] INFO    [exp1_defended] still running — 10 min
+2026-04-29 06:28:54,915 [QUEUE] INFO    [exp1_defended] still running — 11 min
+2026-04-29 06:29:54,916 [QUEUE] INFO    [exp1_defended] still running — 12 min
+2026-04-29 06:30:54,916 [QUEUE] INFO    [exp1_defended] still running — 13 min
+2026-04-29 06:31:54,916 [QUEUE] INFO    [exp1_defended] still running — 14 min
+2026-04-29 06:32:54,917 [QUEUE] INFO    [exp1_defended] still running — 15 min
+2026-04-29 06:33:54,918 [QUEUE] INFO    [exp1_defended] still running — 16 min
+2026-04-29 06:34:54,918 [QUEUE] INFO    [exp1_defended] still running — 17 min
+2026-04-29 06:35:54,919 [QUEUE] INFO    [exp1_defended] still running — 18 min
+2026-04-29 06:36:54,919 [QUEUE] INFO    [exp1_defended] still running — 19 min
+2026-04-29 06:37:54,920 [QUEUE] INFO    [exp1_defended] still running — 20 min
+2026-04-29 06:38:54,920 [QUEUE] INFO    [exp1_defended] still running — 21 min
+2026-04-29 06:39:54,921 [QUEUE] INFO    [exp1_defended] still running — 22 min
+2026-04-29 06:40:54,921 [QUEUE] INFO    [exp1_defended] still running — 23 min
+2026-04-29 06:41:54,922 [QUEUE] INFO    [exp1_defended] still running — 24 min
+2026-04-29 06:42:54,923 [QUEUE] INFO    [exp1_defended] still running — 25 min
+2026-04-29 06:43:54,923 [QUEUE] INFO    [exp1_defended] still running — 26 min
+2026-04-29 06:44:54,924 [QUEUE] INFO    [exp1_defended] still running — 27 min
+2026-04-29 06:45:54,924 [QUEUE] INFO    [exp1_defended] still running — 28 min
+2026-04-29 06:46:54,925 [QUEUE] INFO    [exp1_defended] still running — 29 min
+2026-04-29 06:47:54,925 [QUEUE] INFO    [exp1_defended] still running — 30 min
+2026-04-29 06:48:54,926 [QUEUE] INFO    [exp1_defended] still running — 31 min
+2026-04-29 06:49:54,927 [QUEUE] INFO    [exp1_defended] still running — 32 min
+2026-04-29 06:50:54,927 [QUEUE] INFO    [exp1_defended] still running — 33 min
+2026-04-29 06:51:54,928 [QUEUE] INFO    [exp1_defended] still running — 34 min
+2026-04-29 06:52:54,929 [QUEUE] INFO    [exp1_defended] still running — 35 min
+2026-04-29 06:53:54,929 [QUEUE] INFO    [exp1_defended] still running — 36 min
+2026-04-29 06:54:54,930 [QUEUE] INFO    [exp1_defended] still running — 37 min
+2026-04-29 06:55:54,930 [QUEUE] INFO    [exp1_defended] still running — 38 min
+2026-04-29 06:56:54,931 [QUEUE] INFO    [exp1_defended] still running — 39 min
+2026-04-29 06:57:54,931 [QUEUE] INFO    [exp1_defended] still running — 40 min
+2026-04-29 06:58:54,932 [QUEUE] INFO    [exp1_defended] still running — 41 min
+2026-04-29 06:59:54,932 [QUEUE] INFO    [exp1_defended] still running — 42 min
+2026-04-29 07:00:54,933 [QUEUE] INFO    [exp1_defended] still running — 43 min
+2026-04-29 07:01:54,934 [QUEUE] INFO    [exp1_defended] still running — 44 min
+2026-04-29 07:02:54,934 [QUEUE] INFO    [exp1_defended] still running — 45 min
+2026-04-29 07:03:54,935 [QUEUE] INFO    [exp1_defended] still running — 46 min
+2026-04-29 07:04:54,935 [QUEUE] INFO    [exp1_defended] still running — 47 min
+2026-04-29 07:05:54,936 [QUEUE] INFO    [exp1_defended] still running — 48 min
+2026-04-29 07:06:54,936 [QUEUE] INFO    [exp1_defended] still running — 49 min
+2026-04-29 07:07:54,936 [QUEUE] INFO    [exp1_defended] still running — 50 min
+2026-04-29 07:08:54,937 [QUEUE] INFO    [exp1_defended] still running — 51 min
+2026-04-29 07:09:54,937 [QUEUE] INFO    [exp1_defended] still running — 52 min
+2026-04-29 07:10:54,938 [QUEUE] INFO    [exp1_defended] still running — 53 min
+2026-04-29 07:11:54,938 [QUEUE] INFO    [exp1_defended] still running — 54 min
+2026-04-29 07:12:54,939 [QUEUE] INFO    [exp1_defended] still running — 55 min
+2026-04-29 07:13:54,939 [QUEUE] INFO    [exp1_defended] still running — 56 min
+2026-04-29 07:14:54,939 [QUEUE] INFO    [exp1_defended] still running — 57 min
+2026-04-29 07:15:54,940 [QUEUE] INFO    [exp1_defended] still running — 58 min
+2026-04-29 07:16:54,941 [QUEUE] INFO    [exp1_defended] still running — 59 min
+2026-04-29 07:17:54,941 [QUEUE] INFO    [exp1_defended] still running — 60 min
+2026-04-29 07:18:54,941 [QUEUE] INFO    [exp1_defended] still running — 61 min
+2026-04-29 07:19:54,942 [QUEUE] INFO    [exp1_defended] still running — 62 min
+2026-04-29 07:20:54,942 [QUEUE] INFO    [exp1_defended] still running — 63 min
+2026-04-29 07:21:54,943 [QUEUE] INFO    [exp1_defended] still running — 64 min
+2026-04-29 07:22:54,944 [QUEUE] INFO    [exp1_defended] still running — 65 min
+2026-04-29 07:23:54,944 [QUEUE] INFO    [exp1_defended] still running — 66 min
+2026-04-29 07:24:54,945 [QUEUE] INFO    [exp1_defended] still running — 67 min
+2026-04-29 07:25:54,945 [QUEUE] INFO    [exp1_defended] still running — 68 min
+2026-04-29 07:26:54,946 [QUEUE] INFO    [exp1_defended] still running — 69 min
+2026-04-29 07:27:54,946 [QUEUE] INFO    [exp1_defended] still running — 70 min
+2026-04-29 07:28:54,947 [QUEUE] INFO    [exp1_defended] still running — 71 min
+2026-04-29 07:29:54,947 [QUEUE] INFO    [exp1_defended] still running — 72 min
+2026-04-29 07:30:54,948 [QUEUE] INFO    [exp1_defended] still running — 73 min
+2026-04-29 07:31:54,948 [QUEUE] INFO    [exp1_defended] still running — 74 min
+2026-04-29 07:32:54,949 [QUEUE] INFO    [exp1_defended] still running — 75 min
+2026-04-29 07:33:54,949 [QUEUE] INFO    [exp1_defended] still running — 76 min
+2026-04-29 07:34:54,950 [QUEUE] INFO    [exp1_defended] still running — 77 min
+2026-04-29 07:35:54,950 [QUEUE] INFO    [exp1_defended] still running — 78 min
+2026-04-29 07:36:54,951 [QUEUE] INFO    [exp1_defended] still running — 79 min
+2026-04-29 07:37:54,951 [QUEUE] INFO    [exp1_defended] still running — 80 min
+2026-04-29 07:38:54,952 [QUEUE] INFO    [exp1_defended] still running — 81 min
+2026-04-29 07:39:54,952 [QUEUE] INFO    [exp1_defended] still running — 82 min
+2026-04-29 07:40:54,953 [QUEUE] INFO    [exp1_defended] still running — 83 min
+2026-04-29 07:41:54,953 [QUEUE] INFO    [exp1_defended] still running — 84 min
+2026-04-29 07:42:54,954 [QUEUE] INFO    [exp1_defended] still running — 85 min
+2026-04-29 07:43:54,955 [QUEUE] INFO    [exp1_defended] still running — 86 min
+2026-04-29 07:44:54,955 [QUEUE] INFO    [exp1_defended] still running — 87 min
+2026-04-29 07:45:54,956 [QUEUE] INFO    [exp1_defended] still running — 88 min
+2026-04-29 07:46:54,956 [QUEUE] INFO    [exp1_defended] still running — 89 min
+2026-04-29 07:47:54,956 [QUEUE] INFO    [exp1_defended] still running — 90 min
+2026-04-29 07:48:54,957 [QUEUE] INFO    [exp1_defended] still running — 91 min
+2026-04-29 07:49:54,958 [QUEUE] INFO    [exp1_defended] still running — 92 min
+2026-04-29 07:50:54,958 [QUEUE] INFO    [exp1_defended] still running — 93 min
+2026-04-29 07:51:54,959 [QUEUE] INFO    [exp1_defended] still running — 94 min
+2026-04-29 07:52:54,959 [QUEUE] INFO    [exp1_defended] still running — 95 min
+2026-04-29 07:53:54,959 [QUEUE] INFO    [exp1_defended] still running — 96 min
+2026-04-29 07:54:54,960 [QUEUE] INFO    [exp1_defended] still running — 97 min
+2026-04-29 07:55:54,960 [QUEUE] INFO    [exp1_defended] still running — 98 min
+2026-04-29 07:56:54,962 [QUEUE] INFO    [exp1_defended] still running — 99 min
+2026-04-29 07:57:54,962 [QUEUE] INFO    [exp1_defended] still running — 100 min
+2026-04-29 07:58:54,963 [QUEUE] INFO    [exp1_defended] still running — 101 min
+2026-04-29 07:59:54,963 [QUEUE] INFO    [exp1_defended] still running — 102 min
+2026-04-29 08:00:54,964 [QUEUE] INFO    [exp1_defended] still running — 103 min
+2026-04-29 08:01:54,965 [QUEUE] INFO    [exp1_defended] still running — 104 min
+2026-04-29 08:02:54,965 [QUEUE] INFO    [exp1_defended] still running — 105 min
+2026-04-29 08:03:54,966 [QUEUE] INFO    [exp1_defended] still running — 106 min
+2026-04-29 08:04:54,966 [QUEUE] INFO    [exp1_defended] still running — 107 min
+2026-04-29 08:05:54,966 [QUEUE] INFO    [exp1_defended] still running — 108 min
+2026-04-29 08:06:54,967 [QUEUE] INFO    [exp1_defended] still running — 109 min
+2026-04-29 08:07:54,968 [QUEUE] INFO    [exp1_defended] still running — 110 min
+2026-04-29 08:08:54,968 [QUEUE] INFO    [exp1_defended] still running — 111 min
+2026-04-29 08:09:54,969 [QUEUE] INFO    [exp1_defended] still running — 112 min
+2026-04-29 08:10:54,969 [QUEUE] INFO    [exp1_defended] still running — 113 min
+2026-04-29 08:11:54,970 [QUEUE] INFO    [exp1_defended] still running — 114 min
+2026-04-29 08:12:54,970 [QUEUE] INFO    [exp1_defended] still running — 115 min
+2026-04-29 08:13:54,970 [QUEUE] INFO    [exp1_defended] still running — 116 min
+2026-04-29 08:14:54,971 [QUEUE] INFO    [exp1_defended] still running — 117 min
+2026-04-29 08:15:54,971 [QUEUE] INFO    [exp1_defended] still running — 118 min
+2026-04-29 08:16:54,972 [QUEUE] INFO    [exp1_defended] still running — 119 min
+2026-04-29 08:17:54,972 [QUEUE] INFO    [exp1_defended] still running — 120 min
+2026-04-29 08:18:54,973 [QUEUE] INFO    [exp1_defended] still running — 121 min
+2026-04-29 08:19:54,973 [QUEUE] INFO    [exp1_defended] still running — 122 min
+2026-04-29 08:20:54,973 [QUEUE] INFO    [exp1_defended] still running — 123 min
+2026-04-29 08:21:54,974 [QUEUE] INFO    [exp1_defended] still running — 124 min
+2026-04-29 08:22:54,974 [QUEUE] INFO    [exp1_defended] still running — 125 min
+2026-04-29 08:23:54,975 [QUEUE] INFO    [exp1_defended] still running — 126 min
+2026-04-29 08:24:54,975 [QUEUE] INFO    [exp1_defended] still running — 127 min
+2026-04-29 08:25:54,976 [QUEUE] INFO    [exp1_defended] still running — 128 min
+2026-04-29 08:26:54,976 [QUEUE] INFO    [exp1_defended] still running — 129 min
+2026-04-29 08:27:54,978 [QUEUE] INFO    [exp1_defended] still running — 130 min
+2026-04-29 08:28:54,979 [QUEUE] INFO    [exp1_defended] still running — 131 min
+2026-04-29 08:29:54,979 [QUEUE] INFO    [exp1_defended] still running — 132 min
+2026-04-29 08:30:54,980 [QUEUE] INFO    [exp1_defended] still running — 133 min
+2026-04-29 08:31:54,980 [QUEUE] INFO    [exp1_defended] still running — 134 min
+2026-04-29 08:32:54,980 [QUEUE] INFO    [exp1_defended] still running — 135 min
+2026-04-29 08:33:54,981 [QUEUE] INFO    [exp1_defended] still running — 136 min
+2026-04-29 08:34:54,981 [QUEUE] INFO    [exp1_defended] still running — 137 min
+2026-04-29 08:35:54,982 [QUEUE] INFO    [exp1_defended] still running — 138 min
+2026-04-29 08:36:54,982 [QUEUE] INFO    [exp1_defended] still running — 139 min
+2026-04-29 08:37:54,982 [QUEUE] INFO    [exp1_defended] still running — 140 min
+2026-04-29 08:38:54,983 [QUEUE] INFO    [exp1_defended] still running — 141 min
+2026-04-29 08:39:54,983 [QUEUE] INFO    [exp1_defended] still running — 142 min
+2026-04-29 08:40:54,984 [QUEUE] INFO    [exp1_defended] still running — 143 min
+2026-04-29 08:41:54,984 [QUEUE] INFO    [exp1_defended] still running — 144 min
+2026-04-29 08:42:54,985 [QUEUE] INFO    [exp1_defended] still running — 145 min
+2026-04-29 08:43:54,985 [QUEUE] INFO    [exp1_defended] still running — 146 min
+2026-04-29 08:44:54,986 [QUEUE] INFO    [exp1_defended] still running — 147 min
+2026-04-29 08:45:54,986 [QUEUE] INFO    [exp1_defended] still running — 148 min
+2026-04-29 08:46:54,986 [QUEUE] INFO    [exp1_defended] still running — 149 min
+2026-04-29 08:47:54,987 [QUEUE] INFO    [exp1_defended] still running — 150 min
+2026-04-29 08:48:54,987 [QUEUE] INFO    [exp1_defended] still running — 151 min
+2026-04-29 08:49:54,988 [QUEUE] INFO    [exp1_defended] still running — 152 min
+2026-04-29 08:50:54,988 [QUEUE] INFO    [exp1_defended] still running — 153 min
+2026-04-29 08:51:54,988 [QUEUE] INFO    [exp1_defended] still running — 154 min
+2026-04-29 08:52:54,989 [QUEUE] INFO    [exp1_defended] still running — 155 min
+2026-04-29 08:53:54,990 [QUEUE] INFO    [exp1_defended] still running — 156 min
+2026-04-29 08:54:54,990 [QUEUE] INFO    [exp1_defended] still running — 157 min
+2026-04-29 08:55:54,991 [QUEUE] INFO    [exp1_defended] still running — 158 min
+2026-04-29 08:56:54,991 [QUEUE] INFO    [exp1_defended] still running — 159 min
+2026-04-29 08:57:54,991 [QUEUE] INFO    [exp1_defended] still running — 160 min
+2026-04-29 08:58:54,992 [QUEUE] INFO    [exp1_defended] still running — 161 min
+2026-04-29 08:58:54,993 [QUEUE] INFO    [exp1_defended] FINISHED OK in 161 min
+2026-04-29 08:58:54,993 [QUEUE] INFO  [PARALLEL] Group group_A complete — failed: none
+2026-04-29 08:58:54,993 [QUEUE] INFO  [EXP11] 5 weight profiles analyzed
+2026-04-29 08:58:54,993 [QUEUE] INFO  Health check [exp11] — OK
+2026-04-29 08:58:54,995 [QUEUE] INFO  [EXP1/defended] n=30 def4=97% zero_calls=1
+2026-04-29 08:58:54,995 [QUEUE] WARNING  Health check [exp1_defended] — 2 issue(s):
+2026-04-29 08:58:54,995 [QUEUE] WARNING    !  [EXP1/defended] 1 trials with 0 policy_calls — dispatch may be broken
+2026-04-29 08:58:54,995 [QUEUE] WARNING    !  [EXP1/defended] Def4 rate is 97% — defense not suppressing? Expected <20%
+2026-04-29 08:58:54,995 [QUEUE] WARNING    Health issues for exp1_defended — review
+2026-04-29 08:58:54,995 [QUEUE] INFO  
+2026-04-29 08:58:54,995 [QUEUE] INFO  ============================================================
+2026-04-29 08:58:54,995 [QUEUE] INFO  Next: hook_post_exp1
+2026-04-29 08:58:54,995 [QUEUE] INFO  [HOOK] post-exp1 reanalysis: applying def4_measurable threshold to defended arm
+2026-04-29 08:58:55,160 [QUEUE] INFO  [HOOK] reanalyze stdout: Post-hoc Def4 reanalysis  [threshold=2.0%]
+============================================================
+  [qwen2.5:72b][defended  ] 30 trials: def4_measurable=96.7% def4_strict=96.7% Q@k†=24.0%
+
+Done. Trial JSONs and summary.json files updated in-place.
+2026-04-29 08:58:55,160 [QUEUE] INFO  [HOOK] re-running Exp 11 on updated exp1 results
+2026-04-29 08:58:55,308 [QUEUE] INFO  [HOOK] exp11 stdout: 2026-04-29 08:58:55,275 [EXP11] INFO  Exp 11 Q-weight sensitivity — source: <repo>/experiments/exp1_results
+2026-04-29 08:58:55,275 [EXP11] INFO  Found 60 trial files in vulnerable arm
+2026-04-29 08:58:55,282 [EXP11] INFO  Loaded 60 trials
+
+======================================================================
+EXP 11 — Q-WEIGHT SENSITIVITY
+======================================================================
+
+  Profile            n_usable Def4(meas)   Q@k†(mean)
+  --------------------------------------------------
+  equal                    30     100.0%         27.4%
+2026-04-29 08:58:55,284 [EXP11] INFO    [equal]: n=30  def4_meas=100.0%  def4_strict=100.0%  Q@k†=27.4%
+  embb                     30     100.0%         42.0%
+2026-04-29 08:58:55,284 [EXP11] INFO    [embb]: n=30  def4_meas=100.0%  def4_strict=100.0%  Q@k†=42.0%
+  urllc                    30     100.0%         39.3%
+2026-04-29 08:58:55,284 [EXP11] INFO    [urllc]: n=30  def4_meas=100.0%  def4_strict=100.0%  Q@k†=39.3%
+  loss_sensitive           30     100.0%         42.0%
+2026-04-29 08:58:55,284 [EXP11] INFO    [loss_sensitive]: n=30  def4_meas=100.0%  def4_strict=100.0%  Q@k†=42.0%
+  session_heavy            30     100.0%          6.2%
+2026-04-29 08:58:55,284 [EXP11] INFO    [session_heavy]: n=30  def4_meas=100.0%  def4_strict=100.0%  Q@k†=6.2%
+  [SAVED] exp11_results/weight_sensitivity.json
+2026-04-29 08:58:55,285 [EXP11] INFO  Done.
+2026-04-29 08:58:55,308 [QUEUE] INFO  [HOOK] post-exp1 cleanup complete
+2026-04-29 08:58:55,308 [QUEUE] INFO    Hook [hook_post_exp1] OK
+2026-04-29 08:58:55,308 [QUEUE] INFO  
+2026-04-29 08:58:55,308 [QUEUE] INFO  ============================================================
+2026-04-29 08:58:55,308 [QUEUE] INFO  Next: exp2_qwen
+2026-04-29 08:58:55,308 [QUEUE] INFO  ============================================================
+2026-04-29 08:58:55,308 [QUEUE] INFO  Starting: exp2_qwen
+2026-04-29 08:58:55,308 [QUEUE] INFO  Command:  experiments/exp2_register_trichotomy.py qwen2.5:72b
+2026-04-29 08:58:55,308 [QUEUE] INFO  Log:      <repo>/experiments/queue_logs/exp2_qwen.log
+2026-04-29 08:58:55,309 [QUEUE] INFO  ============================================================
+2026-04-29 09:03:55,309 [QUEUE] INFO    [exp2_qwen] still running — 5 min elapsed
+2026-04-29 09:03:55,309 [QUEUE] ERROR    [exp2_qwen] FAILED (exit=1) after 5 min — see <repo>/experiments/queue_logs/exp2_qwen.log
+2026-04-29 09:03:55,309 [QUEUE] ERROR    exp2_qwen failed — continuing to next item
+2026-04-29 09:03:55,310 [QUEUE] WARNING  Health check [exp2] — 3 issue(s):
+2026-04-29 09:03:55,310 [QUEUE] WARNING    !  [EXP2/direct] No trial files found
+2026-04-29 09:03:55,310 [QUEUE] WARNING    !  [EXP2/staged] No trial files found
+2026-04-29 09:03:55,310 [QUEUE] WARNING    !  [EXP2/null] No trial files found
+2026-04-29 09:03:55,310 [QUEUE] WARNING    Health check issues for exp2_qwen — review before proceeding
+2026-04-29 09:03:55,310 [QUEUE] INFO  
+2026-04-29 09:03:55,310 [QUEUE] INFO  ============================================================
+2026-04-29 09:03:55,310 [QUEUE] INFO  Next: exp6_phase1
+2026-04-29 09:03:55,310 [QUEUE] INFO  ============================================================
+2026-04-29 09:03:55,310 [QUEUE] INFO  Starting: exp6_phase1
+2026-04-29 09:03:55,310 [QUEUE] INFO  Command:  experiments/exp6_hedgetune_calibration.py phase1
+2026-04-29 09:03:55,310 [QUEUE] INFO  Log:      <repo>/experiments/queue_logs/exp6_phase1.log
+2026-04-29 09:03:55,310 [QUEUE] INFO  ============================================================
+2026-04-29 09:08:55,311 [QUEUE] INFO    [exp6_phase1] still running — 5 min elapsed
+2026-04-29 09:08:55,311 [QUEUE] ERROR    [exp6_phase1] FAILED (exit=1) after 5 min — see <repo>/experiments/queue_logs/exp6_phase1.log
+2026-04-29 09:08:55,312 [QUEUE] ERROR    exp6_phase1 failed — continuing to next item
+2026-04-29 09:08:55,312 [QUEUE] WARNING  Health check [exp6] — 1 issue(s):
+2026-04-29 09:08:55,312 [QUEUE] WARNING    !  [EXP6] calibration.json not found — phase1 may not have completed
+2026-04-29 09:08:55,312 [QUEUE] WARNING    Health check issues for exp6_phase1 — review before proceeding
+2026-04-29 09:08:55,312 [QUEUE] INFO  
+2026-04-29 09:08:55,312 [QUEUE] INFO  ============================================================
+2026-04-29 09:08:55,312 [QUEUE] INFO  Next: kstar_update
+2026-04-29 09:08:55,312 [QUEUE] INFO  [HOOK] k†* auto-update starting
+2026-04-29 09:08:55,312 [QUEUE] WARNING  [HOOK] calibration.json not found — skipping k†* update
+2026-04-29 09:08:55,312 [QUEUE] INFO    Hook [kstar_update] OK
+2026-04-29 09:08:55,312 [QUEUE] INFO  
+2026-04-29 09:08:55,313 [QUEUE] INFO  ============================================================
+2026-04-29 09:08:55,313 [QUEUE] INFO  Next: as5_sanity
+2026-04-29 09:08:55,313 [QUEUE] INFO  [HOOK] AS5 sanity check — verifying readback survives ML strip
+2026-04-29 09:08:55,313 [QUEUE] INFO  [HOOK] No existing as5_enforced trials — running 2-trial pre-flight check
+2026-04-29 09:08:55,313 [QUEUE] INFO  [HOOK] Pre-flight will complete before exp5 full run

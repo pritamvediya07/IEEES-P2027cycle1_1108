@@ -1,0 +1,792 @@
+{
+  "C_cell_capacity_mbps": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 4,
+    "note": "aggregate downlink with every AMBR unlimited; this is the bottleneck, measured at the MAC scheduler and NOT set by the enforcement point",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E0_3_capacity.json:C_mbps",
+    "units": "Mbps",
+    "value": 23.38
+  },
+  "C_fair_share_mbps": {
+    "baseline_key": "C_cell_capacity_mbps",
+    "exclusions": "none",
+    "n": 4,
+    "note": "C divided by n",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E0_3_capacity.json:fair_share_mbps",
+    "units": "Mbps",
+    "value": 5.84
+  },
+  "E0_4_escalation_share_of_dQ_pct": {
+    "baseline_key": "E0_4_target_share_of_dQ_pct",
+    "exclusions": "none",
+    "n": null,
+    "note": "paper \u00a76.3: 'under 9%'",
+    "robust_to_analysis_choices": true,
+    "source": "derived from E0_4_target_share_of_dQ_pct",
+    "units": "%",
+    "value": 5.8
+  },
+  "E0_4_knee_mbps_per_ue": {
+    "baseline_key": "C_cell_capacity_mbps",
+    "exclusions": "none",
+    "n": 4,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E0_4_two_regime.json:knee_mbps_per_ue",
+    "units": "Mbps/UE",
+    "value": 5.84
+  },
+  "E0_4_lambda_inflation_factor": {
+    "baseline_key": "E0_4_lambda_min_under_ms",
+    "exclusions": "none",
+    "n": null,
+    "note": "bufferbloat signature: latency inflates while throughput saturates",
+    "robust_to_analysis_choices": true,
+    "source": "derived from E0_4_lambda_min_under_ms and E0_4_lambda_max_over_ms",
+    "units": "x",
+    "value": 7.52
+  },
+  "E0_4_lambda_max_over_ms": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 8,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E0_4_two_regime.json:rows[regime=over]",
+    "units": "ms",
+    "value": 410.11
+  },
+  "E0_4_lambda_min_under_ms": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 2,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E0_4_two_regime.json:rows[regime=under]",
+    "units": "ms",
+    "value": 54.518
+  },
+  "E0_4_target_share_of_dQ_pct": {
+    "baseline_key": "E0_4_knee_mbps_per_ue",
+    "exclusions": "none",
+    "n": 10,
+    "note": "paper \u00a76.3: 'over 91%'. Share of the total Q degradation already realised when the ceiling reaches B* = 3x baseline; minimum over the two measured baselines (E1 per-UE baseline 5.71: 94.3%, E0.4 knee 5.84: 94.2%)",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E0_4_two_regime.json:rows (paper Q, components clipped to [0,1])",
+    "units": "%",
+    "value": 94.2
+  },
+  "E0_5_am_vs_um_gap_pp": {
+    "baseline_key": "E0_5_rho_iperf_am_pct",
+    "exclusions": "none",
+    "n": null,
+    "note": "RLC-AM hypothesis REJECTED: acknowledged mode does not hide the loss",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E0_5_analysis.json:comparison.AM_vs_UM_difference_pp",
+    "units": "percentage points",
+    "value": 0.57
+  },
+  "E0_5_rho_counter_am_pct": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 4,
+    "note": "offered vs /proc/net/dev tun_srsue rx; this is the trustworthy measure",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E0_5_analysis.json:arms.am.counter_loss_mean_pct",
+    "units": "%",
+    "value": 68.35
+  },
+  "E0_5_rho_counter_um_pct": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 4,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E0_5_analysis.json:arms.um.counter_loss_mean_pct",
+    "units": "%",
+    "value": 66.17
+  },
+  "E0_5_rho_iperf_am_pct": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 4,
+    "note": "iperf3 UDP reverse accounting; UNDER-REPORTS, see counters",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E0_5_analysis.json:arms.am.iperf_loss_mean_pct",
+    "units": "%",
+    "value": 30.81
+  },
+  "E10_arm_none_mean_ms": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 120,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E10_overhead.json:arms.none.mean_ms",
+    "units": "ms",
+    "value": 4.4937
+  },
+  "E10_mgmt_plane_interval_ms": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": null,
+    "note": "the correct denominator: this is management-plane, not user-plane, cost",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E10_overhead.json:mgmt_plane_interval_ms",
+    "units": "ms",
+    "value": 1000.0
+  },
+  "E10_n_per_arm": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": null,
+    "note": "paper: n=120",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E10_overhead.json:n_per_arm",
+    "units": "policy calls",
+    "value": 120
+  },
+  "E10_worst_arm_delta_ms": {
+    "baseline_key": "E10_arm_none_mean_ms",
+    "exclusions": "none",
+    "n": 120,
+    "note": "AT OR BELOW THE MEASUREMENT FLOOR. Arm ordering is not self-consistent and two arms show physically impossible negative deltas. Quote only as an upper bound, never as a ranking.",
+    "robust_to_analysis_choices": false,
+    "source": "srsran/results/E10_overhead.json:verdict.worst_arm_delta_ms",
+    "units": "ms",
+    "value": 1.1617
+  },
+  "E12_dMOS_conversational": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": null,
+    "note": "G.107 E-model; larger than streaming but still small, because one-way delay stays below the 177.3 ms interactivity knee",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E12_qoe_mapping.json:verdict.deltas_across_E1_victim_sweep.dMOS_conversational",
+    "units": "MOS",
+    "value": -0.02
+  },
+  "E12_dMOS_streaming": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": null,
+    "note": "buffered streaming absorbs the harm almost entirely",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E12_qoe_mapping.json:verdict.deltas_across_E1_victim_sweep.dMOS_streaming",
+    "units": "MOS",
+    "value": -0.002
+  },
+  "E1_Q0_postfirstcall": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": null,
+    "note": "victim Q AFTER the first escalation. Distinct key by construction so it can never be substituted for E1_Q0_preaction.",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E1_harm_mechanism.json:rows[1].Q_victim",
+    "units": "index",
+    "value": 0.3784
+  },
+  "E1_Q0_preaction": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": null,
+    "note": "victim Q at the FIRST sweep point, i.e. aggressor still at baseline. This is the pre-action baseline and is NOT interchangeable with E1_Q0_postfirstcall.",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E1_harm_mechanism.json:rows[0].Q_victim",
+    "units": "index",
+    "value": 0.4415
+  },
+  "E1_Q_lambda_term_share_pct": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": null,
+    "note": "the lambda term accounts for essentially all of the change in Q; the tau term contributes ~0 because victim throughput is flat",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E12b_q_sensitivity.json:verdict.lambda_term_share_of_dQ_pct",
+    "units": "%",
+    "value": 100.5
+  },
+  "E1_aggressor_tau_last_mbps": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 1,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E1_harm_mechanism.json:rows[-1].tau_aggressor",
+    "units": "Mbps",
+    "value": 6.946
+  },
+  "E1_cell_capacity_mbps": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 4,
+    "note": "paper \u00a76.3 / App. E: 22.8 Mbps. Measured at the start of the E1 campaign; E0.3 measured 23.38 Mbps on a separate run (C_cell_capacity_mbps)",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E1_harm_mechanism.json:C_mbps",
+    "units": "Mbps",
+    "value": 22.83
+  },
+  "E1_per_ue_baseline_mbps": {
+    "baseline_key": "E1_cell_capacity_mbps",
+    "exclusions": "none",
+    "n": 4,
+    "note": "paper App. E: 5.71 Mbps",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E1_harm_mechanism.json:baseline_mbps",
+    "units": "Mbps/UE",
+    "value": 5.71
+  },
+  "E1_share_of_victim_dQ_at_3x_pct": {
+    "baseline_key": "E1_Q0_preaction",
+    "exclusions": "none",
+    "n": 8,
+    "note": "\u00a76.3 Target versus feedback: derivation of the 71%/29% split (71.1% / 28.9%). The paper prints 'at least 71%' for UERANSIM; reproduce_results.py computes the UERANSIM value (71.4%) from the testbed's shaper model",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E1_harm_mechanism.json:rows[ratio_to_baseline 1, 3, worst].Q_victim",
+    "units": "%",
+    "value": 71.1
+  },
+  "E1_victim_Q_drop_pct_at_lamnorm_200": {
+    "baseline_key": "E1_Q0_preaction",
+    "exclusions": "none",
+    "n": null,
+    "note": "NOT ROBUST. Ranges from 6.0% to 63.7% depending only on the lambda normalising constant. Do not lead with this number; lead with E1_victim_lambda_inflation_x, which has units.",
+    "robust_to_analysis_choices": false,
+    "source": "srsran/results/E12b_q_sensitivity.json:verdict.published_drop_pct",
+    "units": "%",
+    "value": 41.6
+  },
+  "E1_victim_lambda_first_ms": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": null,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E1_harm_mechanism.json:rows[0].lambda_ms",
+    "units": "ms",
+    "value": 77.743
+  },
+  "E1_victim_lambda_inflation_x": {
+    "baseline_key": "E1_victim_lambda_first_ms",
+    "exclusions": "none",
+    "n": null,
+    "note": "PRIMARY harm evidence: a measured quantity with units, unlike the Q index",
+    "robust_to_analysis_choices": true,
+    "source": "derived from E1_victim_lambda_first_ms and E1_victim_lambda_last_ms",
+    "units": "x",
+    "value": 1.95
+  },
+  "E1_victim_lambda_last_ms": {
+    "baseline_key": "E1_victim_lambda_first_ms",
+    "exclusions": "none",
+    "n": null,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E1_harm_mechanism.json:rows[-1].lambda_ms",
+    "units": "ms",
+    "value": 151.53
+  },
+  "E1_victim_tau_first_mbps": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 3,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E1_harm_mechanism.json:rows[0].tau_victim_mean",
+    "units": "Mbps",
+    "value": 5.434
+  },
+  "E1_victim_tau_last_mbps": {
+    "baseline_key": "E1_victim_tau_first_mbps",
+    "exclusions": "none",
+    "n": 3,
+    "note": "FLAT. The victims lose no bandwidth at all; this is the key mechanistic fact",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E1_harm_mechanism.json:rows[-1].tau_victim_mean",
+    "units": "Mbps",
+    "value": 5.473
+  },
+  "E2_3_delta_R": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 2,
+    "note": "R moves by this much under the standard collector while Phi is MEASURED and static within tolerance (tau 0.15 Mbps, lambda 0.25 ms, rho 0.05 pp). Flagged not-robust on sample size only: n=2 per arm. The contrast with the isolated arm, not the magnitude, is the result.",
+    "robust_to_analysis_choices": false,
+    "source": "srsran/results/E2_3_dr_fixed_phi.json:verdict.standard_mean_delta_R",
+    "units": "Mbps",
+    "value": 180.0
+  },
+  "E2_3_delta_R_SUPERSEDED": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 1,
+    "note": "SUPERSEDED, DO NOT QUOTE. Phi verification vacuous \u2014 the probe returned None for all four dimensions (no UE attached), so Phi was absent, not static. Retained only so the correction to E2_3_delta_R is auditable.",
+    "robust_to_analysis_choices": false,
+    "source": "srsran/results/E2_contamination.json:E2_3_dR_at_fixed_phi.delta_R",
+    "units": "Mbps",
+    "value": 90.0
+  },
+  "E2_3_delta_R_isolated": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 2,
+    "note": "The control arm. Same write, same static Phi, provenance filter on: R does not move. Paired with E2_3_delta_R this is the dR/da|_Phi result.",
+    "robust_to_analysis_choices": false,
+    "source": "srsran/results/E2_3_dr_fixed_phi.json:verdict.isolated_mean_delta_R",
+    "units": "Mbps",
+    "value": 0.0
+  },
+  "E2_contamination_rate_isolated": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 30,
+    "note": "TRUE rate. The naive 'readback within 5% of the write' rule scores 3/30 here, but the isolated readback is CONSTANT, so every apparent hit is a coincidence where a swept write happened to equal the stale value.",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E2_contamination.json:arm_isolated.true_contamination_rate",
+    "units": "fraction",
+    "value": 0.0
+  },
+  "E2_contamination_rate_standard": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 30,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E2_contamination.json:arm_standard.true_contamination_rate",
+    "units": "fraction",
+    "value": 1.0
+  },
+  "E2_corr_isolated": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 30,
+    "note": "zero: IsolatedCollector fully severs the channel",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E2_contamination.json:arm_isolated.corr_write_readback",
+    "units": "pearson r",
+    "value": 0.0
+  },
+  "E2_corr_standard": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 30,
+    "note": "perfect tracking: the write reappears as the analytic",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E2_contamination.json:arm_standard.corr_write_readback",
+    "units": "pearson r",
+    "value": 1.0
+  },
+  "E3_median_delta_star_with_target": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 20,
+    "note": "median overshoot where the operator STATED a target; 0.00 means the agent stopped exactly at B*",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E3_attribution.json:rows[delta_star]",
+    "units": "fraction over target",
+    "value": 0.0
+  },
+  "E3_no_target_at_tool_ceiling": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 33,
+    "note": "sessions pinned at the policy tool's hard 1000 Mbps maximum",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E3_attribution.json:rows[register in sla,null]",
+    "units": "count",
+    "value": 13
+  },
+  "E3_no_target_mean_b_final_mbps": {
+    "baseline_key": "E4_baseline_ambr_mbps",
+    "exclusions": "none",
+    "n": 33,
+    "note": "where the operator states NO target, every value is agent-selected by construction",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E3_attribution.json:rows[register in sla,null]",
+    "units": "Mbps",
+    "value": 584.2
+  },
+  "E3_sessions_respecting_target": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 20,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E3_attribution.json:rows[delta_star]",
+    "units": "count",
+    "value": 14
+  },
+  "E3_target_free_pooled_mean_x": {
+    "baseline_key": "E4_baseline_ambr_mbps",
+    "exclusions": "none",
+    "n": 33,
+    "note": "paper: 29x, pooled across the four defense arms; descriptive only",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E3_attribution.json:rows",
+    "units": "x baseline",
+    "value": 29.2
+  },
+  "E3_target_free_pooled_n": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": null,
+    "note": "paper: n=33 of 40 sessions record a final ceiling",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E3_attribution.json:rows",
+    "units": "count",
+    "value": 33
+  },
+  "E3_target_free_undefended_at_ceiling": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 10,
+    "note": "paper: 1/10",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E3_attribution.json:rows",
+    "units": "count",
+    "value": 1
+  },
+  "E3_target_free_undefended_contaminated": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 10,
+    "note": "paper: 9/10 obtain a contaminated readback",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E3_attribution.json:rows",
+    "units": "count",
+    "value": 9
+  },
+  "E3_target_free_undefended_mean_x": {
+    "baseline_key": "E4_baseline_ambr_mbps",
+    "exclusions": "none",
+    "n": 10,
+    "note": "paper: 17x. Target-free = the SLA-framed and null-control intents, undefended arm; neither states a number",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E3_attribution.json:rows",
+    "units": "x baseline",
+    "value": 17.0
+  },
+  "E3_target_free_undefended_write_after_readback": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 10,
+    "note": "paper: 6/10 issue a further write after it",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E3_attribution.json:rows",
+    "units": "count",
+    "value": 6
+  },
+  "E3_total_writes_after_kstar": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 18,
+    "note": "writes issued AFTER the operator's target was reached \u2014 the only portion of the policy state that is agent-attributable when a target exists",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E3_attribution.json:rows[agent_attributable_writes]",
+    "units": "count",
+    "value": 23
+  },
+  "E4_baseline_ambr_mbps": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": null,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E4_scripted_controller.json:baseline_mbps",
+    "units": "Mbps",
+    "value": 20
+  },
+  "E4_closed_loop_iso_mean_escalation_x": {
+    "baseline_key": "E4_baseline_ambr_mbps",
+    "exclusions": "none",
+    "n": 20,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E4_scripted_controller.json:arms.closed_loop_iso.mean_escalation_factor",
+    "units": "x",
+    "value": 1.5
+  },
+  "E4_closed_loop_iso_overshoot_rate": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 20,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E4_scripted_controller.json:arms.closed_loop_iso.overshoot_rate",
+    "units": "fraction",
+    "value": 0.0
+  },
+  "E4_closed_loop_mean_escalation_x": {
+    "baseline_key": "E4_baseline_ambr_mbps",
+    "exclusions": "none",
+    "n": 20,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E4_scripted_controller.json:arms.closed_loop.mean_escalation_factor",
+    "units": "x",
+    "value": 50.0
+  },
+  "E4_closed_loop_overshoot_rate": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 20,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E4_scripted_controller.json:arms.closed_loop.overshoot_rate",
+    "units": "fraction",
+    "value": 1.0
+  },
+  "E4_open_loop_mean_escalation_x": {
+    "baseline_key": "E4_baseline_ambr_mbps",
+    "exclusions": "none",
+    "n": 20,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E4_scripted_controller.json:arms.open_loop.mean_escalation_factor",
+    "units": "x",
+    "value": 1.5
+  },
+  "E4_open_loop_overshoot_rate": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 20,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E4_scripted_controller.json:arms.open_loop.overshoot_rate",
+    "units": "fraction",
+    "value": 0.0
+  },
+  "E5_channel_exact_matches": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 48,
+    "note": "48 of 48 exact write-to-readback matches across 4 policy variables under the standard collector",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E5_multivariable.json:channel_standard",
+    "units": "count",
+    "value": 48
+  },
+  "E5_corr_5qi": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 12,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E5_multivariable.json:channel_standard.5qi.corr_write_readback",
+    "units": "pearson r",
+    "value": 1.0
+  },
+  "E5_corr_arp_priority": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 12,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E5_multivariable.json:channel_standard.arp_priority.corr_write_readback",
+    "units": "pearson r",
+    "value": 1.0
+  },
+  "E5_corr_flow_mbr": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 12,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E5_multivariable.json:channel_standard.flow_mbr.corr_write_readback",
+    "units": "pearson r",
+    "value": 1.0
+  },
+  "E5_corr_session_ambr": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 12,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E5_multivariable.json:channel_standard.session_ambr.corr_write_readback",
+    "units": "pearson r",
+    "value": 1.0
+  },
+  "E5_variables_open_under_iso": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 4,
+    "note": "IsolatedCollector removes every one of the four analytics entirely",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E5_multivariable.json:channel_isolated",
+    "units": "count",
+    "value": 0
+  },
+  "E5_variables_with_open_channel": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 4,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E5_multivariable.json:channel_standard",
+    "units": "count",
+    "value": 4
+  },
+  "E6_gemma12b_closed_sessions": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 20,
+    "note": "gemma3-12b-it-q8:latest; paper: 14/20 (8B), 15/20 (12B), 15/20 (Sonnet 4.5)",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E6_capability_sweep.json:per_tier.12-15B",
+    "units": "count",
+    "value": 15
+  },
+  "E6_gemma12b_mean_delta_star": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 15,
+    "note": "paper App. F: +3.41, +2.48, -0.12",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E6_capability_sweep.json:per_tier.12-15B",
+    "units": "fraction over target",
+    "value": 2.48
+  },
+  "E6_llama8b_closed_sessions": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 20,
+    "note": "llama3.1:latest; paper: 14/20 (8B), 15/20 (12B), 15/20 (Sonnet 4.5)",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E6_capability_sweep.json:per_tier.7-8B",
+    "units": "count",
+    "value": 14
+  },
+  "E6_llama8b_mean_delta_star": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 15,
+    "note": "paper App. F: +3.41, +2.48, -0.12",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E6_capability_sweep.json:per_tier.7-8B",
+    "units": "fraction over target",
+    "value": 3.41
+  },
+  "E6_partial_30_36b_closed_sessions": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 6,
+    "note": "PARTIAL tier (6 of 20 planned sessions). The paper prints 6/6 and does not quote it as a rate",
+    "robust_to_analysis_choices": false,
+    "source": "srsran/results/E6_capability_sweep.json:per_tier.30-36B",
+    "units": "count",
+    "value": 6
+  },
+  "E6_sonnet45_closed_sessions": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 20,
+    "note": "claude-sonnet-4-5; paper: 14/20 (8B), 15/20 (12B), 15/20 (Sonnet 4.5)",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E6_capability_sweep.json:per_tier.Frontier API",
+    "units": "count",
+    "value": 15
+  },
+  "E6_sonnet45_mean_delta_star": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 15,
+    "note": "paper App. F: +3.41, +2.48, -0.12",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E6_capability_sweep.json:per_tier.Frontier API",
+    "units": "fraction over target",
+    "value": -0.12
+  },
+  "E8_calls_per_trace": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": null,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E8_gate_replay.json:calls_per_trace",
+    "units": "calls",
+    "value": 12
+  },
+  "E8_counter_admitted_after_reinstantiation": {
+    "baseline_key": "E8_calls_per_trace",
+    "exclusions": "none",
+    "n": null,
+    "note": "paper: the counter admits every call after re-instantiation",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E8_gate_replay.json:results",
+    "units": "calls",
+    "value": 12
+  },
+  "E8_drift_bound_ceiling_x": {
+    "baseline_key": "E4_baseline_ambr_mbps",
+    "exclusions": "none",
+    "n": 5,
+    "note": "paper: 1.5x under every condition",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E8_gate_replay.json:results",
+    "units": "x baseline",
+    "value": 1.5
+  },
+  "E8_drift_bound_max_admitted": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 5,
+    "note": "paper: admits one call",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E8_gate_replay.json:results",
+    "units": "calls",
+    "value": 1
+  },
+  "E8_gates_evaded": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 4,
+    "note": "of 4 natural designs: fixed_window, decaying_memory, session_write_counter",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E8_gate_replay.json:verdict.gates_evaded_under_some_attack",
+    "units": "count",
+    "value": 3
+  },
+  "E8_gates_holding": {
+    "baseline_key": null,
+    "exclusions": "none",
+    "n": 4,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E8_gate_replay.json:verdict.gates_holding_under_every_attack",
+    "units": "count",
+    "value": 1
+  },
+  "E8_max_ambr_reached_worst_gate_mbps": {
+    "baseline_key": "E4_baseline_ambr_mbps",
+    "exclusions": "none",
+    "n": null,
+    "note": "",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E8_gate_replay.json:results[decaying_memory]",
+    "units": "Mbps",
+    "value": 2594.93
+  },
+  "E8_max_escalation_x": {
+    "baseline_key": "E4_baseline_ambr_mbps",
+    "exclusions": "none",
+    "n": null,
+    "note": "paper: 129.8x. The experiment records 129.75 (= 2594.93/20 = 129.7465, stored to 2 dp); the paper rounds the stored value",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E8_gate_replay.json:results.escalation_factor",
+    "units": "x baseline",
+    "value": 129.75
+  },
+  "E8_time_gates_min_admitted_at_10x_100x": {
+    "baseline_key": "E8_calls_per_trace",
+    "exclusions": "none",
+    "n": 4,
+    "note": "paper: 12/12 admitted at 10x and 100x dilation",
+    "robust_to_analysis_choices": true,
+    "source": "srsran/results/E8_gate_replay.json:results",
+    "units": "calls",
+    "value": 12
+  }
+}

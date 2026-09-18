@@ -1,0 +1,486 @@
+{
+  "experiment": "E2",
+  "model": "none (no LLM inference)",
+  "n_writes": 30,
+  "started_at": "2026-08-23T06:11:06.029876+00:00",
+  "arm_standard": {
+    "rows": [
+      {
+        "write_mbps": 20,
+        "readback": 20.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 30,
+        "readback": 30.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 40,
+        "readback": 40.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 50,
+        "readback": 50.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 60,
+        "readback": 60.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 70,
+        "readback": 70.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 80,
+        "readback": 80.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 90,
+        "readback": 90.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 100,
+        "readback": 100.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 110,
+        "readback": 110.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 20,
+        "readback": 20.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 30,
+        "readback": 30.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 40,
+        "readback": 40.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 50,
+        "readback": 50.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 60,
+        "readback": 60.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 70,
+        "readback": 70.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 80,
+        "readback": 80.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 90,
+        "readback": 90.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 100,
+        "readback": 100.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 110,
+        "readback": 110.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 20,
+        "readback": 20.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 30,
+        "readback": 30.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 40,
+        "readback": 40.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 50,
+        "readback": 50.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 60,
+        "readback": 60.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 70,
+        "readback": 70.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 80,
+        "readback": 80.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 90,
+        "readback": 90.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 100,
+        "readback": 100.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 110,
+        "readback": 110.0,
+        "reappeared": true,
+        "tagged": false
+      }
+    ],
+    "contamination_rate": 1.0,
+    "any_provenance_tag": false,
+    "distinct_readbacks": 10,
+    "readback_values": [
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0
+    ],
+    "corr_write_readback": 1.0,
+    "readback_is_constant": false,
+    "coincidental_hits": 0,
+    "true_contamination_rate": 1.0,
+    "naive_rate_note": "readback tracks the write, so hits are genuine contamination."
+  },
+  "arm_isolated": {
+    "rows": [
+      {
+        "write_mbps": 20,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 30,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 40,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 50,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 60,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 70,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 80,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 90,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 100,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 110,
+        "readback": 110.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 20,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 30,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 40,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 50,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 60,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 70,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 80,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 90,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 100,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 110,
+        "readback": 110.0,
+        "reappeared": true,
+        "tagged": false
+      },
+      {
+        "write_mbps": 20,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 30,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 40,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 50,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 60,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 70,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 80,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 90,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 100,
+        "readback": 110.0,
+        "reappeared": false,
+        "tagged": false
+      },
+      {
+        "write_mbps": 110,
+        "readback": 110.0,
+        "reappeared": true,
+        "tagged": false
+      }
+    ],
+    "contamination_rate": 0.1,
+    "any_provenance_tag": false,
+    "distinct_readbacks": 1,
+    "readback_values": [
+      110.0
+    ],
+    "corr_write_readback": 0.0,
+    "readback_is_constant": true,
+    "coincidental_hits": 3,
+    "true_contamination_rate": 0.0,
+    "naive_rate_note": "the naive 'readback within 5% of the write' rule counts a hit whenever a swept write happens to equal a CONSTANT stale reading. Under ISO the readback never moves, so every apparent hit is coincidence."
+  },
+  "E2_3_dR_at_fixed_phi": {
+    "R_before": 110.0,
+    "R_after": 200.0,
+    "delta_R": 90.0,
+    "phi_before": {
+      "k": 0,
+      "ts": "2026-08-23T06:12:14.520705+00:00",
+      "tau_mbps": null,
+      "tau_source": "unavailable",
+      "lambda_ms": null,
+      "lambda_p95_ms": null,
+      "lambda_source": "unavailable",
+      "rho_pct": null,
+      "rho_source": "unavailable",
+      "sigma": null,
+      "sigma_source": "unavailable",
+      "per_ue_tau": {
+        "ue1": null
+      },
+      "raw": {
+        "tau": {
+          "ue1": {
+            "tun_delta_rx": 0,
+            "tun_delta_tx": 0
+          }
+        },
+        "lambda": {},
+        "rho": {}
+      },
+      "complete": false
+    },
+    "phi_after": {
+      "k": 1,
+      "ts": "2026-08-23T06:12:31.743229+00:00",
+      "tau_mbps": null,
+      "tau_source": "unavailable",
+      "lambda_ms": null,
+      "lambda_p95_ms": null,
+      "lambda_source": "unavailable",
+      "rho_pct": null,
+      "rho_source": "unavailable",
+      "sigma": null,
+      "sigma_source": "unavailable",
+      "per_ue_tau": {
+        "ue1": null
+      },
+      "raw": {
+        "tau": {
+          "ue1": {
+            "tun_delta_rx": 0,
+            "tun_delta_tx": 0
+          }
+        },
+        "lambda": {},
+        "rho": {}
+      },
+      "complete": false
+    },
+    "phi_deltas": {
+      "tau_delta_mbps": null,
+      "lambda_delta_ms": null,
+      "rho_delta_pct": null,
+      "sigma_delta": null
+    },
+    "interpretation": "R changes as a function of the agent's write alone, with \u03a6 static. That is dR/da != 0 at fixed \u03a6 \u2014 the formal distinction from a badly designed KPI (R = g(\u03a6)), an observability projection (R = g(\u03a0\u03a6)) and an unstable control loop, all of which are state-only failures.",
+    "phi_verification_status": "VACUOUS \u2014 NOT A PASS",
+    "phi_verification_note": "The probe returned None for tau, lambda, rho and sigma in BOTH the before and after measurements: no UE was attached, so there was no data plane to measure. Phi was therefore not shown to be static; it was simply absent. Delta_R = 90.0 Mbps from a single write is real and was measured, but the load-bearing half of E2.3 \u2014 that R moves WHILE Phi provably does not \u2014 is not established by this run. A reviewer would rightly object that with no traffic at all it is unsurprising that a state-derived metric does not move.",
+    "what_a_valid_run_requires": "UEs attached and idle, so the probe returns real numbers for tau/lambda/rho, and those numbers are shown to be unchanged across the write. Then dR != 0 at FIXED Phi is demonstrated rather than asserted.",
+    "delta_R_is_still_meaningful": "Delta_R = 90.0 with R_before = 110.0 and R_after = 200.0 does confirm that a single policy write propagates into the analytic the agent reads. That is Lemma 2 (the channel), which E2.1 already established at 30/30. It is not the stronger Lemma-6-adjacent claim E2.3 exists for."
+  },
+  "E2_4_standards_shaped_kpi": {
+    "kpi": "virtualised_resource_utilisation (TS 28.554 \u00a76.4.2 shape)",
+    "numerator_measured_bytes": 0.0,
+    "denominator_configured_from_ambr": 25000000.0,
+    "value": 0.0,
+    "provenance_field_present": false,
+    "note": "numerator is measured, denominator is a configured policy value; the standard defines no provenance element, so a consumer cannot separate them",
+    "value_valid": false,
+    "validity_note": "numerator is 0: no user-plane bytes flowed because the radio was down. The SHAPE of the KPI (measured numerator / configured denominator, no provenance element) is what E2.4 demonstrates and that holds regardless; the numeric value must be re-taken with traffic to be quotable."
+  },
+  "finished_at": "2026-08-23T06:12:31.749352+00:00"
+}

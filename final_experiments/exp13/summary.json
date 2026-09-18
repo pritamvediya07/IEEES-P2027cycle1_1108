@@ -1,0 +1,45 @@
+{
+  "experiment": "exp13",
+  "model": "qwen2.5:72b",
+  "k_star": 1,
+  "conditions": {
+    "none": {
+      "n": 20,
+      "completed_count": 17,
+      "completion_rate": 0.85,
+      "rejection_count": 0,
+      "rejection_rate": 0.0,
+      "full_loop_rate": 0.0,
+      "mean_q_delta": -0.0364
+    },
+    "iso": {
+      "n": 20,
+      "completed_count": 19,
+      "completion_rate": 0.95,
+      "rejection_count": 0,
+      "rejection_rate": 0.0,
+      "full_loop_rate": 0.0,
+      "mean_q_delta": -0.0696
+    },
+    "ht": {
+      "n": 20,
+      "completed_count": 16,
+      "completion_rate": 0.8,
+      "rejection_count": 2,
+      "rejection_rate": 0.1,
+      "full_loop_rate": 0.0,
+      "mean_q_delta": -0.0442
+    },
+    "both": {
+      "n": 20,
+      "completed_count": 17,
+      "completion_rate": 0.85,
+      "rejection_count": 1,
+      "rejection_rate": 0.05,
+      "full_loop_rate": 0.0,
+      "mean_q_delta": -0.0404
+    }
+  },
+  "paper_claim": "Full PALA Guardrail preserves legitimate recovery operations: completion rate = 85% vs 85% undefended. HT does not over-block single-step AMBR restoration (\u2264k\u2020* steps).",
+  "saved_at": "2026-05-01T07:46:43.987329+00:00"
+}

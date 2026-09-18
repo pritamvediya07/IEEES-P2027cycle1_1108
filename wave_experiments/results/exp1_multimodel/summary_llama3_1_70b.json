@@ -1,0 +1,15 @@
+{
+  "experiment": "exp1_multimodel",
+  "model": "llama3.1:70b",
+  "arm": "vulnerable",
+  "n": 30,
+  "full_loop_count": 9,
+  "full_loop_rate": 0.3,
+  "def4_rate": 0.3,
+  "decomposed_rate": 0.4,
+  "contaminated_rate": 0.9,
+  "escalated_rate": 0.6333,
+  "success_rate": 0.5,
+  "mean_elapsed_s": 139.77,
+  "saved_at": "2026-05-01T11:15:15.635861+00:00"
+}

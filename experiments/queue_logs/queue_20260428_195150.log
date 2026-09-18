@@ -1,0 +1,38 @@
+2026-04-29 01:21:50,186 [QUEUE] INFO  Waiting for PID 805231 (Exp 1 vulnerable arm) to finish...
+2026-04-29 01:36:50,188 [QUEUE] INFO  PID 805231 finished. Starting queue.
+2026-04-29 01:36:50,189 [QUEUE] INFO  Queue has 11 items to run
+2026-04-29 01:36:50,189 [QUEUE] INFO  ============================================================
+2026-04-29 01:36:50,189 [QUEUE] INFO  Next: group_A
+2026-04-29 01:36:50,189 [QUEUE] INFO  ============================================================
+2026-04-29 01:36:50,189 [QUEUE] INFO  [PARALLEL] Starting group: group_A
+2026-04-29 01:36:50,189 [QUEUE] INFO    >> exp11_posthoc: experiments/exp11_q_weight_sensitivity.py
+2026-04-29 01:36:50,189 [QUEUE] INFO    >> exp1_defended: experiments/exp1_end_to_end.py qwen2.5:72b defended
+2026-04-29 01:36:50,189 [QUEUE] INFO  ============================================================
+2026-04-29 01:36:50,190 [QUEUE] INFO    [exp11_posthoc] launched PID 46218
+2026-04-29 01:36:50,191 [QUEUE] INFO    [exp1_defended] launched PID 46219
+2026-04-29 01:37:50,192 [QUEUE] INFO    [exp11_posthoc] still running — 1 min
+2026-04-29 01:37:50,192 [QUEUE] INFO    [exp1_defended] still running — 1 min
+2026-04-29 01:37:50,192 [QUEUE] INFO    [exp11_posthoc] FINISHED OK in 1 min
+2026-04-29 01:38:50,192 [QUEUE] INFO    [exp1_defended] still running — 2 min
+2026-04-29 01:39:50,196 [QUEUE] INFO    [exp1_defended] still running — 3 min
+2026-04-29 01:40:50,196 [QUEUE] INFO    [exp1_defended] still running — 4 min
+2026-04-29 01:41:50,197 [QUEUE] INFO    [exp1_defended] still running — 5 min
+2026-04-29 01:42:50,197 [QUEUE] INFO    [exp1_defended] still running — 6 min
+2026-04-29 01:43:50,198 [QUEUE] INFO    [exp1_defended] still running — 7 min
+2026-04-29 01:44:50,199 [QUEUE] INFO    [exp1_defended] still running — 8 min
+2026-04-29 01:45:50,199 [QUEUE] INFO    [exp1_defended] still running — 9 min
+2026-04-29 01:46:50,200 [QUEUE] INFO    [exp1_defended] still running — 10 min
+2026-04-29 01:47:50,200 [QUEUE] INFO    [exp1_defended] still running — 11 min
+2026-04-29 01:48:50,201 [QUEUE] INFO    [exp1_defended] still running — 12 min
+2026-04-29 01:49:50,201 [QUEUE] INFO    [exp1_defended] still running — 13 min
+2026-04-29 01:50:50,201 [QUEUE] INFO    [exp1_defended] still running — 14 min
+2026-04-29 01:51:50,202 [QUEUE] INFO    [exp1_defended] still running — 15 min
+2026-04-29 01:52:50,202 [QUEUE] INFO    [exp1_defended] still running — 16 min
+2026-04-29 01:53:50,203 [QUEUE] INFO    [exp1_defended] still running — 17 min
+2026-04-29 01:54:50,203 [QUEUE] INFO    [exp1_defended] still running — 18 min
+2026-04-29 01:55:50,203 [QUEUE] INFO    [exp1_defended] still running — 19 min
+2026-04-29 01:56:50,204 [QUEUE] INFO    [exp1_defended] still running — 20 min
+2026-04-29 01:57:50,204 [QUEUE] INFO    [exp1_defended] still running — 21 min
+2026-04-29 01:58:50,204 [QUEUE] INFO    [exp1_defended] still running — 22 min
+2026-04-29 01:59:50,205 [QUEUE] INFO    [exp1_defended] still running — 23 min
+2026-04-29 02:00:50,205 [QUEUE] INFO    [exp1_defended] still running — 24 min

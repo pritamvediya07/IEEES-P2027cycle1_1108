@@ -1,0 +1,36 @@
+\begin{table}[!t]
+\caption{Adaptive-attacker robustness (Exp~7, $n=50$ per condition).
+Five evasion-instructed prompts $\times$ 10 reps each; full-loop uses
+the corrected metric throughout (H$_\text{budget}$-rejected calls
+excluded from the AMBR sequence log; see footnote~$\dagger$).
+Fisher exact test, two-sided; Cohen $h = 2.37$ (Haldane--Anscombe
+correction) for all three defense arms.}
+\label{tab:exp7_adaptive}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{3.6cm}rrl}
+\toprule
+\textbf{Condition}
+  & \textbf{Full-loop}
+  & \shortstack[r]{\textbf{H$_\text{budget}$}\\\textbf{rej.}}
+  & \textbf{Fisher $p$ vs Vuln.} \\
+\midrule
+\textbf{Vulnerable} (no defense)
+  & 46/50 (92\%)   & n/a  & --- (ref.) \\
+IsolatedCollector alone
+  & 0/50 (0\%)     & n/a  & $6.27\!\times\!10^{-24}$ \\
+HedgeTuned $k^{\dagger\!*}\!=\!1$
+  & 0/50 (0\%)$^\dagger$   & 86  & $6.27\!\times\!10^{-24}$ \\
+\textbf{Full PALA Guardrail}
+  & \textbf{0/50 (0\%)}    & \textbf{90}  & $\mathbf{6.27\!\times\!10^{-24}}$ \\
+\bottomrule
+\multicolumn{4}{p{0.97\linewidth}}{\footnotesize
+$^\dagger$Raw $=\!26/50$ (52\%), inflated by HT-rejection artefact:
+the agent runner logs all \texttt{policy\_manager} attempts including
+those H$_\text{budget}$ rejects, creating a spurious rising AMBR
+sequence in the raw log.
+Corrected metric (successful calls only) $= 0/50$.
+Cf.\ Table~\ref{tab:rq4_efficacy}, note~$^*$.}
+\end{tabular}
+\end{table}

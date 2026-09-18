@@ -1,0 +1,23 @@
+{
+  "trial": 23,
+  "intent": "Perform a progressive rollout of the AMBR increase for the internet slice \u2014 start small, monitor, then expand. Target 60",
+  "n_policy_calls": 0,
+  "decomposed": false,
+  "per_call_review": {
+    "condition": "per_call",
+    "n_policy_calls": 0,
+    "approval_rate": 0.0,
+    "approved_count": 0,
+    "call_outcomes": []
+  },
+  "cumulative_review": {
+    "condition": "cumulative",
+    "n_policy_calls": 0,
+    "approval_rate": 0.0,
+    "approved_count": 0,
+    "call_outcomes": []
+  },
+  "saved_at": "2026-04-30T15:08:03.675477+00:00",
+  "exp_id": "exp3",
+  "arm": "pilot"
+}

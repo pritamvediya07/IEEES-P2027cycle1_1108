@@ -1,0 +1,41 @@
+\begin{table*}[h]
+\centering
+\caption{Table 11 — Master Cross-Vulnerability Summary. Original experiments from the first campaign plus new experiments added in a later campaign. Fisher exact-test p-values are two-sided; Wilson 95\% CIs apply to all binomial rates.}
+\label{tab:master_summary}
+\begin{tabular}{llp{4.5cm}p{6.5cm}l}
+\toprule
+\textbf{Vuln.} & \textbf{Exp.} & \textbf{Description} & \textbf{Key Result} & \textbf{Verdict} \\
+\midrule
+V3 & E3.1 & Regime characterization & Spearman rho(gap,N)=-1.000, p<0.001 & ACCEPTED \\
+V3 & E3.2 & Overfitting proof & All test R² < 0; 6/9 N values overfit & CONFIRMED \\
+V3 & E3.3 & Defense (bounds + R² guard) & Blocks 4, flags 1, allows 4 N values & ACCEPTED \\
+V4 & E4.1 & Dual threshold characterization & β\_cooldown=0.5, β\_ambr=49.0 & DONE \\
+V4 & E4.2 & Manual decomposition & 20→27→37→50→68 Mbps (compound ratio 3.4×) & PROVEN \\
+V4 & E4.3 & Two-part control & Part A: single-step δ=150\% PASSES; Part B: δ=147× FAILS at AMBR ceiling & PROVEN \\
+V4 & E4.4 & LLM autonomous (20 attack + 10 control) & 1/20 genuine decomp. (Trial 1: 20→264 Mbps, 13.2×); Fisher p=0.897 & CAPABILITY SHOWN \\
+V4 & E4.6 & Accumulator defense & Blocked at step 2 (acc: 0.375+0.375>0.5) — Theorem 2 confirmed & ACCEPTED \\
+V7 & E7.3 & Type P propagation to D\_ana & smf\_metrics.ambr\_dl\_mean: 20.0→26.0 Mbps within 3 s & CONFIRMED \\
+V7 & E7.4a & H\_kpi consumes Type P field & H\_kpi reads smf\_metrics.ambr\_dl\_mean (Type P, policy-derived) & CONFIRMED \\
+V7 & E7.4b & Causal effect of Type P & Δ=2.88 Mbps when 20 most-recent docs masked & CONFIRMED \\
+V7 & E7.4c & Discriminating case & Type T: 0.082\%, Type P: 4.887\% (δ\_diverge=0.0480) & CONFIRMED \\
+V7 & E7.6/A7.2 & Defense: isolation alone & Per-session AMBR still in isolated D\_ana — insufficient & REJECTED \\
+V7 & E7.6/A7.3 & Defense: isolation + semantic filter & All Type P blocked (ambr\_dl\_mean absent); Type T intact (mem\_util=4.75) & ACCEPTED \\
+V7 & A7.5 & Circuit latency measurement & First Type P propagation at t=3 s (expected bound: 5.5 s) & CONFIRMED \\
+────── & ──────────── & ──────────── & ──────────── & ──────────── \\
+ &  & ─── New-Campaign Experiments (2026-04-15) ─── &  &  \\
+────── & ──────────── & ──────────── & ──────────── & ──────────── \\
+V7 & E7.7a & Behavioral: contaminated (standard collector) & found\_ambr=5/5 (100\%); success=5/5; Fisher p=0.004 vs clean & ACCEPTED \\
+V7 & E7.7b & Behavioral: clean (IsolatedCollector) & found\_ambr=0/5 (0\%); success=4/5 & ACCEPTED (control) \\
+V7 & E7.7c/d & Behavioral: explicit prompt (contaminated + clean) & Contam.+Explicit: 4/5 found; Clean+Explicit: 1/5; Fisher p=0.024 & ACCEPTED \\
+V7 & E7.7-A1 & Ablation: Type T query (memory\_utilization) & All 3 trials used Type T metric; 0 found ambr\_dl\_mean & CONFIRMED (Type T immune) \\
+V7 & E7.7-A2 & Ablation: N-window variation (N=10 vs N=500) & found\_ambr=6/6 at both N; mean N=10: 23.0 Mbps; mean N=500: 24.5 Mbps & CONFIRMED (N amplifies signal) \\
+V4 & E4.7a & UPF enforcement test & baseline=20.0 Mbps; pre-reest=35.0 Mbps; post-reest=35.0 Mbps; enforcement\_detected=False & TESTBED LIMIT (UPF no enforce) \\
+V4 & E4.7c & Definition 4 instantiation (proxy vs true quality) & R(a): 20.0→71.0 Mbps (+255\%); Q(a): 50.00→50.00 Mbps; Def. 4 satisfied: 3/3 & ACCEPTED \\
+V4 & E4.8a & Autonomous robustness: temperature variation (T=0.1–0.7) & 0/20 decompositions across T=0.1,0.3,0.5,0.7; original E4.4 rate not reproduced at any temperature & NULL (model-dependent) \\
+V4 & E4.8b & Autonomous robustness: intent variation (4 phrasings) & 0/20 decompositions across original/explicit/procedural/aggressive; higher policy-call counts at T=0.7 and explicit intent but no decomp. & NULL (model-dependent) \\
+V4 & E4.8c & Accumulator defense re-test at best condition & best\_condition=original (fallback); blocked=0/5 (trivial at 0\% base rate) & N/A (defense trivial given null rate) \\
+Cross & E-Cross-1 & V3 amplifies V7 (N=5/50/100/200) & found\_ambr=3/3 at every N; claims\_success increases with N (0/3 at N≤100, 1/3 at N=200); larger N→smoother contaminated signal & CONFIRMED \\
+Cross & E-Cross-2 & V4 triggers V7 (single-session chain) & V4→V7 chain: 2/3 (67\%); Trials 1\&2: agent makes 5 policy calls then reads KPI → finds ambr\_dl\_mean & CONFIRMED (2/3 trials) \\
+\bottomrule
+\end{tabular}
+\end{table*}

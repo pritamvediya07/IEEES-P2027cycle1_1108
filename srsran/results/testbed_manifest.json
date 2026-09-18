@@ -1,0 +1,89 @@
+{
+  "_comment": "Spec \u00a72.3 \u2014 frozen testbed configuration. Do not change mid-campaign.",
+  "core": {
+    "software": "Open5GS v2.7.6 (UNCHANGED from the UERANSIM testbed)",
+    "plmn": "999/70",
+    "tac": 1,
+    "sst": 1,
+    "dnn": "internet",
+    "amf_ngap": "127.0.0.5:38412",
+    "ue_subnet": "10.45.0.0/16",
+    "gateway": "10.45.0.1",
+    "smf_advertised_mtu": 1400
+  },
+  "ran": {
+    "gnb": "srsRAN Project release_24_10_1 (commit ef4b074)",
+    "gnb_note": "GitHub repo archived Dec 2025; project moved to OCUDU. Pinned to the last GitHub release.",
+    "ue": "srsRAN 4G srsue 25.10.0 (commit 6bcbd9e)",
+    "rf_driver": "ZeroMQ (libsrsran_rf_zmq.so)",
+    "band": 3,
+    "duplex": "FDD",
+    "dl_arfcn": 368500,
+    "channel_bandwidth_MHz": 20,
+    "common_scs_kHz": 15,
+    "n_prb": 106,
+    "sample_rate_Msps": 23.04,
+    "coreset0_index": 12,
+    "ss0_index": 0,
+    "bandwidth_rationale": "20 MHz matches srsRAN's shipped srsUE reference config (valid CORESET#0 idx 12; 10 MHz was rejected by the gNB). ZMQ loopback sustains ~2.2 GB/s vs the ~184 MB/s required, so the MAC scheduler and not the transport sets C.",
+    "inactivity_timer_s": 7200,
+    "inactivity_rationale": "srsRAN app default is 120 s, which released the UE to RRC_IDLE between probe ticks and zeroed the data plane."
+  },
+  "ue_isolation": {
+    "mechanism": "one Linux network namespace per UE (ue1..ueN)",
+    "why": "Under UERANSIM every UE address sat in the HOST local routing table, so downlink was short-circuited to lo. rx was 0 on every tunnel in every run ever recorded (0 non-zero total_rx_bytes across 3846 result files). Namespaces remove that short-circuit."
+  },
+  "host_prep_required": [
+    "net.ipv4.ip_forward=1",
+    "iptables -t nat MASQUERADE for 10.45.0.0/16 (documented in network_run.md, never created by any script)",
+    "explicit iptables ACCEPT for 10.45.0.0/16 in INPUT/FORWARD/OUTPUT \u2014 host runs k3s with -P INPUT DROP and -P FORWARD DROP plus ufw (147 KUBE-* rules); ICMP passed but every TCP SYN was dropped",
+    "cpu governor = performance (was powersave)",
+    "default route inside each UE netns (srsUE creates only the on-link /24)"
+  ],
+  "first_measurements": {
+    "ping_rtt_ms_to_gateway": {
+      "min": 23.712,
+      "avg": 29.726,
+      "max": 35.241,
+      "mdev": 4.528
+    },
+    "iperf3_downlink_Mbps_single_ue": 53.42,
+    "note": "First genuinely measured throughput in this project. Under UERANSIM tau was max(1.0, 15.0*20/AMBR)*0.9 \u2014 arithmetic, reproduced exactly on 382/382 stored values."
+  },
+  "status": "Phase 0 COMPLETE \u2014 all four gates passed. Next: E1 asymmetric harm.",
+  "recorded_at": "2026-08-22",
+  "phase0_gates": {
+    "E0.1_ambr_enforcement": {
+      "native": "FAILED \u2014 54.2 Mbps flat across a 40x AMBR sweep; Open5GS applies no QER policing",
+      "htb_standin": "PASSED \u2014 tracks configured AMBR at a constant 0.963 ratio (protocol overhead)"
+    },
+    "E0.2_scale": {
+      "result": "PASSED, n=4 concurrent UEs, distinct IPs, stable 60s, gnb_late_markers=0",
+      "mechanism": "GNU Radio flowgraph broker (srsRAN official); gNB ZMQ is REQ/REP 1:1 only",
+      "enabler": "PRACH pool per srsRAN maintainers: total_nof_ra_preambles 64, nof_ssb_per_ro 1, nof_cb_preambles_per_ssb 64"
+    },
+    "E0.3_capacity": {
+      "C_mbps": 23.38,
+      "reproducibility": "23.61 then 23.38 \u2014 1.0% apart",
+      "evidence_of_real_contention": "concurrent 23.38 vs sum-of-solo 86.8 = 3.7x lower"
+    },
+    "E0.4_two_regime": {
+      "result": "PASSED",
+      "below_knee": "tau tracks AMBR at 0.96; latency low",
+      "above_knee": "tau saturates at C/n = 5.84; latency rises 54.5 -> 410 ms (7.5x)",
+      "Q_rise_then_fall": "0.5756 peak -> 0.4201, a 27.0% drop, MEASURED"
+    }
+  },
+  "measurement_bugs_found_and_fixed": [
+    "lambda was sampled AFTER the load finished (link idle) \u2014 made latency look flat at ~73ms across the whole sweep. Now sampled concurrently with iperf3.",
+    "rho omitted -R so it measured the UNSHAPED UPLINK \u2014 reported 0.0% every time, reproducing the constant-rho degeneracy this rebuild exists to remove. Now downlink.",
+    "rho ran one UE at a time \u2014 no contention during the loss test. Now concurrent.",
+    "one iperf3 server cannot serve n concurrent clients; each UE now has its own port."
+  ],
+  "remaining_caveats": {
+    "rho": "still ~0 except the final sweep point (0.188). Near-degenerate; report per-dimension, do not hide inside a scalar Q.",
+    "sigma": "constant at 4 by construction (n is fixed). Carries no information \u2014 drop from Q or report separately.",
+    "enforcement_point": "per-UE HTB on ogstun, DECLARED stand-in for the TS 29.244 QER (E0.1 showed Open5GS does not police Session-AMBR).",
+    "broker": "GNU Radio sits in the sample path; srsRAN's own docs call this 'not an optimized, performant, or scalable solution'. Must be declared."
+  }
+}

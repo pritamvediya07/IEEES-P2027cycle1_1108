@@ -1,0 +1,99 @@
+{
+  "experiment": "E0.5 analysis",
+  "purpose": "resolve rho (real vs artifact) and sigma (can it vary)",
+  "arms": {
+    "am": {
+      "per_ue": [
+        {
+          "ue": "ue1",
+          "offered_mbps": 27.32,
+          "iperf_loss_pct": 31.37,
+          "tun_rx_mbps": 8.85,
+          "counter_loss_pct": 67.59
+        },
+        {
+          "ue": "ue2",
+          "offered_mbps": 27.48,
+          "iperf_loss_pct": 30.32,
+          "tun_rx_mbps": 8.54,
+          "counter_loss_pct": 68.92
+        },
+        {
+          "ue": "ue3",
+          "offered_mbps": 27.39,
+          "iperf_loss_pct": 31.46,
+          "tun_rx_mbps": 8.82,
+          "counter_loss_pct": 67.81
+        },
+        {
+          "ue": "ue4",
+          "offered_mbps": 27.48,
+          "iperf_loss_pct": 30.1,
+          "tun_rx_mbps": 8.5,
+          "counter_loss_pct": 69.08
+        }
+      ],
+      "iperf_loss_mean_pct": 30.81,
+      "counter_loss_mean_pct": 68.35,
+      "offered_total_mbps": 109.7,
+      "delivered_total_mbps": 34.7
+    },
+    "um": {
+      "per_ue": [
+        {
+          "ue": "ue1",
+          "offered_mbps": 27.64,
+          "iperf_loss_pct": 31.63,
+          "tun_rx_mbps": 9.57,
+          "counter_loss_pct": 65.37
+        },
+        {
+          "ue": "ue2",
+          "offered_mbps": 27.66,
+          "iperf_loss_pct": 31.44,
+          "tun_rx_mbps": 9.52,
+          "counter_loss_pct": 65.57
+        },
+        {
+          "ue": "ue3",
+          "offered_mbps": 27.65,
+          "iperf_loss_pct": 31.19,
+          "tun_rx_mbps": 9.15,
+          "counter_loss_pct": 66.92
+        },
+        {
+          "ue": "ue4",
+          "offered_mbps": 27.65,
+          "iperf_loss_pct": 31.26,
+          "tun_rx_mbps": 9.18,
+          "counter_loss_pct": 66.81
+        }
+      ],
+      "iperf_loss_mean_pct": 31.38,
+      "counter_loss_mean_pct": 66.17,
+      "offered_total_mbps": 110.6,
+      "delivered_total_mbps": 37.4
+    }
+  },
+  "comparison": {
+    "AM_iperf_pct": 30.81,
+    "UM_iperf_pct": 31.38,
+    "AM_counter_pct": 68.35,
+    "UM_counter_pct": 66.17,
+    "AM_vs_UM_difference_pp": 0.57
+  },
+  "conclusions": {
+    "rho_is_measurable": "YES. Under genuine congestion (AMBR unlimited, ~109 Mbps offered against C~23) loss is large: 30.8% by iperf3 and 68.3% by interface counters.",
+    "rlc_am_does_not_hide_loss": "AM 30.81% vs UM 31.38% \u2014 a 0.57 pp difference. The RLC-AM hypothesis is REJECTED; acknowledged mode is not what suppressed loss.",
+    "why_rho_was_zero_before": "In E0.4/E1 the per-UE HTB ceiling was set to the sweep value, so the shaper PACED the UDP sender rather than dropping its packets. Nothing was lost because nothing excess was ever sent. With AMBR unlimited the sender runs free and real congestion loss appears.",
+    "iperf3_under_reports": "iperf3 reports 30.8% loss while counters imply 68.3%. iperf3's UDP accounting in reverse mode under-reports; the /proc/net/dev cross-check is the trustworthy measure.",
+    "sigma": "Did NOT vary: SMF reported 4 sessions before and after ue4 was killed, with only 3 live tunnels. Killing the srsUE process does not trigger a NAS detach, so the session lingers at the core. sigma remains non-discriminating in this design.",
+    "implication_for_Q": "rho IS a legitimate Q dimension, but only in a regime where the sender is not shaper-paced. In the AMBR-swept regime that Definition 4 concerns, the shaper paces the source by construction, so rho carries no information there. Q therefore stays two-dimensional (tau, lambda) for the harm sweeps, and this is now an evidenced choice rather than an assumption."
+  },
+  "sigma_test": {
+    "sessions_before": 4,
+    "sessions_after": 4,
+    "live_tunnels_after": 3,
+    "sigma_can_vary": false
+  }
+}

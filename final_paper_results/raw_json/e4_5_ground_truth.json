@@ -1,0 +1,36 @@
+{
+  "experiment": "E4.5",
+  "baseline_throughput": [
+    23.999324268513668,
+    23.99932746841525,
+    23.999319468662893,
+    23.99933786810129,
+    23.99932186858804
+  ],
+  "baseline_cv": 2.671655551587072e-07,
+  "post_decomposition_throughput": [
+    59.99866213681178,
+    59.99833267061268,
+    59.998324670855,
+    59.998324670855,
+    59.998324670855
+  ],
+  "post_cv": 2.2370960741703355e-06,
+  "ambr_configured_mbps": 50.0,
+  "ratio": 1.1999678752799579,
+  "accepted": "False",
+  "upf_enforcement_diagnostic": {
+    "upf_qos_config": "No QoS section found",
+    "subscriber_flat_ambr": {
+      "value": 20,
+      "unit": 3
+    },
+    "subscriber_nested_ambr": {
+      "value": 1,
+      "unit": 3
+    },
+    "paths_in_sync": false,
+    "pcf_enforcement_events": null,
+    "pcf_timestamp": "2026-04-13 07:14:33.880000"
+  }
+}

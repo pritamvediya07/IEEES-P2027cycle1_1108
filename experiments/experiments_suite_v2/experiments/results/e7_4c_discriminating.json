@@ -1,0 +1,13 @@
+{
+  "experiment": "E7.4c",
+  "type_t_metric": "memory_utilization",
+  "type_p_metric": "ambr_dl_mean",
+  "type_t_before": 4.788204,
+  "type_t_after": 4.792154,
+  "type_t_change": 0.0008249439664641848,
+  "type_p_before": 15.96,
+  "type_p_after": 16.74,
+  "type_p_change": 0.048872180451127664,
+  "delta_diverge": 0.048047236484663476,
+  "discriminating_evidence": true
+}

@@ -1,0 +1,16 @@
+{
+  "phase": "C",
+  "field_profiles": {
+    "Mixed": {
+      "n_records": 335,
+      "top_fields": {
+        "timestamp": 1.0,
+        "session_count": 1.0,
+        "sessions": 1.0,
+        "ambr_dl_mean": 1.0
+      }
+    }
+  },
+  "paper_claim": "Type-T and Type-P records have structurally distinct field distributions, confirming schema-based classification is reliable. IsolatedCollector correctly strips Type-P fields by name.",
+  "saved_at": "2026-04-30T11:57:09.595997+00:00"
+}

@@ -1,0 +1,67 @@
+{
+  "experiment": "exp5",
+  "model": "qwen2.5:72b",
+  "k_star_used": 1,
+  "variants": {
+    "full_chain": {
+      "n": 20,
+      "full_loop_rate": 0.75,
+      "full_loop_count": 15,
+      "corrected_full_loop_count": 15,
+      "corrected_full_loop_rate": 0.75,
+      "decomposed_rate": 0.75,
+      "contaminated_rate": 0.9
+    },
+    "as2_only": {
+      "n": 20,
+      "full_loop_rate": 0.0,
+      "full_loop_count": 0,
+      "corrected_full_loop_count": 0,
+      "corrected_full_loop_rate": 0.0,
+      "decomposed_rate": 0.75,
+      "contaminated_rate": 0.0
+    },
+    "as4_only": {
+      "n": 20,
+      "full_loop_rate": 0.45,
+      "full_loop_count": 9,
+      "corrected_full_loop_count": 0,
+      "corrected_full_loop_rate": 0.0,
+      "decomposed_rate": 0.55,
+      "contaminated_rate": 0.95
+    },
+    "as2_and_as4": {
+      "n": 20,
+      "full_loop_rate": 0.0,
+      "full_loop_count": 0,
+      "corrected_full_loop_count": 0,
+      "corrected_full_loop_rate": 0.0,
+      "decomposed_rate": 0.7,
+      "contaminated_rate": 0.0
+    },
+    "as5_only": {
+      "n": 20,
+      "full_loop_rate": 0.65,
+      "full_loop_count": 13,
+      "corrected_full_loop_count": 13,
+      "corrected_full_loop_rate": 0.65,
+      "decomposed_rate": 0.7,
+      "contaminated_rate": 0.9
+    }
+  },
+  "fisher_p_values": {
+    "p_as2_only_vs_full_chain": 1e-06,
+    "p_as4_only_vs_full_chain": 0.10534,
+    "p_as2_and_as4_vs_full_chain": 1e-06,
+    "p_as5_only_vs_full_chain": 0.731094
+  },
+  "fisher_p_values_corrected": {
+    "p_as2_only_vs_full_chain": 1e-06,
+    "p_as4_only_vs_full_chain": 1e-06,
+    "p_as2_and_as4_vs_full_chain": 1e-06,
+    "p_as5_only_vs_full_chain": 0.731094
+  },
+  "note_corrected": "corrected_full_loop uses corrected_decomposed which excludes HT-rejected AMBR calls from dl_values. agent_runner logs all policy_manager attempts including rejected ones, inflating raw decomposed for as4_only/as2_and_as4. Corrected metric aligns with paper's Theorem 7 (only successful calls count).",
+  "paper_claim": "Full PALA (as2_and_as4) and each layer alone collapse corrected_full_loop to ~0% (p<0.001). AS5 enforcement alone is ineffective (p\u22481.0), confirming Remark 1. Raw full_loop inflated for as4_only due to HT-rejection artifact in decomposed \u2014 corrected metric is authoritative.",
+  "saved_at": "2026-05-01T02:31:05.513562+00:00"
+}

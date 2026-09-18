@@ -1,0 +1,23 @@
+{
+  "experiment": "E7.6",
+  "isolated_mongo_port": 27018,
+  "a72_isolation_alone": {
+    "ambr_dl_mean_present": false,
+    "ambr_in_sessions": true,
+    "type_p_contamination": true,
+    "accepted": false,
+    "rationale": "Isolation alone does not remove Type P fields from smf_metrics"
+  },
+  "a73_isolation_plus_filter": {
+    "ambr_dl_mean_present": false,
+    "ambr_in_sessions": false,
+    "session_count": 10,
+    "memory_util_pct": 4.7527,
+    "active_ue_count": 10,
+    "type_t_intact": true,
+    "accepted": true,
+    "rationale": "DB isolation + semantic Type P removal breaks the wireheading circuit: H_kpi on port 27018 receives only Type T fields"
+  },
+  "accepted": true,
+  "criterion": "0 Type P fields in isolated D_ana after policy change"
+}

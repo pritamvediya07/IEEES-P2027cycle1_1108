@@ -1,0 +1,9 @@
+{
+  "delta_c": 5,
+  "rep": 4,
+  "latency_ms": 3034.414768218994,
+  "live_measurement": true,
+  "saved_at": "2026-04-30T12:40:18.126660+00:00",
+  "exp_id": "exp9",
+  "arm": "phaseB_dc5"
+}

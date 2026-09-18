@@ -1,0 +1,10 @@
+{
+  "delta_c_s": 15,
+  "theoretical_latency_ms": 7779.1,
+  "overhead_ms": 279.1,
+  "db_write_ms": 2.7,
+  "theoretical_extrapolation": true,
+  "saved_at": "2026-04-30T12:40:28.174050+00:00",
+  "exp_id": "exp9",
+  "arm": "phaseB_dc15"
+}

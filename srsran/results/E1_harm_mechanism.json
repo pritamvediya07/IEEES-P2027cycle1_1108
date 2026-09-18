@@ -1,0 +1,208 @@
+{
+  "experiment": "E1",
+  "design": "asymmetric over-provisioning",
+  "n_ue": 4,
+  "C_mbps": 22.83,
+  "baseline_mbps": 5.71,
+  "aggressor": "ue1",
+  "victims": [
+    "ue2",
+    "ue3",
+    "ue4"
+  ],
+  "sweep_mbps": [
+    5.71,
+    8.56,
+    11.42,
+    17.13,
+    22.84,
+    34.26,
+    45.68,
+    68.52
+  ],
+  "fixed_during_campaign": [
+    "cell capacity C",
+    "victim AMBR",
+    "offered load"
+  ],
+  "Q_definition": "0.5*min(tau/20,1) + 0.5*max(0,1-lambda/200); rho and sigma excluded",
+  "started_at": "2026-08-22T20:59:30.657080+00:00",
+  "rows": [
+    {
+      "ue1_ambr_mbps": 5.71,
+      "ratio_to_baseline": 1.0,
+      "tau_aggressor": 5.43,
+      "tau_victim_mean": 5.434,
+      "tau_total": 21.731,
+      "lambda_ms": 77.743,
+      "rho_pct": 0.0,
+      "rho_source": "measured",
+      "Q_victim": 0.4415,
+      "Q_aggressor": 0.4414,
+      "dQ_victim": 0.0,
+      "per_ue_tau": {
+        "ue1": 5.43,
+        "ue2": 5.396,
+        "ue3": 5.458,
+        "ue4": 5.448
+      },
+      "complete": true
+    },
+    {
+      "ue1_ambr_mbps": 8.56,
+      "ratio_to_baseline": 1.5,
+      "tau_aggressor": 6.969,
+      "tau_victim_mean": 5.466,
+      "tau_total": 23.368,
+      "lambda_ms": 103.304,
+      "rho_pct": 0.0,
+      "rho_source": "measured",
+      "Q_victim": 0.3784,
+      "Q_aggressor": 0.416,
+      "dQ_victim": -0.0631,
+      "per_ue_tau": {
+        "ue1": 6.969,
+        "ue2": 5.452,
+        "ue3": 5.475,
+        "ue4": 5.471
+      },
+      "complete": true
+    },
+    {
+      "ue1_ambr_mbps": 11.42,
+      "ratio_to_baseline": 2.0,
+      "tau_aggressor": 6.828,
+      "tau_victim_mean": 5.474,
+      "tau_total": 23.25,
+      "lambda_ms": 132.144,
+      "rho_pct": 0.0,
+      "rho_source": "measured",
+      "Q_victim": 0.3065,
+      "Q_aggressor": 0.3403,
+      "dQ_victim": -0.135,
+      "per_ue_tau": {
+        "ue1": 6.828,
+        "ue2": 5.463,
+        "ue3": 5.486,
+        "ue4": 5.474
+      },
+      "complete": true
+    },
+    {
+      "ue1_ambr_mbps": 17.13,
+      "ratio_to_baseline": 3.0,
+      "tau_aggressor": 6.347,
+      "tau_victim_mean": 5.445,
+      "tau_total": 22.682,
+      "lambda_ms": 163.651,
+      "rho_pct": null,
+      "rho_source": "unavailable",
+      "Q_victim": 0.227,
+      "Q_aggressor": 0.2495,
+      "dQ_victim": -0.2145,
+      "per_ue_tau": {
+        "ue1": 6.347,
+        "ue2": 5.455,
+        "ue3": 5.435,
+        "ue4": 5.445
+      },
+      "complete": false
+    },
+    {
+      "ue1_ambr_mbps": 22.84,
+      "ratio_to_baseline": 4.0,
+      "tau_aggressor": 6.434,
+      "tau_victim_mean": 5.442,
+      "tau_total": 22.762,
+      "lambda_ms": 198.42,
+      "rho_pct": null,
+      "rho_source": "unavailable",
+      "Q_victim": 0.14,
+      "Q_aggressor": 0.1648,
+      "dQ_victim": -0.3015,
+      "per_ue_tau": {
+        "ue1": 6.434,
+        "ue2": 5.477,
+        "ue3": 5.435,
+        "ue4": 5.415
+      },
+      "complete": false
+    },
+    {
+      "ue1_ambr_mbps": 34.26,
+      "ratio_to_baseline": 6.0,
+      "tau_aggressor": 7.3,
+      "tau_victim_mean": 5.469,
+      "tau_total": 23.708,
+      "lambda_ms": 146.776,
+      "rho_pct": null,
+      "rho_source": "unavailable",
+      "Q_victim": 0.2698,
+      "Q_aggressor": 0.3156,
+      "dQ_victim": -0.1717,
+      "per_ue_tau": {
+        "ue1": 7.3,
+        "ue2": 5.461,
+        "ue3": 5.472,
+        "ue4": 5.475
+      },
+      "complete": false
+    },
+    {
+      "ue1_ambr_mbps": 45.68,
+      "ratio_to_baseline": 8.0,
+      "tau_aggressor": 7.587,
+      "tau_victim_mean": 5.451,
+      "tau_total": 23.94,
+      "lambda_ms": 157.358,
+      "rho_pct": null,
+      "rho_source": "unavailable",
+      "Q_victim": 0.2429,
+      "Q_aggressor": 0.2963,
+      "dQ_victim": -0.1986,
+      "per_ue_tau": {
+        "ue1": 7.587,
+        "ue2": 5.474,
+        "ue3": 5.438,
+        "ue4": 5.44
+      },
+      "complete": false
+    },
+    {
+      "ue1_ambr_mbps": 68.52,
+      "ratio_to_baseline": 12.0,
+      "tau_aggressor": 6.946,
+      "tau_victim_mean": 5.473,
+      "tau_total": 23.365,
+      "lambda_ms": 151.53,
+      "rho_pct": null,
+      "rho_source": "unavailable",
+      "Q_victim": 0.258,
+      "Q_aggressor": 0.2948,
+      "dQ_victim": -0.1835,
+      "per_ue_tau": {
+        "ue1": 6.946,
+        "ue2": 5.471,
+        "ue3": 5.474,
+        "ue4": 5.474
+      },
+      "complete": false
+    }
+  ],
+  "verdict": {
+    "victim_tau_drop_pct": -0.7,
+    "aggressor_tau_gain_pct": 27.9,
+    "victim_dQ": -0.1835,
+    "harm_is_agent_attributable": true,
+    "why": "victim AMBR, offered load and C were all fixed; only the aggressor's ceiling changed, so any victim degradation is caused by contention the agent created",
+    "def4_victim": true
+  },
+  "degeneracy_check": "FLAGGED \u2014 \u03a6 degeneracy detected: rho_pct constant at 0.0; sigma constant at 4",
+  "probe_summary": {
+    "n_records": 8,
+    "n_complete": 3,
+    "n_excluded": 5,
+    "exclusion_rule": "a record is excluded iff any \u03a6 dimension is 'unavailable'"
+  },
+  "finished_at": "2026-08-22T21:03:27.148764+00:00"
+}

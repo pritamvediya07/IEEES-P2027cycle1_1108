@@ -1,0 +1,605 @@
+{
+  "experiment": "H-D",
+  "results": [
+    {
+      "signal": "synthetic_memory",
+      "config": "unconstrained",
+      "requested_n": 20,
+      "effective_n": 20,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.48608761670968026,
+      "gap": 1.2980375807815716
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "unconstrained",
+      "requested_n": 30,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.4028550984490754,
+      "gap": 1.223740223445593
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "unconstrained",
+      "requested_n": 50,
+      "effective_n": 50,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.22185107528935055,
+      "gap": 1.0494056644776437
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "unconstrained",
+      "requested_n": 100,
+      "effective_n": 100,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.0684963296576524,
+      "gap": 0.9055583313268132
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "unconstrained",
+      "requested_n": 200,
+      "effective_n": 200,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.06195508013711515,
+      "gap": 0.9064100318551778
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "unconstrained",
+      "requested_n": 300,
+      "effective_n": 300,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.1720826271088176,
+      "gap": 1.0083837468627552
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "bounded_N",
+      "requested_n": 5,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.4028550984490754,
+      "gap": 1.223740223445593
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "bounded_N",
+      "requested_n": 10,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.4028550984490754,
+      "gap": 1.223740223445593
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "bounded_N",
+      "requested_n": 20,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.4028550984490754,
+      "gap": 1.223740223445593
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "bounded_N",
+      "requested_n": 30,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.4028550984490754,
+      "gap": 1.223740223445593
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "bounded_N",
+      "requested_n": 50,
+      "effective_n": 50,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.22185107528935055,
+      "gap": 1.0494056644776437
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "bounded_N",
+      "requested_n": 100,
+      "effective_n": 100,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.0684963296576524,
+      "gap": 0.9055583313268132
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "bounded_N",
+      "requested_n": 200,
+      "effective_n": 200,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.06195508013711515,
+      "gap": 0.9064100318551778
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "bounded_N",
+      "requested_n": 300,
+      "effective_n": 300,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.1720826271088176,
+      "gap": 1.0083837468627552
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "full_guard",
+      "requested_n": 5,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.4028550984490754,
+      "gap": 1.223740223445593
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "full_guard",
+      "requested_n": 10,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.4028550984490754,
+      "gap": 1.223740223445593
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "full_guard",
+      "requested_n": 20,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.4028550984490754,
+      "gap": 1.223740223445593
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "full_guard",
+      "requested_n": 30,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.4028550984490754,
+      "gap": 1.223740223445593
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "full_guard",
+      "requested_n": 50,
+      "effective_n": 50,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.22185107528935055,
+      "gap": 1.0494056644776437
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "full_guard",
+      "requested_n": 100,
+      "effective_n": 100,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.0684963296576524,
+      "gap": 0.9055583313268132
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "full_guard",
+      "requested_n": 200,
+      "effective_n": 200,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.06195508013711515,
+      "gap": 0.9064100318551778
+    },
+    {
+      "signal": "synthetic_memory",
+      "config": "full_guard",
+      "requested_n": 300,
+      "effective_n": 300,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.1720826271088176,
+      "gap": 1.0083837468627552
+    },
+    {
+      "signal": "real_traffic",
+      "config": "unconstrained",
+      "requested_n": 20,
+      "effective_n": 20,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -3.0,
+      "gap": 4.0
+    },
+    {
+      "signal": "real_traffic",
+      "config": "unconstrained",
+      "requested_n": 30,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.19999999999999996,
+      "gap": 1.2
+    },
+    {
+      "signal": "real_traffic",
+      "config": "unconstrained",
+      "requested_n": 50,
+      "effective_n": 50,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.11111111111111116,
+      "gap": 1.1111111111111112
+    },
+    {
+      "signal": "real_traffic",
+      "config": "unconstrained",
+      "requested_n": 100,
+      "effective_n": 100,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -1.2222222222222219,
+      "gap": 2.222222222222222
+    },
+    {
+      "signal": "real_traffic",
+      "config": "unconstrained",
+      "requested_n": 200,
+      "effective_n": 200,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.3793103448275861,
+      "gap": 1.379310344827586
+    },
+    {
+      "signal": "real_traffic",
+      "config": "unconstrained",
+      "requested_n": 300,
+      "effective_n": 300,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -1.0689655172413786,
+      "gap": 2.0689655172413786
+    },
+    {
+      "signal": "real_traffic",
+      "config": "bounded_N",
+      "requested_n": 5,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.19999999999999996,
+      "gap": 1.2
+    },
+    {
+      "signal": "real_traffic",
+      "config": "bounded_N",
+      "requested_n": 10,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.19999999999999996,
+      "gap": 1.2
+    },
+    {
+      "signal": "real_traffic",
+      "config": "bounded_N",
+      "requested_n": 20,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.19999999999999996,
+      "gap": 1.2
+    },
+    {
+      "signal": "real_traffic",
+      "config": "bounded_N",
+      "requested_n": 30,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.19999999999999996,
+      "gap": 1.2
+    },
+    {
+      "signal": "real_traffic",
+      "config": "bounded_N",
+      "requested_n": 50,
+      "effective_n": 50,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.11111111111111116,
+      "gap": 1.1111111111111112
+    },
+    {
+      "signal": "real_traffic",
+      "config": "bounded_N",
+      "requested_n": 100,
+      "effective_n": 100,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -1.2222222222222219,
+      "gap": 2.222222222222222
+    },
+    {
+      "signal": "real_traffic",
+      "config": "bounded_N",
+      "requested_n": 200,
+      "effective_n": 200,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.3793103448275861,
+      "gap": 1.379310344827586
+    },
+    {
+      "signal": "real_traffic",
+      "config": "bounded_N",
+      "requested_n": 300,
+      "effective_n": 300,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -1.0689655172413786,
+      "gap": 2.0689655172413786
+    },
+    {
+      "signal": "real_traffic",
+      "config": "full_guard",
+      "requested_n": 5,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.19999999999999996,
+      "gap": 1.2
+    },
+    {
+      "signal": "real_traffic",
+      "config": "full_guard",
+      "requested_n": 10,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.19999999999999996,
+      "gap": 1.2
+    },
+    {
+      "signal": "real_traffic",
+      "config": "full_guard",
+      "requested_n": 20,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.19999999999999996,
+      "gap": 1.2
+    },
+    {
+      "signal": "real_traffic",
+      "config": "full_guard",
+      "requested_n": 30,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.19999999999999996,
+      "gap": 1.2
+    },
+    {
+      "signal": "real_traffic",
+      "config": "full_guard",
+      "requested_n": 50,
+      "effective_n": 50,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.11111111111111116,
+      "gap": 1.1111111111111112
+    },
+    {
+      "signal": "real_traffic",
+      "config": "full_guard",
+      "requested_n": 100,
+      "effective_n": 100,
+      "accepted": false,
+      "r2_blocked": true,
+      "r2_test": -1.2222222222222219,
+      "gap": 2.222222222222222
+    },
+    {
+      "signal": "real_traffic",
+      "config": "full_guard",
+      "requested_n": 200,
+      "effective_n": 200,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": -0.3793103448275861,
+      "gap": 1.379310344827586
+    },
+    {
+      "signal": "real_traffic",
+      "config": "full_guard",
+      "requested_n": 300,
+      "effective_n": 300,
+      "accepted": false,
+      "r2_blocked": true,
+      "r2_test": -1.0689655172413786,
+      "gap": 2.0689655172413786
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "unconstrained",
+      "requested_n": 20,
+      "effective_n": 20,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "unconstrained",
+      "requested_n": 30,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "unconstrained",
+      "requested_n": 50,
+      "effective_n": 50,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "unconstrained",
+      "requested_n": 100,
+      "effective_n": 100,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "bounded_N",
+      "requested_n": 5,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "bounded_N",
+      "requested_n": 10,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "bounded_N",
+      "requested_n": 20,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "bounded_N",
+      "requested_n": 30,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "bounded_N",
+      "requested_n": 50,
+      "effective_n": 50,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "bounded_N",
+      "requested_n": 100,
+      "effective_n": 100,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "full_guard",
+      "requested_n": 5,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "full_guard",
+      "requested_n": 10,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "full_guard",
+      "requested_n": 20,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "full_guard",
+      "requested_n": 30,
+      "effective_n": 30,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "full_guard",
+      "requested_n": 50,
+      "effective_n": 50,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    },
+    {
+      "signal": "contaminated_ambr",
+      "config": "full_guard",
+      "requested_n": 100,
+      "effective_n": 100,
+      "accepted": true,
+      "r2_blocked": false,
+      "r2_test": null,
+      "gap": null
+    }
+  ]
+}

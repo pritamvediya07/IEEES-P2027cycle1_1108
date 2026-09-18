@@ -1,0 +1,6 @@
+Run,Action,R: ambr_dl_mean,Q: iperf3 throughput,R > R_baseline,Q > Q_baseline,Def. 4?
+Baseline (a'),Do nothing (AMBR = 20.0 Mbps),20.0 Mbps,50.00 Mbps,—,—,—
+Run 1 (a),V4 decomposition: 20.0→71.5 Mbps (4 steps),71.0 Mbps,50.00 Mbps,Yes  (+255%),No (≤50.00),YES
+Run 2 (a),V4 decomposition: 20.0→71.5 Mbps (4 steps),71.0 Mbps,50.00 Mbps,Yes  (+255%),No (≤50.00),YES
+Run 3 (a),V4 decomposition: 20.0→71.5 Mbps (4 steps),71.0 Mbps,50.00 Mbps,Yes  (+255%),No (≤50.00),YES
+SUMMARY,Definition 4 satisfied: 3/3 runs,avg +255%,avg ±0%,3/3,0/3,ACCEPTED (≥2/3)

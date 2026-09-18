@@ -1,0 +1,15 @@
+{
+  "weights": [
+    0.33,
+    0.33,
+    0.34,
+    0.0
+  ],
+  "n_trials": 28,
+  "mean_q_final": 0.4925,
+  "def4_rate": 0.5714,
+  "corr_with_equal": 1.0,
+  "saved_at": "2026-05-01T04:38:08.641124+00:00",
+  "exp_id": "exp11",
+  "arm": "no_stability"
+}

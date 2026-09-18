@@ -1,0 +1,113 @@
+{
+  "experiment": "E0.1",
+  "question": "does a change to Session-AMBR change achieved throughput?",
+  "n_ue": 1,
+  "duration_s": 15,
+  "tolerance": 0.15,
+  "sweep_mbps": [
+    5,
+    10,
+    20,
+    50,
+    100,
+    200
+  ],
+  "started_at": "2026-08-22T18:02:55.529333+00:00",
+  "arm_native": [
+    {
+      "ambr_mbps": 5,
+      "achieved_mbps": 54.29,
+      "rel_err": 9.8571,
+      "tracks": false,
+      "ue_ip": "10.45.0.20"
+    },
+    {
+      "ambr_mbps": 10,
+      "achieved_mbps": 54.07,
+      "rel_err": 4.4074,
+      "tracks": false,
+      "ue_ip": "10.45.0.21"
+    },
+    {
+      "ambr_mbps": 20,
+      "achieved_mbps": 54.3,
+      "rel_err": 1.715,
+      "tracks": false,
+      "ue_ip": "10.45.0.22"
+    },
+    {
+      "ambr_mbps": 50,
+      "achieved_mbps": 53.82,
+      "rel_err": 0.0765,
+      "tracks": true,
+      "ue_ip": "10.45.0.23"
+    },
+    {
+      "ambr_mbps": 100,
+      "achieved_mbps": 54.31,
+      "rel_err": 0.4569,
+      "tracks": false,
+      "ue_ip": "10.45.0.24"
+    },
+    {
+      "ambr_mbps": 200,
+      "achieved_mbps": 54.33,
+      "rel_err": 0.7283,
+      "tracks": false,
+      "ue_ip": "10.45.0.25"
+    }
+  ],
+  "arm_native_enforced": false,
+  "C_estimate_mbps": 54.33,
+  "arm_htb": [
+    {
+      "ambr_mbps": 5,
+      "achieved_mbps": 4.82,
+      "rel_err": 0.0355,
+      "tracks": true,
+      "ue_ip": "10.45.0.26"
+    },
+    {
+      "ambr_mbps": 10,
+      "achieved_mbps": 9.64,
+      "rel_err": 0.0363,
+      "tracks": true,
+      "ue_ip": "10.45.0.26"
+    },
+    {
+      "ambr_mbps": 20,
+      "achieved_mbps": 19.26,
+      "rel_err": 0.037,
+      "tracks": true,
+      "ue_ip": "10.45.0.26"
+    },
+    {
+      "ambr_mbps": 50,
+      "achieved_mbps": 48.06,
+      "rel_err": 0.0389,
+      "tracks": true,
+      "ue_ip": "10.45.0.26"
+    },
+    {
+      "ambr_mbps": 100,
+      "achieved_mbps": 54.31,
+      "rel_err": 0.4569,
+      "tracks": false,
+      "ue_ip": "10.45.0.26"
+    },
+    {
+      "ambr_mbps": 200,
+      "achieved_mbps": 54.78,
+      "rel_err": 0.7261,
+      "tracks": false,
+      "ue_ip": "10.45.0.26"
+    }
+  ],
+  "arm_htb_enforced": true,
+  "verdict": {
+    "open5gs_enforces_session_ambr": false,
+    "htb_standin_tracks": true,
+    "paper_statement": "AMBR is enforced at the UPF by a per-UE HTB class on the tunnel interface, configured from the subscriber's Session-AMBR. Open5GS does not implement QER-based rate enforcement, so this stands in for the QER an operator UPF applies under TS 29.244. The enforcement point is per-UE and is the only place the agent's policy value acts; the shared bottleneck is at the air interface and is independent of it."
+  },
+  "finished_at": "2026-08-22T18:11:01.207656+00:00"
+}

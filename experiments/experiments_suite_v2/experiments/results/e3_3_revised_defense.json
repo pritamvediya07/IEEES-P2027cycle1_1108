@@ -1,0 +1,11 @@
+{
+  "experiment": "E3.3_revised",
+  "bounds": [
+    30,
+    500
+  ],
+  "r2_threshold": -0.5,
+  "blocked_by_bounds": 4,
+  "flagged_by_guard": 1,
+  "allowed": 4
+}

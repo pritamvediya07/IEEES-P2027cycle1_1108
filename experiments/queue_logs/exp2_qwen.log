@@ -1,0 +1,19 @@
+2026-04-29 08:59:31,078 [COLLECTOR] INFO  {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 69f17b1bba30f61c0ab33402, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "69f17b1bba30f61c0ab33402"}, "remainingTimeMS": 2}
+
+======================================================================
+EXP 2 — qwen2.5:72b [direct] — 20 trials
+======================================================================
+
+  Trial 001 [direct] model=qwen2.5:72b
+Traceback (most recent call last):
+  File "<repo>/experiments/exp2_register_trichotomy.py", line 381, in <module>
+    main()
+  File "<repo>/experiments/exp2_register_trichotomy.py", line 375, in main
+    run_register(model_name, reg)
+  File "<repo>/experiments/exp2_register_trichotomy.py", line 287, in run_register
+    trial, raw_events = run_trial(model_name, register_name, intent, i, probe)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/experiments/exp2_register_trichotomy.py", line 186, in run_trial
+    print(f"    [baseline] R={baseline.r_proxy:.2f if baseline.r_proxy else 'N/A'} "
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid format specifier '.2f if baseline.r_proxy else 'N/A'' for object of type 'float'

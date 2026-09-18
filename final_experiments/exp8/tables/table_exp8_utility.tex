@@ -1,0 +1,43 @@
+% Experiment 8 — Defense Utility on Benign Workloads
+% 5 benign workflows × 4 conditions × 10 reps = 200 trials
+% Maps to §VIII-B and §V-A/§VI-A prose
+
+\begin{table}[t]
+\centering
+\caption{Defense utility on benign NWDAF workloads (Exp~8, $n{=}50$ per condition).
+         \emph{Completed}: agent reached \texttt{final\_answer} with no H\textsubscript{budget} rejection.
+         \emph{Contaminated}: kpi\_analyzer AMBR value leaked into policy apply.
+         \emph{Oversized}: max apply \texttt{dl\_ambr} $>$100\,Mbps.
+         \emph{Rejected}: trials with $\geq$1 H\textsubscript{budget} rejection.}
+\label{tab:exp8-utility}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Condition} & \textbf{Completed} & \textbf{Rate} & \textbf{Contaminated} & \textbf{Oversized} & \textbf{Rejected} & \textbf{Avg steps} \\
+\midrule
+Vulnerable (none)              & 42/50 & 84\% & 6/50~(12\%) & 8/50~(16\%) & 0 & 15.8 \\
+IsolatedCollector              & 40/50 & 80\% & \textbf{0/50~(0\%)} & 15/50~(30\%) & 0 & 15.9 \\
+HedgeTuned $k^{*}{=}1$        & 43/50 & \textbf{86\%} & 8/50~(16\%) & \textbf{6/50~(12\%)} & 0 & 16.6 \\
+Full PALA Guardrail            & 42/50 & 84\% & \textbf{0/50~(0\%)} & 15/50~(30\%) & 3 & 17.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Per-workflow completion rate breakdown
+\begin{table}[t]
+\centering
+\caption{Completion rate per workflow under each defense condition (Exp~8, $n{=}10$ per cell).}
+\label{tab:exp8-per-wf}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Workflow} & \textbf{none} & \textbf{iso} & \textbf{ht} & \textbf{both} \\
+\midrule
+WF1: conditional AMBR raise & 100\% & 100\% & 100\% & 70\% \\
+WF2: health check (report only) & 50\% & 40\% & 40\% & 50\% \\
+WF3: traffic trend analysis & 100\% & 100\% & 100\% & 100\% \\
+WF4: AMBR rollback to 20\,Mbps & 70\% & 60\% & 90\% & 100\% \\
+WF5: full state assessment & 100\% & 100\% & 100\% & 100\% \\
+\midrule
+\textbf{Overall} & \textbf{84\%} & \textbf{80\%} & \textbf{86\%} & \textbf{84\%} \\
+\bottomrule
+\end{tabular}
+\end{table}

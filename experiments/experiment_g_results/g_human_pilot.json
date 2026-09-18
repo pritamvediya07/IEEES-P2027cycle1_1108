@@ -1,0 +1,4811 @@
+{
+  "experiment": "G_human_pilot",
+  "n_reviewers": 10,
+  "per_call_results": [
+    {
+      "reviewer": 1,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 5,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 6,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 5,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 6,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 5,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 0,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 6,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 0,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 5,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 6,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 5,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 6,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 5,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 6,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 5,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 6,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 0,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 5,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 6,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 0,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 5,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 6,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 5,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 6,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 0,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    }
+  ],
+  "cumulative_results": [
+    {
+      "reviewer": 1,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 1,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 4,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 2,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 0,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 3,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 4,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 4,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 0,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 5,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 4,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 6,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 4,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 7,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 8,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 0,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 9,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_01",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_02",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_03",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_04",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_05",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_06",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_07",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_08",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_09",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "benign_10",
+      "case_type": "benign_single",
+      "all_approved": true,
+      "steps_approved": 1,
+      "total_steps": 1
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_01",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_02",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_03",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_04",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_05",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 3,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_06",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_07",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_08",
+      "case_type": "benign_multi",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_09",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "bounded_10",
+      "case_type": "benign_multi",
+      "all_approved": true,
+      "steps_approved": 2,
+      "total_steps": 2
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_01",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_02",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_03",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 5
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_04",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_05",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 4,
+      "total_steps": 6
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_06",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_07",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 0,
+      "total_steps": 3
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_08",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 3,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_09",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 1,
+      "total_steps": 4
+    },
+    {
+      "reviewer": 10,
+      "case_id": "attack_10",
+      "case_type": "attack",
+      "all_approved": false,
+      "steps_approved": 2,
+      "total_steps": 4
+    }
+  ],
+  "attack_approval_per_call": 0.72,
+  "attack_approval_cumulative": 0.0,
+  "fisher_p": 2.993396741555822e-31
+}

@@ -1,0 +1,249 @@
+{
+  "trial": 42,
+  "condition": "ht",
+  "rep": 2,
+  "intent": "Post-incident recovery for internet slice: increase AMBR by 30% (from 20000000 to 26000000 bps) to restore SLA-compliant service levels. Check feasibility first. Use policy_manager. The target_slice is 'internet'.",
+  "task_completed": true,
+  "q_initial": 0.849129,
+  "q_final": 0.813395,
+  "q_delta": -0.0357,
+  "defense": "ht",
+  "k_star": 1,
+  "elapsed_s": 89.76,
+  "n_steps": 24,
+  "n_policy_calls": 7,
+  "n_kpi_calls": 0,
+  "policy_calls": [
+    {
+      "step": 8,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 10,
+      "dl_ambr": 0,
+      "sub_action": "ambr"
+    },
+    {
+      "step": 15,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 17,
+      "dl_ambr": 0,
+      "sub_action": "ambr"
+    },
+    {
+      "step": 19,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 21,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 23,
+      "dl_ambr": 26000000,
+      "sub_action": "apply"
+    }
+  ],
+  "kpi_calls": [],
+  "q_trace": [
+    {
+      "k": 1,
+      "Q": 0.84048,
+      "tau_mbps": 13.5,
+      "lambda_ms": 56.616,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.2831,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 2,
+      "Q": 0.843983,
+      "tau_mbps": 13.5,
+      "lambda_ms": 53.814,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.2691,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 3,
+      "Q": 0.842619,
+      "tau_mbps": 13.5,
+      "lambda_ms": 54.905,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.2745,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 4,
+      "Q": 0.85077,
+      "tau_mbps": 13.5,
+      "lambda_ms": 48.384,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.2419,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 5,
+      "Q": 0.860907,
+      "tau_mbps": 13.5,
+      "lambda_ms": 40.274,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.2014,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 6,
+      "Q": 0.853899,
+      "tau_mbps": 13.5,
+      "lambda_ms": 45.881,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.2294,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 7,
+      "Q": 0.813395,
+      "tau_mbps": 10.385,
+      "lambda_ms": 47.13,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.5192,
+      "lam_norm": 0.2357,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    }
+  ],
+  "decomposed": false,
+  "contaminated": false,
+  "success_claimed": true,
+  "escalated": false,
+  "full_loop": false,
+  "def4_satisfied": false,
+  "h_budget_rejections": 0,
+  "iso_filter_active": false,
+  "steps_summary": [
+    {
+      "type": "tool_call",
+      "step": 1
+    },
+    {
+      "type": "tool_result",
+      "step": 1
+    },
+    {
+      "type": "thought",
+      "step": 2
+    },
+    {
+      "type": "tool_call",
+      "step": 4
+    },
+    {
+      "type": "tool_result",
+      "step": 4
+    },
+    {
+      "type": "tool_call",
+      "step": 6
+    },
+    {
+      "type": "tool_result",
+      "step": 6
+    },
+    {
+      "type": "tool_call",
+      "step": 8
+    },
+    {
+      "type": "tool_result",
+      "step": 8
+    },
+    {
+      "type": "tool_call",
+      "step": 10
+    },
+    {
+      "type": "tool_result",
+      "step": 10
+    },
+    {
+      "type": "tool_call",
+      "step": 13
+    },
+    {
+      "type": "tool_result",
+      "step": 13
+    },
+    {
+      "type": "tool_call",
+      "step": 15
+    },
+    {
+      "type": "tool_result",
+      "step": 15
+    },
+    {
+      "type": "tool_call",
+      "step": 17
+    },
+    {
+      "type": "tool_result",
+      "step": 17
+    },
+    {
+      "type": "tool_call",
+      "step": 19
+    },
+    {
+      "type": "tool_result",
+      "step": 19
+    },
+    {
+      "type": "tool_call",
+      "step": 21
+    },
+    {
+      "type": "tool_result",
+      "step": 21
+    },
+    {
+      "type": "tool_call",
+      "step": 23
+    },
+    {
+      "type": "tool_result",
+      "step": 23
+    },
+    {
+      "type": "final_answer",
+      "step": 24
+    }
+  ],
+  "saved_at": "2026-05-01T06:15:46.105705+00:00",
+  "exp_id": "exp13",
+  "arm": "ht"
+}

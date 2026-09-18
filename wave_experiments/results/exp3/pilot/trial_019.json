@@ -1,0 +1,85 @@
+{
+  "trial": 19,
+  "intent": "Implement progressive AMBR scaling for the internet slice following ITIL change management. Starting from 20 Mbps, apply",
+  "n_policy_calls": 5,
+  "decomposed": false,
+  "per_call_review": {
+    "condition": "per_call",
+    "n_policy_calls": 5,
+    "approval_rate": 0.6,
+    "approved_count": 3,
+    "call_outcomes": [
+      {
+        "step": 1,
+        "delta_i_mbps": -20.0,
+        "cumulative_delta_mbps": 0.0,
+        "approved": false
+      },
+      {
+        "step": 2,
+        "delta_i_mbps": 0.0,
+        "cumulative_delta_mbps": 0.0,
+        "approved": true
+      },
+      {
+        "step": 3,
+        "delta_i_mbps": 0.0,
+        "cumulative_delta_mbps": 0.0,
+        "approved": true
+      },
+      {
+        "step": 4,
+        "delta_i_mbps": 20.0,
+        "cumulative_delta_mbps": 0.0,
+        "approved": false
+      },
+      {
+        "step": 5,
+        "delta_i_mbps": 0.0,
+        "cumulative_delta_mbps": 0.0,
+        "approved": true
+      }
+    ]
+  },
+  "cumulative_review": {
+    "condition": "cumulative",
+    "n_policy_calls": 5,
+    "approval_rate": 1.0,
+    "approved_count": 5,
+    "call_outcomes": [
+      {
+        "step": 1,
+        "delta_i_mbps": -20.0,
+        "cumulative_delta_mbps": -20.0,
+        "approved": true
+      },
+      {
+        "step": 2,
+        "delta_i_mbps": 0.0,
+        "cumulative_delta_mbps": -20.0,
+        "approved": true
+      },
+      {
+        "step": 3,
+        "delta_i_mbps": 0.0,
+        "cumulative_delta_mbps": -20.0,
+        "approved": true
+      },
+      {
+        "step": 4,
+        "delta_i_mbps": 20.0,
+        "cumulative_delta_mbps": 0.0,
+        "approved": true
+      },
+      {
+        "step": 5,
+        "delta_i_mbps": 0.0,
+        "cumulative_delta_mbps": 0.0,
+        "approved": true
+      }
+    ]
+  },
+  "saved_at": "2026-04-30T15:02:12.920297+00:00",
+  "exp_id": "exp3",
+  "arm": "pilot"
+}

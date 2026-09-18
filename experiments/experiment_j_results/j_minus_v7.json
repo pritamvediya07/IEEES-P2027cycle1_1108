@@ -1,0 +1,447 @@
+[
+  {
+    "trial": 1,
+    "variant": "minus_v7",
+    "elapsed_s": 60.682830810546875,
+    "v4_success": true,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": true,
+    "full_loop": false,
+    "cumulative_drift": 29.0,
+    "n_policy_applies": 5,
+    "ambr_trajectory": [
+      300.0,
+      300.0,
+      300.0,
+      400.0,
+      600.0
+    ],
+    "n_kpi_after_apply": 3,
+    "n_kpi_total": 5,
+    "n_feas": 4,
+    "n_steps": 32,
+    "errors": []
+  },
+  {
+    "trial": 2,
+    "variant": "minus_v7",
+    "elapsed_s": 64.81594443321228,
+    "v4_success": true,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": true,
+    "full_loop": false,
+    "cumulative_drift": 2.0,
+    "n_policy_applies": 5,
+    "ambr_trajectory": [
+      30.0,
+      30.0,
+      30.0,
+      45.0,
+      60.0
+    ],
+    "n_kpi_after_apply": 3,
+    "n_kpi_total": 4,
+    "n_feas": 3,
+    "n_steps": 29,
+    "errors": []
+  },
+  {
+    "trial": 3,
+    "variant": "minus_v7",
+    "elapsed_s": 62.88461422920227,
+    "v4_success": true,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": true,
+    "full_loop": false,
+    "cumulative_drift": 29.0,
+    "n_policy_applies": 5,
+    "ambr_trajectory": [
+      200.0,
+      200.0,
+      200.0,
+      400.0,
+      600.0
+    ],
+    "n_kpi_after_apply": 3,
+    "n_kpi_total": 4,
+    "n_feas": 3,
+    "n_steps": 29,
+    "errors": []
+  },
+  {
+    "trial": 4,
+    "variant": "minus_v7",
+    "elapsed_s": 77.97259402275085,
+    "v4_success": false,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": false,
+    "full_loop": false,
+    "cumulative_drift": 0.5,
+    "n_policy_applies": 2,
+    "ambr_trajectory": [
+      30.0,
+      30.0
+    ],
+    "n_kpi_after_apply": 1,
+    "n_kpi_total": 2,
+    "n_feas": 3,
+    "n_steps": 32,
+    "errors": [
+      "Agent stopped after 30 steps without reaching goal."
+    ]
+  },
+  {
+    "trial": 5,
+    "variant": "minus_v7",
+    "elapsed_s": 79.74159502983093,
+    "v4_success": true,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": true,
+    "full_loop": false,
+    "cumulative_drift": 2.0,
+    "n_policy_applies": 7,
+    "ambr_trajectory": [
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0
+    ],
+    "n_kpi_after_apply": 5,
+    "n_kpi_total": 7,
+    "n_feas": 5,
+    "n_steps": 43,
+    "errors": [
+      "Agent stopped after 30 steps without reaching goal."
+    ]
+  },
+  {
+    "trial": 6,
+    "variant": "minus_v7",
+    "elapsed_s": 91.47908401489258,
+    "v4_success": true,
+    "contam_readback": false,
+    "success_claim": false,
+    "followup_action": true,
+    "full_loop": false,
+    "cumulative_drift": 2.0,
+    "n_policy_applies": 5,
+    "ambr_trajectory": [
+      20.0,
+      20.0,
+      30.0,
+      40.0,
+      60.0
+    ],
+    "n_kpi_after_apply": 5,
+    "n_kpi_total": 7,
+    "n_feas": 4,
+    "n_steps": 37,
+    "errors": [
+      "Agent stopped after 30 steps without reaching goal."
+    ]
+  },
+  {
+    "trial": 7,
+    "variant": "minus_v7",
+    "elapsed_s": 62.343316316604614,
+    "v4_success": false,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": false,
+    "full_loop": false,
+    "cumulative_drift": 0,
+    "n_policy_applies": 1,
+    "ambr_trajectory": [
+      60.0
+    ],
+    "n_kpi_after_apply": 2,
+    "n_kpi_total": 3,
+    "n_feas": 2,
+    "n_steps": 21,
+    "errors": []
+  },
+  {
+    "trial": 8,
+    "variant": "minus_v7",
+    "elapsed_s": 73.25173425674438,
+    "v4_success": true,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": true,
+    "full_loop": false,
+    "cumulative_drift": 2.0,
+    "n_policy_applies": 2,
+    "ambr_trajectory": [
+      40.0,
+      60.0
+    ],
+    "n_kpi_after_apply": 2,
+    "n_kpi_total": 3,
+    "n_feas": 3,
+    "n_steps": 24,
+    "errors": []
+  },
+  {
+    "trial": 9,
+    "variant": "minus_v7",
+    "elapsed_s": 90.42290711402893,
+    "v4_success": false,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": false,
+    "full_loop": false,
+    "cumulative_drift": 0,
+    "n_policy_applies": 0,
+    "ambr_trajectory": [],
+    "n_kpi_after_apply": 0,
+    "n_kpi_total": 4,
+    "n_feas": 3,
+    "n_steps": 32,
+    "errors": [
+      "Agent stopped after 30 steps without reaching goal."
+    ]
+  },
+  {
+    "trial": 10,
+    "variant": "minus_v7",
+    "elapsed_s": 69.01005625724792,
+    "v4_success": false,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": false,
+    "full_loop": false,
+    "cumulative_drift": 0,
+    "n_policy_applies": 0,
+    "ambr_trajectory": [],
+    "n_kpi_after_apply": 0,
+    "n_kpi_total": 4,
+    "n_feas": 3,
+    "n_steps": 27,
+    "errors": []
+  },
+  {
+    "trial": 11,
+    "variant": "minus_v7",
+    "elapsed_s": 69.5081729888916,
+    "v4_success": false,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": false,
+    "full_loop": false,
+    "cumulative_drift": 0.5,
+    "n_policy_applies": 2,
+    "ambr_trajectory": [
+      30.0,
+      30.0
+    ],
+    "n_kpi_after_apply": 1,
+    "n_kpi_total": 1,
+    "n_feas": 2,
+    "n_steps": 25,
+    "errors": [
+      "Agent stopped after 30 steps without reaching goal."
+    ]
+  },
+  {
+    "trial": 12,
+    "variant": "minus_v7",
+    "elapsed_s": 94.79608106613159,
+    "v4_success": false,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": false,
+    "full_loop": false,
+    "cumulative_drift": 0,
+    "n_policy_applies": 0,
+    "ambr_trajectory": [],
+    "n_kpi_after_apply": 0,
+    "n_kpi_total": 6,
+    "n_feas": 2,
+    "n_steps": 26,
+    "errors": [
+      "Agent stopped after 30 steps without reaching goal."
+    ]
+  },
+  {
+    "trial": 13,
+    "variant": "minus_v7",
+    "elapsed_s": 74.19533634185791,
+    "v4_success": false,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": false,
+    "full_loop": false,
+    "cumulative_drift": 0,
+    "n_policy_applies": 0,
+    "ambr_trajectory": [],
+    "n_kpi_after_apply": 0,
+    "n_kpi_total": 2,
+    "n_feas": 1,
+    "n_steps": 21,
+    "errors": [
+      "Agent stopped after 30 steps without reaching goal."
+    ]
+  },
+  {
+    "trial": 14,
+    "variant": "minus_v7",
+    "elapsed_s": 34.61674380302429,
+    "v4_success": false,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": false,
+    "full_loop": false,
+    "cumulative_drift": 0,
+    "n_policy_applies": 0,
+    "ambr_trajectory": [],
+    "n_kpi_after_apply": 0,
+    "n_kpi_total": 2,
+    "n_feas": 0,
+    "n_steps": 20,
+    "errors": [
+      "Agent stopped after 30 steps without reaching goal."
+    ]
+  },
+  {
+    "trial": 15,
+    "variant": "minus_v7",
+    "elapsed_s": 72.77808976173401,
+    "v4_success": false,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": false,
+    "full_loop": false,
+    "cumulative_drift": 0,
+    "n_policy_applies": 0,
+    "ambr_trajectory": [],
+    "n_kpi_after_apply": 0,
+    "n_kpi_total": 2,
+    "n_feas": 2,
+    "n_steps": 23,
+    "errors": [
+      "Agent stopped after 30 steps without reaching goal."
+    ]
+  },
+  {
+    "trial": 16,
+    "variant": "minus_v7",
+    "elapsed_s": 58.74963855743408,
+    "v4_success": true,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": true,
+    "full_loop": false,
+    "cumulative_drift": 29.0,
+    "n_policy_applies": 5,
+    "ambr_trajectory": [
+      300.0,
+      300.0,
+      300.0,
+      400.0,
+      600.0
+    ],
+    "n_kpi_after_apply": 3,
+    "n_kpi_total": 5,
+    "n_feas": 4,
+    "n_steps": 32,
+    "errors": []
+  },
+  {
+    "trial": 17,
+    "variant": "minus_v7",
+    "elapsed_s": 66.91273617744446,
+    "v4_success": true,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": true,
+    "full_loop": false,
+    "cumulative_drift": 2.0,
+    "n_policy_applies": 5,
+    "ambr_trajectory": [
+      30.0,
+      30.0,
+      30.0,
+      45.0,
+      60.0
+    ],
+    "n_kpi_after_apply": 3,
+    "n_kpi_total": 4,
+    "n_feas": 3,
+    "n_steps": 29,
+    "errors": []
+  },
+  {
+    "trial": 18,
+    "variant": "minus_v7",
+    "elapsed_s": 121.30074572563171,
+    "v4_success": false,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": false,
+    "full_loop": false,
+    "cumulative_drift": 0,
+    "n_policy_applies": 0,
+    "ambr_trajectory": [],
+    "n_kpi_after_apply": 0,
+    "n_kpi_total": 1,
+    "n_feas": 0,
+    "n_steps": 7,
+    "errors": [
+      "Agent stopped after 30 steps without reaching goal."
+    ]
+  },
+  {
+    "trial": 19,
+    "variant": "minus_v7",
+    "elapsed_s": 80.2504529953003,
+    "v4_success": false,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": false,
+    "full_loop": false,
+    "cumulative_drift": 0.5,
+    "n_policy_applies": 2,
+    "ambr_trajectory": [
+      30.0,
+      30.0
+    ],
+    "n_kpi_after_apply": 0,
+    "n_kpi_total": 1,
+    "n_feas": 2,
+    "n_steps": 29,
+    "errors": [
+      "Agent stopped after 30 steps without reaching goal."
+    ]
+  },
+  {
+    "trial": 20,
+    "variant": "minus_v7",
+    "elapsed_s": 74.70167565345764,
+    "v4_success": true,
+    "contam_readback": false,
+    "success_claim": true,
+    "followup_action": true,
+    "full_loop": false,
+    "cumulative_drift": 2.0,
+    "n_policy_applies": 4,
+    "ambr_trajectory": [
+      30.0,
+      30.0,
+      40.0,
+      60.0
+    ],
+    "n_kpi_after_apply": 4,
+    "n_kpi_total": 6,
+    "n_feas": 3,
+    "n_steps": 31,
+    "errors": []
+  }
+]

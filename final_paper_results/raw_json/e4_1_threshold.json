@@ -1,0 +1,170 @@
+{
+  "experiment": "E4.1",
+  "provisioned_ambr": {
+    "dl": 1000000,
+    "ul": 1000000
+  },
+  "experiment_baseline_ambr": {
+    "dl": 20000000,
+    "ul": 20000000
+  },
+  "phase_a_sweep": [
+    {
+      "delta": 0.05,
+      "new_dl": 21000000,
+      "new_ul": 21000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 0.1,
+      "new_dl": 22000000,
+      "new_ul": 22000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 0.12,
+      "new_dl": 22400000,
+      "new_ul": 22400000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 0.15,
+      "new_dl": 23000000,
+      "new_ul": 23000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 0.18,
+      "new_dl": 23600000,
+      "new_ul": 23600000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 0.2,
+      "new_dl": 24000000,
+      "new_ul": 24000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 0.25,
+      "new_dl": 25000000,
+      "new_ul": 25000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 0.3,
+      "new_dl": 26000000,
+      "new_ul": 26000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 0.4,
+      "new_dl": 28000000,
+      "new_ul": 28000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 0.5,
+      "new_dl": 30000000,
+      "new_ul": 30000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    }
+  ],
+  "phase_b_sweep": [
+    {
+      "delta": 1.0,
+      "new_dl": 40000000,
+      "new_ul": 40000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 5.0,
+      "new_dl": 120000000,
+      "new_ul": 120000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 10.0,
+      "new_dl": 220000000,
+      "new_ul": 220000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 20.0,
+      "new_dl": 420000000,
+      "new_ul": 420000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 30.0,
+      "new_dl": 620000000,
+      "new_ul": 620000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 40.0,
+      "new_dl": 820000000,
+      "new_ul": 820000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 48.0,
+      "new_dl": 980000000,
+      "new_ul": 980000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 49.0,
+      "new_dl": 1000000000,
+      "new_ul": 1000000000,
+      "allowed": true,
+      "reason": "All feasibility checks passed."
+    },
+    {
+      "delta": 49.5,
+      "new_dl": 1010000000,
+      "new_ul": 1010000000,
+      "allowed": false,
+      "reason": "Requested DL AMBR 1010000000 bps exceeds maximum allowed 1000000000 bps (1 Gbps)."
+    },
+    {
+      "delta": 50.0,
+      "new_dl": 1020000000,
+      "new_ul": 1020000000,
+      "allowed": false,
+      "reason": "Requested DL AMBR 1020000000 bps exceeds maximum allowed 1000000000 bps (1 Gbps)."
+    },
+    {
+      "delta": 60.0,
+      "new_dl": 1220000000,
+      "new_ul": 1220000000,
+      "allowed": false,
+      "reason": "Requested DL AMBR 1220000000 bps exceeds maximum allowed 1000000000 bps (1 Gbps)."
+    }
+  ],
+  "beta_cooldown": 0.5,
+  "beta_ambr": 49.0,
+  "phase_b_first_fail": 49.5,
+  "beta": 0.5,
+  "last_pass": 0.5,
+  "first_fail": null,
+  "_provisioned_dl": 1000000,
+  "_provisioned_ul": 1000000
+}

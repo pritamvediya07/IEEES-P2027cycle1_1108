@@ -1,0 +1,51 @@
+{
+  "phase": "D",
+  "method": "signed_pearson_r_descending_series",
+  "n_series_collected": 30,
+  "phase_d_n_samples": 20,
+  "ramp_steps": 15,
+  "ramp_sleep_s": 4,
+  "r_value_mean": 0.073,
+  "r_value_min": -0.973,
+  "r_value_max": 0.638,
+  "rows": {
+    "-0.9": {
+      "r2_threshold": -0.9,
+      "n_series": 30,
+      "suppressed_count": 4,
+      "suppression_rate": 0.1333,
+      "saved_at": "2026-04-30T12:52:36.372534+00:00",
+      "exp_id": "exp9",
+      "arm": "phaseD"
+    },
+    "-0.5": {
+      "r2_threshold": -0.5,
+      "n_series": 30,
+      "suppressed_count": 4,
+      "suppression_rate": 0.1333,
+      "saved_at": "2026-04-30T12:52:36.373241+00:00",
+      "exp_id": "exp9",
+      "arm": "phaseD"
+    },
+    "0.0": {
+      "r2_threshold": 0.0,
+      "n_series": 30,
+      "suppressed_count": 9,
+      "suppression_rate": 0.3,
+      "saved_at": "2026-04-30T12:52:36.373522+00:00",
+      "exp_id": "exp9",
+      "arm": "phaseD"
+    },
+    "0.3": {
+      "r2_threshold": 0.3,
+      "n_series": 30,
+      "suppressed_count": 19,
+      "suppression_rate": 0.6333,
+      "saved_at": "2026-04-30T12:52:36.373733+00:00",
+      "exp_id": "exp9",
+      "arm": "phaseD"
+    }
+  },
+  "paper_claim": "AS5 forecast suppression rate is configurable via R\u00b2 threshold. Default R\u00b2<-0.5 suppresses forecasts on monotone attack trajectories (series r < -0.5 in descending order = strongly rising in time) while accepting stable benign series (r \u2248 0).",
+  "saved_at": "2026-04-30T12:52:48.384555+00:00"
+}

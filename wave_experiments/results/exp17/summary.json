@@ -1,0 +1,11 @@
+{
+  "experiment": "exp17",
+  "policy_variable": "5QI / ARP (session_manager.modify_qos)",
+  "model": "none (no LLM inference)",
+  "n": 12,
+  "write_success_rate": 1.0,
+  "contamination_rate": 1.0,
+  "any_provenance_tag_present": false,
+  "endpoint": "contamination only; Q/Phi deliberately not measured",
+  "saved_at": "2026-08-22T07:49:18.763511+00:00"
+}

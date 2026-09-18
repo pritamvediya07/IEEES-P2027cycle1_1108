@@ -1,0 +1,1371 @@
+{
+  "captured_at": "2026-08-24T06:34:15.856153+00:00",
+  "reason": "jobs left by earlier agent campaigns; removed so they cannot fire mid-experiment and move AMBR with no matching policy write",
+  "n": 124,
+  "jobs": [
+    {
+      "id": "revert_69f3cebc02a6650517d8b32c",
+      "next_run_time": "2026-08-24 12:05:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f3cebc02a6650517d8b32c"
+      }
+    },
+    {
+      "id": "revert_69f5301521ed3ef978837a7b",
+      "next_run_time": "2026-08-24 12:05:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-25.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5301521ed3ef978837a7b"
+      }
+    },
+    {
+      "id": "apply_6a8bd10aee416d737a7e93c1",
+      "next_run_time": "2026-08-24 13:00:00+05:30",
+      "kwargs": {
+        "slice_name": "SLICE-123",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8bd10aee416d737a7e93c1"
+      }
+    },
+    {
+      "id": "apply_6a8aa3df960ee37baa06c7c8",
+      "next_run_time": "2026-08-24 13:10:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "100.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8aa3df960ee37baa06c7c8"
+      }
+    },
+    {
+      "id": "apply_69f2bcd19849e5cb02b1dc0e",
+      "next_run_time": "2026-08-24 14:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f2bcd19849e5cb02b1dc0e"
+      }
+    },
+    {
+      "id": "apply_69f3f75402a6650517d8b4a3",
+      "next_run_time": "2026-08-24 14:00:00+05:30",
+      "kwargs": {
+        "slice_name": "default_internet_slice",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f3f75402a6650517d8b4a3"
+      }
+    },
+    {
+      "id": "apply_69f3fa4d02a6650517d8b4ac",
+      "next_run_time": "2026-08-24 14:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "100.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f3fa4d02a6650517d8b4ac"
+      }
+    },
+    {
+      "id": "apply_69f4e1a321ed3ef9788378d8",
+      "next_run_time": "2026-08-24 14:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "25.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f4e1a321ed3ef9788378d8"
+      }
+    },
+    {
+      "id": "apply_69f4e66221ed3ef9788378ed",
+      "next_run_time": "2026-08-24 14:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f4e66221ed3ef9788378ed"
+      }
+    },
+    {
+      "id": "apply_69f4fa6e21ed3ef97883795d",
+      "next_run_time": "2026-08-24 14:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f4fa6e21ed3ef97883795d"
+      }
+    },
+    {
+      "id": "apply_69f4fcec21ed3ef978837963",
+      "next_run_time": "2026-08-24 14:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f4fcec21ed3ef978837963"
+      }
+    },
+    {
+      "id": "apply_69f5009321ed3ef97883796c",
+      "next_run_time": "2026-08-24 14:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5009321ed3ef97883796c"
+      }
+    },
+    {
+      "id": "apply_69f5014121ed3ef97883796f",
+      "next_run_time": "2026-08-24 14:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5014121ed3ef97883796f"
+      }
+    },
+    {
+      "id": "apply_69f5024f21ed3ef978837974",
+      "next_run_time": "2026-08-24 14:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5024f21ed3ef978837974"
+      }
+    },
+    {
+      "id": "apply_69f52ad821ed3ef978837a59",
+      "next_run_time": "2026-08-24 14:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "25.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f52ad821ed3ef978837a59"
+      }
+    },
+    {
+      "id": "apply_69f52e2221ed3ef978837a6e",
+      "next_run_time": "2026-08-24 14:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f52e2221ed3ef978837a6e"
+      }
+    },
+    {
+      "id": "apply_6a8b48cd150a63449dd3a1aa",
+      "next_run_time": "2026-08-24 14:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice_123",
+        "delta_pct": "25.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8b48cd150a63449dd3a1aa"
+      }
+    },
+    {
+      "id": "revert_69f3fa4d02a6650517d8b4ac",
+      "next_run_time": "2026-08-24 14:05:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "-100.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f3fa4d02a6650517d8b4ac"
+      }
+    },
+    {
+      "id": "revert_69f4e66221ed3ef9788378ed",
+      "next_run_time": "2026-08-24 14:05:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f4e66221ed3ef9788378ed"
+      }
+    },
+    {
+      "id": "revert_69f5014121ed3ef97883796f",
+      "next_run_time": "2026-08-24 14:05:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5014121ed3ef97883796f"
+      }
+    },
+    {
+      "id": "apply_69f5016521ed3ef978837970",
+      "next_run_time": "2026-08-24 14:10:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "33.33",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5016521ed3ef978837970"
+      }
+    },
+    {
+      "id": "revert_69f5016521ed3ef978837970",
+      "next_run_time": "2026-08-24 14:15:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-33.33",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5016521ed3ef978837970"
+      }
+    },
+    {
+      "id": "apply_69f5017521ed3ef978837971",
+      "next_run_time": "2026-08-24 14:20:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5017521ed3ef978837971"
+      }
+    },
+    {
+      "id": "revert_69f5017521ed3ef978837971",
+      "next_run_time": "2026-08-24 14:25:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5017521ed3ef978837971"
+      }
+    },
+    {
+      "id": "apply_69f425e602a6650517d8b558",
+      "next_run_time": "2026-08-24 14:30:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f425e602a6650517d8b558"
+      }
+    },
+    {
+      "id": "apply_69f4f8b221ed3ef978837957",
+      "next_run_time": "2026-08-24 14:30:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f4f8b221ed3ef978837957"
+      }
+    },
+    {
+      "id": "apply_69f4f98121ed3ef97883795a",
+      "next_run_time": "2026-08-24 14:30:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f4f98121ed3ef97883795a"
+      }
+    },
+    {
+      "id": "apply_69f5258421ed3ef978837a40",
+      "next_run_time": "2026-08-24 14:30:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5258421ed3ef978837a40"
+      }
+    },
+    {
+      "id": "apply_69f526ae21ed3ef978837a46",
+      "next_run_time": "2026-08-24 14:30:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f526ae21ed3ef978837a46"
+      }
+    },
+    {
+      "id": "apply_6a8b4a7c150a63449dd3a24a",
+      "next_run_time": "2026-08-24 14:30:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8b4a7c150a63449dd3a24a"
+      }
+    },
+    {
+      "id": "apply_6a8bd29dee416d737a7e9435",
+      "next_run_time": "2026-08-24 14:30:00+05:30",
+      "kwargs": {
+        "slice_name": "SLICE-123",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8bd29dee416d737a7e9435"
+      }
+    },
+    {
+      "id": "apply_6a8bd81cee416d737a7e954c",
+      "next_run_time": "2026-08-24 14:30:00+05:30",
+      "kwargs": {
+        "slice_name": "SLICE-123",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8bd81cee416d737a7e954c"
+      }
+    },
+    {
+      "id": "apply_6a8bd8f1ee416d737a7e95c2",
+      "next_run_time": "2026-08-24 14:30:00+05:30",
+      "kwargs": {
+        "slice_name": "SLICE-123",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8bd8f1ee416d737a7e95c2"
+      }
+    },
+    {
+      "id": "apply_6a8bd8f2ee416d737a7e95c3",
+      "next_run_time": "2026-08-24 14:30:00+05:30",
+      "kwargs": {
+        "slice_name": "SLICE-123",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8bd8f2ee416d737a7e95c3"
+      }
+    },
+    {
+      "id": "apply_69f4ffc421ed3ef978837969",
+      "next_run_time": "2026-08-24 14:48:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f4ffc421ed3ef978837969"
+      }
+    },
+    {
+      "id": "revert_69f4ffc421ed3ef978837969",
+      "next_run_time": "2026-08-24 14:50:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f4ffc421ed3ef978837969"
+      }
+    },
+    {
+      "id": "revert_69f2bcd19849e5cb02b1dc0e",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f2bcd19849e5cb02b1dc0e"
+      }
+    },
+    {
+      "id": "revert_69f3f75402a6650517d8b4a3",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "default_internet_slice",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f3f75402a6650517d8b4a3"
+      }
+    },
+    {
+      "id": "revert_69f425e602a6650517d8b558",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f425e602a6650517d8b558"
+      }
+    },
+    {
+      "id": "revert_69f4e1a321ed3ef9788378d8",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-25.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f4e1a321ed3ef9788378d8"
+      }
+    },
+    {
+      "id": "revert_69f4f8b221ed3ef978837957",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f4f8b221ed3ef978837957"
+      }
+    },
+    {
+      "id": "revert_69f4f98121ed3ef97883795a",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f4f98121ed3ef97883795a"
+      }
+    },
+    {
+      "id": "revert_69f4fa6e21ed3ef97883795d",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f4fa6e21ed3ef97883795d"
+      }
+    },
+    {
+      "id": "revert_69f4fcec21ed3ef978837963",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f4fcec21ed3ef978837963"
+      }
+    },
+    {
+      "id": "revert_69f5009321ed3ef97883796c",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5009321ed3ef97883796c"
+      }
+    },
+    {
+      "id": "revert_69f5024f21ed3ef978837974",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5024f21ed3ef978837974"
+      }
+    },
+    {
+      "id": "revert_69f5258421ed3ef978837a40",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5258421ed3ef978837a40"
+      }
+    },
+    {
+      "id": "apply_69f5274d21ed3ef978837a49",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "33.33",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5274d21ed3ef978837a49"
+      }
+    },
+    {
+      "id": "revert_69f52ad821ed3ef978837a59",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-25.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f52ad821ed3ef978837a59"
+      }
+    },
+    {
+      "id": "apply_69f52d9a21ed3ef978837a6a",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f52d9a21ed3ef978837a6a"
+      }
+    },
+    {
+      "id": "revert_69f52e2221ed3ef978837a6e",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f52e2221ed3ef978837a6e"
+      }
+    },
+    {
+      "id": "apply_69f5308521ed3ef978837a7f",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5308521ed3ef978837a7f"
+      }
+    },
+    {
+      "id": "revert_6a8bd10aee416d737a7e93c1",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "SLICE-123",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8bd10aee416d737a7e93c1"
+      }
+    },
+    {
+      "id": "revert_6a8bd29dee416d737a7e9435",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "SLICE-123",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8bd29dee416d737a7e9435"
+      }
+    },
+    {
+      "id": "revert_6a8bd81cee416d737a7e954c",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "SLICE-123",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8bd81cee416d737a7e954c"
+      }
+    },
+    {
+      "id": "revert_6a8bd8f1ee416d737a7e95c2",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "SLICE-123",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8bd8f1ee416d737a7e95c2"
+      }
+    },
+    {
+      "id": "revert_6a8bd8f2ee416d737a7e95c3",
+      "next_run_time": "2026-08-24 15:00:00+05:30",
+      "kwargs": {
+        "slice_name": "SLICE-123",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8bd8f2ee416d737a7e95c3"
+      }
+    },
+    {
+      "id": "revert_69f526ae21ed3ef978837a46",
+      "next_run_time": "2026-08-24 15:30:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f526ae21ed3ef978837a46"
+      }
+    },
+    {
+      "id": "revert_6a8b4a7c150a63449dd3a24a",
+      "next_run_time": "2026-08-24 15:30:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8b4a7c150a63449dd3a24a"
+      }
+    },
+    {
+      "id": "revert_69f5274d21ed3ef978837a49",
+      "next_run_time": "2026-08-24 16:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-33.33",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5274d21ed3ef978837a49"
+      }
+    },
+    {
+      "id": "revert_69f52d9a21ed3ef978837a6a",
+      "next_run_time": "2026-08-24 16:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f52d9a21ed3ef978837a6a"
+      }
+    },
+    {
+      "id": "apply_69f52dbb21ed3ef978837a6b",
+      "next_run_time": "2026-08-24 16:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f52dbb21ed3ef978837a6b"
+      }
+    },
+    {
+      "id": "revert_69f5308521ed3ef978837a7f",
+      "next_run_time": "2026-08-24 16:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5308521ed3ef978837a7f"
+      }
+    },
+    {
+      "id": "apply_69f5309821ed3ef978837a80",
+      "next_run_time": "2026-08-24 16:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5309821ed3ef978837a80"
+      }
+    },
+    {
+      "id": "revert_6a8b48cd150a63449dd3a1aa",
+      "next_run_time": "2026-08-24 16:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice_123",
+        "delta_pct": "-25.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8b48cd150a63449dd3a1aa"
+      }
+    },
+    {
+      "id": "revert_69f52dbb21ed3ef978837a6b",
+      "next_run_time": "2026-08-24 17:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f52dbb21ed3ef978837a6b"
+      }
+    },
+    {
+      "id": "revert_69f5309821ed3ef978837a80",
+      "next_run_time": "2026-08-24 17:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5309821ed3ef978837a80"
+      }
+    },
+    {
+      "id": "apply_6a8b48d2150a63449dd3a1ab",
+      "next_run_time": "2026-08-24 18:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice_123",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8b48d2150a63449dd3a1ab"
+      }
+    },
+    {
+      "id": "revert_6a8b48d2150a63449dd3a1ab",
+      "next_run_time": "2026-08-24 20:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice_123",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8b48d2150a63449dd3a1ab"
+      }
+    },
+    {
+      "id": "apply_69f4c31929eeb5efa65ca533",
+      "next_run_time": "2026-08-24 20:43:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "116.438",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f4c31929eeb5efa65ca533"
+      }
+    },
+    {
+      "id": "revert_69f4c31929eeb5efa65ca533",
+      "next_run_time": "2026-08-24 23:59:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "-116.438",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f4c31929eeb5efa65ca533"
+      }
+    },
+    {
+      "id": "revert_6a895d4bb2ffb90888335170",
+      "next_run_time": "2026-08-24 23:59:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a895d4bb2ffb90888335170"
+      }
+    },
+    {
+      "id": "revert_6a8aa3df960ee37baa06c7c8",
+      "next_run_time": "2026-08-24 23:59:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "-100.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8aa3df960ee37baa06c7c8"
+      }
+    },
+    {
+      "id": "revert_6a8bd601ee416d737a7e94d6",
+      "next_run_time": "2026-08-24 23:59:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-20.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8bd601ee416d737a7e94d6"
+      }
+    },
+    {
+      "id": "apply_69f5288721ed3ef978837a4d",
+      "next_run_time": "2026-08-25 00:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5288721ed3ef978837a4d"
+      }
+    },
+    {
+      "id": "apply_6a895d4bb2ffb90888335170",
+      "next_run_time": "2026-08-25 00:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a895d4bb2ffb90888335170"
+      }
+    },
+    {
+      "id": "apply_6a8bd601ee416d737a7e94d6",
+      "next_run_time": "2026-08-25 00:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "20.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8bd601ee416d737a7e94d6"
+      }
+    },
+    {
+      "id": "revert_69f5288721ed3ef978837a4d",
+      "next_run_time": "2026-08-25 01:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5288721ed3ef978837a4d"
+      }
+    },
+    {
+      "id": "apply_6a8b4a7a150a63449dd3a249",
+      "next_run_time": "2026-08-25 01:01:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8b4a7a150a63449dd3a249"
+      }
+    },
+    {
+      "id": "revert_6a8b4a7a150a63449dd3a249",
+      "next_run_time": "2026-08-25 01:01:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8b4a7a150a63449dd3a249"
+      }
+    },
+    {
+      "id": "apply_6a8b4a8d150a63449dd3a272",
+      "next_run_time": "2026-08-25 01:01:00+05:30",
+      "kwargs": {
+        "slice_name": "slice1",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8b4a8d150a63449dd3a272"
+      }
+    },
+    {
+      "id": "revert_6a8b4a8d150a63449dd3a272",
+      "next_run_time": "2026-08-25 01:01:00+05:30",
+      "kwargs": {
+        "slice_name": "slice1",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8b4a8d150a63449dd3a272"
+      }
+    },
+    {
+      "id": "apply_6a8b4a9e150a63449dd3a299",
+      "next_run_time": "2026-08-25 01:01:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8b4a9e150a63449dd3a299"
+      }
+    },
+    {
+      "id": "revert_6a8b4a9e150a63449dd3a299",
+      "next_run_time": "2026-08-25 01:01:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8b4a9e150a63449dd3a299"
+      }
+    },
+    {
+      "id": "apply_69f5031a21ed3ef978837977",
+      "next_run_time": "2026-08-25 01:16:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "100.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5031a21ed3ef978837977"
+      }
+    },
+    {
+      "id": "revert_69f5031a21ed3ef978837977",
+      "next_run_time": "2026-08-25 01:16:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-100.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5031a21ed3ef978837977"
+      }
+    },
+    {
+      "id": "apply_69f504b021ed3ef97883797c",
+      "next_run_time": "2026-08-25 01:23:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "100.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f504b021ed3ef97883797c"
+      }
+    },
+    {
+      "id": "apply_69f5083b21ed3ef978837987",
+      "next_run_time": "2026-08-25 01:38:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5083b21ed3ef978837987"
+      }
+    },
+    {
+      "id": "apply_69f5085521ed3ef978837988",
+      "next_run_time": "2026-08-25 01:38:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5085521ed3ef978837988"
+      }
+    },
+    {
+      "id": "revert_69f504b021ed3ef97883797c",
+      "next_run_time": "2026-08-25 02:23:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-100.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f504b021ed3ef97883797c"
+      }
+    },
+    {
+      "id": "revert_69f5083b21ed3ef978837987",
+      "next_run_time": "2026-08-25 02:38:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5083b21ed3ef978837987"
+      }
+    },
+    {
+      "id": "revert_69f5085521ed3ef978837988",
+      "next_run_time": "2026-08-25 02:38:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5085521ed3ef978837988"
+      }
+    },
+    {
+      "id": "apply_69f5260c21ed3ef978837a43",
+      "next_run_time": "2026-08-25 03:46:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5260c21ed3ef978837a43"
+      }
+    },
+    {
+      "id": "revert_69f5260c21ed3ef978837a43",
+      "next_run_time": "2026-08-25 03:50:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5260c21ed3ef978837a43"
+      }
+    },
+    {
+      "id": "apply_69f52c3521ed3ef978837a60",
+      "next_run_time": "2026-08-25 04:11:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "33.33",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f52c3521ed3ef978837a60"
+      }
+    },
+    {
+      "id": "apply_69f52c4a21ed3ef978837a61",
+      "next_run_time": "2026-08-25 04:12:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "25.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f52c4a21ed3ef978837a61"
+      }
+    },
+    {
+      "id": "apply_69f52c5f21ed3ef978837a62",
+      "next_run_time": "2026-08-25 04:12:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "20.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f52c5f21ed3ef978837a62"
+      }
+    },
+    {
+      "id": "apply_69f52b9e21ed3ef978837a5d",
+      "next_run_time": "2026-08-25 04:24:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "33.33",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f52b9e21ed3ef978837a5d"
+      }
+    },
+    {
+      "id": "revert_69f52b9e21ed3ef978837a5d",
+      "next_run_time": "2026-08-25 04:39:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-33.33",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f52b9e21ed3ef978837a5d"
+      }
+    },
+    {
+      "id": "revert_69f52c3521ed3ef978837a60",
+      "next_run_time": "2026-08-25 05:11:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-33.33",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f52c3521ed3ef978837a60"
+      }
+    },
+    {
+      "id": "revert_69f52c4a21ed3ef978837a61",
+      "next_run_time": "2026-08-25 05:12:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-25.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f52c4a21ed3ef978837a61"
+      }
+    },
+    {
+      "id": "revert_69f52c5f21ed3ef978837a62",
+      "next_run_time": "2026-08-25 05:12:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-20.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f52c5f21ed3ef978837a62"
+      }
+    },
+    {
+      "id": "apply_69f2cfa33276a8c5c7be410a",
+      "next_run_time": "2026-08-25 10:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f2cfa33276a8c5c7be410a"
+      }
+    },
+    {
+      "id": "apply_69f5073a21ed3ef978837983",
+      "next_run_time": "2026-08-25 10:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "100.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5073a21ed3ef978837983"
+      }
+    },
+    {
+      "id": "apply_69f524cf21ed3ef978837a3c",
+      "next_run_time": "2026-08-25 10:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f524cf21ed3ef978837a3c"
+      }
+    },
+    {
+      "id": "apply_69f5291121ed3ef978837a50",
+      "next_run_time": "2026-08-25 10:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5291121ed3ef978837a50"
+      }
+    },
+    {
+      "id": "apply_69f52cce21ed3ef978837a66",
+      "next_run_time": "2026-08-25 10:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "100.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f52cce21ed3ef978837a66"
+      }
+    },
+    {
+      "id": "apply_69f5310e21ed3ef978837a84",
+      "next_run_time": "2026-08-25 10:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "50.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5310e21ed3ef978837a84"
+      }
+    },
+    {
+      "id": "revert_69f5073a21ed3ef978837983",
+      "next_run_time": "2026-08-25 10:05:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-100.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5073a21ed3ef978837983"
+      }
+    },
+    {
+      "id": "revert_69f5291121ed3ef978837a50",
+      "next_run_time": "2026-08-25 10:05:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5291121ed3ef978837a50"
+      }
+    },
+    {
+      "id": "revert_69f5310e21ed3ef978837a84",
+      "next_run_time": "2026-08-25 10:05:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5310e21ed3ef978837a84"
+      }
+    },
+    {
+      "id": "apply_69f5076521ed3ef978837984",
+      "next_run_time": "2026-08-25 10:10:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "150.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5076521ed3ef978837984"
+      }
+    },
+    {
+      "id": "revert_69f524cf21ed3ef978837a3c",
+      "next_run_time": "2026-08-25 10:10:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-50.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f524cf21ed3ef978837a3c"
+      }
+    },
+    {
+      "id": "revert_69f5076521ed3ef978837984",
+      "next_run_time": "2026-08-25 10:15:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-150.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f5076521ed3ef978837984"
+      }
+    },
+    {
+      "id": "revert_69f52cce21ed3ef978837a66",
+      "next_run_time": "2026-08-25 10:30:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-100.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f52cce21ed3ef978837a66"
+      }
+    },
+    {
+      "id": "apply_69f52ce621ed3ef978837a67",
+      "next_run_time": "2026-08-25 11:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "100.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f52ce621ed3ef978837a67"
+      }
+    },
+    {
+      "id": "apply_6a8bd85fee416d737a7e9573",
+      "next_run_time": "2026-08-25 11:06:00+05:30",
+      "kwargs": {
+        "slice_name": "first_slice",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8bd85fee416d737a7e9573"
+      }
+    },
+    {
+      "id": "revert_6a8bd85fee416d737a7e9573",
+      "next_run_time": "2026-08-25 11:06:00+05:30",
+      "kwargs": {
+        "slice_name": "first_slice",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8bd85fee416d737a7e9573"
+      }
+    },
+    {
+      "id": "apply_6a8bd8a9ee416d737a7e959a",
+      "next_run_time": "2026-08-25 11:07:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "100.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "6a8bd8a9ee416d737a7e959a"
+      }
+    },
+    {
+      "id": "revert_6a8bd8a9ee416d737a7e959a",
+      "next_run_time": "2026-08-25 11:07:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "-100.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "6a8bd8a9ee416d737a7e959a"
+      }
+    },
+    {
+      "id": "revert_69f52ce621ed3ef978837a67",
+      "next_run_time": "2026-08-25 11:30:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-100.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f52ce621ed3ef978837a67"
+      }
+    },
+    {
+      "id": "revert_69f2cfa33276a8c5c7be410a",
+      "next_run_time": "2026-08-25 12:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "-10.0",
+        "is_revert": "True",
+        "target_imsi": "None",
+        "doc_id": "69f2cfa33276a8c5c7be410a"
+      }
+    },
+    {
+      "id": "apply_69f3cebc02a6650517d8b32c",
+      "next_run_time": "2026-08-25 12:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet_slice",
+        "delta_pct": "10.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f3cebc02a6650517d8b32c"
+      }
+    },
+    {
+      "id": "apply_69f5301521ed3ef978837a7b",
+      "next_run_time": "2026-08-25 12:00:00+05:30",
+      "kwargs": {
+        "slice_name": "internet",
+        "delta_pct": "25.0",
+        "is_revert": "False",
+        "target_imsi": "None",
+        "doc_id": "69f5301521ed3ef978837a7b"
+      }
+    }
+  ]
+}

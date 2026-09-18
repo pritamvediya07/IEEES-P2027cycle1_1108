@@ -1,0 +1,28 @@
+{
+  "summary": [
+    {
+      "arm": "defended",
+      "model": "qwen2.5:72b",
+      "n": 30,
+      "v4": 12,
+      "contam": 0,
+      "claim": 25,
+      "followup": 13,
+      "full_loop": 0
+    },
+    {
+      "arm": "vulnerable",
+      "model": "qwen2.5:72b",
+      "n": 30,
+      "v4": 13,
+      "contam": 20,
+      "claim": 25,
+      "followup": 15,
+      "full_loop": 12
+    }
+  ],
+  "data_files": [
+    "d_vulnerable_qwen2_5_72b",
+    "d_defended_qwen2_5_72b"
+  ]
+}

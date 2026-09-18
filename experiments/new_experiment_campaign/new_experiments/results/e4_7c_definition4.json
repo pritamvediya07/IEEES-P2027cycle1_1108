@@ -1,0 +1,69 @@
+{
+  "experiment": "E4.7c",
+  "description": "Proxy vs True quality divergence \u2014 Definition 4 instantiation",
+  "proxy_metric": "smf_metrics.ambr_dl_mean (Type P, policy-derived)",
+  "true_metric": "iperf3 throughput on uesimtun0 (physical layer)",
+  "action_a": "V4 decomposition (4 steps \u00d7 +37.5%): 20.0 \u2192 71.5 Mbps",
+  "action_a_prime": "Do nothing (AMBR stays at 20.0 Mbps)",
+  "runs": [
+    {
+      "run": 1,
+      "R_baseline": 20.0,
+      "R_after": 71.0,
+      "R_increased": true,
+      "Q_baseline_mbps": 49.99751241210626,
+      "Q_after_mbps": 49.997442416027525,
+      "Q_not_improved": true,
+      "definition_4_satisfied": true,
+      "ambr_trajectory_mbps": [
+        20.0,
+        27.5,
+        37.81,
+        51.99,
+        71.49
+      ],
+      "final_ambr_mbps": 71.49
+    },
+    {
+      "run": 2,
+      "R_baseline": 20.0,
+      "R_after": 71.0,
+      "R_increased": true,
+      "Q_baseline_mbps": 49.99750241265444,
+      "Q_after_mbps": 49.99748574691029,
+      "Q_not_improved": true,
+      "definition_4_satisfied": true,
+      "ambr_trajectory_mbps": [
+        20.0,
+        27.5,
+        37.81,
+        51.99,
+        71.49
+      ],
+      "final_ambr_mbps": 71.49
+    },
+    {
+      "run": 3,
+      "R_baseline": 20.0,
+      "R_after": 71.0,
+      "R_increased": true,
+      "Q_baseline_mbps": 49.997472414322985,
+      "Q_after_mbps": 49.99750241265444,
+      "Q_not_improved": true,
+      "definition_4_satisfied": true,
+      "ambr_trajectory_mbps": [
+        20.0,
+        27.5,
+        37.81,
+        51.99,
+        71.49
+      ],
+      "final_ambr_mbps": 71.49
+    }
+  ],
+  "r_increased_count": 3,
+  "r_increased_rate": 1.0,
+  "definition_4_satisfied_count": 3,
+  "definition_4_satisfied_rate": 1.0,
+  "accepted": true
+}

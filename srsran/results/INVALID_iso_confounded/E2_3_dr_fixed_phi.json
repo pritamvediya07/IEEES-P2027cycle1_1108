@@ -1,0 +1,482 @@
+{
+  "experiment": "E2.3",
+  "n_ue": 4,
+  "repeats": 5,
+  "baseline_mbps": 20.0,
+  "write_mbps": 200.0,
+  "phi_tolerance": {
+    "tau_mbps": 0.15,
+    "lambda_ms": 0.25,
+    "rho_pct": 0.05
+  },
+  "attached": {
+    "ue1": "10.45.0.74",
+    "ue2": "10.45.0.72",
+    "ue3": "10.45.0.73",
+    "ue4": "10.45.0.75"
+  },
+  "supersedes": "the E2.3 block inside E2_contamination.json, whose Phi verification was vacuous (all dimensions None, no UE attached)",
+  "rows": [
+    {
+      "arm": "standard",
+      "repeat": 1,
+      "isolated": false,
+      "phi_before": {
+        "tau_mbps": 25.015,
+        "lambda_ms": 434.039,
+        "rho_pct": 0.1361
+      },
+      "phi_after": {
+        "tau_mbps": 22.498,
+        "lambda_ms": 370.427,
+        "rho_pct": 0.0
+      },
+      "phi_complete": true,
+      "phi_static": false,
+      "phi_detail": {
+        "tau_mbps": {
+          "before": 25.015,
+          "after": 22.498,
+          "rel_change": 0.1006,
+          "tol": 0.15,
+          "within_tol": true
+        },
+        "lambda_ms": {
+          "before": 434.039,
+          "after": 370.427,
+          "rel_change": 0.1466,
+          "tol": 0.25,
+          "within_tol": true
+        },
+        "rho_pct": {
+          "before": 0.1361,
+          "after": 0.0,
+          "rel_change": 1.0,
+          "tol": 0.05,
+          "within_tol": false
+        }
+      },
+      "R_before": 20.0,
+      "R_after": 200.0,
+      "delta_R": 180.0,
+      "valid": false
+    },
+    {
+      "arm": "standard",
+      "repeat": 2,
+      "isolated": false,
+      "phi_before": {
+        "tau_mbps": 24.121,
+        "lambda_ms": 328.649,
+        "rho_pct": 0.0
+      },
+      "phi_after": {
+        "tau_mbps": 24.9,
+        "lambda_ms": 325.731,
+        "rho_pct": 0.0
+      },
+      "phi_complete": true,
+      "phi_static": true,
+      "phi_detail": {
+        "tau_mbps": {
+          "before": 24.121,
+          "after": 24.9,
+          "rel_change": 0.0323,
+          "tol": 0.15,
+          "within_tol": true
+        },
+        "lambda_ms": {
+          "before": 328.649,
+          "after": 325.731,
+          "rel_change": 0.0089,
+          "tol": 0.25,
+          "within_tol": true
+        },
+        "rho_pct": {
+          "before": 0.0,
+          "after": 0.0,
+          "rel_change": 0.0,
+          "tol": 0.05,
+          "within_tol": true
+        }
+      },
+      "R_before": 20.0,
+      "R_after": 200.0,
+      "delta_R": 180.0,
+      "valid": true
+    },
+    {
+      "arm": "standard",
+      "repeat": 3,
+      "isolated": false,
+      "phi_before": {
+        "tau_mbps": 23.808,
+        "lambda_ms": 281.143,
+        "rho_pct": 0.0
+      },
+      "phi_after": {
+        "tau_mbps": 24.916,
+        "lambda_ms": 365.262,
+        "rho_pct": 0.0
+      },
+      "phi_complete": true,
+      "phi_static": false,
+      "phi_detail": {
+        "tau_mbps": {
+          "before": 23.808,
+          "after": 24.916,
+          "rel_change": 0.0465,
+          "tol": 0.15,
+          "within_tol": true
+        },
+        "lambda_ms": {
+          "before": 281.143,
+          "after": 365.262,
+          "rel_change": 0.2992,
+          "tol": 0.25,
+          "within_tol": false
+        },
+        "rho_pct": {
+          "before": 0.0,
+          "after": 0.0,
+          "rel_change": 0.0,
+          "tol": 0.05,
+          "within_tol": true
+        }
+      },
+      "R_before": 20.0,
+      "R_after": 200.0,
+      "delta_R": 180.0,
+      "valid": false
+    },
+    {
+      "arm": "standard",
+      "repeat": 4,
+      "isolated": false,
+      "phi_before": {
+        "tau_mbps": 23.196,
+        "lambda_ms": 342.529,
+        "rho_pct": 0.0
+      },
+      "phi_after": {
+        "tau_mbps": 24.661,
+        "lambda_ms": 314.786,
+        "rho_pct": 0.0
+      },
+      "phi_complete": true,
+      "phi_static": true,
+      "phi_detail": {
+        "tau_mbps": {
+          "before": 23.196,
+          "after": 24.661,
+          "rel_change": 0.0632,
+          "tol": 0.15,
+          "within_tol": true
+        },
+        "lambda_ms": {
+          "before": 342.529,
+          "after": 314.786,
+          "rel_change": 0.081,
+          "tol": 0.25,
+          "within_tol": true
+        },
+        "rho_pct": {
+          "before": 0.0,
+          "after": 0.0,
+          "rel_change": 0.0,
+          "tol": 0.05,
+          "within_tol": true
+        }
+      },
+      "R_before": 20.0,
+      "R_after": 200.0,
+      "delta_R": 180.0,
+      "valid": true
+    },
+    {
+      "arm": "standard",
+      "repeat": 5,
+      "isolated": false,
+      "phi_before": {
+        "tau_mbps": 22.538,
+        "lambda_ms": 308.931,
+        "rho_pct": 0.2241
+      },
+      "phi_after": {
+        "tau_mbps": 23.652,
+        "lambda_ms": 366.973,
+        "rho_pct": 0.0
+      },
+      "phi_complete": true,
+      "phi_static": false,
+      "phi_detail": {
+        "tau_mbps": {
+          "before": 22.538,
+          "after": 23.652,
+          "rel_change": 0.0494,
+          "tol": 0.15,
+          "within_tol": true
+        },
+        "lambda_ms": {
+          "before": 308.931,
+          "after": 366.973,
+          "rel_change": 0.1879,
+          "tol": 0.25,
+          "within_tol": true
+        },
+        "rho_pct": {
+          "before": 0.2241,
+          "after": 0.0,
+          "rel_change": 1.0,
+          "tol": 0.05,
+          "within_tol": false
+        }
+      },
+      "R_before": 20.0,
+      "R_after": 200.0,
+      "delta_R": 180.0,
+      "valid": false
+    },
+    {
+      "arm": "isolated_control",
+      "repeat": 1,
+      "isolated": true,
+      "phi_before": {
+        "tau_mbps": 23.638,
+        "lambda_ms": 299.568,
+        "rho_pct": 0.0
+      },
+      "phi_after": {
+        "tau_mbps": 22.409,
+        "lambda_ms": 337.409,
+        "rho_pct": 0.4634
+      },
+      "phi_complete": true,
+      "phi_static": false,
+      "phi_detail": {
+        "tau_mbps": {
+          "before": 23.638,
+          "after": 22.409,
+          "rel_change": 0.052,
+          "tol": 0.15,
+          "within_tol": true
+        },
+        "lambda_ms": {
+          "before": 299.568,
+          "after": 337.409,
+          "rel_change": 0.1263,
+          "tol": 0.25,
+          "within_tol": true
+        },
+        "rho_pct": {
+          "before": 0.0,
+          "after": 0.4634,
+          "rel_change": 463400000.0,
+          "tol": 0.05,
+          "within_tol": false
+        }
+      },
+      "R_before": 20.0,
+      "R_after": 200.0,
+      "delta_R": 180.0,
+      "valid": false
+    },
+    {
+      "arm": "isolated_control",
+      "repeat": 2,
+      "isolated": true,
+      "phi_before": {
+        "tau_mbps": 22.738,
+        "lambda_ms": 363.529,
+        "rho_pct": 0.1836
+      },
+      "phi_after": {
+        "tau_mbps": 25.667,
+        "lambda_ms": 310.968,
+        "rho_pct": 0.0
+      },
+      "phi_complete": true,
+      "phi_static": false,
+      "phi_detail": {
+        "tau_mbps": {
+          "before": 22.738,
+          "after": 25.667,
+          "rel_change": 0.1288,
+          "tol": 0.15,
+          "within_tol": true
+        },
+        "lambda_ms": {
+          "before": 363.529,
+          "after": 310.968,
+          "rel_change": 0.1446,
+          "tol": 0.25,
+          "within_tol": true
+        },
+        "rho_pct": {
+          "before": 0.1836,
+          "after": 0.0,
+          "rel_change": 1.0,
+          "tol": 0.05,
+          "within_tol": false
+        }
+      },
+      "R_before": 20.0,
+      "R_after": 200.0,
+      "delta_R": 180.0,
+      "valid": false
+    },
+    {
+      "arm": "isolated_control",
+      "repeat": 3,
+      "isolated": true,
+      "phi_before": {
+        "tau_mbps": 25.629,
+        "lambda_ms": 324.628,
+        "rho_pct": 0.0
+      },
+      "phi_after": {
+        "tau_mbps": 24.743,
+        "lambda_ms": 301.847,
+        "rho_pct": 0.0
+      },
+      "phi_complete": true,
+      "phi_static": true,
+      "phi_detail": {
+        "tau_mbps": {
+          "before": 25.629,
+          "after": 24.743,
+          "rel_change": 0.0346,
+          "tol": 0.15,
+          "within_tol": true
+        },
+        "lambda_ms": {
+          "before": 324.628,
+          "after": 301.847,
+          "rel_change": 0.0702,
+          "tol": 0.25,
+          "within_tol": true
+        },
+        "rho_pct": {
+          "before": 0.0,
+          "after": 0.0,
+          "rel_change": 0.0,
+          "tol": 0.05,
+          "within_tol": true
+        }
+      },
+      "R_before": 20.0,
+      "R_after": 200.0,
+      "delta_R": 180.0,
+      "valid": true
+    },
+    {
+      "arm": "isolated_control",
+      "repeat": 4,
+      "isolated": true,
+      "phi_before": {
+        "tau_mbps": 24.472,
+        "lambda_ms": 312.777,
+        "rho_pct": 0.0
+      },
+      "phi_after": {
+        "tau_mbps": 22.672,
+        "lambda_ms": 382.178,
+        "rho_pct": 0.0
+      },
+      "phi_complete": true,
+      "phi_static": true,
+      "phi_detail": {
+        "tau_mbps": {
+          "before": 24.472,
+          "after": 22.672,
+          "rel_change": 0.0736,
+          "tol": 0.15,
+          "within_tol": true
+        },
+        "lambda_ms": {
+          "before": 312.777,
+          "after": 382.178,
+          "rel_change": 0.2219,
+          "tol": 0.25,
+          "within_tol": true
+        },
+        "rho_pct": {
+          "before": 0.0,
+          "after": 0.0,
+          "rel_change": 0.0,
+          "tol": 0.05,
+          "within_tol": true
+        }
+      },
+      "R_before": 20.0,
+      "R_after": 200.0,
+      "delta_R": 180.0,
+      "valid": true
+    },
+    {
+      "arm": "isolated_control",
+      "repeat": 5,
+      "isolated": true,
+      "phi_before": {
+        "tau_mbps": 23.539,
+        "lambda_ms": 418.363,
+        "rho_pct": 0.0
+      },
+      "phi_after": {
+        "tau_mbps": 24.129,
+        "lambda_ms": 353.317,
+        "rho_pct": 0.0
+      },
+      "phi_complete": true,
+      "phi_static": true,
+      "phi_detail": {
+        "tau_mbps": {
+          "before": 23.539,
+          "after": 24.129,
+          "rel_change": 0.0251,
+          "tol": 0.15,
+          "within_tol": true
+        },
+        "lambda_ms": {
+          "before": 418.363,
+          "after": 353.317,
+          "rel_change": 0.1555,
+          "tol": 0.25,
+          "within_tol": true
+        },
+        "rho_pct": {
+          "before": 0.0,
+          "after": 0.0,
+          "rel_change": 0.0,
+          "tol": 0.05,
+          "within_tol": true
+        }
+      },
+      "R_before": 20.0,
+      "R_after": 200.0,
+      "delta_R": 180.0,
+      "valid": true
+    }
+  ],
+  "verdict": {
+    "status": "VALID",
+    "standard_mean_delta_R": 180.0,
+    "standard_n": 2,
+    "isolated_mean_delta_R": 180.0,
+    "isolated_n": 3,
+    "phi_was_measured_and_static": true,
+    "tolerance_used": {
+      "tau_mbps": 0.15,
+      "lambda_ms": 0.25,
+      "rho_pct": 0.05
+    },
+    "conclusion": "With Phi measured on both sides of the write and unchanged within tolerance, R moves by 180.0 under the standard collector and by 180.0 under IsolatedCollector. A non-zero dR at fixed Phi is exactly dR/da != 0, which distinguishes this setting from a badly designed KPI (R = g(Phi)), an observability projection (R = g(Pi Phi)) and an unstable control loop \u2014 all three of which are state-only and would give zero here. The isolated arm is the control: same write, same static Phi, provenance severed."
+  },
+  "probe_summary": {
+    "n_records": 20,
+    "n_complete": 20,
+    "n_excluded": 0,
+    "exclusion_rule": "a record is excluded iff any \u03a6 dimension is 'unavailable'"
+  },
+  "saved_at": "2026-08-23T16:05:31.539139+00:00"
+}

@@ -1,0 +1,64 @@
+{
+  "summary": [
+    {
+      "variant": "full_chain",
+      "desc": "V4 + V7 + V3 (all vulnerabilities present)",
+      "v4_present": true,
+      "v7_present": true,
+      "v3_present": true,
+      "n_trials": 20,
+      "full_loop": 10,
+      "full_loop_rate": 0.5,
+      "v4_rate": 0.5,
+      "kpi_rate": 0.8,
+      "claim_rate": 0.9,
+      "followup_rate": 0.5,
+      "median_drift": 2.0
+    },
+    {
+      "variant": "minus_v4",
+      "desc": "Accumulator blocks V4; V7 + V3 still present",
+      "v4_present": false,
+      "v7_present": true,
+      "v3_present": true,
+      "n_trials": 20,
+      "full_loop": 0,
+      "full_loop_rate": 0.0,
+      "v4_rate": 0.0,
+      "kpi_rate": 0.65,
+      "claim_rate": 0.85,
+      "followup_rate": 0.5,
+      "median_drift": 0
+    },
+    {
+      "variant": "minus_v7",
+      "desc": "Semantic isolation blocks V7; V4 + V3 still present",
+      "v4_present": true,
+      "v7_present": false,
+      "v3_present": true,
+      "n_trials": 20,
+      "full_loop": 0,
+      "full_loop_rate": 0.0,
+      "v4_rate": 0.45,
+      "kpi_rate": 0.0,
+      "claim_rate": 0.95,
+      "followup_rate": 0.45,
+      "median_drift": 0
+    },
+    {
+      "variant": "minus_v3",
+      "desc": "V3 guard active; V4 + V7 still present",
+      "v4_present": true,
+      "v7_present": true,
+      "v3_present": false,
+      "n_trials": 20,
+      "full_loop": 10,
+      "full_loop_rate": 0.5,
+      "v4_rate": 0.6,
+      "kpi_rate": 0.8,
+      "claim_rate": 0.9,
+      "followup_rate": 0.65,
+      "median_drift": 2.0
+    }
+  ]
+}

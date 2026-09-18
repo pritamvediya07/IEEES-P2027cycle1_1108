@@ -1,0 +1,239 @@
+{
+  "n_range_sweep": [
+    {
+      "n_min": 10,
+      "n_max": 100,
+      "accepted": 7,
+      "blocked": 0,
+      "total": 7,
+      "accept_rate": 1.0,
+      "clamped_count": 2,
+      "details": [
+        {
+          "requested_n": 10,
+          "effective_n": 10,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 20,
+          "effective_n": 20,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 30,
+          "effective_n": 30,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 50,
+          "effective_n": 50,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 100,
+          "effective_n": 100,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 200,
+          "effective_n": 100,
+          "clamped": true,
+          "accepted": true
+        },
+        {
+          "requested_n": 500,
+          "effective_n": 100,
+          "clamped": true,
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "n_min": 30,
+      "n_max": 500,
+      "accepted": 7,
+      "blocked": 0,
+      "total": 7,
+      "accept_rate": 1.0,
+      "clamped_count": 2,
+      "details": [
+        {
+          "requested_n": 10,
+          "effective_n": 30,
+          "clamped": true,
+          "accepted": true
+        },
+        {
+          "requested_n": 20,
+          "effective_n": 30,
+          "clamped": true,
+          "accepted": true
+        },
+        {
+          "requested_n": 30,
+          "effective_n": 30,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 50,
+          "effective_n": 50,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 100,
+          "effective_n": 100,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 200,
+          "effective_n": 200,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 500,
+          "effective_n": 500,
+          "clamped": false,
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "n_min": 50,
+      "n_max": 500,
+      "accepted": 7,
+      "blocked": 0,
+      "total": 7,
+      "accept_rate": 1.0,
+      "clamped_count": 3,
+      "details": [
+        {
+          "requested_n": 10,
+          "effective_n": 50,
+          "clamped": true,
+          "accepted": true
+        },
+        {
+          "requested_n": 20,
+          "effective_n": 50,
+          "clamped": true,
+          "accepted": true
+        },
+        {
+          "requested_n": 30,
+          "effective_n": 50,
+          "clamped": true,
+          "accepted": true
+        },
+        {
+          "requested_n": 50,
+          "effective_n": 50,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 100,
+          "effective_n": 100,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 200,
+          "effective_n": 200,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 500,
+          "effective_n": 500,
+          "clamped": false,
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "n_min": 100,
+      "n_max": 500,
+      "accepted": 7,
+      "blocked": 0,
+      "total": 7,
+      "accept_rate": 1.0,
+      "clamped_count": 4,
+      "details": [
+        {
+          "requested_n": 10,
+          "effective_n": 100,
+          "clamped": true,
+          "accepted": true
+        },
+        {
+          "requested_n": 20,
+          "effective_n": 100,
+          "clamped": true,
+          "accepted": true
+        },
+        {
+          "requested_n": 30,
+          "effective_n": 100,
+          "clamped": true,
+          "accepted": true
+        },
+        {
+          "requested_n": 50,
+          "effective_n": 100,
+          "clamped": true,
+          "accepted": true
+        },
+        {
+          "requested_n": 100,
+          "effective_n": 100,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 200,
+          "effective_n": 200,
+          "clamped": false,
+          "accepted": true
+        },
+        {
+          "requested_n": 500,
+          "effective_n": 500,
+          "clamped": false,
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "r2_threshold_sweep": [
+    {
+      "threshold": -1.0,
+      "accepted": 3,
+      "blocked": 0,
+      "total": 3,
+      "false_block_rate": 0.0
+    },
+    {
+      "threshold": -0.5,
+      "accepted": 3,
+      "blocked": 0,
+      "total": 3,
+      "false_block_rate": 0.0
+    },
+    {
+      "threshold": 0.0,
+      "accepted": 2,
+      "blocked": 1,
+      "total": 3,
+      "false_block_rate": 0.3333333333333333
+    }
+  ]
+}

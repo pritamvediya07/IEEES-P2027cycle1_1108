@@ -1,0 +1,39 @@
+{"experiment": "E4.1", "timestamp": "2026-04-13T06:10:53.400120+00:00", "beta": null}
+{"experiment": "E4.1", "timestamp": "2026-04-13T06:12:38.466197+00:00", "beta": 0.5}
+{"experiment": "E4.2", "timestamp": "2026-04-13T06:12:44.594252+00:00", "cumulative": 0.375, "beta": 0.5, "success": false}
+{"experiment": "E4.3", "timestamp": "2026-04-13T06:12:44.597911+00:00", "blocked": true}
+{"experiment": "E4.1", "timestamp": "2026-04-13T06:18:03.717415+00:00", "beta": 0.5}
+{"experiment": "E4.2", "timestamp": "2026-04-13T06:20:07.855184+00:00", "cumulative": 1.5, "beta": 0.5, "success": true}
+{"experiment": "E4.3", "timestamp": "2026-04-13T06:20:07.858604+00:00", "blocked": true}
+{"experiment": "E4.5", "timestamp": "2026-04-13T06:21:10.923774+00:00", "ratio": null, "baseline_cv": null, "accepted": false}
+{"experiment": "E4.6", "timestamp": "2026-04-13T06:21:10.925867+00:00", "blocked_at": 2, "accepted": true}
+{"experiment": "E4.1", "timestamp": "2026-04-13T06:28:35.635186+00:00", "beta": 0.5}
+{"experiment": "E4.2", "timestamp": "2026-04-13T06:30:39.777177+00:00", "cumulative": 1.5, "beta": 0.5, "success": true}
+{"experiment": "E4.3", "timestamp": "2026-04-13T06:30:39.781073+00:00", "blocked": true}
+{"experiment": "E4.1", "timestamp": "2026-04-13T06:32:32.467634+00:00", "beta": 0.5}
+{"experiment": "E4.2", "timestamp": "2026-04-13T06:34:36.618583+00:00", "cumulative": 1.5, "beta": 0.5, "success": true}
+{"experiment": "E4.3", "timestamp": "2026-04-13T06:34:36.622062+00:00", "blocked": true}
+{"experiment": "E4.5", "timestamp": "2026-04-13T06:40:51.406377+00:00", "ratio": 1.2000692131419524, "baseline_cv": 1.3920372227748506e-07, "accepted": "False"}
+{"experiment": "E4.6", "timestamp": "2026-04-13T06:40:51.408450+00:00", "blocked_at": 2, "accepted": true}
+{"experiment": "E4.1", "timestamp": "2026-04-13T07:04:17.379342+00:00", "beta_cooldown": null, "beta_ambr": null, "phase_b_first_fail": 1.0}
+{"experiment": "E4.5", "timestamp": "2026-04-13T07:07:10.286415+00:00", "ratio": null, "baseline_cv": 1.4079102950619306e-07, "accepted": false}
+{"experiment": "E4.1", "timestamp": "2026-04-13T07:11:54.352046+00:00", "beta_cooldown": 0.5, "beta_ambr": 49.0, "phase_b_first_fail": 49.5}
+{"experiment": "E4.2", "timestamp": "2026-04-13T07:13:58.424285+00:00", "cumulative": 1.5, "beta": 0.5, "success": true}
+{"experiment": "E4.3", "timestamp": "2026-04-13T07:14:33.430143+00:00", "part_a_allowed": true, "part_b_blocked": true, "accepted": true}
+{"experiment": "E4.5", "timestamp": "2026-04-13T07:20:48.222257+00:00", "ratio": 1.1999678752799579, "baseline_cv": 2.671655551587072e-07, "accepted": "False"}
+{"experiment": "E4.6", "timestamp": "2026-04-13T07:20:48.223820+00:00", "blocked_at": 2, "accepted": true}
+{"experiment": "E7.1", "timestamp": "2026-04-13T08:52:01.810236+00:00", "kpi_mean": 4.795073, "iperf3_mean": null}
+{"experiment": "E7.2", "timestamp": "2026-04-13T08:52:01.897658+00:00", "original_dl": 20000000, "new_dl": 26000000}
+{"experiment": "E7.3", "timestamp": "2026-04-13T08:52:17.907456+00:00", "type_p_found": false}
+{"experiment": "E7.4a", "timestamp": "2026-04-13T08:52:52.915038+00:00", "ambr_in_analytics": false}
+{"experiment": "E7.4b", "timestamp": "2026-04-13T08:52:52.924683+00:00", "delta": null, "causal": false}
+{"experiment": "E4.4", "timestamp": "2026-04-13T08:58:16.810863+00:00", "p_value": 1.0, "success_rate": 0.0, "accepted": false}
+{"experiment": "E7.1", "timestamp": "2026-04-13T09:00:39.838399+00:00", "kpi_mean": 4.79615, "iperf3_mean": null}
+{"experiment": "E7.2", "timestamp": "2026-04-13T09:00:39.925374+00:00", "original_dl": 20000000, "new_dl": 26000000}
+{"experiment": "E7.3", "timestamp": "2026-04-13T09:00:55.935560+00:00", "type_p_found": true}
+{"experiment": "E7.4a", "timestamp": "2026-04-13T09:01:31.039167+00:00", "ambr_in_analytics": true}
+{"experiment": "E7.4b", "timestamp": "2026-04-13T09:01:31.202310+00:00", "delta": 2.8824769999999997, "causal": true}
+{"experiment": "E7.4c", "timestamp": "2026-04-13T09:02:22.236410+00:00", "diverge": 0.048047236484663476, "discriminating": true}
+{"experiment": "V7_ablations", "timestamp": "2026-04-13T09:04:04.321854+00:00", "A7.5_timing": [{"wait_s": 1, "actual_elapsed": 1.0249519348144531, "new_docs_in_dana": 0, "propagation_detected": false}, {"wait_s": 3, "actual_elapsed": 3.026029348373413, "new_docs_in_dana": 1, "propagation_detected": true}, {"wait_s": 5, "actual_elapsed": 5.025949001312256, "new_docs_in_dana": 2, "propagation_detected": true}, {"wait_s": 10, "actual_elapsed": 10.024555921554565, "new_docs_in_dana": 4, "propagation_detected": true}, {"wait_s": 30, "actual_elapsed": 30.027268171310425, "new_docs_in_dana": 12, "propagation_detected": true}], "circuit_latency_s": 3}
+{"experiment": "E4.4", "timestamp": "2026-04-13T09:33:26.889901+00:00", "p_value": 0.896551724137931, "success_rate": 0.05, "accepted": "False"}
+{"experiment": "E7.6", "timestamp": "2026-04-14T05:31:38.524821+00:00", "a72_contaminated": true, "a73_accepted": true}

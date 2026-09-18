@@ -1,0 +1,9 @@
+config_name,v4_v4_success,v7_contamination_present,chain_chain_possible,severity_proxy_inflation,benign_benign_accept_rate,benign_false_reject_rate,benign_type_t_available
+vulnerable,True,True,True,2.575,1.0,0.0,True
+per_call_gate,True,True,True,2.575,1.0,0.0,True
+tight_bound,True,True,True,2.575,1.0,0.0,True
+cooldown_only,True,True,True,2.575,1.0,0.0,True
+db_isolation,True,True,True,2.575,1.0,0.0,True
+semantic_filter,True,False,False,2.575,1.0,0.0,True
+accumulator_only,False,True,False,0.375,1.0,0.0,True
+full_pala,False,False,False,0.375,1.0,0.0,True

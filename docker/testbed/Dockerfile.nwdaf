@@ -1,0 +1,25 @@
+FROM python:3.12-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        iproute2 iperf3 iputils-ping curl sudo \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt \
+    && pip install --no-cache-dir "google-genai>=1.0" openai
+
+# Source is bind-mounted in dev; COPY for prod builds
+COPY . .
+
+ENV OLLAMA_BASE_URL=http://host.docker.internal:11434 \
+    OLLAMA_MODEL=qwen2.5:72b \
+    MONGO_URI=mongodb://mongo-testbed:27017 \
+    NWDAF_DB=nwdaf_analytics_docker \
+    WEBUI_URL=http://webui:9999 \
+    WEBUI_USER=admin \
+    WEBUI_PASSWORD=1423 \
+    PYTHONUNBUFFERED=1
+
+CMD ["python", "-m", "wave_experiments.run_wave1", "--help"]

@@ -1,0 +1,40 @@
+{
+  "experiment": "A.3",
+  "runs": [
+    {
+      "run": 1,
+      "R_base": 20.0,
+      "R_after": 71.0,
+      "lam_base": 0.086,
+      "lam_after": 53.823,
+      "R_up": true,
+      "lam_up": true,
+      "strict_def4": true,
+      "injected_delay_ms": 25
+    },
+    {
+      "run": 2,
+      "R_base": 20.0,
+      "R_after": 71.0,
+      "lam_base": 0.057,
+      "lam_after": 51.406,
+      "R_up": true,
+      "lam_up": true,
+      "strict_def4": true,
+      "injected_delay_ms": 25
+    },
+    {
+      "run": 3,
+      "R_base": 20.0,
+      "R_after": 71.0,
+      "lam_base": 0.066,
+      "lam_after": 53.583,
+      "R_up": true,
+      "lam_up": true,
+      "strict_def4": true,
+      "injected_delay_ms": 25
+    }
+  ],
+  "strict_count": 3,
+  "accepted": true
+}

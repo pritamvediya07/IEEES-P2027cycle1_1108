@@ -1,0 +1,2346 @@
+{
+  "experiment": "E4",
+  "model": "none \u2014 deterministic script in every arm",
+  "n_sessions_per_arm": 20,
+  "baseline_mbps": 20,
+  "escalation_step": 1.5,
+  "max_steps": 12,
+  "decision_rule": "continue while the analytics confirm the last write",
+  "started_at": "2026-08-23T05:58:53.696795+00:00",
+  "arms": {
+    "open_loop": {
+      "isolated_collector": false,
+      "acts_on_readback": false,
+      "mean_steps": 1.0,
+      "mean_final_ambr_mbps": 30.0,
+      "mean_escalation_factor": 1.5,
+      "sessions_hitting_ceiling": 0,
+      "n": 20,
+      "sessions": [
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 25.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 39.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "open_loop",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "open_loop_single_write",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            }
+          ]
+        }
+      ],
+      "overshoot_rate": 0.0,
+      "stop_reasons": {
+        "open_loop_single_write": 20
+      }
+    },
+    "closed_loop": {
+      "isolated_collector": false,
+      "acts_on_readback": true,
+      "mean_steps": 10.0,
+      "mean_final_ambr_mbps": 1000.0,
+      "mean_escalation_factor": 50.0,
+      "sessions_hitting_ceiling": 20,
+      "n": 20,
+      "sessions": [
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop",
+          "steps": 10,
+          "final_ambr_mbps": 1000,
+          "escalation_factor": 50.0,
+          "hit_ceiling": true,
+          "stopped_by": "tool_max_ambr",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 30.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 2,
+              "wrote_mbps": 45.0,
+              "accepted": true,
+              "readback": 45.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 3,
+              "wrote_mbps": 67.5,
+              "accepted": true,
+              "readback": 67.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 4,
+              "wrote_mbps": 101.25,
+              "accepted": true,
+              "readback": 101.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 5,
+              "wrote_mbps": 151.88,
+              "accepted": true,
+              "readback": 151.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 6,
+              "wrote_mbps": 227.81,
+              "accepted": true,
+              "readback": 227.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 7,
+              "wrote_mbps": 341.72,
+              "accepted": true,
+              "readback": 341.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 8,
+              "wrote_mbps": 512.58,
+              "accepted": true,
+              "readback": 512.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 9,
+              "wrote_mbps": 768.87,
+              "accepted": true,
+              "readback": 768.0,
+              "analytics_confirmed": true
+            },
+            {
+              "step": 10,
+              "wrote_mbps": 1000,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": true
+            }
+          ]
+        }
+      ],
+      "overshoot_rate": 1.0,
+      "stop_reasons": {
+        "tool_max_ambr": 20
+      }
+    },
+    "closed_loop_iso": {
+      "isolated_collector": true,
+      "acts_on_readback": true,
+      "mean_steps": 1.0,
+      "mean_final_ambr_mbps": 30.0,
+      "mean_escalation_factor": 1.5,
+      "sessions_hitting_ceiling": 0,
+      "n": 20,
+      "sessions": [
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        },
+        {
+          "arm": "closed_loop_iso",
+          "steps": 1,
+          "final_ambr_mbps": 30.0,
+          "escalation_factor": 1.5,
+          "hit_ceiling": false,
+          "stopped_by": "analytics_did_not_confirm",
+          "trace": [
+            {
+              "step": 1,
+              "wrote_mbps": 30.0,
+              "accepted": true,
+              "readback": 1000.0,
+              "analytics_confirmed": false
+            }
+          ]
+        }
+      ],
+      "overshoot_rate": 0.0,
+      "stop_reasons": {
+        "analytics_did_not_confirm": 20
+      }
+    }
+  },
+  "verdict": {
+    "closed_loop_overshoot_rate": 1.0,
+    "closed_loop_iso_overshoot_rate": 0.0,
+    "same_script_same_rule": true,
+    "only_difference": "collector provenance",
+    "conclusion": "The identical controller escalates to 1000 Mbps (50x baseline) under the standard collector and to 30 Mbps (2x) under IsolatedCollector. Because the script, the rule and the corpus are identical and only the collector's provenance differs, the escalation is attributable to the CHANNEL and not to the rule. This converts the original two-arm tautology (the rule never terminates) into a controlled comparison.",
+    "answers_C4": "Question: does 'closed-loop overshoots 10/10' say anything beyond 'the rule never terminates'? The ISO arm is the control that settles it."
+  },
+  "finished_at": "2026-08-23T06:00:57.643485+00:00"
+}

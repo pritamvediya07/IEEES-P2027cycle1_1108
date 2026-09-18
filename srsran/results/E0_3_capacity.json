@@ -1,0 +1,96 @@
+{
+  "experiment": "E0.3",
+  "n_ue": 4,
+  "C_mbps": 23.38,
+  "fair_share_mbps": 5.84,
+  "window_s": 60,
+  "record": {
+    "k": 0,
+    "ts": "2026-08-22T20:17:08.785537+00:00",
+    "tau_mbps": 23.377,
+    "tau_source": "measured",
+    "lambda_ms": 2001.389,
+    "lambda_p95_ms": 2126.851,
+    "lambda_source": "measured",
+    "rho_pct": 0.0,
+    "rho_source": "measured",
+    "sigma": 4,
+    "sigma_source": "measured",
+    "per_ue_tau": {
+      "ue1": 5.987,
+      "ue2": 5.694,
+      "ue3": 6.04,
+      "ue4": 5.657
+    },
+    "raw": {
+      "tau": {
+        "ue1": {
+          "bytes": 44957696,
+          "seconds": 60.073714,
+          "tun_delta_rx": 50156702,
+          "tun_delta_tx": 1142863
+        },
+        "ue2": {
+          "bytes": 42729472,
+          "seconds": 60.038989,
+          "tun_delta_rx": 46852189,
+          "tun_delta_tx": 1081589
+        },
+        "ue3": {
+          "bytes": 45350912,
+          "seconds": 60.067148,
+          "tun_delta_rx": 49391319,
+          "tun_delta_tx": 1117553
+        },
+        "ue4": {
+          "bytes": 42467328,
+          "seconds": 60.057402,
+          "tun_delta_rx": 46532058,
+          "tun_delta_tx": 1078789
+        }
+      },
+      "lambda": {
+        "ue1": {
+          "avg_under_load": 1896.092,
+          "max_under_load": 3961.058
+        },
+        "ue2": {
+          "avg_under_load": 2126.851,
+          "max_under_load": 4126.723
+        },
+        "ue3": {
+          "avg_under_load": 1836.098,
+          "max_under_load": 3870.159
+        },
+        "ue4": {
+          "avg_under_load": 2146.513,
+          "max_under_load": 4234.579
+        }
+      },
+      "rho": {
+        "ue1": {
+          "lost": 0,
+          "total": 9505,
+          "pct": 0
+        },
+        "ue2": {
+          "lost": 0,
+          "total": 9554,
+          "pct": 0
+        },
+        "ue3": {
+          "lost": 0,
+          "total": 9509,
+          "pct": 0
+        },
+        "ue4": {
+          "lost": 0,
+          "total": 9511,
+          "pct": 0
+        }
+      }
+    },
+    "complete": true
+  },
+  "saved_at": "2026-08-22T20:17:08.785639+00:00"
+}

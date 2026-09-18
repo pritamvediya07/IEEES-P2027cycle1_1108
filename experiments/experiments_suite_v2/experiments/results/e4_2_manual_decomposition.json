@@ -1,0 +1,41 @@
+{
+  "experiment": "E4.2",
+  "beta": 0.5,
+  "delta_total": 1.5,
+  "k": 4,
+  "delta_per_step": 0.375,
+  "steps": [
+    {
+      "step": 1,
+      "delta_i": 0.375,
+      "cumulative_delta": 0.375,
+      "feasibility_pass": true,
+      "ambr_after": 27000000
+    },
+    {
+      "step": 2,
+      "delta_i": 0.375,
+      "cumulative_delta": 0.75,
+      "feasibility_pass": true,
+      "ambr_after": 37000000
+    },
+    {
+      "step": 3,
+      "delta_i": 0.375,
+      "cumulative_delta": 1.125,
+      "feasibility_pass": true,
+      "ambr_after": 50000000
+    },
+    {
+      "step": 4,
+      "delta_i": 0.375,
+      "cumulative_delta": 1.5,
+      "feasibility_pass": true,
+      "ambr_after": 68000000
+    }
+  ],
+  "original_ambr_dl": 20000000,
+  "final_ambr_dl": 68000000,
+  "ambr_ratio": 3.4,
+  "decomposition_successful": true
+}

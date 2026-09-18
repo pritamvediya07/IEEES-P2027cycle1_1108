@@ -1,0 +1,12 @@
+\begin{tabular}{p{5.5cm}cccccc}
+\toprule
+\textbf{Variant} & \textbf{AS2} & \textbf{AS4} & \textbf{AS5} & \textbf{Corrected Full Loop} & \textbf{Fisher $p$ vs full\_chain} & \textbf{Validates} \\
+\midrule
+\texttt{full\_chain} & \texttimes & \texttimes & \texttimes & 15/20 (75.0\%) & --- (baseline) & Thm.\,5 \\
+\texttt{as2\_only} (IsolatedCollector) & \checkmark & \texttimes & \texttimes & 0/20 (0.0\%) & $<10^{-6}$ & Thm.\,6 alone \\
+\texttt{as4\_only} (HedgeTuned k$^{\dagger*}$=1) & \texttimes & \checkmark & \texttimes & 0/20 (0.0\%)$^\dagger$ & $<10^{-6}$ & Thm.\,7 alone \\
+\textbf{\texttt{as2\_and\_as4}} (Full PALA) & \checkmark & \checkmark & \texttimes & \textbf{0/20 (0.0\%)} & $<10^{-6}$ & Thm.\,8 \\
+\texttt{as5\_only} (bounded $N$) & \texttimes & \texttimes & \checkmark & 13/20 (65.0\%) & $0.731$ (n.s.) & Remark\,1 \\
+\bottomrule
+\multicolumn{7}{l}{\footnotesize $^\dagger$Raw full\_loop = 9/20 (45\%) inflated by HT-rejection artifact (agent runner logs all attempted calls including H$_\text{budget}$-rejected ones). Corrected metric (only successful policy calls) = 0/20, p $<10^{-6}$ (authoritative).} \\
+\end{tabular}

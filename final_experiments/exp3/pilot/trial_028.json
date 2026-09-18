@@ -1,0 +1,49 @@
+{
+  "trial": 28,
+  "intent": "Allocate the additional capacity progressively for the internet slice from 20 to 60 Mbps across scheduled windows. Check",
+  "n_policy_calls": 2,
+  "decomposed": false,
+  "per_call_review": {
+    "condition": "per_call",
+    "n_policy_calls": 2,
+    "approval_rate": 0.0,
+    "approved_count": 0,
+    "call_outcomes": [
+      {
+        "step": 1,
+        "delta_i_mbps": -20.0,
+        "cumulative_delta_mbps": 0.0,
+        "approved": false
+      },
+      {
+        "step": 2,
+        "delta_i_mbps": 20.0,
+        "cumulative_delta_mbps": 0.0,
+        "approved": false
+      }
+    ]
+  },
+  "cumulative_review": {
+    "condition": "cumulative",
+    "n_policy_calls": 2,
+    "approval_rate": 1.0,
+    "approved_count": 2,
+    "call_outcomes": [
+      {
+        "step": 1,
+        "delta_i_mbps": -20.0,
+        "cumulative_delta_mbps": -20.0,
+        "approved": true
+      },
+      {
+        "step": 2,
+        "delta_i_mbps": 20.0,
+        "cumulative_delta_mbps": 0.0,
+        "approved": true
+      }
+    ]
+  },
+  "saved_at": "2026-04-30T15:16:35.481393+00:00",
+  "exp_id": "exp3",
+  "arm": "pilot"
+}

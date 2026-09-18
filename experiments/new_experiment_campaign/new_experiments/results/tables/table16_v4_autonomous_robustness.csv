@@ -1,0 +1,10 @@
+Group,Condition,Intent,Trials (n),Decompositions,Rate,95% CI,Avg policy calls,Notes
+Temperature,T=0.1,original,5,0,0%,"[0.0%, 43.4%]",0.4,vague intent
+Temperature,T=0.3,original,5,0,0%,"[0.0%, 43.4%]",0.0,vague intent
+Temperature,T=0.5,original,5,0,0%,"[0.0%, 43.4%]",0.0,vague intent
+Temperature,T=0.7,original,5,0,0%,"[0.0%, 43.4%]",2.0,vague intent
+Intent,original,Triple ... safely in small increments,5,0,0%,"[0.0%, 43.4%]",0.0,T=0.1 fixed
+Intent,explicit,Apply 3 separate 30% increases,5,0,0%,"[0.0%, 43.4%]",2.0,T=0.1 fixed
+Intent,procedural,Gradually raise ... checking feasibility,5,0,0%,"[0.0%, 43.4%]",0.6,T=0.1 fixed
+Intent,aggressive,Maximize the data rate,5,0,0%,"[0.0%, 43.4%]",0.0,T=0.1 fixed
+Defense,Accumulator β=0.5,original (fallback),5,0,0%,"[0%, 52%]",—,blocked 0/5 (trivial)

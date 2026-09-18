@@ -1,0 +1,75 @@
+{
+  "experiment": "E12b",
+  "tau_norm_mbps": 20.0,
+  "endpoints": {
+    "tau_first": 5.434,
+    "tau_last": 5.473,
+    "lambda_first": 77.743,
+    "lambda_last": 151.53
+  },
+  "rows": [
+    {
+      "lambda_norm_ms": 100.0,
+      "Q_first": 0.2471,
+      "Q_last": 0.1368,
+      "dQ": -0.1103,
+      "drop_pct": 44.6,
+      "lambda_term_floored_at_last_point": true
+    },
+    {
+      "lambda_norm_ms": 150.0,
+      "Q_first": 0.3767,
+      "Q_last": 0.1368,
+      "dQ": -0.2399,
+      "drop_pct": 63.7,
+      "lambda_term_floored_at_last_point": true
+    },
+    {
+      "lambda_norm_ms": 200.0,
+      "Q_first": 0.4415,
+      "Q_last": 0.258,
+      "dQ": -0.1835,
+      "drop_pct": 41.6,
+      "lambda_term_floored_at_last_point": false
+    },
+    {
+      "lambda_norm_ms": 300.0,
+      "Q_first": 0.5063,
+      "Q_last": 0.3843,
+      "dQ": -0.122,
+      "drop_pct": 24.1,
+      "lambda_term_floored_at_last_point": false
+    },
+    {
+      "lambda_norm_ms": 500.0,
+      "Q_first": 0.5581,
+      "Q_last": 0.4853,
+      "dQ": -0.0728,
+      "drop_pct": 13.0,
+      "lambda_term_floored_at_last_point": false
+    },
+    {
+      "lambda_norm_ms": 1000.0,
+      "Q_first": 0.597,
+      "Q_last": 0.5611,
+      "dQ": -0.0359,
+      "drop_pct": 6.0,
+      "lambda_term_floored_at_last_point": false
+    }
+  ],
+  "verdict": {
+    "published_lambda_norm_ms": 200.0,
+    "published_drop_pct": 41.6,
+    "drop_pct_range_across_normalisers": [
+      6.0,
+      63.7
+    ],
+    "lambda_term_share_of_dQ_pct": 100.5,
+    "tau_term_contribution": 0.001,
+    "lambda_term_contribution": -0.1845,
+    "FINDING": "The headline drop in Q ranges from 6.0% to 63.7% depending purely on the choice of the lambda normalising constant, which no measurement fixes. At the published value of 200 ms the lambda term accounts for 100.5% of the change, and the tau term contributes essentially nothing because victim throughput is flat. The magnitude of the Q drop is therefore NOT a robust quantity and must not be quoted as if it were.",
+    "WHAT_SURVIVES": "The SIGN and the ATTRIBUTION survive at every normaliser: Q falls monotonically with the aggressor's ceiling under every choice tested, victim configuration and offered load never change, and the mechanism (shared queueing delay, not bandwidth theft) is directly measured. What does not survive is the specific percentage.",
+    "RECOMMENDED_WORDING": "Report the mechanism and the direction, with lambda in milliseconds as the primary evidence: victim latency rises from 78 ms to 152 ms (1.9x) while victim throughput is unchanged at ~5.5 Mbps. Those are measured quantities with units. Present Q as a derived index with its constants stated, and do not lead with a percentage drop in it."
+  },
+  "saved_at": "2026-08-23T06:05:41.204091+00:00"
+}

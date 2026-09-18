@@ -1,0 +1,27 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Step 1: base tools + MongoDB 7.0 repo (open5gs-pcrf depends on mongodb-org)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        software-properties-common gnupg curl ca-certificates \
+    && curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc \
+       | gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor \
+    && echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] \
+       https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" \
+       > /etc/apt/sources.list.d/mongodb-org-7.0.list
+
+# Step 2: Open5GS PPA + install (mongodb-org now resolvable)
+RUN add-apt-repository ppa:open5gs/latest \
+    && apt-get update && apt-get install -y --no-install-recommends \
+        open5gs \
+        iproute2 iptables iputils-ping \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN mkdir -p /var/log/open5gs /etc/open5gs/hnet
+
+# NF configs and hnet keys are bind-mounted at runtime by docker-compose
+# NF_NAME is set per-service (amf, smf, upf, nrf, scp, etc.)
+ENV NF_NAME=amf
+
+ENTRYPOINT ["sh", "-c", "exec open5gs-${NF_NAME}d -c /etc/open5gs/${NF_NAME}.yaml"]

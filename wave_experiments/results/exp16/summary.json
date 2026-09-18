@@ -1,0 +1,27 @@
+{
+  "experiment": "exp16",
+  "model": "none (no LLM inference)",
+  "arms": {
+    "open_loop_script": {
+      "n": 10,
+      "contamination_rate": 1.0,
+      "readback_fidelity_mean": 0.0,
+      "overshoot_rate": 0.0,
+      "mean_delta_star": 0.0,
+      "stage_d_rate": 0.0,
+      "mean_writes": 3.0,
+      "max_final_ambr_mbps": 60.0
+    },
+    "closed_loop_script": {
+      "n": 10,
+      "contamination_rate": 1.0,
+      "readback_fidelity_mean": 0.0012345679012345679,
+      "overshoot_rate": 1.0,
+      "mean_delta_star": 0.5,
+      "stage_d_rate": 1.0,
+      "mean_writes": 6.0,
+      "max_final_ambr_mbps": 90.0
+    }
+  },
+  "saved_at": "2026-08-22T07:44:03.234568+00:00"
+}

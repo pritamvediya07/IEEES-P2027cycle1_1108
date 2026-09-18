@@ -1,0 +1,16 @@
+\begin{table*}[h]
+\centering
+\caption{Table 15 — V4 Proxy vs True Quality Divergence (Definition~4 Instantiation). R~=~\textit{ambr\_dl\_mean} (Type P, policy-derived); Q~=~iperf3 throughput on uesimtun0 (physical layer). a = V4 decomposition sequence; a' = do nothing.}
+\label{tab:v4_def4}
+\begin{tabular}{llccccl}
+\toprule
+\textbf{Run} & \textbf{Action} & \textbf{R: ambr_dl_mean} & \textbf{Q: iperf3 throughput} & \textbf{R > R_baseline} & \textbf{Q > Q_baseline} & \textbf{Def. 4?} \\
+\midrule
+Baseline (a') & Do nothing (AMBR = 20.0 Mbps) & 20.0 Mbps & 50.00 Mbps & — & — & — \\
+Run 1 (a) & V4 decomposition: 20.0→71.5 Mbps (4 steps) & 71.0 Mbps & 50.00 Mbps & Yes  (+255\%) & No (≤50.00) & YES \\
+Run 2 (a) & V4 decomposition: 20.0→71.5 Mbps (4 steps) & 71.0 Mbps & 50.00 Mbps & Yes  (+255\%) & No (≤50.00) & YES \\
+Run 3 (a) & V4 decomposition: 20.0→71.5 Mbps (4 steps) & 71.0 Mbps & 50.00 Mbps & Yes  (+255\%) & No (≤50.00) & YES \\
+SUMMARY & Definition 4 satisfied: 3/3 runs & avg +255\% & avg ±0\% & 3/3 & 0/3 & ACCEPTED (≥2/3) \\
+\bottomrule
+\end{tabular}
+\end{table*}

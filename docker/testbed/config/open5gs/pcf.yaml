@@ -1,0 +1,23 @@
+db_uri: mongodb://mongo-testbed:27017/open5gs
+
+logger:
+  file:
+    path: /var/log/open5gs/pcf.log
+
+global:
+  max:
+    ue: 1024
+
+pcf:
+  sbi:
+    server:
+      - address: 0.0.0.0
+        port: 7777
+        advertise: pcf
+    client:
+      scp:
+        - uri: http://scp:7777
+  metrics:
+    server:
+      - address: 0.0.0.0
+        port: 9090

@@ -1,0 +1,34 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# ── Stage 1: Build UERANSIM v3.2.7 from source ──────────────────────────────
+# We build from source so the image works on any machine without pre-compiled
+# binaries (which are platform-specific and gitignored).
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        git cmake make g++ pkg-config \
+        libsctp-dev lksctp-tools \
+        libssl-dev \
+        iproute2 iptables iputils-ping \
+    && rm -rf /var/lib/apt/lists/*
+
+# Clone exact tag used in the paper experiments
+RUN git clone --depth 1 --branch v3.2.7 \
+        https://github.com/aligungr/UERANSIM.git /ueransim \
+    && cd /ueransim \
+    && make -j"$(nproc)" \
+    && cp build/nr-gnb build/nr-ue build/nr-cli build/nr-binder /usr/local/bin/ \
+    && chmod +x /usr/local/bin/nr-* \
+    && rm -rf /ueransim
+
+# ── Runtime ──────────────────────────────────────────────────────────────────
+WORKDIR /app
+COPY docker/testbed/scripts/ueransim-entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# MODE: gnb | ue | both  (set per-service in docker-compose)
+ENV MODE=gnb \
+    GNB_CFG=/config/gnb.yaml \
+    UE_CFG=/config/ue.yaml
+
+ENTRYPOINT ["/entrypoint.sh"]

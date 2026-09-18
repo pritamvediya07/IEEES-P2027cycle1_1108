@@ -1,0 +1,84 @@
+{
+  "experiment": "E7.1",
+  "field_inventory": {
+    "upf_metrics": {
+      "timestamp": {
+        "provenance": "unknown",
+        "sample_value": "2026-04-13 09:00:22.495000"
+      },
+      "tun_interfaces": {
+        "provenance": "unknown",
+        "sample_value": "{'uesimtun0': {'rx_bytes': 0, 'rx_packets': 0, 'tx_bytes': 159696, 'tx_packets': 1153}, 'uesimtun1':"
+      },
+      "total_rx_bytes": {
+        "provenance": "T",
+        "sample_value": "0"
+      },
+      "total_tx_bytes": {
+        "provenance": "T",
+        "sample_value": "1538820"
+      },
+      "active_ue_count": {
+        "provenance": "T",
+        "sample_value": "10"
+      },
+      "db_session_count": {
+        "provenance": "T",
+        "sample_value": "10"
+      },
+      "memory_util_pct": {
+        "provenance": "T",
+        "sample_value": "4.8242"
+      },
+      "active_bearers": {
+        "provenance": "unknown",
+        "sample_value": "10"
+      }
+    },
+    "smf_metrics": {
+      "timestamp": {
+        "provenance": "unknown",
+        "sample_value": "2026-04-13 09:00:22.495000"
+      },
+      "session_count": {
+        "provenance": "T",
+        "sample_value": "10"
+      },
+      "sessions": {
+        "provenance": "unknown",
+        "sample_value": "[{'imsi': '999700000000001', 'dnn': 'internet', 'ambr_dl': 20, 'ambr_ul': 20, 'qos_index': 9}, {'ims"
+      },
+      "ambr_dl_mean": {
+        "provenance": "P",
+        "sample_value": "20.0"
+      }
+    },
+    "pcf_metrics": {
+      "timestamp": {
+        "provenance": "unknown",
+        "sample_value": "2026-04-13 09:00:22.495000"
+      },
+      "policy_count": {
+        "provenance": "P",
+        "sample_value": "0"
+      },
+      "policies": {
+        "provenance": "P",
+        "sample_value": "[]"
+      }
+    }
+  },
+  "policy_snapshot": {
+    "policies": [],
+    "timestamp": "2026-04-13T09:00:24.208860+00:00"
+  },
+  "analytics_snapshot_timestamp": "2026-04-13T09:00:24.210598+00:00",
+  "kpi_baseline": {
+    "mean": 4.79615
+  },
+  "iperf3_baseline": {
+    "mean_mbps": null,
+    "cv": null,
+    "runs": []
+  }
+}

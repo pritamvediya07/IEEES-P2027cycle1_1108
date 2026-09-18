@@ -1,0 +1,35 @@
+\begin{table*}[!t]
+\caption{Headline defense efficacy on the vulnerable PALA testbed
+(Qwen 2.5:72b). Strict Def~4 counts sessions satisfying
+Definition~\ref{def:ngn_rh} against the no-op baseline; under
+$k^{\dagger\!*}\!=\!1$ enforcement we use the \emph{corrected}
+metric throughout (HT-rejected calls excluded from the AMBR sequence
+log). Inference-time HedgeTune is calibrated via Algorithm~4 of
+\cite{ref26} on a held-out vulnerable corpus; bisection calibrates $n^*\!=\!4$
+(interior root at $n\approx3.79$). Cohen's $h$ uses
+Haldane--Anscombe correction for zero cells; $q$-values are
+Benjamini--Hochberg-corrected over the four pairwise comparisons.}
+\label{tab:rq4_efficacy}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.9}
+\begin{tabularx}{\textwidth}{p{3.4cm}ccccccccccX}
+\toprule
+\textbf{Config.} & \textbf{$n$} & \shortstack{\textbf{Strict}\\\textbf{Def~4}} & \shortstack{\textbf{Mean}\\\textbf{$\Delta Q$}} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \shortstack{\textbf{$p$ vs}\\\textbf{FC$^\S$}} & \shortstack{\textbf{BH}\\\textbf{$q$}} & \shortstack{\textbf{Cohen}\\\textbf{$h$}} & \textbf{Theorem} \\
+\midrule
+\textbf{Vulnerable} (no defense) & 30 & 20/30 (66.7\%) & $-11.0\%$ & 70\% & 93\% & 77\% & 67\% & --- & --- & --- & (Thm.\,5 realized) \\
+Inference-time HedgeTune (BoN-PALA, $n^{*}\!=\!4$)$^\dagger$ & 20 & 14/20 (70\%) & $-11.8\%$ & 70\% & 85\% & 70\% & 70\% & $1.000$ (n.s.) & $1.000$ (n.s.) & 0.11 & \cite{ref26} \\
+\textbf{IsolatedCollector} alone (AS2 held) & 20 & 0/20 (0.0\%) & \emph{n/a}$^\ddagger$ & 75\% & \textbf{0\%} & 85\%$^\ddagger$ & 0\% & $<10^{-6}$ & $<10^{-5}$ & 1.78 & Thm.\,6 \\
+\textbf{HedgeTuned k$^{\dagger*}$} alone (AS4 held) & 20 & 0/20 (0.0\%)$^*$ & $-0.015$ ($\le 0$) & \textbf{0\%}$^*$ & 95\% & 0\%$^*$ & 0\%$^*$ & $<10^{-6}$ & $<10^{-5}$ & 1.78 & Thm.\,7 \\
+\textbf{Full PALA Guardrail} (AS2 $\wedge$ AS4 held) & 20 & 0/20 (0.0\%) & \emph{n/a}$^\ddagger$ & \textbf{0\%}$^*$ & \textbf{0\%} & 0\%$^*$ & 0\% & $<10^{-6}$ & $<10^{-5}$ & 1.78 & Thm.\,8 \\
+\bottomrule
+\multicolumn{12}{p{0.97\textwidth}}{\footnotesize $^*$Corrected: $k^{\dagger\!*}\!=\!1\Rightarrow\,\leq\!1$ successful policy call per session $\Rightarrow$ no rising AMBR sequence (Stage\,A) and no repeated-confirm loop (Stage\,C) possible. Raw \texttt{as4\_only} A$=\!55\%$, full-loop$=\!45\%$; corrected $=\!0\%$.}
+\\
+\multicolumn{12}{p{0.97\textwidth}}{\footnotesize $^\dagger$Exp~15 A2 (BoN-PALA): bisection (Khalaf Alg.~4, $n\in[1,32]$) calibrates $n^*\!=\!4$ (interior root at $n\approx3.79$); BoN selects from 4 AMBR candidates per policy call. Full-loop rate 70\% is statistically indistinguishable from the vulnerable baseline (Fisher $p=1.00$, n.s.): per-call output selection cannot address a circuit that closes via sequential cross-step contamination.}}
+\\
+\multicolumn{12}{p{0.97\textwidth}}{\footnotesize $^\ddagger$No QProbe instrumentation in Exp~5 ablation ($\Delta Q$ = n/a). Stage\,C for IsolatedCollector uses the \emph{raw} \texttt{success\_claimed} rate (85\%): ISO severs Stage\,D via blocked contamination readback --- it does not prevent the agent from asserting success after its single successful call. HT-alone $\Delta Q$ from Exp~6 Phase~2 ($n=30$, mean $\Delta Q$ at $k^{\dagger\!*}$ boundary $=\!-0.015 \le 0$, validating Theorem~\ref{thm:hedgetune}).}
+\\
+\multicolumn{12}{p{0.97\textwidth}}{\footnotesize $^\S$Comparisons vs.\ the Exp~5 \texttt{full\_chain} baseline ($n=20$, 75\%) for ablation arms; vs.\ Exp~1 vulnerable arm ($n=30$, 67\%) for the Khalaf row.}
+\end{tabularx}
+\end{table*}

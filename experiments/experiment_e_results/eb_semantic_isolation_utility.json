@@ -1,0 +1,129 @@
+{
+  "experiment": "E-B",
+  "metrics": [
+    {
+      "config": "baseline",
+      "metric": "memory_utilization",
+      "type": "T",
+      "needed_benign": true,
+      "available": true,
+      "count": 16,
+      "mean": 4.799369,
+      "latency_ms": 328.65238189697266
+    },
+    {
+      "config": "baseline",
+      "metric": "active_ue_count",
+      "type": "T",
+      "needed_benign": true,
+      "available": true,
+      "count": 16,
+      "mean": 10.0,
+      "latency_ms": 23.684978485107422
+    },
+    {
+      "config": "baseline",
+      "metric": "total_rx_bytes",
+      "type": "T",
+      "needed_benign": true,
+      "available": true,
+      "count": 16,
+      "mean": 0.0,
+      "latency_ms": 19.695520401000977
+    },
+    {
+      "config": "baseline",
+      "metric": "total_tx_bytes",
+      "type": "T",
+      "needed_benign": true,
+      "available": true,
+      "count": 16,
+      "mean": 50332.0,
+      "latency_ms": 19.64259147644043
+    },
+    {
+      "config": "baseline",
+      "metric": "session_count",
+      "type": "T",
+      "needed_benign": true,
+      "available": true,
+      "count": 16,
+      "mean": 10.0,
+      "latency_ms": 2.161741256713867
+    },
+    {
+      "config": "baseline",
+      "metric": "ambr_dl_mean",
+      "type": "P",
+      "needed_benign": false,
+      "available": true,
+      "count": 16,
+      "mean": 20.0,
+      "latency_ms": 1.6689300537109375
+    },
+    {
+      "config": "isolated",
+      "metric": "memory_utilization",
+      "type": "T",
+      "needed_benign": true,
+      "available": true,
+      "count": 19,
+      "mean": 4.808774,
+      "latency_ms": 3.221750259399414
+    },
+    {
+      "config": "isolated",
+      "metric": "active_ue_count",
+      "type": "T",
+      "needed_benign": true,
+      "available": true,
+      "count": 19,
+      "mean": 10.0,
+      "latency_ms": 1.9843578338623047
+    },
+    {
+      "config": "isolated",
+      "metric": "total_rx_bytes",
+      "type": "T",
+      "needed_benign": true,
+      "available": true,
+      "count": 19,
+      "mean": 0.0,
+      "latency_ms": 1.9359588623046875
+    },
+    {
+      "config": "isolated",
+      "metric": "total_tx_bytes",
+      "type": "T",
+      "needed_benign": true,
+      "available": true,
+      "count": 19,
+      "mean": 50332.0,
+      "latency_ms": 1.5697479248046875
+    },
+    {
+      "config": "isolated",
+      "metric": "session_count",
+      "type": "T",
+      "needed_benign": true,
+      "available": true,
+      "count": 19,
+      "mean": 10.0,
+      "latency_ms": 1.8045902252197266
+    },
+    {
+      "config": "isolated",
+      "metric": "ambr_dl_mean",
+      "type": "P",
+      "needed_benign": false,
+      "available": false,
+      "count": 0,
+      "mean": null,
+      "latency_ms": 1.3532638549804688
+    }
+  ],
+  "type_t_preserved": true,
+  "type_p_removed": true,
+  "baseline_latency_median_ms": 19.669055938720703,
+  "isolated_latency_median_ms": 1.870274543762207
+}

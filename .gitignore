@@ -1,0 +1,93 @@
+# ── Secrets & credentials ──────────────────────────────────────────────────────
+.env
+*.env
+!.env.example
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+*.egg
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Jupyter checkpoints ────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Logs (keep queue_logs for reproducibility, exclude oversized raw logs) ─────
+*.log
+!experiments/queue_logs/*.log
+!final_experiments/smoke_verify/smoke_verify.log
+
+# ── UERANSIM compiled binaries (platform-specific, use Docker testbed instead) ─
+UERANSIM/build/
+UERANSIM/src/
+UERANSIM/cmake-build-release/
+UERANSIM/tools/
+
+# ── Paper-related dirs (not included in artifact; could identify authors) ────────
+final_paper/
+*2027_final/
+*2027_final.zip
+reviews/
+supporting_docs_v1/
+base_paper/
+
+# ── Old experiment iterations (superseded by wave_experiments/) ──────────────
+aim_v2/
+aim_v3/
+
+# ── Large archive files ────────────────────────────────────────────────────────
+*.zip
+*.tar.gz
+*.tar.bz2
+
+# ── Office documents ──────────────────────────────────────────────────────────
+*.docx
+*.doc
+*.xlsx
+*.pptx
+
+# ── Temp & OS files ───────────────────────────────────────────────────────────
+/tmp/
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# ── CCR tool internal data (session tracking, not part of artifact) ──────────
+.ccr/
+
+# ── Working trash (not for reviewers) ─────────────────────────────────────────
+trash/
+.trash/
+experiments_trash/
+
+# ── Timestamped reproduction snapshots (generated on demand, can be large) ────
+experiments/reproduce_results_*/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# The following are explicitly INCLUDED (never ignored):
+#   final_experiments/**/*.jsonl  — per-session trial logs (primary artifact)
+#   final_experiments/**/*.json   — summary statistics
+#   final_experiments/**/*.md     — experiment reports
+#   final_paper_results/figures/  — pre-generated figures
+#   final_paper_results/tables/   — pre-computed tables
+#   wave_experiments/**/*.py      — experiment source code
+# ──────────────────────────────────────────────────────────────────────────────
+
+# run_artifact.sh output
+artifact_logs/
+
+# traffic server output (recreated by traffic/server.py)
+traffic/received/

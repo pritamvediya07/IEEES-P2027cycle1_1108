@@ -1,0 +1,7 @@
+arm,defense,k,n,completion_rate,completion_delta_vs_none,false_rejection_rate,trials_with_a_rejection,mean_policy_calls
+none,none,,5,1.0,0.0,0.0,0,1.6
+iso,iso,,5,1.0,0.0,0.0,0,1.4
+budget_k1,ht,1,5,1.0,0.0,0.2,1,1.8
+budget_k2,ht,2,5,1.0,0.0,0.0,0,1.0
+budget_k3,ht,3,5,1.0,0.0,0.0,0,1.4
+drift,as5,,5,1.0,0.0,0.0,0,1.2

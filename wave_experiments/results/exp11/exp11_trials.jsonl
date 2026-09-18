@@ -1,0 +1,12 @@
+{"weights": [0.25, 0.25, 0.25, 0.25], "n_trials": 28, "mean_q_final": 0.6157, "def4_rate": 0.5714, "corr_with_equal": 1.0, "saved_at": "2026-04-30T22:05:47.473959+00:00", "exp_id": "exp11", "arm": "equal"}
+{"weights": [0.5, 0.17, 0.17, 0.16], "n_trials": 28, "mean_q_final": 0.4828, "def4_rate": 0.75, "corr_with_equal": 0.9198, "saved_at": "2026-04-30T22:05:47.483809+00:00", "exp_id": "exp11", "arm": "tput_heavy"}
+{"weights": [0.17, 0.5, 0.17, 0.16], "n_trials": 28, "mean_q_final": 0.4973, "def4_rate": 0.5357, "corr_with_equal": 0.9602, "saved_at": "2026-04-30T22:05:47.484590+00:00", "exp_id": "exp11", "arm": "latency_heavy"}
+{"weights": [0.17, 0.17, 0.5, 0.16], "n_trials": 28, "mean_q_final": 0.7288, "def4_rate": 0.5714, "corr_with_equal": 1.0, "saved_at": "2026-04-30T22:05:47.485247+00:00", "exp_id": "exp11", "arm": "loss_heavy"}
+{"weights": [0.17, 0.17, 0.16, 0.5], "n_trials": 28, "mean_q_final": 0.739, "def4_rate": 0.5714, "corr_with_equal": 1.0, "saved_at": "2026-04-30T22:05:47.485851+00:00", "exp_id": "exp11", "arm": "stable_heavy"}
+{"weights": [0.33, 0.33, 0.34, 0.0], "n_trials": 28, "mean_q_final": 0.4925, "def4_rate": 0.5714, "corr_with_equal": 1.0, "saved_at": "2026-04-30T22:05:47.486460+00:00", "exp_id": "exp11", "arm": "no_stability"}
+{"weights": [0.25, 0.25, 0.25, 0.25], "n_trials": 28, "mean_q_final": 0.6157, "def4_rate": 0.5714, "corr_with_equal": 1.0, "saved_at": "2026-05-01T04:38:08.636601+00:00", "exp_id": "exp11", "arm": "equal"}
+{"weights": [0.5, 0.17, 0.17, 0.16], "n_trials": 28, "mean_q_final": 0.4828, "def4_rate": 0.75, "corr_with_equal": 0.9198, "saved_at": "2026-05-01T04:38:08.638026+00:00", "exp_id": "exp11", "arm": "tput_heavy"}
+{"weights": [0.17, 0.5, 0.17, 0.16], "n_trials": 28, "mean_q_final": 0.4973, "def4_rate": 0.5357, "corr_with_equal": 0.9602, "saved_at": "2026-05-01T04:38:08.638880+00:00", "exp_id": "exp11", "arm": "latency_heavy"}
+{"weights": [0.17, 0.17, 0.5, 0.16], "n_trials": 28, "mean_q_final": 0.7288, "def4_rate": 0.5714, "corr_with_equal": 1.0, "saved_at": "2026-05-01T04:38:08.639639+00:00", "exp_id": "exp11", "arm": "loss_heavy"}
+{"weights": [0.17, 0.17, 0.16, 0.5], "n_trials": 28, "mean_q_final": 0.739, "def4_rate": 0.5714, "corr_with_equal": 1.0, "saved_at": "2026-05-01T04:38:08.640395+00:00", "exp_id": "exp11", "arm": "stable_heavy"}
+{"weights": [0.33, 0.33, 0.34, 0.0], "n_trials": 28, "mean_q_final": 0.4925, "def4_rate": 0.5714, "corr_with_equal": 1.0, "saved_at": "2026-05-01T04:38:08.641124+00:00", "exp_id": "exp11", "arm": "no_stability"}

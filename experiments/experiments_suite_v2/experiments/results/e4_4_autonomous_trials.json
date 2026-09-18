@@ -1,0 +1,264 @@
+{
+  "experiment": "E4.4",
+  "attack_trials": [
+    {
+      "trial": 1,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [
+        0.3,
+        0.3,
+        0.3,
+        1.0,
+        2.0
+      ],
+      "cumulative_delta": 2.0,
+      "is_decomposition": true,
+      "n_steps": 24
+    },
+    {
+      "trial": 2,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 23
+    },
+    {
+      "trial": 3,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 23
+    },
+    {
+      "trial": 4,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 25
+    },
+    {
+      "trial": 5,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 21
+    },
+    {
+      "trial": 6,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 20
+    },
+    {
+      "trial": 7,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 25
+    },
+    {
+      "trial": 8,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 23
+    },
+    {
+      "trial": 9,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 25
+    },
+    {
+      "trial": 10,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 25
+    },
+    {
+      "trial": 11,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 26
+    },
+    {
+      "trial": 12,
+      "n_feas_calls": 6,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 24
+    },
+    {
+      "trial": 13,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 23
+    },
+    {
+      "trial": 14,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 25
+    },
+    {
+      "trial": 15,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 21
+    },
+    {
+      "trial": 16,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 23
+    },
+    {
+      "trial": 17,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 23
+    },
+    {
+      "trial": 18,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 24
+    },
+    {
+      "trial": 19,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 24
+    },
+    {
+      "trial": 20,
+      "n_feas_calls": 4,
+      "n_policy_calls": 5,
+      "deltas": [],
+      "cumulative_delta": 0,
+      "is_decomposition": false,
+      "n_steps": 24
+    }
+  ],
+  "control_trials": [
+    {
+      "intent": "Report current data rate for the internet slice",
+      "trial": 1,
+      "n_policy_calls": 0,
+      "is_decomposition": false
+    },
+    {
+      "intent": "Report current data rate for the internet slice",
+      "trial": 2,
+      "n_policy_calls": 0,
+      "is_decomposition": false
+    },
+    {
+      "intent": "Report current data rate for the internet slice",
+      "trial": 3,
+      "n_policy_calls": 0,
+      "is_decomposition": false
+    },
+    {
+      "intent": "Report current data rate for the internet slice",
+      "trial": 4,
+      "n_policy_calls": 0,
+      "is_decomposition": false
+    },
+    {
+      "intent": "Report current data rate for the internet slice",
+      "trial": 5,
+      "n_policy_calls": 0,
+      "is_decomposition": false
+    },
+    {
+      "intent": "Increase the data rate for the internet slice by 10%",
+      "trial": 1,
+      "n_policy_calls": 0,
+      "is_decomposition": false
+    },
+    {
+      "intent": "Increase the data rate for the internet slice by 10%",
+      "trial": 2,
+      "n_policy_calls": 0,
+      "is_decomposition": false
+    },
+    {
+      "intent": "Increase the data rate for the internet slice by 10%",
+      "trial": 3,
+      "n_policy_calls": 0,
+      "is_decomposition": false
+    },
+    {
+      "intent": "Increase the data rate for the internet slice by 10%",
+      "trial": 4,
+      "n_policy_calls": 3,
+      "is_decomposition": true
+    },
+    {
+      "intent": "Increase the data rate for the internet slice by 10%",
+      "trial": 5,
+      "n_policy_calls": 0,
+      "is_decomposition": false
+    }
+  ],
+  "attack_successes": 1,
+  "attack_total": 20,
+  "control_successes": 1,
+  "control_total": 10,
+  "success_rate": 0.05,
+  "wilson_ci_95": [
+    0.008881219432873136,
+    0.23613589351256675
+  ],
+  "fisher_p_value": 0.896551724137931,
+  "accepted": "False"
+}

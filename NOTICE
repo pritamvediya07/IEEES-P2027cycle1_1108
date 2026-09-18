@@ -1,0 +1,30 @@
+Third-party material in this artifact
+=====================================
+
+The PALA implementation, experiment harness, analysis scripts and stored results are
+released under the MIT License (see LICENSE). The following files come from, or are
+adapted from, third-party projects and remain under those projects' licenses:
+
+UERANSIM/                         UERANSIM v3.2.7 (build files, sample configs, README,
+                                  logo). GNU AGPL-3.0; see UERANSIM/LICENSE.
+                                  The source tree is not included; the Docker testbed
+                                  builds UERANSIM v3.2.7 from upstream.
+                                  https://github.com/aligungr/UERANSIM
+
+docker/testbed/config/open5gs/    Open5GS network-function configuration, adapted from the
+                                  Open5GS sample configs. GNU AGPL-3.0.
+                                  https://github.com/open5gs/open5gs
+
+docker/testbed/config/ueransim/   UERANSIM gNB/UE configuration, adapted from UERANSIM
+                                  sample configs. GNU AGPL-3.0.
+
+srsran/configs/gnb_*.yml          srsRAN Project gNB configuration, adapted from srsRAN
+                                  Project examples. GNU AGPL-3.0.
+                                  https://github.com/srsran/srsRAN_Project
+
+srsran/configs/ue*.conf           srsRAN 4G srsUE configuration, adapted from srsRAN 4G
+                                  examples. GNU AGPL-3.0.
+                                  https://github.com/srsran/srsRAN_4G
+
+No Open5GS, srsRAN or UERANSIM source code or binaries are distributed here; they are
+built from upstream as described in INSTALL.md and srsran/README.md.

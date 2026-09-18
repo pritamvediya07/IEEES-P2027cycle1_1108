@@ -1,0 +1,66 @@
+{
+  "experiment": "E0.1 \u2014 analysis addendum",
+  "gate_result": "FAILED for native Open5GS; PASSED for the declared HTB stand-in",
+  "C_measured_mbps": 54.28,
+  "C_n_measurements": 8,
+  "C_stdev_mbps": 0.253,
+  "arm_native": {
+    "achieved_mbps": [
+      54.29,
+      54.07,
+      54.3,
+      53.82,
+      54.31,
+      54.33
+    ],
+    "mean": 54.19,
+    "stdev": 0.186,
+    "spread_pct": 0.94,
+    "finding": "AMBR varied 40x (5->200 Mbps); achieved throughput varied 0.9%. Open5GS applies no rate policing; the achieved rate is simply C.",
+    "caveat_50mbps": "The tracks=True at AMBR=50 is coincidental, not enforcement: 50 falls within the 15% tolerance of C=54.3. Every other point shows the same ~54 Mbps."
+  },
+  "arm_htb": {
+    "below_knee": [
+      {
+        "ambr": 5,
+        "achieved": 4.82,
+        "ratio": 0.964
+      },
+      {
+        "ambr": 10,
+        "achieved": 9.64,
+        "ratio": 0.964
+      },
+      {
+        "ambr": 20,
+        "achieved": 19.26,
+        "ratio": 0.963
+      },
+      {
+        "ambr": 50,
+        "achieved": 48.06,
+        "ratio": 0.9612
+      }
+    ],
+    "above_knee": [
+      {
+        "ambr": 100,
+        "achieved": 54.31
+      },
+      {
+        "ambr": 200,
+        "achieved": 54.78
+      }
+    ],
+    "overhead_ratio": 0.9631,
+    "finding": "Achieved tracks AMBR at a CONSTANT 0.963 ratio below the knee \u2014 that is IP/TCP/Ethernet protocol overhead, not measurement error. Above the knee the air interface binds and achieved saturates at C.",
+    "invariant": "HTB root 10000 Mbit >= 10x C. Enforcement is per-UE; nothing scales C."
+  },
+  "two_regime_confirmed": true,
+  "knee_mbps": 54.3,
+  "why_this_matters": {
+    "B_Q1": "There is now a real, measured mechanism with a declared enforcement point. Below the knee AMBR binds; above it the MAC scheduler binds. Neither is imposed by the harness.",
+    "D_Q9": "The low-regime expectation is CONFIRMED and measured: below the knee, raising the AMBR ceiling raises real throughput (5->4.82, 50->48.06). The paper's assumed regime is above the knee.",
+    "spec_S0": "Enforcement (per-UE HTB) and bottleneck (air interface, C=54.28 Mbps fixed) are now separate objects. The circularity that invalidated the original harm claims is removed."
+  }
+}

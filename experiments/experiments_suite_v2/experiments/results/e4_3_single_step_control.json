@@ -1,0 +1,23 @@
+{
+  "experiment": "E4.3",
+  "part_a_delta": 1.5,
+  "part_a_new_dl": 50000000,
+  "part_a_allowed": true,
+  "part_a_result": {
+    "allowed": true,
+    "reason": "All feasibility checks passed.",
+    "warnings": [],
+    "current_load_pct": 50.0
+  },
+  "part_b_delta": 147.0,
+  "part_b_new_dl": 2960000000,
+  "part_b_blocked": true,
+  "part_b_result": {
+    "allowed": false,
+    "reason": "Requested DL AMBR 2960000000 bps exceeds maximum allowed 1000000000 bps (1 Gbps).",
+    "warnings": [],
+    "current_load_pct": null
+  },
+  "accepted": true,
+  "single_step_blocked": false
+}

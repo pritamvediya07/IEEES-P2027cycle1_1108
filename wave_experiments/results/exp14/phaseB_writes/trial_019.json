@@ -1,0 +1,16 @@
+{
+  "write_idx": 19,
+  "ambr_bps_written": 56000000,
+  "ambr_readback_bps": 56.0,
+  "confirmed_contamination": true,
+  "n_records": 200,
+  "type_t": 0,
+  "type_p": 0,
+  "mixed": 200,
+  "unknown": 0,
+  "type_p_fraction": 0.0,
+  "mixed_fraction": 1.0,
+  "saved_at": "2026-04-30T11:56:39.529518+00:00",
+  "exp_id": "exp14",
+  "arm": "phaseB_writes"
+}

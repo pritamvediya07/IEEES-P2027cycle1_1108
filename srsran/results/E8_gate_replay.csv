@@ -1,0 +1,21 @@
+gate,state_variable,attack,dilation,spacing_s,allowed,rejected,max_ambr_reached_mbps,escalation_factor,exceeded_theta
+fixed_window,elapsed time,time_dilation,1,15.0,9,3,1729.95,86.5,True
+fixed_window,elapsed time,time_dilation,10,150.0,12,0,2594.93,129.75,True
+fixed_window,elapsed time,time_dilation,100,1500.0,12,0,2594.93,129.75,True
+decaying_memory,time-weighted history,time_dilation,1,15.0,8,4,2594.93,129.75,True
+decaying_memory,time-weighted history,time_dilation,10,150.0,12,0,2594.93,129.75,True
+decaying_memory,time-weighted history,time_dilation,100,1500.0,12,0,2594.93,129.75,True
+session_write_counter,writes this session,time_dilation,1,15.0,3,9,67.5,3.38,True
+session_write_counter,writes this session,time_dilation,10,150.0,3,9,67.5,3.38,True
+session_write_counter,writes this session,time_dilation,100,1500.0,3,9,67.5,3.38,True
+policy_state_drift_bound,current AMBR vs baseline,time_dilation,1,15.0,1,11,30.0,1.5,False
+policy_state_drift_bound,current AMBR vs baseline,time_dilation,10,150.0,1,11,30.0,1.5,False
+policy_state_drift_bound,current AMBR vs baseline,time_dilation,100,1500.0,1,11,30.0,1.5,False
+fixed_window,elapsed time,session_reinstantiation,1,15.0,9,3,1729.95,86.5,True
+decaying_memory,time-weighted history,session_reinstantiation,1,15.0,8,4,2594.93,129.75,True
+session_write_counter,writes this session,session_reinstantiation,1,15.0,12,0,2594.93,129.75,True
+policy_state_drift_bound,current AMBR vs baseline,session_reinstantiation,1,15.0,1,11,30.0,1.5,False
+fixed_window,elapsed time,combined,100,1500.0,12,0,2594.93,129.75,True
+decaying_memory,time-weighted history,combined,100,1500.0,12,0,2594.93,129.75,True
+session_write_counter,writes this session,combined,100,1500.0,12,0,2594.93,129.75,True
+policy_state_drift_bound,current AMBR vs baseline,combined,100,1500.0,1,11,30.0,1.5,False

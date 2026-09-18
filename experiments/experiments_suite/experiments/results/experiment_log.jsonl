@@ -1,0 +1,10 @@
+{"experiment": "E3.1", "timestamp": "2026-04-13T05:37:39.204523+00:00", "spearman_rho": 0.8928571428571429, "spearman_p": 0.006807187408935393, "accepted": "False"}
+{"experiment": "E3.2", "timestamp": "2026-04-13T05:37:39.204872+00:00", "mae_monotonic_decreasing": false, "r2_negative_for_low_n": false, "mae_values": [[5, 0.033644000000006], [10, 0.03357450000000073], [20, 0.035955624999999714], [30, 0.030593416666666227], [50, 0.032071400000000326], [100, 0.0316943749999995], [200, 0.029552974999999804]], "r2_low_n_values": [], "accepted": false}
+{"experiment": "E3.3", "timestamp": "2026-04-13T05:37:39.205315+00:00", "reduction": -0.4496285815353964}
+{"experiment": "E3.4", "timestamp": "2026-04-13T05:37:39.205551+00:00", "fp_rate": 0.0, "accepted": true}
+{"experiment": "E3.5", "timestamp": "2026-04-13T05:37:39.482569+00:00", "type": "exploratory"}
+{"experiment": "E3.1", "timestamp": "2026-04-13T05:44:05.911897+00:00", "spearman_rho": NaN, "spearman_p": NaN, "accepted": false}
+{"experiment": "E3.2", "timestamp": "2026-04-13T05:44:05.912243+00:00", "mae_monotonic_decreasing": false, "r2_negative_for_low_n": false, "mae_values": [[5, 0.0], [10, 0.0], [20, 0.0], [30, 0.0], [50, 236.17500000004657], [100, 2412.0], [200, 5628.0]], "r2_low_n_values": [], "accepted": false}
+{"experiment": "E3.3", "timestamp": "2026-04-13T05:44:05.912694+00:00", "reduction": 0}
+{"experiment": "E3.4", "timestamp": "2026-04-13T05:44:05.912934+00:00", "fp_rate": 0.75, "accepted": false}
+{"experiment": "E3.5", "timestamp": "2026-04-13T05:44:12.769734+00:00", "type": "exploratory"}

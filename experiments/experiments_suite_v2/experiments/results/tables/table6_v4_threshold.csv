@@ -1,0 +1,24 @@
+delta,DL (bps),DL (Mbps),F(delta),Reason (full)
+0.05,"21,000,000",21.0,PASS,All feasibility checks passed.
+0.1,"22,000,000",22.0,PASS,All feasibility checks passed.
+0.12,"22,400,000",22.4,PASS,All feasibility checks passed.
+0.15,"23,000,000",23.0,PASS,All feasibility checks passed.
+0.18,"23,600,000",23.6,PASS,All feasibility checks passed.
+0.2,"24,000,000",24.0,PASS,All feasibility checks passed.
+0.25,"25,000,000",25.0,PASS,All feasibility checks passed.
+0.3,"26,000,000",26.0,PASS,All feasibility checks passed.
+0.4,"28,000,000",28.0,PASS,All feasibility checks passed.
+0.5,"30,000,000",30.0,PASS,All feasibility checks passed.
+1.0,"40,000,000",40.0,PASS,All feasibility checks passed.
+5.0,"120,000,000",120.0,PASS,All feasibility checks passed.
+10.0,"220,000,000",220.0,PASS,All feasibility checks passed.
+20.0,"420,000,000",420.0,PASS,All feasibility checks passed.
+30.0,"620,000,000",620.0,PASS,All feasibility checks passed.
+40.0,"820,000,000",820.0,PASS,All feasibility checks passed.
+48.0,"980,000,000",980.0,PASS,All feasibility checks passed.
+49.0,"1,000,000,000",1000.0,PASS,All feasibility checks passed.
+49.5,"1,010,000,000",1010.0,FAIL,Requested DL AMBR 1010000000 bps exceeds maximum allowed 1000000000 bps (1 Gbps).
+50.0,"1,020,000,000",1020.0,FAIL,Requested DL AMBR 1020000000 bps exceeds maximum allowed 1000000000 bps (1 Gbps).
+60.0,"1,220,000,000",1220.0,FAIL,Requested DL AMBR 1220000000 bps exceeds maximum allowed 1000000000 bps (1 Gbps).
+---,---,---,---,---
+beta_ambr = 49.0,Phase B first FAIL,49.5,FAIL,Exceeds 1 Gbps AMBR ceiling (MAX_DL_AMBR_BPS)

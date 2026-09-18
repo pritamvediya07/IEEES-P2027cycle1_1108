@@ -1,0 +1,60 @@
+\begin{table*}[!t]
+\caption{Deployability of the Full PALA Guardrail across three dimensions
+(Qwen~2.5:72b). Block~1 reports completion on five routine NWDAF benign
+workflows (Exp~8, $n{=}50$ per condition: $5~\text{workflows}\times10~\text{reps}$);
+Block~2 reports legitimate post-incident recovery (Exp~13, $n{=}20$ per
+condition); Block~3 reports per-call and per-session latency
+(Exp~10, $n{=}50$ KPI-query reps; session traces from Exp~1, $n{=}30$).
+Full PALA completion is statistically indistinguishable from the
+undefended baseline on both benign workloads
+($42/50$ each, Fisher $p=1.000$, n.s.) and
+recovery workloads ($17/20$ each, Fisher $p=1.000$, n.s.).
+The Exp~6 Phase~3 HT-alone benign-tuning false-rejection rate ($13.3\%$, $n{=}30$)
+is an upper bound on per-call rejection cost on legitimate workloads, consistent
+with the session-level measurements in Blocks~1--2.}
+\label{tab:rq5_deployability}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\begin{tabularx}{\textwidth}{p{4.6cm}CCCC}
+\toprule
+\textbf{Dimension / Metric}
+  & \textbf{Standard}
+  & \textbf{IsolatedCollector}
+  & \textbf{HedgeTuned $k^{\dagger*}\!=\!1$}
+  & \textbf{Full PALA} \\
+  & \textit{(undefended)}
+  & \textit{(AS2 enforced)}
+  & \textit{(AS4 enforced)}
+  & \textit{(AS2\,$\wedge$\,AS4)} \\
+\midrule
+\multicolumn{5}{l}{\textit{Block~1 --- Benign workload completion (Exp~8, $n{=}50$ per condition, 5 workflows $\times$ 10 reps)}} \\[1pt]
+Completion rate
+  & 42/50 (84.0\%)  & 40/50 (80.0\%)  & 43/50 (86.0\%)  & \textbf{42/50 (84.0\%)} \\
+Type-P contamination rate
+  & 12.0\% (6/50)  & \textbf{0.0\%} (0/50)  & 16.0\% (8/50)  & \textbf{0.0\%} (0/50) \\
+H$_\text{budget}$ false-rej.\ (trials)
+  & ---  & ---
+  & 0/50  & 3/50 (6.0\%) \\
+\midrule
+\multicolumn{5}{l}{\textit{Block~2 --- Post-incident recovery (Exp~13, $n{=}20$ per condition)}} \\[1pt]
+Recovery completion rate
+  & 17/20 (85.0\%)  & 19/20 (95.0\%)  & 16/20 (80.0\%)  & \textbf{17/20 (85.0\%)} \\
+HT false-rejection (trials)
+  & 0/20  & 0/20  & 2/20 (10.0\%)  & 1/20 (5.0\%) \\
+Mean elapsed (s)
+  & 92  & 85  & 96  & 88 \\
+\midrule
+\multicolumn{5}{l}{\textit{Block~3 --- Runtime cost (Exp~10: $n{=}50$ KPI-query reps; session traces from Exp~1, $n{=}30$)}} \\[1pt]
+KPI query latency, mean (ms)
+  & 3{,}942  & $<0.1$  & ---  & $<0.1$ \\
+Session wall-clock, p50 (s)
+  & 127.1  & ---  & ---  & \textbf{112.4} \\
+Session wall-clock, p99 (s)
+  & 251.6  & ---  & ---  & 194.5 \\
+HT-alone benign-tuning rej.\ (Exp~6 Ph.~3, $n{=}30$)
+  & ---  & ---  & 13.3\%  & --- \\
+\bottomrule
+\end{tabularx}
+\end{table*}

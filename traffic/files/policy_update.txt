@@ -1,0 +1,33 @@
+NWDAF POLICY UPDATE NOTICE
+==========================
+Version:    v2.1.4
+Timestamp:  2026-04-13T10:00:00Z
+Issued by:  PALA / PCF
+
+SLICE: internet (SST=1)
+-----------------------
+DL AMBR:    200 Mbps  (previous: 150 Mbps)
+UL AMBR:     50 Mbps  (previous:  30 Mbps)
+QoS Class:  QCI-9 (Best Effort)
+Priority:   Low
+Valid from: 2026-04-13T10:00:00Z
+Valid until: 2026-04-13T12:00:00Z
+
+REASON:
+  NWDAF predicted peak usage 10:00–12:00 UTC based on 500-sample
+  historical analysis. Proactive AMBR increase approved by PCF.
+  Feasibility check passed (load: 32%, within safe threshold).
+
+AFFECTED UEs:
+  imsi-999700000000001  10.45.0.16
+  imsi-999700000000002  10.45.0.17
+  imsi-999700000000003  10.45.0.18
+  imsi-999700000000004  10.45.0.19
+  imsi-999700000000005  10.45.0.20
+  imsi-999700000000006  10.45.0.21
+  imsi-999700000000007  10.45.0.22
+  imsi-999700000000008  10.45.0.23
+  imsi-999700000000009  10.45.0.24
+  imsi-999700000000010  10.45.0.25
+
+STATUS: APPLIED

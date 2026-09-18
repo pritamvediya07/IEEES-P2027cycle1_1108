@@ -1,0 +1,52 @@
+{
+  "summary_table": [
+    [
+      "Baseline AMBR R\u2080",
+      "V4",
+      "Decomposition works at all baselines",
+      "Absolute drift scale"
+    ],
+    [
+      "Cooldown \u03c4_cool",
+      "V4",
+      "Decomposition still possible",
+      "Exploit elapsed time"
+    ],
+    [
+      "Collector \u0394c",
+      "V7",
+      "Contamination occurs at all intervals",
+      "Time-to-contamination"
+    ],
+    [
+      "AMBR change size",
+      "V7",
+      "Type P always reflects change",
+      "Signal magnitude"
+    ],
+    [
+      "Accumulator \u03b2",
+      "Defense",
+      "Bounded drift enforced at all \u03b2",
+      "Benign accept rate"
+    ],
+    [
+      "Filter strictness",
+      "Defense",
+      "Isolation severs loop when Type P removed",
+      "Analytics richness"
+    ],
+    [
+      "N-range bounds",
+      "V3",
+      "Clamping prevents unstable regime",
+      "False block rate"
+    ],
+    [
+      "R\u00b2 threshold",
+      "V3",
+      "Guard catches unreliable forecasts",
+      "False block rate"
+    ]
+  ]
+}

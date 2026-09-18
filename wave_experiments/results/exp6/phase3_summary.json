@@ -1,0 +1,9 @@
+{
+  "phase": 3,
+  "n_sessions": 30,
+  "k_star": 1,
+  "rejection_rate": 0.1333,
+  "acceptance_rate": 0.8667,
+  "paper_claim": "HT alone rejects 13% of benign sessions \u2014 the quantifiable cost of runtime defense.",
+  "saved_at": "2026-05-01T04:38:08.628807+00:00"
+}

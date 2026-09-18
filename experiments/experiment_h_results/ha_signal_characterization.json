@@ -1,0 +1,127 @@
+{
+  "experiment": "H-A",
+  "signals": {
+    "synthetic_memory": {
+      "type": "Type T (synthetic)",
+      "realistic": false,
+      "contaminated": false,
+      "desc": "Synthetic Gaussian noise (\u03bc\u22484.80, \u03c3\u22480.04)",
+      "n_samples": 500,
+      "mean": 4.8017506,
+      "std": 0.040219199142200734,
+      "cv": 0.008375945044334608
+    },
+    "real_traffic": {
+      "type": "Type T (real)",
+      "realistic": true,
+      "contaminated": false,
+      "desc": "Real total_tx_bytes from 10 active UEs",
+      "n_samples": 500,
+      "mean": 51926.656,
+      "std": 19.948374971410576,
+      "cv": 0.0003841644447778531
+    },
+    "contaminated_ambr": {
+      "type": "Type P (contaminated)",
+      "realistic": true,
+      "contaminated": true,
+      "desc": "Policy-derived ambr_dl_mean (V7 contamination source)",
+      "n_samples": 174,
+      "mean": 20.0,
+      "std": 0.0,
+      "cv": 0.0
+    }
+  },
+  "profiles": {
+    "synthetic_memory": {
+      "N": 100,
+      "window": 10,
+      "adaptive": false,
+      "width": {
+        "median": 0.035640999999999146,
+        "mean": 0.03793430000000009,
+        "std": 0.012186932941064328,
+        "n": 20
+      },
+      "mae": {
+        "median": 0.03318619999999985,
+        "mean": 0.03375659000000005,
+        "std": 0.0062462298904138545,
+        "n": 20
+      },
+      "r2_train": {
+        "median": 0.8370620016691608,
+        "mean": 0.8338863948888458,
+        "std": 0.01561900683912957,
+        "n": 20
+      },
+      "r2_test": {
+        "median": -0.0684963296576524,
+        "mean": -0.11659325888136633,
+        "std": 0.15344450553434463,
+        "n": 20
+      },
+      "gap": 0.9055583313268132
+    },
+    "real_traffic": {
+      "N": 100,
+      "window": 10,
+      "adaptive": false,
+      "width": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "n": 20
+      },
+      "mae": {
+        "median": 0.0,
+        "mean": 1.3199999999999998,
+        "std": 5.753746605473688,
+        "n": 20
+      },
+      "r2_train": {
+        "median": 1.0,
+        "mean": 0.9864107706739971,
+        "std": 0.029382729796124333,
+        "n": 20
+      },
+      "r2_test": {
+        "median": -1.2222222222222219,
+        "mean": -1.2222222222222219,
+        "std": 0.0,
+        "n": 1
+      },
+      "gap": 2.222222222222222
+    },
+    "contaminated_ambr": {
+      "N": 100,
+      "window": 10,
+      "adaptive": false,
+      "width": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "n": 3
+      },
+      "mae": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "n": 3
+      },
+      "r2_train": {
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "n": 3
+      },
+      "r2_test": {
+        "median": null,
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "gap": null
+    }
+  }
+}

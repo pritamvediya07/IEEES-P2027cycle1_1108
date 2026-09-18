@@ -1,0 +1,71 @@
+{
+  "experiment": "E2.4 \u2014 dimensional correction",
+  "applies_to": "srsran/results/E2_4_standards_kpi.json",
+  "problem": "the reported `kpi` divides a CUMULATIVE byte counter by a capacity in bytes/second, so it carries dimensions of seconds rather than being a utilisation ratio. That is why its values are ~2000 instead of a percentage. The SHAPE argument (measured numerator over configured denominator, no provenance element) is unaffected, but those numbers must not be quoted as utilisation.",
+  "corrected_form": "utilisation = (delta_bytes / interval_s) / configured_capacity_Bps",
+  "interval_s_used": 11.3,
+  "interval_provenance": "INFERRED from the script's fixed schedule (settle 10 s + one collector tick + 1 s sleep), not recorded per row. A re-run should stamp each row and measure it. Because the same interval applies to every point, an error in it scales all utilisations equally and does not affect the ratio below.",
+  "rows": [
+    {
+      "configured_ambr_mbps": 40.0,
+      "measured_bytes": 5071886226.0,
+      "configured_capacity_Bps": 5000000.0,
+      "kpi": 1014.3772452,
+      "measured_delta_bytes": 2223676.0,
+      "measured_rate_Bps": 196785.5,
+      "utilisation_ratio": 0.039357
+    },
+    {
+      "configured_ambr_mbps": 60.0,
+      "measured_bytes": 5073922654.0,
+      "configured_capacity_Bps": 7500000.0,
+      "kpi": 676.5230205333334,
+      "measured_delta_bytes": 2036428.0,
+      "measured_rate_Bps": 180214.9,
+      "utilisation_ratio": 0.024029
+    },
+    {
+      "configured_ambr_mbps": 80.0,
+      "measured_bytes": 5075818078.0,
+      "configured_capacity_Bps": 10000000.0,
+      "kpi": 507.5818078,
+      "measured_delta_bytes": 1895424.0,
+      "measured_rate_Bps": 167736.6,
+      "utilisation_ratio": 0.016774
+    },
+    {
+      "configured_ambr_mbps": 100.0,
+      "measured_bytes": 5078047521.0,
+      "configured_capacity_Bps": 12500000.0,
+      "kpi": 406.24380168,
+      "measured_delta_bytes": 2229443.0,
+      "measured_rate_Bps": 197295.8,
+      "utilisation_ratio": 0.015784
+    },
+    {
+      "configured_ambr_mbps": 150.0,
+      "measured_bytes": 5080134935.0,
+      "configured_capacity_Bps": 18750000.0,
+      "kpi": 270.9405298666667,
+      "measured_delta_bytes": 2087414.0,
+      "measured_rate_Bps": 184726.9,
+      "utilisation_ratio": 0.009852
+    },
+    {
+      "configured_ambr_mbps": 200.0,
+      "measured_bytes": 5081965489.0,
+      "configured_capacity_Bps": 25000000.0,
+      "kpi": 203.27861956,
+      "measured_delta_bytes": 1830554.0,
+      "measured_rate_Bps": 161995.9,
+      "utilisation_ratio": 0.00648
+    }
+  ],
+  "utilisation_first_pct": 3.94,
+  "utilisation_last_pct": 0.65,
+  "utilisation_span_x": 6.07,
+  "measured_rate_Bps_mean": 181459.3,
+  "measured_rate_spread_pct": 19.5,
+  "conclusion": "Utilisation falls from 3.94% to 0.65% \u2014 a 6.1x change \u2014 while the measured rate varies by only 19.5% about its mean. The KPI moves overwhelmingly because the CONFIGURED denominator moved. This is the dimensionally correct statement of the same finding.",
+  "honest_caveat": "the measured rate is not perfectly constant (19.5% spread), so the denominator does not account for the change entirely. The claim is that it dominates, not that the numerator was frozen."
+}

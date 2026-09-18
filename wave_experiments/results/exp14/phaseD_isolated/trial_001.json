@@ -1,0 +1,9 @@
+{
+  "condition": "isolated",
+  "returned_values": 0,
+  "isolated_collector": true,
+  "stripped": true,
+  "saved_at": "2026-04-30T11:57:39.438297+00:00",
+  "exp_id": "exp14",
+  "arm": "phaseD_isolated"
+}

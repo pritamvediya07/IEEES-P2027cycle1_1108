@@ -1,0 +1,86 @@
+{
+  "beta_sweep": [
+    {
+      "beta": 0.1,
+      "benign_accept_rate": 0.4,
+      "benign_accepted": 2,
+      "benign_total": 5,
+      "attack_blocked_at_step": 1,
+      "attack_max_drift_allowed": 0.1
+    },
+    {
+      "beta": 0.25,
+      "benign_accept_rate": 0.6,
+      "benign_accepted": 3,
+      "benign_total": 5,
+      "attack_blocked_at_step": 1,
+      "attack_max_drift_allowed": 0.25
+    },
+    {
+      "beta": 0.5,
+      "benign_accept_rate": 1.0,
+      "benign_accepted": 5,
+      "benign_total": 5,
+      "attack_blocked_at_step": 2,
+      "attack_max_drift_allowed": 0.5
+    },
+    {
+      "beta": 0.75,
+      "benign_accept_rate": 1.0,
+      "benign_accepted": 5,
+      "benign_total": 5,
+      "attack_blocked_at_step": 3,
+      "attack_max_drift_allowed": 0.75
+    },
+    {
+      "beta": 1.0,
+      "benign_accept_rate": 1.0,
+      "benign_accepted": 5,
+      "benign_total": 5,
+      "attack_blocked_at_step": 3,
+      "attack_max_drift_allowed": 1.0
+    }
+  ],
+  "filter_strictness": [
+    {
+      "config": "no_filter",
+      "desc": "No filtering \u2014 all fields present",
+      "fields": {
+        "ambr_dl_mean": true,
+        "session_count": true,
+        "memory_util_pct": true,
+        "active_ue_count": true,
+        "total_rx_bytes": true
+      },
+      "field_values": {
+        "ambr_dl_mean": 26.0,
+        "session_count": 10,
+        "memory_util_pct": 4.8182,
+        "active_ue_count": 10,
+        "total_rx_bytes": 0
+      },
+      "contamination_removed": "N/A",
+      "type_t_intact": true
+    },
+    {
+      "config": "standard_isolation",
+      "desc": "IsolatedCollector \u2014 removes ambr_dl_mean + session AMBR",
+      "fields": {
+        "ambr_dl_mean": false,
+        "session_count": true,
+        "memory_util_pct": true,
+        "active_ue_count": true,
+        "total_rx_bytes": true
+      },
+      "field_values": {
+        "ambr_dl_mean": null,
+        "session_count": 10,
+        "memory_util_pct": 4.783,
+        "active_ue_count": 10,
+        "total_rx_bytes": 0
+      },
+      "contamination_removed": true,
+      "type_t_intact": true
+    }
+  ]
+}

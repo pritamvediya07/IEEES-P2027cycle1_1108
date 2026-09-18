@@ -1,0 +1,41 @@
+{
+  "experiment": "E7.2",
+  "original_ambr": {
+    "dl": 20000000,
+    "ul": 20000000
+  },
+  "target_ambr": {
+    "dl": 26000000,
+    "ul": 26000000
+  },
+  "policy_manager_result": {
+    "success": true,
+    "message": "AMBR updated for 10 subscriber(s) on slice 'internet'.",
+    "affected_imsis": [
+      "999700000000001",
+      "999700000000002",
+      "999700000000003",
+      "999700000000004",
+      "999700000000005",
+      "999700000000006",
+      "999700000000007",
+      "999700000000008",
+      "999700000000009",
+      "999700000000010"
+    ],
+    "old_dl_ambr": 20,
+    "old_ul_ambr": 20,
+    "new_dl_ambr": 26000000,
+    "new_ul_ambr": 26000000
+  },
+  "write_timestamp": "2026-04-13T09:00:39.846133+00:00",
+  "verify_timestamp": "2026-04-13T09:00:39.924955+00:00",
+  "policy_before": {
+    "policies": [],
+    "timestamp": "2026-04-13T09:00:39.842651+00:00"
+  },
+  "policy_after": {
+    "policies": [],
+    "timestamp": "2026-04-13T09:00:39.924932+00:00"
+  }
+}

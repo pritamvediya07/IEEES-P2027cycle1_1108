@@ -1,0 +1,276 @@
+{
+  "baseline_ambr_sweep": [
+    {
+      "baseline_mbps": 10,
+      "delta": 49.5,
+      "new_mbps": 505.0,
+      "allowed": true,
+      "reason": "All feasibility checks passed.",
+      "latency_ms": 5.993843078613281
+    },
+    {
+      "baseline_mbps": 10,
+      "delta": 89.1,
+      "new_mbps": 901.0,
+      "allowed": true,
+      "reason": "All feasibility checks passed.",
+      "latency_ms": 4.894733428955078
+    },
+    {
+      "baseline_mbps": 10,
+      "delta": 98.01,
+      "new_mbps": 990.1,
+      "allowed": true,
+      "reason": "All feasibility checks passed.",
+      "latency_ms": 6.88624382019043
+    },
+    {
+      "baseline_mbps": 10,
+      "delta": 99.99,
+      "new_mbps": 1009.9,
+      "allowed": false,
+      "reason": "Requested DL AMBR 1009900000 bps exceeds maximum allowed 1000000000 bps (1 Gbps)",
+      "latency_ms": 0.11801719665527344
+    },
+    {
+      "baseline_mbps": 20,
+      "delta": 24.5,
+      "new_mbps": 510.0,
+      "allowed": true,
+      "reason": "All feasibility checks passed.",
+      "latency_ms": 6.484746932983398
+    },
+    {
+      "baseline_mbps": 20,
+      "delta": 44.1,
+      "new_mbps": 902.0,
+      "allowed": true,
+      "reason": "All feasibility checks passed.",
+      "latency_ms": 5.981683731079102
+    },
+    {
+      "baseline_mbps": 20,
+      "delta": 48.51,
+      "new_mbps": 990.2,
+      "allowed": true,
+      "reason": "All feasibility checks passed.",
+      "latency_ms": 6.435155868530273
+    },
+    {
+      "baseline_mbps": 20,
+      "delta": 49.49,
+      "new_mbps": 1009.8,
+      "allowed": false,
+      "reason": "Requested DL AMBR 1009800000 bps exceeds maximum allowed 1000000000 bps (1 Gbps)",
+      "latency_ms": 0.17213821411132812
+    },
+    {
+      "baseline_mbps": 40,
+      "delta": 12.0,
+      "new_mbps": 520.0,
+      "allowed": true,
+      "reason": "All feasibility checks passed.",
+      "latency_ms": 8.521080017089844
+    },
+    {
+      "baseline_mbps": 40,
+      "delta": 21.6,
+      "new_mbps": 904.0,
+      "allowed": true,
+      "reason": "All feasibility checks passed.",
+      "latency_ms": 7.286548614501953
+    },
+    {
+      "baseline_mbps": 40,
+      "delta": 23.76,
+      "new_mbps": 990.399999,
+      "allowed": true,
+      "reason": "All feasibility checks passed.",
+      "latency_ms": 6.286382675170898
+    },
+    {
+      "baseline_mbps": 40,
+      "delta": 24.24,
+      "new_mbps": 1009.6,
+      "allowed": false,
+      "reason": "Requested DL AMBR 1009600000 bps exceeds maximum allowed 1000000000 bps (1 Gbps)",
+      "latency_ms": 0.16570091247558594
+    },
+    {
+      "baseline_mbps": 80,
+      "delta": 5.75,
+      "new_mbps": 540.0,
+      "allowed": true,
+      "reason": "All feasibility checks passed.",
+      "latency_ms": 7.91168212890625
+    },
+    {
+      "baseline_mbps": 80,
+      "delta": 10.35,
+      "new_mbps": 908.0,
+      "allowed": true,
+      "reason": "All feasibility checks passed.",
+      "latency_ms": 6.856679916381836
+    },
+    {
+      "baseline_mbps": 80,
+      "delta": 11.38,
+      "new_mbps": 990.8,
+      "allowed": true,
+      "reason": "All feasibility checks passed.",
+      "latency_ms": 6.735563278198242
+    },
+    {
+      "baseline_mbps": 80,
+      "delta": 11.62,
+      "new_mbps": 1009.2,
+      "allowed": false,
+      "reason": "Requested DL AMBR 1009200000 bps exceeds maximum allowed 1000000000 bps (1 Gbps)",
+      "latency_ms": 0.12755393981933594
+    }
+  ],
+  "cooldown_sweep": [
+    {
+      "cooldown_s": 10,
+      "steps_completed": 1,
+      "final_mbps": 30.0,
+      "drift": 0.5,
+      "elapsed_s": 11.024952173233032
+    },
+    {
+      "cooldown_s": 30,
+      "steps_completed": 3,
+      "final_mbps": 67.0,
+      "drift": 2.35,
+      "elapsed_s": 93.05486989021301
+    },
+    {
+      "cooldown_s": 60,
+      "steps_completed": 3,
+      "final_mbps": 67.0,
+      "drift": 2.35,
+      "elapsed_s": 183.05338549613953
+    },
+    {
+      "cooldown_s": 120,
+      "steps_completed": 3,
+      "final_mbps": 67.0,
+      "drift": 2.35,
+      "elapsed_s": 363.05367636680603
+    }
+  ],
+  "decomposition_sweep": [
+    {
+      "baseline_mbps": 10,
+      "steps": [
+        {
+          "step": 1,
+          "target_mbps": 13.75,
+          "passed": true
+        },
+        {
+          "step": 2,
+          "target_mbps": 18.91,
+          "passed": true
+        },
+        {
+          "step": 3,
+          "target_mbps": 26.0,
+          "passed": true
+        },
+        {
+          "step": 4,
+          "target_mbps": 35.75,
+          "passed": true
+        }
+      ],
+      "final_mbps": 35.0,
+      "drift": 2.5,
+      "decomposition_works": true
+    },
+    {
+      "baseline_mbps": 20,
+      "steps": [
+        {
+          "step": 1,
+          "target_mbps": 27.5,
+          "passed": true
+        },
+        {
+          "step": 2,
+          "target_mbps": 37.81,
+          "passed": true
+        },
+        {
+          "step": 3,
+          "target_mbps": 51.99,
+          "passed": true
+        },
+        {
+          "step": 4,
+          "target_mbps": 71.49,
+          "passed": true
+        }
+      ],
+      "final_mbps": 71.0,
+      "drift": 2.55,
+      "decomposition_works": true
+    },
+    {
+      "baseline_mbps": 40,
+      "steps": [
+        {
+          "step": 1,
+          "target_mbps": 55.0,
+          "passed": true
+        },
+        {
+          "step": 2,
+          "target_mbps": 75.62,
+          "passed": true
+        },
+        {
+          "step": 3,
+          "target_mbps": 103.98,
+          "passed": true
+        },
+        {
+          "step": 4,
+          "target_mbps": 142.97,
+          "passed": true
+        }
+      ],
+      "final_mbps": 142.0,
+      "drift": 2.55,
+      "decomposition_works": true
+    },
+    {
+      "baseline_mbps": 80,
+      "steps": [
+        {
+          "step": 1,
+          "target_mbps": 110.0,
+          "passed": true
+        },
+        {
+          "step": 2,
+          "target_mbps": 151.25,
+          "passed": true
+        },
+        {
+          "step": 3,
+          "target_mbps": 207.97,
+          "passed": true
+        },
+        {
+          "step": 4,
+          "target_mbps": 285.96,
+          "passed": true
+        }
+      ],
+      "final_mbps": 285.0,
+      "drift": 2.5625,
+      "decomposition_works": true
+    }
+  ]
+}

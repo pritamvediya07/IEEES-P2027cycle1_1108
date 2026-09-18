@@ -1,0 +1,26 @@
+{
+  "phase": "D",
+  "results": {
+    "baseline": {
+      "condition": "baseline",
+      "returned_values": 20,
+      "isolated_collector": false,
+      "stripped": false,
+      "saved_at": "2026-04-30T11:57:21.416706+00:00",
+      "exp_id": "exp14",
+      "arm": "phaseD_baseline"
+    },
+    "isolated": {
+      "condition": "isolated",
+      "returned_values": 0,
+      "isolated_collector": true,
+      "stripped": true,
+      "saved_at": "2026-04-30T11:57:39.438297+00:00",
+      "exp_id": "exp14",
+      "arm": "phaseD_isolated"
+    }
+  },
+  "isolation_verified": true,
+  "paper_claim": "IsolatedCollector correctly strips all Type-P fields, returning 0 ambr_dl_mean values under isolation. AS3 (contamination channel) is severed.",
+  "saved_at": "2026-04-30T11:57:51.452070+00:00"
+}

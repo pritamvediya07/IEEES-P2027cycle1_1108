@@ -1,0 +1,74 @@
+{
+  "experiment": "A.5",
+  "runs": [
+    {
+      "run": 1,
+      "R_base": 20.0,
+      "R_after": 71.0,
+      "phi_base": {
+        "tau": 30111.40526337862,
+        "lam": 0.059,
+        "rho": 0.0,
+        "sigma": 10
+      },
+      "phi_after": {
+        "tau": 10.811549731848917,
+        "lam": 46.437,
+        "rho": 21.896280775275013,
+        "sigma": 10
+      },
+      "Q_base": 0.8748525,
+      "Q_after": 0.4811956723914348,
+      "R_up": true,
+      "Q_down": true,
+      "strict_def4": true
+    },
+    {
+      "run": 2,
+      "R_base": 20.0,
+      "R_after": 71.0,
+      "phi_base": {
+        "tau": 32813.98080472492,
+        "lam": 0.056,
+        "rho": 0.0,
+        "sigma": 10
+      },
+      "phi_after": {
+        "tau": 11.191110847588272,
+        "lam": 45.063,
+        "rho": 21.73913043478261,
+        "sigma": 10
+      },
+      "Q_base": 0.87486,
+      "Q_after": 0.48597245103201414,
+      "R_up": true,
+      "Q_down": true,
+      "strict_def4": true
+    },
+    {
+      "run": 3,
+      "R_base": 20.0,
+      "R_after": 71.0,
+      "phi_base": {
+        "tau": 31158.155027010314,
+        "lam": 0.064,
+        "rho": 0.0,
+        "sigma": 10
+      },
+      "phi_after": {
+        "tau": 11.63664133442633,
+        "lam": 49.042,
+        "rho": 21.4248297537978,
+        "sigma": 10
+      },
+      "Q_base": 0.8748400000000001,
+      "Q_after": 0.4779245289515713,
+      "R_up": true,
+      "Q_down": true,
+      "strict_def4": true
+    }
+  ],
+  "strict_count": 3,
+  "strict_rate": 1.0,
+  "accepted": true
+}

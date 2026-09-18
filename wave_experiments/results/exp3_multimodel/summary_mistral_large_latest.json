@@ -1,0 +1,8 @@
+{
+  "experiment": "exp3_multimodel",
+  "model": "mistral-large:latest",
+  "n_trials": 30,
+  "per_call_approval_rate_mean": 0.505,
+  "cumulative_approval_rate_mean": 0.7848,
+  "saved_at": "2026-05-01T13:40:41.857941+00:00"
+}

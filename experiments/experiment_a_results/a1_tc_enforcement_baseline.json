@@ -1,0 +1,80 @@
+{
+  "experiment": "A.1",
+  "measurements": [
+    {
+      "condition": "unrestricted",
+      "tcp_mbps": 23299.11350712955,
+      "latency_ms": 0.07
+    },
+    {
+      "condition": "unrestricted",
+      "tcp_mbps": 27285.385725356646,
+      "latency_ms": 0.086
+    },
+    {
+      "condition": "unrestricted",
+      "tcp_mbps": 19083.61733583588,
+      "latency_ms": 0.081
+    },
+    {
+      "condition": "tc_20",
+      "tcp_mbps": 16.833068943881113,
+      "latency_ms": 5.359
+    },
+    {
+      "condition": "tc_20",
+      "tcp_mbps": 16.733086361899037,
+      "latency_ms": 0.097
+    },
+    {
+      "condition": "tc_20",
+      "tcp_mbps": 16.67110644056755,
+      "latency_ms": 0.086
+    },
+    {
+      "condition": "tc_10_30ms",
+      "tcp_mbps": 8.327150851002651,
+      "latency_ms": 72.192
+    },
+    {
+      "condition": "tc_10_30ms",
+      "tcp_mbps": 8.232373630342265,
+      "latency_ms": 84.119
+    },
+    {
+      "condition": "tc_10_30ms",
+      "tcp_mbps": 7.975083328237043,
+      "latency_ms": 80.906
+    },
+    {
+      "condition": "tc_5_50ms_3loss",
+      "tcp_mbps": 2.9139036531617566,
+      "latency_ms": 191.064,
+      "loss_pct": 3.926701570680628
+    },
+    {
+      "condition": "tc_5_50ms_3loss",
+      "tcp_mbps": 2.5763325574534575,
+      "latency_ms": 194.68,
+      "loss_pct": 3.664921465968586
+    },
+    {
+      "condition": "tc_5_50ms_3loss",
+      "tcp_mbps": 3.3749538374819075,
+      "latency_ms": 162.15,
+      "loss_pct": null
+    },
+    {
+      "condition": "recovered",
+      "tcp_mbps": 21210.911583232693,
+      "latency_ms": 0.08
+    }
+  ],
+  "summary": {
+    "unrestricted": 23222.705522774024,
+    "tc_20": 16.74575391544923,
+    "tc_10_30ms": 8.178202603193986,
+    "tc_5_50ms_3loss": 2.955063349365707,
+    "enforcement_works": "True"
+  }
+}

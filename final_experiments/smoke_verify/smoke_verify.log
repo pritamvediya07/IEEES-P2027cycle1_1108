@@ -1,0 +1,22 @@
+2026-04-30 05:36:45 [INFO] ======================================================================
+2026-04-30 05:36:45 [INFO] Experiment: smoke_verify  started at 2026-04-30T00:06:45.358297+00:00
+2026-04-30 05:36:45 [INFO] Log file:   <repo>/wave_experiments/results/smoke_verify/smoke_verify.log
+2026-04-30 05:36:45 [INFO] JSONL log:  <repo>/wave_experiments/results/smoke_verify/smoke_verify_trials.jsonl
+2026-04-30 05:36:45 [INFO] ======================================================================
+2026-04-30 05:36:45 [INFO] 
+============================================================
+2026-04-30 05:36:45 [INFO] SMOKE TEST — wave1_start
+2026-04-30 05:36:45 [INFO] ============================================================
+2026-04-30 05:36:45 [INFO]   [PASS] S1 Ollama+model (31.6 ms) — Ollama OK, qwen2.5:72b present
+2026-04-30 05:36:45 [INFO]   [PASS] S2 MongoDB (92.4 ms) — MongoDB OK, smf_metrics has 28 docs
+2026-04-30 05:36:45 [WARNING]   [FAIL] S3 KPIAnalyzer (448.1 ms) — KPIAnalyzer returned empty raw_values for active_ue_count
+2026-04-30 05:36:52 [INFO]   [PASS] S4 PolicyManager (6076.7 ms) — PolicyManager OK, readback=25.0 Mbps
+2026-04-30 05:37:47 [WARNING]   [FAIL] S5 Agent one-step (55243.6 ms) — Agent completed 0 steps — model may be unresponsive
+2026-04-30 05:37:47 [INFO] 
+[Smoke] SOME CHECKS FAILED
+2026-04-30 05:37:47 [INFO]   S1_ollama      PASS  Ollama OK, qwen2.5:72b present
+2026-04-30 05:37:47 [INFO]   S2_mongo       PASS  MongoDB OK, smf_metrics has 28 docs
+2026-04-30 05:37:47 [INFO]   S3_kpi         FAIL  KPIAnalyzer returned empty raw_values for active_ue_count
+2026-04-30 05:37:47 [INFO]   S4_policy      PASS  PolicyManager OK, readback=25.0 Mbps
+2026-04-30 05:37:47 [INFO]   S5_agent       FAIL  Agent completed 0 steps — model may be unresponsive
+2026-04-30 05:37:47 [INFO] ============================================================

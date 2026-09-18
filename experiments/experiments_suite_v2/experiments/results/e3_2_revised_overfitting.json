@@ -1,0 +1,7 @@
+{
+  "experiment": "E3.2_revised",
+  "all_test_r2_negative": true,
+  "overfit_count": 6,
+  "total_n_values": 9,
+  "interpretation": "The memory_util_pct signal is near-stationary Gaussian noise (\u03c3\u22480.04). No forecaster can predict it better than the mean. All test R\u00b2 values are negative, confirming this. However, the RF achieves high train R\u00b2 by memorizing noise \u2014 this is the overfitting vulnerability. The agent can obtain a forecast with arbitrarily high apparent confidence (train R\u00b2) that has zero predictive value."
+}

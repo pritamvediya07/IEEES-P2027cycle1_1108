@@ -1,0 +1,89 @@
+{
+  "experiment": "E7.4a",
+  "ambr_dl_mean_result": {
+    "metric": "ambr_dl_mean",
+    "stats": {
+      "count": 49,
+      "mean": 15.020408,
+      "std": 10.021385,
+      "min": 1.0,
+      "max": 26.0,
+      "trend": "rising",
+      "anomalies": []
+    },
+    "ml": null,
+    "raw_values": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      26.0,
+      26.0,
+      26.0,
+      26.0,
+      26.0,
+      26.0,
+      26.0,
+      26.0,
+      26.0,
+      26.0
+    ]
+  },
+  "memory_util_result": {
+    "metric": "memory_utilization",
+    "stats": {
+      "count": 100,
+      "mean": 4.795594,
+      "std": 0.039428,
+      "min": 4.7,
+      "max": 4.8997,
+      "trend": "stable",
+      "anomalies": []
+    },
+    "ml": null,
+    "raw_values": [
+      4.7777,
+      4.7991,
+      4.7374,
+      4.7965,
+      4.7968,
+      4.8997,
+      4.7697,
+      4.7988,
+      4.7433,
+      4.8529,
+      4.7801,
+      4.8308,
+      4.7875,
+      4.8142,
+      4.8387,
+      4.826,
+      4.8246,
+      4.713,
+      4.8394,
+      4.7786
+    ]
+  },
+  "smf_metrics_contains_ambr": true,
+  "ambr_dl_mean_value": 26.0,
+  "fields_read": {
+    "ambr_dl_mean": {
+      "collection": "smf_metrics",
+      "field": "ambr_dl_mean",
+      "provenance": "P",
+      "reason": "Mean subscriber AMBR written by PolicyManager, propagated via collector"
+    },
+    "memory_utilization": {
+      "collection": "upf_metrics",
+      "field": "memory_util_pct",
+      "provenance": "T",
+      "reason": "Synthetic telemetry, not policy-derived"
+    }
+  }
+}

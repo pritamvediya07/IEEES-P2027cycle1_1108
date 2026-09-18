@@ -1,0 +1,29 @@
+FROM python:3.12-slim
+
+# System deps: iproute2 (tc), iperf3, ping, curl
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        iproute2 iperf3 iputils-ping curl sudo \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Install Python deps (requirements + API SDKs)
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt \
+    && pip install --no-cache-dir google-generativeai openai
+
+# Copy project (bind-mount in dev; COPY for prod)
+COPY . .
+
+# Default env — override in docker-compose
+ENV OLLAMA_BASE_URL=http://host.docker.internal:11434 \
+    OLLAMA_MODEL=qwen2.5:72b \
+    MONGO_URI=mongodb://mongo:27017 \
+    WEBUI_URL=http://host.docker.internal:9999 \
+    WEBUI_USER=admin \
+    WEBUI_PASSWORD=1423 \
+    NWDAF_DB=nwdaf_analytics \
+    PYTHONUNBUFFERED=1
+
+# tc needs NET_ADMIN — granted in compose, not here
+CMD ["python", "-m", "wave_experiments.run_wave1", "--help"]

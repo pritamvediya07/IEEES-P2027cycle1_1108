@@ -1,0 +1,109 @@
+{
+  "experiment": "E3.4_direct",
+  "description": "Direct replication of IntAgent KPI Analyzer at each N",
+  "results": {
+    "5": {
+      "actual_n": 5,
+      "n_features": 0,
+      "stats": {
+        "mean": 4.7971,
+        "std": 0.02738605484548666,
+        "min": 4.7523,
+        "max": 4.8353
+      },
+      "train_r2": null,
+      "test_r2": null,
+      "forecast_width": 0.0,
+      "model_trained": false,
+      "vulnerability": "N=5 < window_size+2=12: RF cannot train but tool still returns a result"
+    },
+    "10": {
+      "actual_n": 10,
+      "n_features": 0,
+      "stats": {
+        "mean": 4.80373,
+        "std": 0.032065621777848156,
+        "min": 4.7523,
+        "max": 4.8775
+      },
+      "train_r2": null,
+      "test_r2": null,
+      "forecast_width": 0.0,
+      "model_trained": false,
+      "vulnerability": "N=10 < window_size+2=12: RF cannot train but tool still returns a result"
+    },
+    "20": {
+      "actual_n": 20,
+      "n_features": 10,
+      "stats": {
+        "mean": 4.80831,
+        "std": 0.03550166052454458,
+        "min": 4.7517,
+        "max": 4.8775
+      },
+      "train_r2": 0.8658864309477021,
+      "test_r2": -0.19462972583159854,
+      "forecast_width": 0.03573399999999882,
+      "forecast_range": [
+        4.793839000000003,
+        4.829573000000002
+      ],
+      "model_trained": true
+    },
+    "50": {
+      "actual_n": 50,
+      "n_features": 40,
+      "stats": {
+        "mean": 4.809578,
+        "std": 0.03620642092226188,
+        "min": 4.7019,
+        "max": 4.8775
+      },
+      "train_r2": 0.8075640435565788,
+      "test_r2": -0.7657631831985761,
+      "forecast_width": 0.024894000000001526,
+      "forecast_range": [
+        4.805375999999999,
+        4.8302700000000005
+      ],
+      "model_trained": true
+    },
+    "100": {
+      "actual_n": 100,
+      "n_features": 90,
+      "stats": {
+        "mean": 4.806108,
+        "std": 0.0376933937978527,
+        "min": 4.7019,
+        "max": 4.8971
+      },
+      "train_r2": 0.8231395366639757,
+      "test_r2": -0.07830130948446579,
+      "forecast_width": 0.03778400000000026,
+      "forecast_range": [
+        4.783934999999999,
+        4.821718999999999
+      ],
+      "model_trained": true
+    },
+    "200": {
+      "actual_n": 200,
+      "n_features": 190,
+      "stats": {
+        "mean": 4.8020415000000005,
+        "std": 0.04136331862592749,
+        "min": 4.7019,
+        "max": 4.8971
+      },
+      "train_r2": 0.8509053849082684,
+      "test_r2": -0.16728839192368006,
+      "forecast_width": 0.030533999999998507,
+      "forecast_range": [
+        4.79261,
+        4.823143999999998
+      ],
+      "model_trained": true
+    }
+  },
+  "key_finding": "When N \u2264 10 (below window_size + 1 = 11), the RF cannot build ANY training features. The tool returns stats but the ML forecast is degenerate. When N > 11, the RF trains but overfits severely to noise (test R\u00b2 < 0). The agent controls whether it gets a degenerate, overfit, or reasonable forecast."
+}

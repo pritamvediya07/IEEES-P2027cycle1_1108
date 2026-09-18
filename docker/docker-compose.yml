@@ -1,0 +1,146 @@
+version: "3.9"
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  PALA — Parallel Experiment Stack
+#
+#  Architecture:
+#    • mongo      — shared MongoDB (Open5GS data + per-instance analytics DBs)
+#    • wave1      — qwen2.5:72b experiments via local Ollama (native GPU)
+#    • gemma4     — Gemma 4 experiments via Google AI Studio API (zero VRAM)
+#    • multimodel — multi-model comparison runner (Gemma 4 + optional Together AI)
+#
+#  Open5GS + UERANSIM stay native (kernel GTP + TUN interfaces need host network).
+#  Ollama stays native (GPU passthrough simpler outside Docker on this host).
+#
+#  To run:
+#    export GEMINI_API_KEY=your_key
+#    docker compose -f docker/docker-compose.yml up -d gemma4
+#    docker compose -f docker/docker-compose.yml logs -f gemma4
+#
+#  For full Wave 1 (local qwen):
+#    docker compose -f docker/docker-compose.yml up -d wave1
+# ─────────────────────────────────────────────────────────────────────────────
+
+x-common: &common
+  build:
+    context: ..
+    dockerfile: docker/Dockerfile.experiment
+  volumes:
+    - ../wave_experiments/results:/app/wave_experiments/results
+    - ../wave_experiments:/app/wave_experiments:ro    # code read-only
+    - ../agent:/app/agent:ro
+    - ../tools:/app/tools:ro
+    - ../config:/app/config:ro
+    - ../mcp_server:/app/mcp_server:ro
+    - /tmp/nwdaf_network:/tmp/nwdaf_network            # shared tc/probe logs
+  extra_hosts:
+    - "host.docker.internal:host-gateway"             # reach native Ollama + Open5GS WebUI
+  restart: "no"
+  network_mode: host                                  # needed for tc + iperf3 probe
+
+services:
+
+  # ── Shared MongoDB ──────────────────────────────────────────────────────────
+  mongo:
+    image: mongo:7
+    container_name: nwdaf_mongo_parallel
+    ports:
+      - "27019:27017"         # expose on 27019 to avoid conflict with native mongo:27017
+    volumes:
+      - mongo_parallel_data:/data/db
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.runCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Wave 1 — qwen2.5:72b via local Ollama ──────────────────────────────────
+  wave1:
+    <<: *common
+    container_name: wave1_runner
+    cap_add: [NET_ADMIN]          # needed for tc qdisc
+    environment:
+      OLLAMA_BASE_URL:  "http://localhost:11434"
+      OLLAMA_MODEL:     "qwen2.5:72b"
+      MONGO_URI:        "mongodb://localhost:27017"    # native mongo
+      NWDAF_DB:         "nwdaf_analytics"
+      WEBUI_URL:        "http://localhost:9999"
+      WEBUI_USER:       "admin"
+      WEBUI_PASSWORD:   "1423"
+    command: >
+      python -m wave_experiments.run_wave1
+        --auto-resume --no-smoke --no-clean
+
+  # ── Gemma 4 — Google AI Studio API (zero VRAM) ─────────────────────────────
+  gemma4:
+    <<: *common
+    container_name: gemma4_runner
+    environment:
+      GEMINI_API_KEY:   "${GEMINI_API_KEY}"
+      GEMINI_MODEL:     "${GEMINI_MODEL:-gemma-4-27b-it}"
+      MONGO_URI:        "mongodb://localhost:27017"    # native mongo
+      NWDAF_DB:         "nwdaf_analytics_gemma4"      # isolated DB — no cross-contamination
+      WEBUI_URL:        "http://localhost:9999"
+      WEBUI_USER:       "admin"
+      WEBUI_PASSWORD:   "1423"
+      OLLAMA_MODEL:     "unused"                      # required by imports, not used
+    command: >
+      python -m wave_experiments.run_multimodel
+        --backend gemini
+        --model ${GEMINI_MODEL:-gemma-4-27b-it}
+        --exp mm1 mm3 mm5
+        --reps 20
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+  # ── Together AI — Gemma 4 27B via Together (higher RPM than free Gemini) ───
+  together:
+    <<: *common
+    container_name: together_runner
+    environment:
+      TOGETHER_API_KEY: "${TOGETHER_API_KEY}"
+      OPENAI_COMPAT_KEY:      "${TOGETHER_API_KEY}"
+      OPENAI_COMPAT_BASE_URL: "https://api.together.xyz/v1"
+      OPENAI_COMPAT_MODEL:    "${TOGETHER_MODEL:-google/gemma-4-27b-it}"
+      MONGO_URI:        "mongodb://localhost:27017"
+      NWDAF_DB:         "nwdaf_analytics_together"
+      WEBUI_URL:        "http://localhost:9999"
+      WEBUI_USER:       "admin"
+      WEBUI_PASSWORD:   "1423"
+      OLLAMA_MODEL:     "unused"
+    command: >
+      python -m wave_experiments.run_multimodel
+        --backend together
+        --model ${TOGETHER_MODEL:-google/gemma-4-27b-it}
+        --exp mm1 mm3 mm5
+        --reps 20
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+  # ── Groq — Gemma 2 9B (fastest inference, 30 RPM free) ─────────────────────
+  groq:
+    <<: *common
+    container_name: groq_runner
+    environment:
+      GROQ_API_KEY:     "${GROQ_API_KEY}"
+      OPENAI_COMPAT_KEY:      "${GROQ_API_KEY}"
+      OPENAI_COMPAT_BASE_URL: "https://api.groq.com/openai/v1"
+      OPENAI_COMPAT_MODEL:    "gemma2-9b-it"
+      MONGO_URI:        "mongodb://localhost:27017"
+      NWDAF_DB:         "nwdaf_analytics_groq"
+      WEBUI_URL:        "http://localhost:9999"
+      WEBUI_USER:       "admin"
+      WEBUI_PASSWORD:   "1423"
+      OLLAMA_MODEL:     "unused"
+    command: >
+      python -m wave_experiments.run_multimodel
+        --backend groq
+        --model gemma2-9b-it
+        --exp mm1 mm3 mm5
+        --reps 20
+
+volumes:
+  mongo_parallel_data:

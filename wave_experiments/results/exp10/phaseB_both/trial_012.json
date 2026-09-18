@@ -1,0 +1,8 @@
+{
+  "cond": "both",
+  "rep": 12,
+  "lat_ms": 0.01,
+  "saved_at": "2026-04-30T22:32:24.267329+00:00",
+  "exp_id": "exp10",
+  "arm": "phaseB_both"
+}

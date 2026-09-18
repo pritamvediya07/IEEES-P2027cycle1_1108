@@ -1,0 +1,16 @@
+# Additional Python dependencies for the srsRAN testbed (Track C) and its LLM
+# experiments. Installed automatically by ./run_artifact.sh live-srsran; by hand:
+#
+#     pip install -r requirements.txt -r requirements-srsran.txt
+#
+# Track A (offline verification) does NOT need these.
+
+pyzmq==27.2.0        # srsran/zmq_broker.py — multi-UE ZeroMQ sample broker
+
+# Optional: E6 frontier capability tier only (agent/agent.py AnthropicLLM).
+# The import is lazy, so every other experiment runs without it.
+anthropic==1.0.0
+
+# System packages (not pip-installable) — see srsran/README.md:
+#   gnuradio   srsran/gr_broker.py (alternative multi-UE broker)
+#   iperf3     ground-truth throughput / loss probe (srsran/phi_probe.py)

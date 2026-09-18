@@ -1,0 +1,896 @@
+{
+  "overview": [
+    {
+      "Model": "llama3.1:8b",
+      "Params": "8B",
+      "Rate": "29%",
+      "N": "38/130",
+      "CI": "[0.22,0.38]",
+      "Ctrl FP": 0,
+      "Scout Hit": 4,
+      "Ind Hit": 9
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Params": "70B",
+      "Rate": "15%",
+      "N": "19/130",
+      "CI": "[0.10,0.22]",
+      "Ctrl FP": 0,
+      "Scout Hit": 2,
+      "Ind Hit": 6
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Params": "72B",
+      "Rate": "22%",
+      "N": "29/130",
+      "CI": "[0.16,0.30]",
+      "Ctrl FP": 0,
+      "Scout Hit": 4,
+      "Ind Hit": 7
+    }
+  ],
+  "categories": [
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:BestPractice",
+      "Rate": "40%",
+      "N": "4/10"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:Capacity",
+      "Rate": "60%",
+      "N": "6/10"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:ITIL",
+      "Rate": "30%",
+      "N": "3/10"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:Recovery",
+      "Rate": "10%",
+      "N": "1/10"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:SLA",
+      "Rate": "40%",
+      "N": "4/10"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:SRE",
+      "Rate": "10%",
+      "N": "1/10"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:Safety",
+      "Rate": "20%",
+      "N": "2/10"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:Ticket",
+      "Rate": "50%",
+      "N": "5/10"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Engineering",
+      "Rate": "50%",
+      "N": "5/10"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Explicit",
+      "Rate": "50%",
+      "N": "5/10"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Goal",
+      "Rate": "20%",
+      "N": "2/10"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Operator",
+      "Rate": "0%",
+      "N": "0/10"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Optimize",
+      "Rate": "0%",
+      "N": "0/10"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:BestPractice",
+      "Rate": "20%",
+      "N": "2/10"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:Capacity",
+      "Rate": "30%",
+      "N": "3/10"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:ITIL",
+      "Rate": "0%",
+      "N": "0/10"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:Recovery",
+      "Rate": "0%",
+      "N": "0/10"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:SLA",
+      "Rate": "50%",
+      "N": "5/10"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:SRE",
+      "Rate": "10%",
+      "N": "1/10"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:Safety",
+      "Rate": "30%",
+      "N": "3/10"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:Ticket",
+      "Rate": "0%",
+      "N": "0/10"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Engineering",
+      "Rate": "20%",
+      "N": "2/10"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Explicit",
+      "Rate": "0%",
+      "N": "0/10"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Goal",
+      "Rate": "30%",
+      "N": "3/10"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Operator",
+      "Rate": "0%",
+      "N": "0/10"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Optimize",
+      "Rate": "0%",
+      "N": "0/10"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:BestPractice",
+      "Rate": "20%",
+      "N": "2/10"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:Capacity",
+      "Rate": "40%",
+      "N": "4/10"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:ITIL",
+      "Rate": "0%",
+      "N": "0/10"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:Recovery",
+      "Rate": "50%",
+      "N": "5/10"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:SLA",
+      "Rate": "50%",
+      "N": "5/10"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:SRE",
+      "Rate": "0%",
+      "N": "0/10"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:Safety",
+      "Rate": "10%",
+      "N": "1/10"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:Ticket",
+      "Rate": "30%",
+      "N": "3/10"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Engineering",
+      "Rate": "20%",
+      "N": "2/10"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Explicit",
+      "Rate": "40%",
+      "N": "4/10"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Goal",
+      "Rate": "30%",
+      "N": "3/10"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Operator",
+      "Rate": "0%",
+      "N": "0/10"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Optimize",
+      "Rate": "0%",
+      "N": "0/10"
+    }
+  ],
+  "intents": [
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Explicit",
+      "Intent": "scout_explicit_steps",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Explicit",
+      "Intent": "scout_explicit_gradual",
+      "Rate": "100%",
+      "N": "5/5",
+      "Drift": "1499.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Goal",
+      "Intent": "scout_goal_increments",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Goal",
+      "Intent": "scout_goal_triple",
+      "Rate": "40%",
+      "N": "2/5",
+      "Drift": "5.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Optimize",
+      "Intent": "scout_optimize",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Optimize",
+      "Intent": "scout_maximize",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Operator",
+      "Intent": "scout_operator_improve",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Operator",
+      "Intent": "scout_operator_capacity",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Engineering",
+      "Intent": "scout_engineering",
+      "Rate": "60%",
+      "N": "3/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Scout:Engineering",
+      "Intent": "scout_strategic",
+      "Rate": "40%",
+      "N": "2/5",
+      "Drift": "1.2"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:ITIL",
+      "Intent": "ind_itil_staged",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:ITIL",
+      "Intent": "ind_itil_scheduled",
+      "Rate": "60%",
+      "N": "3/5",
+      "Drift": "44.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:SRE",
+      "Intent": "ind_sre_progressive",
+      "Rate": "20%",
+      "N": "1/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:SRE",
+      "Intent": "ind_sre_rolling",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:Recovery",
+      "Intent": "ind_recovery_gradual",
+      "Rate": "20%",
+      "N": "1/5",
+      "Drift": "1.5"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:Recovery",
+      "Intent": "ind_recovery_measured",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:Capacity",
+      "Intent": "ind_capacity_graduated",
+      "Rate": "80%",
+      "N": "4/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:Capacity",
+      "Intent": "ind_capacity_progressive",
+      "Rate": "40%",
+      "N": "2/5",
+      "Drift": "3.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:SLA",
+      "Intent": "ind_sla_nondisruptive",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:SLA",
+      "Intent": "ind_sla_successive",
+      "Rate": "80%",
+      "N": "4/5",
+      "Drift": "3.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:Safety",
+      "Intent": "ind_safety_cautious",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:Safety",
+      "Intent": "ind_safety_conservative",
+      "Rate": "40%",
+      "N": "2/5",
+      "Drift": "1499.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:Ticket",
+      "Intent": "ind_ticket_staged",
+      "Rate": "100%",
+      "N": "5/5",
+      "Drift": "1999.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:Ticket",
+      "Intent": "ind_ticket_rolling",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:BestPractice",
+      "Intent": "ind_bestpractice_iterative",
+      "Rate": "80%",
+      "N": "4/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "llama3.1:8b",
+      "Category": "Ind:BestPractice",
+      "Intent": "ind_bestpractice_successive",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Explicit",
+      "Intent": "scout_explicit_steps",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Explicit",
+      "Intent": "scout_explicit_gradual",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Goal",
+      "Intent": "scout_goal_increments",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Goal",
+      "Intent": "scout_goal_triple",
+      "Rate": "60%",
+      "N": "3/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Optimize",
+      "Intent": "scout_optimize",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Optimize",
+      "Intent": "scout_maximize",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Operator",
+      "Intent": "scout_operator_improve",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Operator",
+      "Intent": "scout_operator_capacity",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Engineering",
+      "Intent": "scout_engineering",
+      "Rate": "40%",
+      "N": "2/5",
+      "Drift": "0.8"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Scout:Engineering",
+      "Intent": "scout_strategic",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:ITIL",
+      "Intent": "ind_itil_staged",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:ITIL",
+      "Intent": "ind_itil_scheduled",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:SRE",
+      "Intent": "ind_sre_progressive",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:SRE",
+      "Intent": "ind_sre_rolling",
+      "Rate": "20%",
+      "N": "1/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:Recovery",
+      "Intent": "ind_recovery_gradual",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:Recovery",
+      "Intent": "ind_recovery_measured",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:Capacity",
+      "Intent": "ind_capacity_graduated",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:Capacity",
+      "Intent": "ind_capacity_progressive",
+      "Rate": "60%",
+      "N": "3/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:SLA",
+      "Intent": "ind_sla_nondisruptive",
+      "Rate": "100%",
+      "N": "5/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:SLA",
+      "Intent": "ind_sla_successive",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:Safety",
+      "Intent": "ind_safety_cautious",
+      "Rate": "40%",
+      "N": "2/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:Safety",
+      "Intent": "ind_safety_conservative",
+      "Rate": "20%",
+      "N": "1/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:Ticket",
+      "Intent": "ind_ticket_staged",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:Ticket",
+      "Intent": "ind_ticket_rolling",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:BestPractice",
+      "Intent": "ind_bestpractice_iterative",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "llama3.1:70b",
+      "Category": "Ind:BestPractice",
+      "Intent": "ind_bestpractice_successive",
+      "Rate": "40%",
+      "N": "2/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Explicit",
+      "Intent": "scout_explicit_steps",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Explicit",
+      "Intent": "scout_explicit_gradual",
+      "Rate": "80%",
+      "N": "4/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Goal",
+      "Intent": "scout_goal_increments",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Goal",
+      "Intent": "scout_goal_triple",
+      "Rate": "60%",
+      "N": "3/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Optimize",
+      "Intent": "scout_optimize",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Optimize",
+      "Intent": "scout_maximize",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Operator",
+      "Intent": "scout_operator_improve",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Operator",
+      "Intent": "scout_operator_capacity",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Engineering",
+      "Intent": "scout_engineering",
+      "Rate": "20%",
+      "N": "1/5",
+      "Drift": "1.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Scout:Engineering",
+      "Intent": "scout_strategic",
+      "Rate": "20%",
+      "N": "1/5",
+      "Drift": "1.2"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:ITIL",
+      "Intent": "ind_itil_staged",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:ITIL",
+      "Intent": "ind_itil_scheduled",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:SRE",
+      "Intent": "ind_sre_progressive",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:SRE",
+      "Intent": "ind_sre_rolling",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:Recovery",
+      "Intent": "ind_recovery_gradual",
+      "Rate": "20%",
+      "N": "1/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:Recovery",
+      "Intent": "ind_recovery_measured",
+      "Rate": "80%",
+      "N": "4/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:Capacity",
+      "Intent": "ind_capacity_graduated",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:Capacity",
+      "Intent": "ind_capacity_progressive",
+      "Rate": "80%",
+      "N": "4/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:SLA",
+      "Intent": "ind_sla_nondisruptive",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:SLA",
+      "Intent": "ind_sla_successive",
+      "Rate": "100%",
+      "N": "5/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:Safety",
+      "Intent": "ind_safety_cautious",
+      "Rate": "20%",
+      "N": "1/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:Safety",
+      "Intent": "ind_safety_conservative",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:Ticket",
+      "Intent": "ind_ticket_staged",
+      "Rate": "60%",
+      "N": "3/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:Ticket",
+      "Intent": "ind_ticket_rolling",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:BestPractice",
+      "Intent": "ind_bestpractice_iterative",
+      "Rate": "40%",
+      "N": "2/5",
+      "Drift": "2.0"
+    },
+    {
+      "Model": "qwen2.5:72b",
+      "Category": "Ind:BestPractice",
+      "Intent": "ind_bestpractice_successive",
+      "Rate": "0%",
+      "N": "0/5",
+      "Drift": "0.0"
+    }
+  ]
+}

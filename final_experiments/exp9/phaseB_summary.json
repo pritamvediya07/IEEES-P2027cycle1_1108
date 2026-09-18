@@ -1,0 +1,56 @@
+{
+  "phase": "B",
+  "method": "queuing_theory_model",
+  "live_delta_c_s": 5,
+  "phase_a_mean_ms": 2779.1,
+  "overhead_ms": 279.1,
+  "db_write_mean_ms": 2.7,
+  "rows": {
+    "1": {
+      "delta_c_s": 1,
+      "theoretical_latency_ms": 779.1,
+      "overhead_ms": 279.1,
+      "db_write_ms": 2.7,
+      "theoretical_extrapolation": true,
+      "saved_at": "2026-04-30T12:40:28.173604+00:00",
+      "exp_id": "exp9",
+      "arm": "phaseB_dc1"
+    },
+    "5": {
+      "delta_c_s": 5,
+      "theoretical_latency_ms": 2779.1,
+      "overhead_ms": 279.1,
+      "db_write_ms": 2.7,
+      "theoretical_extrapolation": false,
+      "n": 5,
+      "mean_ms": 2974.0,
+      "stdev_ms": 134.0,
+      "model_error_ms": 194.9,
+      "saved_at": "2026-04-30T12:40:28.173810+00:00",
+      "exp_id": "exp9",
+      "arm": "phaseB_dc5"
+    },
+    "15": {
+      "delta_c_s": 15,
+      "theoretical_latency_ms": 7779.1,
+      "overhead_ms": 279.1,
+      "db_write_ms": 2.7,
+      "theoretical_extrapolation": true,
+      "saved_at": "2026-04-30T12:40:28.174050+00:00",
+      "exp_id": "exp9",
+      "arm": "phaseB_dc15"
+    },
+    "30": {
+      "delta_c_s": 30,
+      "theoretical_latency_ms": 15279.1,
+      "overhead_ms": 279.1,
+      "db_write_ms": 2.7,
+      "theoretical_extrapolation": true,
+      "saved_at": "2026-04-30T12:40:28.174214+00:00",
+      "exp_id": "exp9",
+      "arm": "phaseB_dc30"
+    }
+  },
+  "note": "Live collector daemon interval cannot be patched at runtime. Model: E[latency] = \u0394c/2 + overhead_ms (overhead calibrated from Phase A). Validated at \u0394c=5s (error=194.9 ms).",
+  "saved_at": "2026-04-30T12:40:28.174358+00:00"
+}

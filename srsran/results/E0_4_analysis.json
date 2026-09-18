@@ -1,0 +1,105 @@
+{
+  "experiment": "E0.4 analysis",
+  "C_mbps": 23.38,
+  "knee_mbps_per_ue": 5.84,
+  "C_reproducibility": {
+    "run1": 23.61,
+    "run2": 23.38,
+    "pct_diff": 0.97
+  },
+  "rows": [
+    {
+      "B": 1.17,
+      "tau_per_ue": 1.125,
+      "lambda_ms": 100.828,
+      "rho_pct": 0.0,
+      "Q": 0.488,
+      "regime": "under"
+    },
+    {
+      "B": 3.64,
+      "tau_per_ue": 3.498,
+      "lambda_ms": 54.518,
+      "rho_pct": 0.0,
+      "Q": 0.5756,
+      "regime": "under"
+    },
+    {
+      "B": 6.1,
+      "tau_per_ue": 5.736,
+      "lambda_ms": 114.143,
+      "rho_pct": 0.0,
+      "Q": 0.529,
+      "regime": "over"
+    },
+    {
+      "B": 8.57,
+      "tau_per_ue": 5.709,
+      "lambda_ms": 402.939,
+      "rho_pct": 0.0,
+      "Q": 0.4214,
+      "regime": "over"
+    },
+    {
+      "B": 11.04,
+      "tau_per_ue": 5.74,
+      "lambda_ms": 406.925,
+      "rho_pct": 0.0,
+      "Q": 0.4217,
+      "regime": "over"
+    },
+    {
+      "B": 13.51,
+      "tau_per_ue": 5.849,
+      "lambda_ms": 382.995,
+      "rho_pct": 0.0,
+      "Q": 0.4231,
+      "regime": "over"
+    },
+    {
+      "B": 15.97,
+      "tau_per_ue": 6.141,
+      "lambda_ms": 410.11,
+      "rho_pct": 0.0,
+      "Q": 0.4268,
+      "regime": "over"
+    },
+    {
+      "B": 18.44,
+      "tau_per_ue": 6.137,
+      "lambda_ms": 338.501,
+      "rho_pct": 0.0,
+      "Q": 0.4267,
+      "regime": "over"
+    },
+    {
+      "B": 20.91,
+      "tau_per_ue": 5.962,
+      "lambda_ms": 398.882,
+      "rho_pct": 0.0,
+      "Q": 0.4245,
+      "regime": "over"
+    },
+    {
+      "B": 23.38,
+      "tau_per_ue": 5.646,
+      "lambda_ms": 399.501,
+      "rho_pct": 0.188,
+      "Q": 0.4201,
+      "regime": "over"
+    }
+  ],
+  "Q_peak": 0.5756,
+  "Q_final": 0.4201,
+  "Q_drop_pct": 27.0,
+  "lambda_range_ms": [
+    54.518,
+    410.11
+  ],
+  "lambda_ratio": 7.5,
+  "finding": "Below the knee raising AMBR raises throughput at ~0.96 ratio and latency stays low. Above the knee throughput saturates at C/n while latency rises ~7x. Q therefore rises then falls \u2014 the rise-then-fall pattern, now MEASURED rather than imposed.",
+  "caveats": {
+    "rho": "still ~0 except the final point (0.188) \u2014 near-degenerate, report per-dimension",
+    "sigma": "constant at 4 by construction (n fixed); carries no information and should be dropped from Q or reported separately"
+  }
+}

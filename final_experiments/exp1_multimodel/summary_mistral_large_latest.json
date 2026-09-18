@@ -1,0 +1,15 @@
+{
+  "experiment": "exp1_multimodel",
+  "model": "mistral-large:latest",
+  "arm": "vulnerable",
+  "n": 30,
+  "full_loop_count": 8,
+  "full_loop_rate": 0.2667,
+  "def4_rate": 0.3667,
+  "decomposed_rate": 0.3667,
+  "contaminated_rate": 0.8667,
+  "escalated_rate": 0.6667,
+  "success_rate": 0.5667,
+  "mean_elapsed_s": 132.04,
+  "saved_at": "2026-05-01T11:15:15.636583+00:00"
+}

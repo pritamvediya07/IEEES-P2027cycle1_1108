@@ -1,0 +1,77 @@
+{"rep": 1, "latency_ms": 3549.1, "saved_at": "2026-04-30T12:00:58.354140+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 2, "latency_ms": 3025.8, "saved_at": "2026-04-30T12:01:13.390722+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 3, "latency_ms": 2522.5, "saved_at": "2026-04-30T12:01:27.926700+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 4, "latency_ms": 3025.1, "saved_at": "2026-04-30T12:01:42.962940+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 5, "latency_ms": 3029.4, "saved_at": "2026-04-30T12:01:58.002712+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 6, "latency_ms": 3025.9, "saved_at": "2026-04-30T12:02:13.039910+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 7, "latency_ms": 3020.9, "saved_at": "2026-04-30T12:02:28.070030+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 8, "latency_ms": 3024.4, "saved_at": "2026-04-30T12:02:43.105225+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 9, "latency_ms": 3021.4, "saved_at": "2026-04-30T12:02:58.139381+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 10, "latency_ms": 3028.6, "saved_at": "2026-04-30T12:03:13.177952+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"delta_c": 1, "rep": 1, "latency_ms": 3029.090404510498, "saved_at": "2026-04-30T12:03:28.222188+00:00", "exp_id": "exp9", "arm": "phaseB_dc1"}
+{"delta_c": 1, "rep": 2, "latency_ms": 11.183500289916992, "saved_at": "2026-04-30T12:03:31.244614+00:00", "exp_id": "exp9", "arm": "phaseB_dc1"}
+{"delta_c": 1, "rep": 3, "latency_ms": 3936.9585514068604, "saved_at": "2026-04-30T12:03:38.192142+00:00", "exp_id": "exp9", "arm": "phaseB_dc1"}
+{"delta_c": 1, "rep": 4, "latency_ms": 13.907432556152344, "saved_at": "2026-04-30T12:03:41.216979+00:00", "exp_id": "exp9", "arm": "phaseB_dc1"}
+{"delta_c": 1, "rep": 5, "latency_ms": 3936.329126358032, "saved_at": "2026-04-30T12:03:48.164942+00:00", "exp_id": "exp9", "arm": "phaseB_dc1"}
+{"delta_c": 5, "rep": 1, "latency_ms": 14.453887939453125, "saved_at": "2026-04-30T12:03:51.191217+00:00", "exp_id": "exp9", "arm": "phaseB_dc5"}
+{"delta_c": 5, "rep": 2, "latency_ms": 5144.016981124878, "saved_at": "2026-04-30T12:04:03.346003+00:00", "exp_id": "exp9", "arm": "phaseB_dc5"}
+{"delta_c": 5, "rep": 3, "latency_ms": 3026.5138149261475, "saved_at": "2026-04-30T12:04:13.383578+00:00", "exp_id": "exp9", "arm": "phaseB_dc5"}
+{"delta_c": 5, "rep": 4, "latency_ms": 3031.6073894500732, "saved_at": "2026-04-30T12:04:23.422804+00:00", "exp_id": "exp9", "arm": "phaseB_dc5"}
+{"delta_c": 5, "rep": 5, "latency_ms": 2731.926918029785, "saved_at": "2026-04-30T12:04:33.164632+00:00", "exp_id": "exp9", "arm": "phaseB_dc5"}
+{"delta_c": 15, "rep": 1, "latency_ms": 3034.2884063720703, "saved_at": "2026-04-30T12:04:43.212329+00:00", "exp_id": "exp9", "arm": "phaseB_dc15"}
+{"delta_c": 15, "rep": 2, "latency_ms": 3034.170627593994, "saved_at": "2026-04-30T12:05:03.257796+00:00", "exp_id": "exp9", "arm": "phaseB_dc15"}
+{"delta_c": 15, "rep": 3, "latency_ms": 3031.619071960449, "saved_at": "2026-04-30T12:05:23.300988+00:00", "exp_id": "exp9", "arm": "phaseB_dc15"}
+{"delta_c": 15, "rep": 4, "latency_ms": 3030.151844024658, "saved_at": "2026-04-30T12:05:43.342214+00:00", "exp_id": "exp9", "arm": "phaseB_dc15"}
+{"delta_c": 15, "rep": 5, "latency_ms": 3030.520439147949, "saved_at": "2026-04-30T12:06:03.380418+00:00", "exp_id": "exp9", "arm": "phaseB_dc15"}
+{"delta_c": 30, "rep": 1, "latency_ms": 3029.7842025756836, "saved_at": "2026-04-30T12:06:23.420499+00:00", "exp_id": "exp9", "arm": "phaseB_dc30"}
+{"delta_c": 30, "rep": 2, "latency_ms": 3033.769369125366, "saved_at": "2026-04-30T12:06:58.466710+00:00", "exp_id": "exp9", "arm": "phaseB_dc30"}
+{"delta_c": 30, "rep": 3, "latency_ms": 3029.9618244171143, "saved_at": "2026-04-30T12:07:33.507508+00:00", "exp_id": "exp9", "arm": "phaseB_dc30"}
+{"delta_c": 30, "rep": 4, "latency_ms": 3032.2399139404297, "saved_at": "2026-04-30T12:08:08.550003+00:00", "exp_id": "exp9", "arm": "phaseB_dc30"}
+{"delta_c": 30, "rep": 5, "latency_ms": 3031.853437423706, "saved_at": "2026-04-30T12:08:43.591681+00:00", "exp_id": "exp9", "arm": "phaseB_dc30"}
+{"n_samples": 5, "records_returned": 0, "type_p_count": 0, "type_p_escape_fraction": 0.0, "saved_at": "2026-04-30T12:09:21.971375+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"n_samples": 5, "records_returned": 5, "type_p_count": 5, "type_p_escape_fraction": 1.0, "saved_at": "2026-04-30T12:14:26.574294+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"n_samples": 10, "records_returned": 10, "type_p_count": 10, "type_p_escape_fraction": 1.0, "saved_at": "2026-04-30T12:14:44.598409+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"n_samples": 20, "records_returned": 20, "type_p_count": 20, "type_p_escape_fraction": 1.0, "saved_at": "2026-04-30T12:15:02.624586+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"n_samples": 30, "records_returned": 20, "type_p_count": 20, "type_p_escape_fraction": 1.0, "saved_at": "2026-04-30T12:15:20.652468+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"n_samples": 50, "records_returned": 20, "type_p_count": 20, "type_p_escape_fraction": 1.0, "saved_at": "2026-04-30T12:15:38.678907+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"r2_threshold": -0.9, "n_series": 30, "suppressed_count": 0, "suppression_rate": 0.0, "saved_at": "2026-04-30T12:22:40.635787+00:00", "exp_id": "exp9", "arm": "phaseD"}
+{"r2_threshold": -0.5, "n_series": 30, "suppressed_count": 0, "suppression_rate": 0.0, "saved_at": "2026-04-30T12:22:40.640784+00:00", "exp_id": "exp9", "arm": "phaseD"}
+{"r2_threshold": 0.0, "n_series": 30, "suppressed_count": 0, "suppression_rate": 0.0, "saved_at": "2026-04-30T12:22:40.642322+00:00", "exp_id": "exp9", "arm": "phaseD"}
+{"r2_threshold": 0.3, "n_series": 30, "suppressed_count": 0, "suppression_rate": 0.0, "saved_at": "2026-04-30T12:22:40.643124+00:00", "exp_id": "exp9", "arm": "phaseD"}
+{"rep": 1, "latency_ms": 523.7, "saved_at": "2026-04-30T12:37:10.836769+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 2, "latency_ms": 3030.0, "saved_at": "2026-04-30T12:37:25.881565+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 3, "latency_ms": 3030.1, "saved_at": "2026-04-30T12:37:40.923320+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 4, "latency_ms": 3027.9, "saved_at": "2026-04-30T12:37:55.964520+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 5, "latency_ms": 3028.8, "saved_at": "2026-04-30T12:38:11.006195+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 6, "latency_ms": 3030.4, "saved_at": "2026-04-30T12:38:26.048403+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 7, "latency_ms": 3031.0, "saved_at": "2026-04-30T12:38:41.091306+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 8, "latency_ms": 3029.9, "saved_at": "2026-04-30T12:38:56.129640+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 9, "latency_ms": 3028.3, "saved_at": "2026-04-30T12:39:11.170991+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"rep": 10, "latency_ms": 3030.8, "saved_at": "2026-04-30T12:39:26.214993+00:00", "exp_id": "exp9", "arm": "phaseA"}
+{"delta_c": 5, "rep": 1, "latency_ms": 2734.3125343322754, "live_measurement": true, "saved_at": "2026-04-30T12:39:47.991048+00:00", "exp_id": "exp9", "arm": "phaseB_dc5"}
+{"delta_c": 5, "rep": 2, "latency_ms": 3034.111976623535, "live_measurement": true, "saved_at": "2026-04-30T12:39:58.037097+00:00", "exp_id": "exp9", "arm": "phaseB_dc5"}
+{"delta_c": 5, "rep": 3, "latency_ms": 3034.0781211853027, "live_measurement": true, "saved_at": "2026-04-30T12:40:08.081243+00:00", "exp_id": "exp9", "arm": "phaseB_dc5"}
+{"delta_c": 5, "rep": 4, "latency_ms": 3034.414768218994, "live_measurement": true, "saved_at": "2026-04-30T12:40:18.126660+00:00", "exp_id": "exp9", "arm": "phaseB_dc5"}
+{"delta_c": 5, "rep": 5, "latency_ms": 3033.2019329071045, "live_measurement": true, "saved_at": "2026-04-30T12:40:28.172712+00:00", "exp_id": "exp9", "arm": "phaseB_dc5"}
+{"delta_c_s": 1, "theoretical_latency_ms": 779.1, "overhead_ms": 279.1, "db_write_ms": 2.7, "theoretical_extrapolation": true, "saved_at": "2026-04-30T12:40:28.173604+00:00", "exp_id": "exp9", "arm": "phaseB_dc1"}
+{"delta_c_s": 5, "theoretical_latency_ms": 2779.1, "overhead_ms": 279.1, "db_write_ms": 2.7, "theoretical_extrapolation": false, "n": 5, "mean_ms": 2974.0, "stdev_ms": 134.0, "model_error_ms": 194.9, "saved_at": "2026-04-30T12:40:28.173810+00:00", "exp_id": "exp9", "arm": "phaseB_dc5"}
+{"delta_c_s": 15, "theoretical_latency_ms": 7779.1, "overhead_ms": 279.1, "db_write_ms": 2.7, "theoretical_extrapolation": true, "saved_at": "2026-04-30T12:40:28.174050+00:00", "exp_id": "exp9", "arm": "phaseB_dc15"}
+{"delta_c_s": 30, "theoretical_latency_ms": 15279.1, "overhead_ms": 279.1, "db_write_ms": 2.7, "theoretical_extrapolation": true, "saved_at": "2026-04-30T12:40:28.174214+00:00", "exp_id": "exp9", "arm": "phaseB_dc30"}
+{"n_requested": 5, "n_returned": 5, "db_ceiling": false, "type_p_count": 5, "type_p_escape_fraction": 1.0, "saved_at": "2026-04-30T12:40:36.193044+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"n_requested": 10, "n_returned": 10, "db_ceiling": false, "type_p_count": 10, "type_p_escape_fraction": 1.0, "saved_at": "2026-04-30T12:40:36.194452+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"n_requested": 20, "n_returned": 20, "db_ceiling": false, "type_p_count": 20, "type_p_escape_fraction": 1.0, "saved_at": "2026-04-30T12:40:36.195948+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"n_requested": 30, "n_returned": 30, "db_ceiling": false, "type_p_count": 30, "type_p_escape_fraction": 1.0, "saved_at": "2026-04-30T12:40:36.197508+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"n_requested": 50, "n_returned": 50, "db_ceiling": false, "type_p_count": 50, "type_p_escape_fraction": 1.0, "saved_at": "2026-04-30T12:40:36.199281+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"r2_threshold": -0.9, "suppress_cutoff_r": 0.9, "n_series": 30, "suppressed_count": 0, "suppression_rate": 0.0, "saved_at": "2026-04-30T12:41:36.747891+00:00", "exp_id": "exp9", "arm": "phaseD"}
+{"r2_threshold": -0.5, "suppress_cutoff_r": 0.5, "n_series": 30, "suppressed_count": 0, "suppression_rate": 0.0, "saved_at": "2026-04-30T12:41:36.748669+00:00", "exp_id": "exp9", "arm": "phaseD"}
+{"r2_threshold": 0.0, "suppress_cutoff_r": -0.0, "n_series": 30, "suppressed_count": 0, "suppression_rate": 0.0, "saved_at": "2026-04-30T12:41:36.748944+00:00", "exp_id": "exp9", "arm": "phaseD"}
+{"r2_threshold": 0.3, "suppress_cutoff_r": -0.3, "n_series": 30, "suppressed_count": 20, "suppression_rate": 0.6667, "saved_at": "2026-04-30T12:41:36.749112+00:00", "exp_id": "exp9", "arm": "phaseD"}
+{"n_requested": 5, "n_returned": 5, "contaminated_count": 5, "type_p_escape_fraction": 1.0, "threshold_mbps": 40.0, "saved_at": "2026-04-30T12:50:54.113509+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"n_requested": 10, "n_returned": 10, "contaminated_count": 8, "type_p_escape_fraction": 0.8, "threshold_mbps": 40.0, "saved_at": "2026-04-30T12:50:54.115145+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"n_requested": 20, "n_returned": 20, "contaminated_count": 8, "type_p_escape_fraction": 0.4, "threshold_mbps": 40.0, "saved_at": "2026-04-30T12:50:54.116111+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"n_requested": 30, "n_returned": 30, "contaminated_count": 8, "type_p_escape_fraction": 0.2667, "threshold_mbps": 40.0, "saved_at": "2026-04-30T12:50:54.117034+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"n_requested": 50, "n_returned": 50, "contaminated_count": 8, "type_p_escape_fraction": 0.16, "threshold_mbps": 40.0, "saved_at": "2026-04-30T12:50:54.118007+00:00", "exp_id": "exp9", "arm": "phaseC"}
+{"r2_threshold": -0.9, "n_series": 30, "suppressed_count": 4, "suppression_rate": 0.1333, "saved_at": "2026-04-30T12:52:36.372534+00:00", "exp_id": "exp9", "arm": "phaseD"}
+{"r2_threshold": -0.5, "n_series": 30, "suppressed_count": 4, "suppression_rate": 0.1333, "saved_at": "2026-04-30T12:52:36.373241+00:00", "exp_id": "exp9", "arm": "phaseD"}
+{"r2_threshold": 0.0, "n_series": 30, "suppressed_count": 9, "suppression_rate": 0.3, "saved_at": "2026-04-30T12:52:36.373522+00:00", "exp_id": "exp9", "arm": "phaseD"}
+{"r2_threshold": 0.3, "n_series": 30, "suppressed_count": 19, "suppression_rate": 0.6333, "saved_at": "2026-04-30T12:52:36.373733+00:00", "exp_id": "exp9", "arm": "phaseD"}

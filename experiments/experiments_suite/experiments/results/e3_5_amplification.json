@@ -1,0 +1,38 @@
+{
+  "experiment": "E3.5",
+  "type": "exploratory",
+  "description": "Forecast character comparison across N values (no formal criterion)",
+  "results": {
+    "5": {
+      "mean": null,
+      "std": null,
+      "trend": null,
+      "forecast_range": null,
+      "train_r2": null,
+      "test_r2": null
+    },
+    "10": {
+      "error": "Expected 2D array, got 1D array instead:\narray=[].\nReshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample."
+    },
+    "100": {
+      "mean": 4.795364,
+      "std": 0.043888,
+      "trend": "stable",
+      "forecast_range": 0.0589069999999996,
+      "train_r2": 0.8547,
+      "test_r2": -0.0866,
+      "forecast_min": 4.769154,
+      "forecast_max": 4.828061
+    },
+    "200": {
+      "mean": 4.799591,
+      "std": 0.04444,
+      "trend": "stable",
+      "forecast_range": 0.02816699999999983,
+      "train_r2": 0.8502,
+      "test_r2": 0.0162,
+      "forecast_min": 4.798873,
+      "forecast_max": 4.82704
+    }
+  }
+}

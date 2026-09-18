@@ -1,0 +1,72 @@
+{
+  "exp2": {
+    "staged": {
+      "decomp_%": 65.0,
+      "fl_%": 30.0
+    },
+    "direct": {
+      "decomp_%": 15.0,
+      "fl_%": 0.0
+    },
+    "null": {
+      "decomp_%": 0.0,
+      "fl_%": 0.0
+    }
+  },
+  "exp1_phi_degradation_n": 18,
+  "exp1_phi_pct_change": {
+    "tau_%": -51.45,
+    "lambda_%": 43.44,
+    "rho_pp": 0.0,
+    "sigma_%": 0.0
+  },
+  "exp14": {
+    "standard_contamination_%": 100,
+    "isolated_contamination_%": 0
+  },
+  "exp9_phaseC": {
+    "5": 100.0,
+    "10": 80.0,
+    "20": 40.0,
+    "30": 26.7,
+    "50": 16.0
+  },
+  "exp11_profiles": {
+    "equal": {
+      "rate_%": 57.1,
+      "delta_pp": 0.0,
+      "cohen_h": 0.0,
+      "bh_q": NaN
+    },
+    "tput_heavy": {
+      "rate_%": 75.0,
+      "delta_pp": 17.9,
+      "cohen_h": 0.38,
+      "bh_q": 1.0
+    },
+    "latency_heavy": {
+      "rate_%": 53.6,
+      "delta_pp": -3.6,
+      "cohen_h": -0.072,
+      "bh_q": 1.0
+    },
+    "loss_heavy": {
+      "rate_%": 57.1,
+      "delta_pp": 0.0,
+      "cohen_h": 0.0,
+      "bh_q": 1.0
+    },
+    "stable_heavy": {
+      "rate_%": 57.1,
+      "delta_pp": 0.0,
+      "cohen_h": 0.0,
+      "bh_q": 1.0
+    },
+    "no_stability": {
+      "rate_%": 57.1,
+      "delta_pp": 0.0,
+      "cohen_h": 0.0,
+      "bh_q": 1.0
+    }
+  }
+}

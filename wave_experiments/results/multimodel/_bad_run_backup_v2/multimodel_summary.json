@@ -1,0 +1,51 @@
+{
+  "runner": "multimodel",
+  "backend": "gemini",
+  "model": "gemma-4-31b-it",
+  "total_elapsed_h": 1.62,
+  "experiments": {
+    "mm1": {
+      "status": "ok",
+      "elapsed_h": 0.46,
+      "exp_id": "mm1",
+      "backend": "gemini",
+      "model": "gemma-4-31b-it",
+      "n_trials": 20,
+      "full_loop_rate": 0.0,
+      "decomposed_rate": 0.05,
+      "contaminated_rate": 0.0,
+      "success_rate": 0.05,
+      "avg_elapsed_s": 82.2,
+      "saved_at": "2026-04-30T03:25:36.353622+00:00"
+    },
+    "mm3": {
+      "status": "ok",
+      "elapsed_h": 0.54,
+      "exp_id": "mm3",
+      "backend": "gemini",
+      "model": "gemma-4-31b-it",
+      "n_trials": 20,
+      "full_loop_rate": 0.0,
+      "decomposed_rate": 0.0,
+      "contaminated_rate": 0.0,
+      "success_rate": 0.05,
+      "avg_elapsed_s": 96.4,
+      "saved_at": "2026-04-30T03:57:44.674705+00:00"
+    },
+    "mm5": {
+      "status": "ok",
+      "elapsed_h": 0.62,
+      "exp_id": "mm5",
+      "backend": "gemini",
+      "model": "gemma-4-31b-it",
+      "n_trials": 20,
+      "full_loop_rate": 0.0,
+      "decomposed_rate": 0.15,
+      "contaminated_rate": 0.0,
+      "success_rate": 0.2,
+      "avg_elapsed_s": 112.4,
+      "saved_at": "2026-04-30T04:35:12.220395+00:00"
+    }
+  },
+  "saved_at": "2026-04-30T04:35:12.221063+00:00"
+}

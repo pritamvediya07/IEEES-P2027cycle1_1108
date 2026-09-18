@@ -1,0 +1,199 @@
+{
+  "trial": 149,
+  "workflow_idx": 4,
+  "condition": "ht",
+  "rep": 9,
+  "task_completed": true,
+  "intent": "The internet slice AMBR was previously increased to 24 Mbps but load has decreased. Roll it back to 20 Mbps using policy_manager sub_action apply. Check feasibility first. The target_slice parameter is 'internet'. AMBR in bps.",
+  "defense": "ht",
+  "k_star": 1,
+  "elapsed_s": 98.29,
+  "n_steps": 32,
+  "n_policy_calls": 8,
+  "n_kpi_calls": 0,
+  "policy_calls": [
+    {
+      "step": 15,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 17,
+      "dl_ambr": 0,
+      "sub_action": "set_ambr"
+    },
+    {
+      "step": 19,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 23,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 25,
+      "dl_ambr": 0,
+      "sub_action": "update"
+    },
+    {
+      "step": 27,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 30,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 32,
+      "dl_ambr": 20000000,
+      "sub_action": "apply"
+    }
+  ],
+  "kpi_calls": [],
+  "q_trace": [],
+  "decomposed": false,
+  "contaminated": false,
+  "success_claimed": true,
+  "escalated": false,
+  "full_loop": false,
+  "def4_satisfied": false,
+  "h_budget_rejections": 0,
+  "iso_filter_active": false,
+  "steps_summary": [
+    {
+      "type": "tool_call",
+      "step": 1
+    },
+    {
+      "type": "tool_result",
+      "step": 1
+    },
+    {
+      "type": "thought",
+      "step": 2
+    },
+    {
+      "type": "tool_call",
+      "step": 4
+    },
+    {
+      "type": "tool_result",
+      "step": 4
+    },
+    {
+      "type": "tool_call",
+      "step": 6
+    },
+    {
+      "type": "tool_result",
+      "step": 6
+    },
+    {
+      "type": "tool_call",
+      "step": 8
+    },
+    {
+      "type": "tool_result",
+      "step": 8
+    },
+    {
+      "type": "tool_call",
+      "step": 11
+    },
+    {
+      "type": "tool_result",
+      "step": 11
+    },
+    {
+      "type": "tool_call",
+      "step": 13
+    },
+    {
+      "type": "tool_result",
+      "step": 13
+    },
+    {
+      "type": "tool_call",
+      "step": 15
+    },
+    {
+      "type": "tool_result",
+      "step": 15
+    },
+    {
+      "type": "tool_call",
+      "step": 17
+    },
+    {
+      "type": "tool_result",
+      "step": 17
+    },
+    {
+      "type": "tool_call",
+      "step": 19
+    },
+    {
+      "type": "tool_result",
+      "step": 19
+    },
+    {
+      "type": "tool_call",
+      "step": 21
+    },
+    {
+      "type": "tool_result",
+      "step": 21
+    },
+    {
+      "type": "tool_call",
+      "step": 23
+    },
+    {
+      "type": "tool_result",
+      "step": 23
+    },
+    {
+      "type": "tool_call",
+      "step": 25
+    },
+    {
+      "type": "tool_result",
+      "step": 25
+    },
+    {
+      "type": "tool_call",
+      "step": 27
+    },
+    {
+      "type": "tool_result",
+      "step": 27
+    },
+    {
+      "type": "tool_call",
+      "step": 30
+    },
+    {
+      "type": "tool_result",
+      "step": 30
+    },
+    {
+      "type": "tool_call",
+      "step": 32
+    },
+    {
+      "type": "tool_result",
+      "step": 32
+    },
+    {
+      "type": "final_answer",
+      "step": 33
+    }
+  ],
+  "saved_at": "2026-05-02T10:44:45.765620+00:00",
+  "exp_id": "exp8",
+  "arm": "wf4_ht"
+}

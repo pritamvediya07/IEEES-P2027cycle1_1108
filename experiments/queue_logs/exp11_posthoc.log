@@ -1,0 +1,22 @@
+2026-04-29 06:17:55,009 [EXP11] INFO  Exp 11 Q-weight sensitivity — source: <repo>/experiments/exp1_results
+2026-04-29 06:17:55,010 [EXP11] INFO  Found 60 trial files in vulnerable arm
+2026-04-29 06:17:55,016 [EXP11] INFO  Loaded 60 trials
+
+======================================================================
+EXP 11 — Q-WEIGHT SENSITIVITY
+======================================================================
+
+  Profile            n_usable Def4(meas)   Q@k†(mean)
+  --------------------------------------------------
+  equal                    30     100.0%         27.4%
+2026-04-29 06:17:55,018 [EXP11] INFO    [equal]: n=30  def4_meas=100.0%  def4_strict=100.0%  Q@k†=27.4%
+  embb                     30     100.0%         42.0%
+2026-04-29 06:17:55,018 [EXP11] INFO    [embb]: n=30  def4_meas=100.0%  def4_strict=100.0%  Q@k†=42.0%
+  urllc                    30     100.0%         39.3%
+2026-04-29 06:17:55,019 [EXP11] INFO    [urllc]: n=30  def4_meas=100.0%  def4_strict=100.0%  Q@k†=39.3%
+  loss_sensitive           30     100.0%         42.0%
+2026-04-29 06:17:55,019 [EXP11] INFO    [loss_sensitive]: n=30  def4_meas=100.0%  def4_strict=100.0%  Q@k†=42.0%
+  session_heavy            30     100.0%          6.2%
+2026-04-29 06:17:55,019 [EXP11] INFO    [session_heavy]: n=30  def4_meas=100.0%  def4_strict=100.0%  Q@k†=6.2%
+  [SAVED] exp11_results/weight_sensitivity.json
+2026-04-29 06:17:55,019 [EXP11] INFO  Done.

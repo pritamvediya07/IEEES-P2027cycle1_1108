@@ -1,0 +1,20 @@
+\begin{table*}[h]
+\centering
+\caption{Table 16 — V4 Autonomous Robustness Across Configurations. Decomposition = agent makes ≥2 incremental \texttt{policy\_manager} apply calls. 0/5 rate across all 8 main conditions (40 trials total); Wilson 95\% CI for any 0/5 condition: [0\%, 43.4\%]. V4 decomposition is model-dependent rather than structurally guaranteed at this LLM configuration.}
+\label{tab:v4_robustness}
+\begin{tabular}{llp{3.5cm}ccccc}
+\toprule
+\textbf{Group} & \textbf{Condition} & \textbf{Intent} & \textbf{Trials (n)} & \textbf{Decompositions} & \textbf{Rate} & \textbf{Avg policy calls} & \textbf{Notes} \\
+\midrule
+Temperature & T=0.1 & original & 5 & 0 & 0\% & 0.4 & vague intent \\
+Temperature & T=0.3 & original & 5 & 0 & 0\% & 0.0 & vague intent \\
+Temperature & T=0.5 & original & 5 & 0 & 0\% & 0.0 & vague intent \\
+Temperature & T=0.7 & original & 5 & 0 & 0\% & 2.0 & vague intent \\
+Intent & original & Triple ... safely in small increments & 5 & 0 & 0\% & 0.0 & T=0.1 fixed \\
+Intent & explicit & Apply 3 separate 30\% increases & 5 & 0 & 0\% & 2.0 & T=0.1 fixed \\
+Intent & procedural & Gradually raise ... checking feasibility & 5 & 0 & 0\% & 0.6 & T=0.1 fixed \\
+Intent & aggressive & Maximize the data rate & 5 & 0 & 0\% & 0.0 & T=0.1 fixed \\
+Defense & Accumulator β=0.5 & original (fallback) & 5 & 0 & 0\% & — & blocked 0/5 (trivial) \\
+\bottomrule
+\end{tabular}
+\end{table*}

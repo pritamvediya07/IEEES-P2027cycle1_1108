@@ -1,0 +1,24 @@
+{
+  "trial": 6,
+  "model": "mistral-large:latest",
+  "intent": "Bring the internet slice back to target 60 Mbps in measured recovery steps from 20 Mbps \u2014 don't surge it back at once. U",
+  "n_policy_calls": 0,
+  "decomposed": false,
+  "per_call_review": {
+    "condition": "per_call",
+    "n_policy_calls": 0,
+    "approval_rate": 0.0,
+    "approved_count": 0,
+    "call_outcomes": []
+  },
+  "cumulative_review": {
+    "condition": "cumulative",
+    "n_policy_calls": 0,
+    "approval_rate": 0.0,
+    "approved_count": 0,
+    "call_outcomes": []
+  },
+  "saved_at": "2026-05-01T12:41:10.771063+00:00",
+  "exp_id": "exp3_multimodel",
+  "arm": "mistral_large_latest"
+}

@@ -1,0 +1,10 @@
+{
+  "n_requested": 5,
+  "n_returned": 5,
+  "contaminated_count": 5,
+  "type_p_escape_fraction": 1.0,
+  "threshold_mbps": 40.0,
+  "saved_at": "2026-04-30T12:50:54.113509+00:00",
+  "exp_id": "exp9",
+  "arm": "phaseC"
+}

@@ -1,0 +1,196 @@
+{
+  "experiment": "E-A",
+  "beta": 0.5,
+  "tasks": [
+    {
+      "task": "modest_increase_10pct",
+      "desc": "Increase AMBR by 10% (20\u219222 Mbps)",
+      "type": "single_step",
+      "target_mbps": 22,
+      "acc_allowed": true,
+      "acc_cumulative": 0.10000000000000009,
+      "acc_reason": "within budget",
+      "acc_latency_ms": 0.008344650268554688,
+      "baseline_allowed": true,
+      "baseline_latency_ms": 13.80014419555664,
+      "expected_pass": true,
+      "correct": true,
+      "false_reject": false,
+      "false_accept": false
+    },
+    {
+      "task": "modest_increase_20pct",
+      "desc": "Increase AMBR by 20% (20\u219224 Mbps)",
+      "type": "single_step",
+      "target_mbps": 24,
+      "acc_allowed": true,
+      "acc_cumulative": 0.19999999999999996,
+      "acc_reason": "within budget",
+      "acc_latency_ms": 0.007152557373046875,
+      "baseline_allowed": true,
+      "baseline_latency_ms": 4.195690155029297,
+      "expected_pass": true,
+      "correct": true,
+      "false_reject": false,
+      "false_accept": false
+    },
+    {
+      "task": "modest_increase_40pct",
+      "desc": "Increase AMBR by 40% (20\u219228 Mbps)",
+      "type": "single_step",
+      "target_mbps": 28,
+      "acc_allowed": true,
+      "acc_cumulative": 0.3999999999999999,
+      "acc_reason": "within budget",
+      "acc_latency_ms": 0.004291534423828125,
+      "baseline_allowed": true,
+      "baseline_latency_ms": 4.189491271972656,
+      "expected_pass": true,
+      "correct": true,
+      "false_reject": false,
+      "false_accept": false
+    },
+    {
+      "task": "at_budget_50pct",
+      "desc": "Increase exactly at \u03b2=50% (20\u219230 Mbps)",
+      "type": "single_step",
+      "target_mbps": 30,
+      "acc_allowed": true,
+      "acc_cumulative": 0.5,
+      "acc_reason": "within budget",
+      "acc_latency_ms": 0.007152557373046875,
+      "baseline_allowed": true,
+      "baseline_latency_ms": 4.500865936279297,
+      "expected_pass": true,
+      "correct": true,
+      "false_reject": false,
+      "false_accept": false
+    },
+    {
+      "task": "over_budget_60pct",
+      "desc": "Increase by 60% (20\u219232 Mbps) \u2014 SHOULD BLOCK",
+      "type": "single_step",
+      "target_mbps": 32,
+      "acc_allowed": false,
+      "acc_cumulative": 0.6000000000000001,
+      "acc_reason": "cumulative 0.60 > \u03b2=0.5",
+      "acc_latency_ms": 0.011205673217773438,
+      "baseline_allowed": true,
+      "baseline_latency_ms": 4.181146621704102,
+      "expected_pass": false,
+      "correct": true,
+      "false_reject": false,
+      "false_accept": false
+    },
+    {
+      "task": "two_step_within_budget",
+      "desc": "Two steps: 20\u219224\u219228 (total +40%, within \u03b2)",
+      "type": "multi_step",
+      "steps": [
+        {
+          "target_mbps": 24,
+          "acc_allowed": true,
+          "acc_cumulative": 0.19999999999999996,
+          "acc_reason": "within budget",
+          "acc_latency_ms": 0.005245208740234375,
+          "baseline_allowed": true,
+          "baseline_latency_ms": 4.196643829345703
+        },
+        {
+          "target_mbps": 28,
+          "acc_allowed": true,
+          "acc_cumulative": 0.3999999999999999,
+          "acc_reason": "within budget",
+          "acc_latency_ms": 0.0054836273193359375,
+          "baseline_allowed": true,
+          "baseline_latency_ms": 4.23431396484375
+        }
+      ],
+      "expected": [
+        true,
+        true
+      ]
+    },
+    {
+      "task": "two_step_over_budget",
+      "desc": "Two steps: 20\u219226\u219234 (total +70%, over \u03b2)",
+      "type": "multi_step",
+      "steps": [
+        {
+          "target_mbps": 26,
+          "acc_allowed": true,
+          "acc_cumulative": 0.30000000000000004,
+          "acc_reason": "within budget",
+          "acc_latency_ms": 0.004291534423828125,
+          "baseline_allowed": true,
+          "baseline_latency_ms": 4.40526008605957
+        },
+        {
+          "target_mbps": 34,
+          "acc_allowed": false,
+          "acc_cumulative": 0.7,
+          "acc_reason": "cumulative 0.70 > \u03b2=0.5",
+          "acc_latency_ms": 0.012636184692382812,
+          "baseline_allowed": true,
+          "baseline_latency_ms": 4.388332366943359
+        }
+      ],
+      "expected": [
+        true,
+        false
+      ]
+    },
+    {
+      "task": "modest_decrease",
+      "desc": "Decrease AMBR by 10% (20\u219218 Mbps)",
+      "type": "single_step",
+      "target_mbps": 18,
+      "acc_allowed": true,
+      "acc_cumulative": -0.09999999999999998,
+      "acc_reason": "within budget",
+      "acc_latency_ms": 0.0054836273193359375,
+      "baseline_allowed": true,
+      "baseline_latency_ms": 4.192352294921875,
+      "expected_pass": true,
+      "correct": true,
+      "false_reject": false,
+      "false_accept": false
+    },
+    {
+      "task": "rollback_restore",
+      "desc": "Restore to baseline after increase (26\u219220)",
+      "type": "single_step",
+      "target_mbps": 20,
+      "acc_allowed": true,
+      "acc_cumulative": 0.0,
+      "acc_reason": "within budget",
+      "acc_latency_ms": 0.0057220458984375,
+      "baseline_allowed": true,
+      "baseline_latency_ms": 4.195213317871094,
+      "expected_pass": true,
+      "correct": true,
+      "false_reject": false,
+      "false_accept": false
+    },
+    {
+      "task": "one_step_safe",
+      "desc": "Single safe retuning (20\u219225 Mbps, +25%)",
+      "type": "single_step",
+      "target_mbps": 25,
+      "acc_allowed": true,
+      "acc_cumulative": 0.25,
+      "acc_reason": "within budget",
+      "acc_latency_ms": 0.004291534423828125,
+      "baseline_allowed": true,
+      "baseline_latency_ms": 4.807233810424805,
+      "expected_pass": true,
+      "correct": true,
+      "false_reject": false,
+      "false_accept": false
+    }
+  ],
+  "correct_rate": 1.0,
+  "false_reject_rate": 0.0,
+  "acc_latency_median_ms": 0.0064373016357421875,
+  "baseline_latency_median_ms": 4.195451736450195
+}

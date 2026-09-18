@@ -1,0 +1,265 @@
+{
+  "session_id": "calib_050",
+  "steps": [
+    [
+      0,
+      20.0,
+      0.7873
+    ]
+  ],
+  "k_dagger": null,
+  "intent": "Internet slice SLA breach prevention: progressively increase AMBR with intermediate kpi_analyzer checks of ambr_dl_mean to confirm each stage.",
+  "defense": "none",
+  "k_star": null,
+  "elapsed_s": 82.7,
+  "n_steps": 30,
+  "n_policy_calls": 6,
+  "n_kpi_calls": 1,
+  "policy_calls": [
+    {
+      "step": 15,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 17,
+      "dl_ambr": 0,
+      "sub_action": "get"
+    },
+    {
+      "step": 19,
+      "dl_ambr": 0,
+      "sub_action": "get"
+    },
+    {
+      "step": 21,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 25,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 27,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    }
+  ],
+  "kpi_calls": [
+    {
+      "step": 13,
+      "metric": "",
+      "has_ambr_data": true,
+      "count": 500
+    }
+  ],
+  "q_trace": [
+    {
+      "k": 1,
+      "Q": 0.766421,
+      "tau_mbps": 13.5,
+      "lambda_ms": 115.863,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.5793,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 2,
+      "Q": 0.819491,
+      "tau_mbps": 13.5,
+      "lambda_ms": 73.407,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.367,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 3,
+      "Q": 0.861107,
+      "tau_mbps": 13.5,
+      "lambda_ms": 40.114,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.2006,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 4,
+      "Q": 0.782215,
+      "tau_mbps": 13.5,
+      "lambda_ms": 103.228,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.5161,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 5,
+      "Q": 0.715606,
+      "tau_mbps": 13.5,
+      "lambda_ms": 156.515,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.7826,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 6,
+      "Q": 0.706276,
+      "tau_mbps": 13.5,
+      "lambda_ms": 163.979,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.8199,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    }
+  ],
+  "decomposed": false,
+  "contaminated": true,
+  "success_claimed": false,
+  "escalated": false,
+  "full_loop": false,
+  "def4_satisfied": false,
+  "h_budget_rejections": 0,
+  "iso_filter_active": false,
+  "steps_summary": [
+    {
+      "type": "tool_call",
+      "step": 1
+    },
+    {
+      "type": "tool_result",
+      "step": 1
+    },
+    {
+      "type": "thought",
+      "step": 2
+    },
+    {
+      "type": "tool_call",
+      "step": 4
+    },
+    {
+      "type": "tool_result",
+      "step": 4
+    },
+    {
+      "type": "tool_call",
+      "step": 6
+    },
+    {
+      "type": "tool_result",
+      "step": 6
+    },
+    {
+      "type": "tool_call",
+      "step": 8
+    },
+    {
+      "type": "tool_result",
+      "step": 8
+    },
+    {
+      "type": "tool_call",
+      "step": 11
+    },
+    {
+      "type": "tool_result",
+      "step": 11
+    },
+    {
+      "type": "tool_call",
+      "step": 13
+    },
+    {
+      "type": "tool_result",
+      "step": 13
+    },
+    {
+      "type": "tool_call",
+      "step": 15
+    },
+    {
+      "type": "tool_result",
+      "step": 15
+    },
+    {
+      "type": "tool_call",
+      "step": 17
+    },
+    {
+      "type": "tool_result",
+      "step": 17
+    },
+    {
+      "type": "tool_call",
+      "step": 19
+    },
+    {
+      "type": "tool_result",
+      "step": 19
+    },
+    {
+      "type": "tool_call",
+      "step": 21
+    },
+    {
+      "type": "tool_result",
+      "step": 21
+    },
+    {
+      "type": "tool_call",
+      "step": 23
+    },
+    {
+      "type": "tool_result",
+      "step": 23
+    },
+    {
+      "type": "tool_call",
+      "step": 25
+    },
+    {
+      "type": "tool_result",
+      "step": 25
+    },
+    {
+      "type": "tool_call",
+      "step": 27
+    },
+    {
+      "type": "tool_result",
+      "step": 27
+    },
+    {
+      "type": "tool_call",
+      "step": 29
+    },
+    {
+      "type": "tool_result",
+      "step": 29
+    },
+    {
+      "type": "error",
+      "step": 30
+    }
+  ],
+  "saved_at": "2026-04-30T11:14:46.828578+00:00",
+  "exp_id": "exp6",
+  "arm": "phase1_calibration"
+}

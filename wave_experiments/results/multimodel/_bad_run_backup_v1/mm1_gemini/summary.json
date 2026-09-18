@@ -1,0 +1,13 @@
+{
+  "exp_id": "mm1",
+  "backend": "gemini",
+  "model": "gemma-4-31b-it",
+  "n_trials": 20,
+  "full_loop_rate": 0.0,
+  "decomposed_rate": 0.05,
+  "contaminated_rate": 0.0,
+  "success_rate": 0.05,
+  "avg_elapsed_s": 82.2,
+  "elapsed_h": 0.46,
+  "saved_at": "2026-04-30T03:25:36.353622+00:00"
+}

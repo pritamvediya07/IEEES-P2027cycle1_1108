@@ -1,0 +1,117 @@
+{
+  "experiment": "E10",
+  "model": "none",
+  "n_per_arm": 120,
+  "mgmt_plane_interval_ms": 1000.0,
+  "arms": {
+    "none": {
+      "n": 120,
+      "mean_ms": 4.4937,
+      "p50_ms": 4.0843,
+      "p95_ms": 6.6999,
+      "p99_ms": 9.9617,
+      "min_ms": 2.9924,
+      "max_ms": 10.2062,
+      "stdev_ms": 1.3101,
+      "drift_bound": false,
+      "isolated_collector": false,
+      "rejected_by_gate": 0
+    },
+    "drift": {
+      "n": 120,
+      "mean_ms": 4.4129,
+      "p50_ms": 4.1977,
+      "p95_ms": 5.9518,
+      "p99_ms": 6.5065,
+      "min_ms": 3.2757,
+      "max_ms": 6.5186,
+      "stdev_ms": 0.8019,
+      "drift_bound": true,
+      "isolated_collector": false,
+      "rejected_by_gate": 0,
+      "gate_check_only": {
+        "n": 120,
+        "mean_ms": 0.0004,
+        "p50_ms": 0.0004,
+        "p95_ms": 0.0004,
+        "p99_ms": 0.0013,
+        "min_ms": 0.0003,
+        "max_ms": 0.0017,
+        "stdev_ms": 0.0002
+      }
+    },
+    "iso": {
+      "n": 120,
+      "mean_ms": 5.6554,
+      "p50_ms": 5.5537,
+      "p95_ms": 6.822,
+      "p99_ms": 9.5971,
+      "min_ms": 3.9525,
+      "max_ms": 10.1561,
+      "stdev_ms": 1.0207,
+      "drift_bound": false,
+      "isolated_collector": true,
+      "rejected_by_gate": 0
+    },
+    "both": {
+      "n": 120,
+      "mean_ms": 4.3705,
+      "p50_ms": 3.9828,
+      "p95_ms": 6.4438,
+      "p99_ms": 9.7637,
+      "min_ms": 2.992,
+      "max_ms": 9.9096,
+      "stdev_ms": 1.2223,
+      "drift_bound": true,
+      "isolated_collector": true,
+      "rejected_by_gate": 0,
+      "gate_check_only": {
+        "n": 120,
+        "mean_ms": 0.0004,
+        "p50_ms": 0.0004,
+        "p95_ms": 0.0005,
+        "p99_ms": 0.001,
+        "min_ms": 0.0003,
+        "max_ms": 0.005,
+        "stdev_ms": 0.0004
+      }
+    }
+  },
+  "kpi_query_latency": {
+    "n": 120,
+    "mean_ms": 0.7774,
+    "p50_ms": 0.7792,
+    "p95_ms": 0.9631,
+    "p99_ms": 1.0148,
+    "min_ms": 0.4348,
+    "max_ms": 1.2146,
+    "stdev_ms": 0.1783
+  },
+  "deltas_vs_none": {
+    "drift": {
+      "delta_ms": -0.0808,
+      "delta_pct_vs_none": -1.8,
+      "pct_of_mgmt_plane_interval": -0.0081
+    },
+    "iso": {
+      "delta_ms": 1.1617,
+      "delta_pct_vs_none": 25.85,
+      "pct_of_mgmt_plane_interval": 0.1162
+    },
+    "both": {
+      "delta_ms": -0.1232,
+      "delta_pct_vs_none": -2.74,
+      "pct_of_mgmt_plane_interval": -0.0123
+    }
+  },
+  "verdict": {
+    "framing": "this is management-plane cost. The standard rate-limits successive slice policy modifications on the order of seconds, so the meaningful denominator is that interval (~1000 ms), not a user-plane budget.",
+    "worst_arm_delta_ms": 1.1617,
+    "worst_arm_pct_of_mgmt_interval": 0.1162,
+    "drift_bound_cost": "a single float comparison against the policy state; its own cost is in the microseconds and is dominated entirely by the database write it precedes.",
+    "conclusion": "The most expensive arm adds 1.16 ms per policy call, which is 0.1162% of a one-second management-plane update interval. Neither defense is on the user-plane data path at all: the drift bound is one comparison at the policy-application boundary, and IsolatedCollector changes where the collector writes, not how often anything is forwarded.",
+    "measurement_floor_caveat": "The arm ordering is NOT internally consistent: 'both' (4.37 ms) came in cheaper than 'iso' (5.66 ms), although 'both' does strictly more work. The total spread across all four arms is 1.28 ms against a within-arm standard deviation of up to 1.31 ms. The correct reading is therefore NOT that the drift bound has negative cost, but that every arm's overhead sits at or below this harness's measurement floor, which is dominated by the MongoDB write the policy call performs anyway. Two arms show negative deltas, and negative overhead is not physical \u2014 that is the signature of noise, and it is reported rather than hidden because a sub-millisecond claim quoted to two decimals would not survive scrutiny.",
+    "defensible_claim": "Defensible: all defense configurations cost under 1.5 ms per policy call, which is under 0.2% of a one-second management-plane update interval. Not defensible from this data: any ranking of the arms against each other."
+  },
+  "saved_at": "2026-08-23T06:01:41.318709+00:00"
+}

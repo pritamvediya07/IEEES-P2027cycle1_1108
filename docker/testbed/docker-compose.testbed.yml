@@ -1,0 +1,366 @@
+version: "3.9"
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  PALA Testbed — Open5GS 5G SA Core + UERANSIM + NWDAF Collector
+#  IEEE S&P 2027 Artifact (Architecture-Induced Reward Hacking)
+#
+#  Single-command start (from repo root):
+#    ./quickstart.sh
+#
+#  Or manually:
+#    cp .env.example .env              # configure LLM API key
+#    sudo bash docker/testbed/scripts/setup-host.sh
+#    docker compose -f docker/testbed/docker-compose.testbed.yml \
+#      --env-file .env up -d --build
+#
+#  Services started:
+#    mongo-testbed  — MongoDB 7 (port 27020 on host)
+#    nrf, scp       — NRF + SCP (service discovery)
+#    amf, smf, upf  — Control + User plane
+#    pcf, udm, udr, ausf, nssf, bsf  — Policy + Data + Auth functions
+#    webui          — Open5GS WebUI (port 10999 on host)
+#    ueransim       — gNB + 1 UE (creates uesimtun0 inside container)
+#    nwdaf          — NWDAF collector (reads Open5GS → writes analytics every 5s)
+#
+#  Ports on host:
+#    27020 — MongoDB testbed
+#    10999 — Open5GS WebUI  (http://localhost:10999, admin / 1423)
+#    38413 — AMF NGAP (SCTP)
+#
+#  After start, run experiments from host:
+#    source .venv/bin/activate
+#    python reproduce_results.py          # offline verification (~10 min)
+#    ./run_experiments.sh --phase rq1     # live experiment run
+#
+#  Teardown:
+#    docker compose -f docker/testbed/docker-compose.testbed.yml down -v
+# ─────────────────────────────────────────────────────────────────────────────
+
+networks:
+  5gcore:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+
+volumes:
+  mongo_testbed_data:
+  nwdaf_results:
+
+# ── Shared NF defaults ────────────────────────────────────────────────────────
+x-nf: &nf-defaults
+  build:
+    context: ../..
+    dockerfile: docker/testbed/Dockerfile.open5gs
+  networks:
+    - 5gcore
+  restart: unless-stopped
+  logging:
+    driver: json-file
+    options:
+      max-size: "10m"
+      max-file: "3"
+
+services:
+
+  # ── MongoDB (port 27020 on host) ─────────────────────────────────────────────
+  mongo-testbed:
+    image: mongo:7
+    container_name: mongo_testbed
+    ports:
+      - "27020:27017"
+    volumes:
+      - mongo_testbed_data:/data/db
+    networks:
+      - 5gcore
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.runCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  # ── Subscriber init (one-shot, exits after populating MongoDB) ───────────────
+  init-db:
+    image: mongo:7
+    container_name: init_subscribers
+    networks:
+      - 5gcore
+    depends_on:
+      mongo-testbed:
+        condition: service_healthy
+    volumes:
+      - ./scripts/init_subscribers.js:/init_subscribers.js:ro
+    command: mongosh mongodb://mongo-testbed:27017/open5gs /init_subscribers.js
+    restart: "no"
+
+  # ── NRF ──────────────────────────────────────────────────────────────────────
+  nrf:
+    <<: *nf-defaults
+    container_name: testbed_nrf
+    environment:
+      NF_NAME: nrf
+    volumes:
+      - /tmp/open5gs-docker-logs:/var/log/open5gs
+      - ./config/open5gs/hnet:/etc/open5gs/hnet:ro
+      - ./config/open5gs/nrf.yaml:/etc/open5gs/nrf.yaml:ro
+
+  # ── SCP ──────────────────────────────────────────────────────────────────────
+  scp:
+    <<: *nf-defaults
+    container_name: testbed_scp
+    environment:
+      NF_NAME: scp
+    volumes:
+      - /tmp/open5gs-docker-logs:/var/log/open5gs
+      - ./config/open5gs/hnet:/etc/open5gs/hnet:ro
+      - ./config/open5gs/scp.yaml:/etc/open5gs/scp.yaml:ro
+    depends_on:
+      nrf:
+        condition: service_started
+
+  # ── UDR ──────────────────────────────────────────────────────────────────────
+  udr:
+    <<: *nf-defaults
+    container_name: testbed_udr
+    environment:
+      NF_NAME: udr
+    volumes:
+      - /tmp/open5gs-docker-logs:/var/log/open5gs
+      - ./config/open5gs/hnet:/etc/open5gs/hnet:ro
+      - ./config/open5gs/udr.yaml:/etc/open5gs/udr.yaml:ro
+    depends_on:
+      scp:
+        condition: service_started
+      mongo-testbed:
+        condition: service_healthy
+
+  # ── UDM ──────────────────────────────────────────────────────────────────────
+  udm:
+    <<: *nf-defaults
+    container_name: testbed_udm
+    environment:
+      NF_NAME: udm
+    volumes:
+      - /tmp/open5gs-docker-logs:/var/log/open5gs
+      - ./config/open5gs/hnet:/etc/open5gs/hnet:ro
+      - ./config/open5gs/udm.yaml:/etc/open5gs/udm.yaml:ro
+    depends_on:
+      udr:
+        condition: service_started
+
+  # ── AUSF ─────────────────────────────────────────────────────────────────────
+  ausf:
+    <<: *nf-defaults
+    container_name: testbed_ausf
+    environment:
+      NF_NAME: ausf
+    volumes:
+      - /tmp/open5gs-docker-logs:/var/log/open5gs
+      - ./config/open5gs/hnet:/etc/open5gs/hnet:ro
+      - ./config/open5gs/ausf.yaml:/etc/open5gs/ausf.yaml:ro
+    depends_on:
+      udm:
+        condition: service_started
+
+  # ── PCF ──────────────────────────────────────────────────────────────────────
+  pcf:
+    <<: *nf-defaults
+    container_name: testbed_pcf
+    environment:
+      NF_NAME: pcf
+    volumes:
+      - /tmp/open5gs-docker-logs:/var/log/open5gs
+      - ./config/open5gs/hnet:/etc/open5gs/hnet:ro
+      - ./config/open5gs/pcf.yaml:/etc/open5gs/pcf.yaml:ro
+    depends_on:
+      scp:
+        condition: service_started
+      mongo-testbed:
+        condition: service_healthy
+
+  # ── NSSF ─────────────────────────────────────────────────────────────────────
+  nssf:
+    <<: *nf-defaults
+    container_name: testbed_nssf
+    environment:
+      NF_NAME: nssf
+    volumes:
+      - /tmp/open5gs-docker-logs:/var/log/open5gs
+      - ./config/open5gs/hnet:/etc/open5gs/hnet:ro
+      - ./config/open5gs/nssf.yaml:/etc/open5gs/nssf.yaml:ro
+    depends_on:
+      nrf:
+        condition: service_started
+
+  # ── BSF ──────────────────────────────────────────────────────────────────────
+  bsf:
+    <<: *nf-defaults
+    container_name: testbed_bsf
+    environment:
+      NF_NAME: bsf
+    volumes:
+      - /tmp/open5gs-docker-logs:/var/log/open5gs
+      - ./config/open5gs/hnet:/etc/open5gs/hnet:ro
+      - ./config/open5gs/bsf.yaml:/etc/open5gs/bsf.yaml:ro
+    depends_on:
+      scp:
+        condition: service_started
+      mongo-testbed:
+        condition: service_healthy
+
+  # ── AMF ──────────────────────────────────────────────────────────────────────
+  amf:
+    <<: *nf-defaults
+    container_name: testbed_amf
+    environment:
+      NF_NAME: amf
+    volumes:
+      - /tmp/open5gs-docker-logs:/var/log/open5gs
+      - ./config/open5gs/hnet:/etc/open5gs/hnet:ro
+      - ./config/open5gs/amf.yaml:/etc/open5gs/amf.yaml:ro
+    ports:
+      - "38413:38412/sctp"   # offset +1 from native 38412
+    depends_on:
+      ausf:
+        condition: service_started
+      scp:
+        condition: service_started
+
+  # ── SMF ──────────────────────────────────────────────────────────────────────
+  smf:
+    <<: *nf-defaults
+    container_name: testbed_smf
+    environment:
+      NF_NAME: smf
+    volumes:
+      - /tmp/open5gs-docker-logs:/var/log/open5gs
+      - ./config/open5gs/hnet:/etc/open5gs/hnet:ro
+      - ./config/open5gs/smf.yaml:/etc/open5gs/smf.yaml:ro
+    depends_on:
+      scp:
+        condition: service_started
+      pcf:
+        condition: service_started
+
+  # ── UPF ──────────────────────────────────────────────────────────────────────
+  # Requires GTP kernel module on host: sudo modprobe gtp
+  upf:
+    <<: *nf-defaults
+    container_name: testbed_upf
+    environment:
+      NF_NAME: upf
+    volumes:
+      - /tmp/open5gs-docker-logs:/var/log/open5gs
+      - ./config/open5gs/hnet:/etc/open5gs/hnet:ro
+      - ./config/open5gs/upf.yaml:/etc/open5gs/upf.yaml:ro
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    sysctls:
+      net.ipv4.ip_forward: 1
+    depends_on:
+      smf:
+        condition: service_started
+
+  # ── WebUI (port 10999 on host) ────────────────────────────────────────────────
+  webui:
+    image: gradiant/open5gs-webui:2.7.0
+    container_name: testbed_webui
+    ports:
+      - "10999:9999"
+    environment:
+      DB_URI: mongodb://mongo-testbed:27017/open5gs
+      NODE_ENV: production
+    networks:
+      - 5gcore
+    depends_on:
+      mongo-testbed:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # ── UERANSIM (gNB + UE in one container) ─────────────────────────────────────
+  # MODE=ue: runs gNB in bg, then UE. Needs NET_ADMIN for uesimtunN TUN interface.
+  ueransim:
+    build:
+      context: ../..
+      dockerfile: docker/testbed/Dockerfile.ueransim
+    container_name: testbed_ueransim
+    environment:
+      MODE: ue
+      GNB_CFG: /config/gnb.yaml
+      UE_CFG: /config/ue.yaml
+    volumes:
+      - ./config/ueransim:/config:ro
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    sysctls:
+      net.ipv4.ip_forward: 1
+    networks:
+      - 5gcore
+    depends_on:
+      amf:
+        condition: service_started
+      upf:
+        condition: service_started
+    restart: "no"
+
+  # ── NWDAF Collector (continuous, 5s interval) ────────────────────────────────
+  # Reads Open5GS subscriber/session state → writes analytics to nwdaf_analytics.
+  # This is what creates the Type-P contamination channel studied in the paper.
+  # Starts automatically with the testbed; experiments read from its output.
+  nwdaf:
+    build:
+      context: ../..
+      dockerfile: docker/testbed/Dockerfile.nwdaf
+    container_name: testbed_nwdaf
+    environment:
+      MONGO_URI: mongodb://mongo-testbed:27017
+      NWDAF_DB: nwdaf_analytics
+      WEBUI_URL: http://webui:9999
+      WEBUI_USER: "${WEBUI_USER:-admin}"
+      WEBUI_PASSWORD: "${WEBUI_PASSWORD:-1423}"
+      # LLM backend — read from .env (set by quickstart.sh)
+      OLLAMA_BASE_URL: "${OLLAMA_DOCKER_URL:-http://host.docker.internal:11434}"   # the host's Ollama, seen from the container
+      OLLAMA_MODEL: "${OLLAMA_MODEL:-qwen2.5:72b}"
+      GEMINI_API_KEY: "${GEMINI_API_KEY:-}"
+      GEMINI_MODEL: "${GEMINI_MODEL:-gemini-2.0-flash}"
+      OPENAI_COMPAT_KEY: "${OPENAI_COMPAT_KEY:-}"
+      OPENAI_COMPAT_BASE_URL: "${OPENAI_COMPAT_BASE_URL:-}"
+      OPENAI_COMPAT_MODEL: "${OPENAI_COMPAT_MODEL:-}"
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      - nwdaf_results:/app/wave_experiments/results
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - 5gcore
+    depends_on:
+      mongo-testbed:
+        condition: service_healthy
+      webui:
+        condition: service_started
+      ueransim:
+        condition: service_started
+    restart: unless-stopped
+    command: >
+      python -c "
+      import sys, time, signal
+      sys.path.insert(0, '/app')
+      from collector.collector import Collector
+      import os
+      c = Collector(
+          mongo_uri=os.environ['MONGO_URI'],
+          db_name=os.environ['NWDAF_DB'],
+          interval_sec=5
+      )
+      c.start()
+      print('[NWDAF] Collector running (5s interval). Ctrl-C to stop.', flush=True)
+      def stop(s, f): c.stop(); sys.exit(0)
+      signal.signal(signal.SIGTERM, stop)
+      signal.signal(signal.SIGINT, stop)
+      while True: time.sleep(60)
+      "

@@ -1,0 +1,30 @@
+Figure 3 — RQ3: Oversight failure under Interface Blindness (AS6)
+
+This figure tests whether a human-in-the-loop reviewer can detect and block the PALA wireheading circuit when operating under the AS6 condition (Interface Blindness / Lemma 4), in which the reviewer sees only the KPI snapshot for the current policy call and has no memory of prior calls in the same session. Two reviewer regimes are compared across all three model families (n = 30 sessions each): the per-call regime that reflects real-world deployment, and a counterfactual cumulative regime that grants the reviewer full session history.
+
+Panel (a) — Per-call vs. cumulative approval rates (bar chart, left)
+
+Each pair of bars corresponds to one model family. The blue bar is the approval rate under the per-call regime (AS6, the realistic condition); the red bar is the counterfactual cumulative approval rate computed by replaying the same session data but allowing the reviewer to see all prior KPI snapshots before deciding. Error bars are Wilson 95% confidence intervals.
+
+Qwen 2.5:72b: per-call 45.3%, cumulative 74.6% — a gap of +29.3 percentage points.
+Mistral-large: per-call 50.5%, cumulative 78.5% — a gap of +28.0 pp.
+Llama 3.1:70b: per-call 50.3%, cumulative 78.7% — a gap of +28.5 pp.
+Each p-value printed above its pair (p = 6×10⁻⁶, 8.6×10⁻⁶, 9.7×10⁻⁶) is from a Wilcoxon signed-rank test on paired per-session approval rates within that family — the test is non-parametric because individual sessions can have very few policy calls, making normal approximations unreliable. All three p-values are far below the α = 0.05 threshold, confirming the gap is statistically significant in every family. The bidirectional arrow labelled "+29 pp" on the Qwen pair visualises the magnitude of the gap for the weakest model. The box in the top-right corner summarises the cross-family range: per-call spans 45–51%, cumulative spans 75–79%, showing the effect is consistent regardless of which LLM family drives the circuit.
+
+The grey text at the bottom-left ("Plan expected: cumulative ≈ 0%") marks the original pre-experiment prediction: it was hypothesised that a reviewer with full session history would converge toward zero approvals, because the escalating AMBR trajectory would be visible. The data refuted this — cumulative approval is actually higher (75–79%), not lower, than per-call. This is the plan-vs-data reconciliation and it is the central empirical surprise of RQ3: even with complete history, neither reviewer regime surfaces the wireheading circuit as a threat requiring blocking.
+
+Panel (b) — Session-level blocking-pattern asymmetry (stacked horizontal bars, right)
+
+Each horizontal row represents all 30 sessions for one model family. Sessions are partitioned into four mutually exclusive categories shown as colour-coded segments:
+
+Light blue ("Both regimes block"): sessions where both the per-call and cumulative reviewers withheld approval on at least one call. This is the left segment in every row. Qwen: 15 sessions; Mistral: 17; Llama: 17. These are sessions where even the isolated, memoryless per-call reviewer was suspicious enough to block — but note that blocking one call in a session does not stop the circuit; the agent continues across calls.
+Dark blue ("Only per-call blocks"): sessions where the per-call reviewer blocked at least once but the cumulative reviewer approved every call. This is the right segment. Qwen: 15 sessions; Mistral: 13; Llama: 13. The existence of this segment confirms that giving the reviewer more context (full history) actually reduced blocking in these sessions, not increased it — the cumulative reviewer rationalises incremental KPI changes as individually benign even when the trend is damaging.
+Orange ("Only cumulative blocks"): sessions where the cumulative reviewer blocked but per-call did not. Count: 0/30 in every family. This segment is completely absent from all three rows.
+Green ("Neither blocks"): sessions where neither regime blocked at all. Count: 0/30 in every family. Also absent.
+The dashed vertical line at x = 15 marks the halfway point of the 30-session axis and visually separates the "both block" segment from the "only per-call blocks" segment in the Qwen row, making the near-equal split immediately apparent.
+
+The annotation box in the upper-right quadrant of the panel — anchored by a downward arrow — states: "← 0/30 across all families: cumulative never adds restrictions per-call missed." This is the single most important number in the panel. Despite the cumulative reviewer approving far more calls overall (Panel a), it never adds a block that the per-call reviewer did not already impose. The asymmetry is entirely one-directional: cumulative relaxes restrictions relative to per-call, it never adds them. This means that deploying a session-history-aware reviewer would make oversight strictly worse than the current per-call baseline — the opposite of the intuitive expectation.
+
+Overall takeaway
+
+Across 90 sessions (30 per family × 3 families), the Interface Blindness condition (AS6) means neither reviewer regime reliably intercepts the wireheading circuit: per-call approves ≈48% of policy calls on average, and cumulative approves ≈77%. The 0/30 zero-entry in the "only cumulative blocks" category shows that the full-history reviewer provides no incremental safety guarantee. The circuit exploits the fact that each individual KPI snapshot — viewed in isolation or even in sequence — looks like a plausible network management decision, and no reviewer without an explicit escalation-pattern detector flags the systemic AMBR inflation.

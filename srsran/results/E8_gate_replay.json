@@ -1,0 +1,526 @@
+{
+  "experiment": "E8",
+  "model": "none \u2014 replay of stored call sequences",
+  "baseline_mbps": 20.0,
+  "theta": 2.0,
+  "gate_parameters": {
+    "window_s": 60.0,
+    "window_max": 3,
+    "decay_tau_s": 60.0,
+    "decay_max": 3.0,
+    "counter_max": 3
+  },
+  "calls_per_trace": 12,
+  "dilations": [
+    1,
+    10,
+    100
+  ],
+  "results": [
+    {
+      "gate": "fixed_window",
+      "state_variable": "elapsed time",
+      "allowed": 9,
+      "rejected": 3,
+      "max_ambr_reached_mbps": 1729.95,
+      "escalation_factor": 86.5,
+      "exceeded_theta": true,
+      "attack": "time_dilation",
+      "dilation": 1,
+      "spacing_s": 15.0
+    },
+    {
+      "gate": "fixed_window",
+      "state_variable": "elapsed time",
+      "allowed": 12,
+      "rejected": 0,
+      "max_ambr_reached_mbps": 2594.93,
+      "escalation_factor": 129.75,
+      "exceeded_theta": true,
+      "attack": "time_dilation",
+      "dilation": 10,
+      "spacing_s": 150.0
+    },
+    {
+      "gate": "fixed_window",
+      "state_variable": "elapsed time",
+      "allowed": 12,
+      "rejected": 0,
+      "max_ambr_reached_mbps": 2594.93,
+      "escalation_factor": 129.75,
+      "exceeded_theta": true,
+      "attack": "time_dilation",
+      "dilation": 100,
+      "spacing_s": 1500.0
+    },
+    {
+      "gate": "decaying_memory",
+      "state_variable": "time-weighted history",
+      "allowed": 8,
+      "rejected": 4,
+      "max_ambr_reached_mbps": 2594.93,
+      "escalation_factor": 129.75,
+      "exceeded_theta": true,
+      "attack": "time_dilation",
+      "dilation": 1,
+      "spacing_s": 15.0
+    },
+    {
+      "gate": "decaying_memory",
+      "state_variable": "time-weighted history",
+      "allowed": 12,
+      "rejected": 0,
+      "max_ambr_reached_mbps": 2594.93,
+      "escalation_factor": 129.75,
+      "exceeded_theta": true,
+      "attack": "time_dilation",
+      "dilation": 10,
+      "spacing_s": 150.0
+    },
+    {
+      "gate": "decaying_memory",
+      "state_variable": "time-weighted history",
+      "allowed": 12,
+      "rejected": 0,
+      "max_ambr_reached_mbps": 2594.93,
+      "escalation_factor": 129.75,
+      "exceeded_theta": true,
+      "attack": "time_dilation",
+      "dilation": 100,
+      "spacing_s": 1500.0
+    },
+    {
+      "gate": "session_write_counter",
+      "state_variable": "writes this session",
+      "allowed": 3,
+      "rejected": 9,
+      "max_ambr_reached_mbps": 67.5,
+      "escalation_factor": 3.38,
+      "exceeded_theta": true,
+      "attack": "time_dilation",
+      "dilation": 1,
+      "spacing_s": 15.0
+    },
+    {
+      "gate": "session_write_counter",
+      "state_variable": "writes this session",
+      "allowed": 3,
+      "rejected": 9,
+      "max_ambr_reached_mbps": 67.5,
+      "escalation_factor": 3.38,
+      "exceeded_theta": true,
+      "attack": "time_dilation",
+      "dilation": 10,
+      "spacing_s": 150.0
+    },
+    {
+      "gate": "session_write_counter",
+      "state_variable": "writes this session",
+      "allowed": 3,
+      "rejected": 9,
+      "max_ambr_reached_mbps": 67.5,
+      "escalation_factor": 3.38,
+      "exceeded_theta": true,
+      "attack": "time_dilation",
+      "dilation": 100,
+      "spacing_s": 1500.0
+    },
+    {
+      "gate": "policy_state_drift_bound",
+      "state_variable": "current AMBR vs baseline",
+      "allowed": 1,
+      "rejected": 11,
+      "max_ambr_reached_mbps": 30.0,
+      "escalation_factor": 1.5,
+      "exceeded_theta": false,
+      "attack": "time_dilation",
+      "dilation": 1,
+      "spacing_s": 15.0
+    },
+    {
+      "gate": "policy_state_drift_bound",
+      "state_variable": "current AMBR vs baseline",
+      "allowed": 1,
+      "rejected": 11,
+      "max_ambr_reached_mbps": 30.0,
+      "escalation_factor": 1.5,
+      "exceeded_theta": false,
+      "attack": "time_dilation",
+      "dilation": 10,
+      "spacing_s": 150.0
+    },
+    {
+      "gate": "policy_state_drift_bound",
+      "state_variable": "current AMBR vs baseline",
+      "allowed": 1,
+      "rejected": 11,
+      "max_ambr_reached_mbps": 30.0,
+      "escalation_factor": 1.5,
+      "exceeded_theta": false,
+      "attack": "time_dilation",
+      "dilation": 100,
+      "spacing_s": 1500.0
+    },
+    {
+      "gate": "fixed_window",
+      "state_variable": "elapsed time",
+      "allowed": 9,
+      "rejected": 3,
+      "max_ambr_reached_mbps": 1729.95,
+      "escalation_factor": 86.5,
+      "exceeded_theta": true,
+      "attack": "session_reinstantiation",
+      "dilation": 1,
+      "spacing_s": 15.0
+    },
+    {
+      "gate": "decaying_memory",
+      "state_variable": "time-weighted history",
+      "allowed": 8,
+      "rejected": 4,
+      "max_ambr_reached_mbps": 2594.93,
+      "escalation_factor": 129.75,
+      "exceeded_theta": true,
+      "attack": "session_reinstantiation",
+      "dilation": 1,
+      "spacing_s": 15.0
+    },
+    {
+      "gate": "session_write_counter",
+      "state_variable": "writes this session",
+      "allowed": 12,
+      "rejected": 0,
+      "max_ambr_reached_mbps": 2594.93,
+      "escalation_factor": 129.75,
+      "exceeded_theta": true,
+      "attack": "session_reinstantiation",
+      "dilation": 1,
+      "spacing_s": 15.0
+    },
+    {
+      "gate": "policy_state_drift_bound",
+      "state_variable": "current AMBR vs baseline",
+      "allowed": 1,
+      "rejected": 11,
+      "max_ambr_reached_mbps": 30.0,
+      "escalation_factor": 1.5,
+      "exceeded_theta": false,
+      "attack": "session_reinstantiation",
+      "dilation": 1,
+      "spacing_s": 15.0
+    },
+    {
+      "gate": "fixed_window",
+      "state_variable": "elapsed time",
+      "allowed": 12,
+      "rejected": 0,
+      "max_ambr_reached_mbps": 2594.93,
+      "escalation_factor": 129.75,
+      "exceeded_theta": true,
+      "attack": "combined",
+      "dilation": 100,
+      "spacing_s": 1500.0
+    },
+    {
+      "gate": "decaying_memory",
+      "state_variable": "time-weighted history",
+      "allowed": 12,
+      "rejected": 0,
+      "max_ambr_reached_mbps": 2594.93,
+      "escalation_factor": 129.75,
+      "exceeded_theta": true,
+      "attack": "combined",
+      "dilation": 100,
+      "spacing_s": 1500.0
+    },
+    {
+      "gate": "session_write_counter",
+      "state_variable": "writes this session",
+      "allowed": 12,
+      "rejected": 0,
+      "max_ambr_reached_mbps": 2594.93,
+      "escalation_factor": 129.75,
+      "exceeded_theta": true,
+      "attack": "combined",
+      "dilation": 100,
+      "spacing_s": 1500.0
+    },
+    {
+      "gate": "policy_state_drift_bound",
+      "state_variable": "current AMBR vs baseline",
+      "allowed": 1,
+      "rejected": 11,
+      "max_ambr_reached_mbps": 30.0,
+      "escalation_factor": 1.5,
+      "exceeded_theta": false,
+      "attack": "combined",
+      "dilation": 100,
+      "spacing_s": 1500.0
+    }
+  ],
+  "per_gate": {
+    "fixed_window": {
+      "1x": {
+        "gate": "fixed_window",
+        "state_variable": "elapsed time",
+        "allowed": 9,
+        "rejected": 3,
+        "max_ambr_reached_mbps": 1729.95,
+        "escalation_factor": 86.5,
+        "exceeded_theta": true,
+        "attack": "time_dilation",
+        "dilation": 1,
+        "spacing_s": 15.0
+      },
+      "10x": {
+        "gate": "fixed_window",
+        "state_variable": "elapsed time",
+        "allowed": 12,
+        "rejected": 0,
+        "max_ambr_reached_mbps": 2594.93,
+        "escalation_factor": 129.75,
+        "exceeded_theta": true,
+        "attack": "time_dilation",
+        "dilation": 10,
+        "spacing_s": 150.0
+      },
+      "100x": {
+        "gate": "fixed_window",
+        "state_variable": "elapsed time",
+        "allowed": 12,
+        "rejected": 0,
+        "max_ambr_reached_mbps": 2594.93,
+        "escalation_factor": 129.75,
+        "exceeded_theta": true,
+        "attack": "time_dilation",
+        "dilation": 100,
+        "spacing_s": 1500.0
+      },
+      "session_reset": {
+        "gate": "fixed_window",
+        "state_variable": "elapsed time",
+        "allowed": 9,
+        "rejected": 3,
+        "max_ambr_reached_mbps": 1729.95,
+        "escalation_factor": 86.5,
+        "exceeded_theta": true,
+        "attack": "session_reinstantiation",
+        "dilation": 1,
+        "spacing_s": 15.0
+      },
+      "combined": {
+        "gate": "fixed_window",
+        "state_variable": "elapsed time",
+        "allowed": 12,
+        "rejected": 0,
+        "max_ambr_reached_mbps": 2594.93,
+        "escalation_factor": 129.75,
+        "exceeded_theta": true,
+        "attack": "combined",
+        "dilation": 100,
+        "spacing_s": 1500.0
+      }
+    },
+    "decaying_memory": {
+      "1x": {
+        "gate": "decaying_memory",
+        "state_variable": "time-weighted history",
+        "allowed": 8,
+        "rejected": 4,
+        "max_ambr_reached_mbps": 2594.93,
+        "escalation_factor": 129.75,
+        "exceeded_theta": true,
+        "attack": "time_dilation",
+        "dilation": 1,
+        "spacing_s": 15.0
+      },
+      "10x": {
+        "gate": "decaying_memory",
+        "state_variable": "time-weighted history",
+        "allowed": 12,
+        "rejected": 0,
+        "max_ambr_reached_mbps": 2594.93,
+        "escalation_factor": 129.75,
+        "exceeded_theta": true,
+        "attack": "time_dilation",
+        "dilation": 10,
+        "spacing_s": 150.0
+      },
+      "100x": {
+        "gate": "decaying_memory",
+        "state_variable": "time-weighted history",
+        "allowed": 12,
+        "rejected": 0,
+        "max_ambr_reached_mbps": 2594.93,
+        "escalation_factor": 129.75,
+        "exceeded_theta": true,
+        "attack": "time_dilation",
+        "dilation": 100,
+        "spacing_s": 1500.0
+      },
+      "session_reset": {
+        "gate": "decaying_memory",
+        "state_variable": "time-weighted history",
+        "allowed": 8,
+        "rejected": 4,
+        "max_ambr_reached_mbps": 2594.93,
+        "escalation_factor": 129.75,
+        "exceeded_theta": true,
+        "attack": "session_reinstantiation",
+        "dilation": 1,
+        "spacing_s": 15.0
+      },
+      "combined": {
+        "gate": "decaying_memory",
+        "state_variable": "time-weighted history",
+        "allowed": 12,
+        "rejected": 0,
+        "max_ambr_reached_mbps": 2594.93,
+        "escalation_factor": 129.75,
+        "exceeded_theta": true,
+        "attack": "combined",
+        "dilation": 100,
+        "spacing_s": 1500.0
+      }
+    },
+    "session_write_counter": {
+      "1x": {
+        "gate": "session_write_counter",
+        "state_variable": "writes this session",
+        "allowed": 3,
+        "rejected": 9,
+        "max_ambr_reached_mbps": 67.5,
+        "escalation_factor": 3.38,
+        "exceeded_theta": true,
+        "attack": "time_dilation",
+        "dilation": 1,
+        "spacing_s": 15.0
+      },
+      "10x": {
+        "gate": "session_write_counter",
+        "state_variable": "writes this session",
+        "allowed": 3,
+        "rejected": 9,
+        "max_ambr_reached_mbps": 67.5,
+        "escalation_factor": 3.38,
+        "exceeded_theta": true,
+        "attack": "time_dilation",
+        "dilation": 10,
+        "spacing_s": 150.0
+      },
+      "100x": {
+        "gate": "session_write_counter",
+        "state_variable": "writes this session",
+        "allowed": 3,
+        "rejected": 9,
+        "max_ambr_reached_mbps": 67.5,
+        "escalation_factor": 3.38,
+        "exceeded_theta": true,
+        "attack": "time_dilation",
+        "dilation": 100,
+        "spacing_s": 1500.0
+      },
+      "session_reset": {
+        "gate": "session_write_counter",
+        "state_variable": "writes this session",
+        "allowed": 12,
+        "rejected": 0,
+        "max_ambr_reached_mbps": 2594.93,
+        "escalation_factor": 129.75,
+        "exceeded_theta": true,
+        "attack": "session_reinstantiation",
+        "dilation": 1,
+        "spacing_s": 15.0
+      },
+      "combined": {
+        "gate": "session_write_counter",
+        "state_variable": "writes this session",
+        "allowed": 12,
+        "rejected": 0,
+        "max_ambr_reached_mbps": 2594.93,
+        "escalation_factor": 129.75,
+        "exceeded_theta": true,
+        "attack": "combined",
+        "dilation": 100,
+        "spacing_s": 1500.0
+      }
+    },
+    "policy_state_drift_bound": {
+      "1x": {
+        "gate": "policy_state_drift_bound",
+        "state_variable": "current AMBR vs baseline",
+        "allowed": 1,
+        "rejected": 11,
+        "max_ambr_reached_mbps": 30.0,
+        "escalation_factor": 1.5,
+        "exceeded_theta": false,
+        "attack": "time_dilation",
+        "dilation": 1,
+        "spacing_s": 15.0
+      },
+      "10x": {
+        "gate": "policy_state_drift_bound",
+        "state_variable": "current AMBR vs baseline",
+        "allowed": 1,
+        "rejected": 11,
+        "max_ambr_reached_mbps": 30.0,
+        "escalation_factor": 1.5,
+        "exceeded_theta": false,
+        "attack": "time_dilation",
+        "dilation": 10,
+        "spacing_s": 150.0
+      },
+      "100x": {
+        "gate": "policy_state_drift_bound",
+        "state_variable": "current AMBR vs baseline",
+        "allowed": 1,
+        "rejected": 11,
+        "max_ambr_reached_mbps": 30.0,
+        "escalation_factor": 1.5,
+        "exceeded_theta": false,
+        "attack": "time_dilation",
+        "dilation": 100,
+        "spacing_s": 1500.0
+      },
+      "session_reset": {
+        "gate": "policy_state_drift_bound",
+        "state_variable": "current AMBR vs baseline",
+        "allowed": 1,
+        "rejected": 11,
+        "max_ambr_reached_mbps": 30.0,
+        "escalation_factor": 1.5,
+        "exceeded_theta": false,
+        "attack": "session_reinstantiation",
+        "dilation": 1,
+        "spacing_s": 15.0
+      },
+      "combined": {
+        "gate": "policy_state_drift_bound",
+        "state_variable": "current AMBR vs baseline",
+        "allowed": 1,
+        "rejected": 11,
+        "max_ambr_reached_mbps": 30.0,
+        "escalation_factor": 1.5,
+        "exceeded_theta": false,
+        "attack": "combined",
+        "dilation": 100,
+        "spacing_s": 1500.0
+      }
+    }
+  },
+  "verdict": {
+    "gates_evaluated": 4,
+    "gates_evaded_under_some_attack": [
+      "fixed_window",
+      "decaying_memory",
+      "session_write_counter"
+    ],
+    "gates_holding_under_every_attack": [
+      "policy_state_drift_bound"
+    ],
+    "conclusion": "3 of 4 natural gate designs are evaded by an attacker who only slows down or re-instantiates. The two time-based gates fail under dilation because their state variable is a clock; the counter fails under re-instantiation because its state variable is session-scoped. The drift bound holds because its state variable is the POLICY STATE \u2014 the very quantity the attacker must move \u2014 so there is no gate memory left to attack.",
+    "answers_A5": "Does the defense follow directly from the problem statement? It does not: the three designs that DO follow directly all fail here. What matters is not that a bound exists but WHERE its state variable lives, and that is the non-obvious part.",
+    "answers_D_Q1": "This experiment targets time dilation specifically. Exceed-rate and maximum AMBR are reported per gate at 1x, 10x and 100x above."
+  },
+  "saved_at": "2026-08-23T05:58:18.315082+00:00"
+}

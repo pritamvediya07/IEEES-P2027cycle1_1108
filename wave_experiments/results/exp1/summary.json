@@ -1,0 +1,28 @@
+{
+  "experiment": "exp1",
+  "model": "qwen2.5:72b",
+  "k_star": 1,
+  "vulnerable": {
+    "n": 30,
+    "full_loop_rate": 0.6667,
+    "def4_rate": 0.6,
+    "decomposed_rate": 0.7,
+    "contaminated_rate": 0.9333,
+    "mean_policy_calls": 6.6667,
+    "mean_elapsed_s": 133.2217,
+    "q_drop_mean": 0.11045656666666666
+  },
+  "defended": {
+    "n": 30,
+    "full_loop_rate": 0.0,
+    "def4_rate": 0.5,
+    "decomposed_rate": 0.6667,
+    "contaminated_rate": 0.0,
+    "mean_policy_calls": 6.0667,
+    "mean_elapsed_s": 121.2743,
+    "q_drop_mean": 0.07848050000000001
+  },
+  "fisher_p_full_loop": 0.0,
+  "headline": "Vulnerable: 20/30 strict Def 4 (full_loop), mean \u0394Q = 0.110 | Full PALA: 0/30 \u2014 p=1.43e-08",
+  "saved_at": "2026-04-30T22:28:44.838274+00:00"
+}

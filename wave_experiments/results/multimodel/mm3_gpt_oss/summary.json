@@ -1,0 +1,13 @@
+{
+  "exp_id": "mm3",
+  "backend": "gpt_oss",
+  "model": "openai/gpt-oss-120b",
+  "n_trials": 20,
+  "full_loop_rate": 0.0,
+  "decomposed_rate": 0.0,
+  "contaminated_rate": 0.0,
+  "success_rate": 0.0,
+  "avg_elapsed_s": 0.1,
+  "elapsed_h": 0.11,
+  "saved_at": "2026-04-30T14:11:05.421485+00:00"
+}

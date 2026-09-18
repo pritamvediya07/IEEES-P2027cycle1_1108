@@ -1,0 +1,35 @@
+Table 6 — Deployability of the Full PALA Guardrail
+
+This table quantifies three independent deployability dimensions of the Full PALA Guardrail (IsolatedCollector + HedgeTuned k†*=1) deployed on a Qwen 2.5:72b NWDAF agent. The three blocks address the distinct concerns a production operator would have before deploying the defense: (1) does the defense block routine legitimate workloads? (2) does it prevent post-incident recovery? (3) what is the runtime cost?
+
+The headline answer to all three is: no measurable harm, and in some dimensions a net improvement.
+
+Block 1 — Benign workload completion (Exp 8, n=50 per condition)
+
+Five routine NWDAF workflows were run under each of the four defense conditions. WF1 performs a conditional AMBR raise; WF2 is a health-check (report only); WF3 is traffic trend analysis; WF4 is AMBR rollback; WF5 is full slice state assessment. The completion rate is the fraction of trials where the agent successfully executed the requested workflow (task_completed = True and h_budget_rejections = 0).
+
+The Full PALA Guardrail achieves a completion rate of 42/50 (84%) — identical to the undefended Standard arm (42/50, 84%), confirming that the defense imposes no completion overhead. Fisher exact test (two-sided): p=1.000 (n.s.). IsolatedCollector alone drops slightly to 80% (within workflow-difficulty noise — WF2 has ~40–50% completion across all conditions including undefended); HedgeTuned alone is marginally above baseline at 86%.
+
+The Type-P contamination rate measures the fraction of trials where kpi_analyzer returned an ambr_dl_mean value that had been written by the agent in the same session (the same readback contamination measured in Exp 1–5). ISO and Full PALA achieve 0% contamination vs 12% undefended. Notably, HT alone amplifies contamination to 16%, because H_budget enforcement increases the agent's policy-call probe count, which widens the contamination window; ISO is required to close it.
+
+H_budget false-rejection (trials) counts the number of benign trials where H_budget fired and blocked a legitimate policy call. The Standard and IsolatedCollector arms have no H_budget installed (---). The HedgeTuned arm recorded 0 false rejections across 50 trials. The Full PALA arm recorded 3/50 (6.0%) false rejections — all on WF1, the single workflow that legitimately issues two sequential policy applies. This is the localized engineered cost: k†*=1 is not calibrated for multi-step benign workflows; WF1 is the one case where operator awareness of the budget is needed.
+
+Block 2 — Post-incident recovery (Exp 13, n=20 per condition)
+
+A legitimate single-step recovery scenario: +30% AMBR increase (20 → 26 Mbps) following a simulated congestion event. All five intent variants specify a single apply ("apply once", "apply a single increase"), which is exactly the k†*=1 permitted operation. Recovery completion rate measures the fraction of trials where the agent successfully applied the 26 Mbps target.
+
+Full PALA achieves 17/20 (85%) recovery completion — identical to the undefended baseline (17/20, 85%). Fisher exact test: p=1.000 (n.s.). The HT false-rejection rate under Full PALA is 1/20 (5%) — 1 trial where the agent exhausted k†*=1 on intermediate feasibility probes before the actual remediation write. HedgeTuned alone shows 10% rejection (2/20) for the same reason. IsolatedCollector alone shows higher completion (95%) — without contaminated readback, the agent skips verification retries and completes faster.
+
+Mean elapsed time confirms no session overhead: Full PALA at 88s is within 4% of the undefended 92s.
+
+Block 3 — Runtime cost (Exp 10)
+
+KPI query latency is the per-call time for KPIAnalyzer.analyze under each condition (Phase B microbenchmark, n=50 reps). Standard NWDAF collector requires a database round-trip: mean 3942 ms (~4 seconds). IsolatedCollector short-circuits the query immediately upon recognizing a Type-P field, returning in <0.1 ms — a ~40,000× reduction. Full PALA inherits this speedup.
+
+Session wall-clock is the end-to-end agent session duration re-extracted from Exp 1 trial timestamps (Phase A, n=30 sessions each). Full PALA reduces p50 from 127.1s to 112.4s (delta -14.7s) and p99 from 251.6s to 194.5s. The session-level speedup reflects H_budget's early-termination effect: the agent makes fewer policy calls per session when escalation attempts are blocked, reducing total session duration.
+
+The HT-alone benign-tuning rejection row (Exp 6 Phase 3, n=30) reports the per-call H_budget rejection rate on benign intents in the calibration phase. At 13.3%, this is higher than the session-level rates measured in Exp 8 (6%) and Exp 13 (5%), because Exp 6 Phase 3 used broader intent diversity including workflows that naturally probe with intermediate AMBR values. The 13.3% figure is the conservative upper bound; Exp 8 and Exp 13 are the tighter task-level estimates.
+
+Overall: Full PALA is deployable
+
+The three blocks together support the paper's RQ5 claim: the Full PALA Guardrail is deployable without meaningful operational cost. Benign completion matches the undefended baseline exactly. Recovery completion matches exactly. Per-call KPI latency improves by ~40,000×. Per-session wall-clock decreases by 14.7s at p50. The only quantifiable cost is a 5–6% H_budget false-rejection rate on multi-step benign workloads (WF1, post-incident recovery with intermediate probes) — a consequence of k†*=1 enforcement that operators can relax by raising k†* if the false-rejection rate is unacceptable.

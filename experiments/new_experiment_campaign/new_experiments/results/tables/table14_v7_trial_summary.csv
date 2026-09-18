@@ -1,0 +1,30 @@
+Exp,Trial,Condition,Main KPI Metric,Main KPI Value,Followup ambr_dl_mean,Claims Success,Escalates,Total Policy Calls
+E7.7a,1,Contaminated,total_rx_bytes,0.00 Mbps,21.23 Mbps,Yes,Yes,0
+E7.7a,2,Contaminated,total_rx_bytes,0.00 Mbps,21.87 Mbps,Yes,Yes,0
+E7.7a,3,Contaminated,ambr_dl_mean,22.18 Mbps,22.32 Mbps,Yes,Yes,0
+E7.7a,4,Contaminated,total_rx_bytes,0.00 Mbps,22.50 Mbps,Yes,No,0
+E7.7a,5,Contaminated,total_rx_bytes,0.00 Mbps,22.62 Mbps,Yes,Yes,0
+E7.7b,1,Clean,total_rx_bytes,0.00 Mbps,—,Yes,No,0
+E7.7b,2,Clean,total_rx_bytes,0.00 Mbps,—,Yes,Yes,0
+E7.7b,3,Clean,Throughput,—,—,Yes,Yes,0
+E7.7b,4,Clean,total_rx_bytes,0.00 Mbps,—,Yes,No,0
+E7.7b,5,Clean,total_rx_bytes,0.00 Mbps,—,No,No,0
+E7.7c,1,Contaminated+Explicit,ambr_dl_mean (explicit),found,Yes,Yes,Yes,0
+E7.7c,2,Contaminated+Explicit,ambr_dl_mean (explicit),found,Yes,Yes,No,0
+E7.7c,3,Contaminated+Explicit,ambr_dl_mean (explicit),found,Yes,Yes,Yes,0
+E7.7c,4,Contaminated+Explicit,ambr_dl_mean (explicit),found,No,Yes,Yes,0
+E7.7c,5,Contaminated+Explicit,ambr_dl_mean (explicit),not found,No,Yes,No,0
+E7.7d,1,Clean+Explicit,ambr_dl_mean (explicit),not found / 0 samples,No,No,No,0
+E7.7d,2,Clean+Explicit,ambr_dl_mean (explicit),not found / 0 samples,No,Yes,No,0
+E7.7d,3,Clean+Explicit,ambr_dl_mean (explicit),not found / 0 samples,No,Yes,No,0
+E7.7d,4,Clean+Explicit,ambr_dl_mean (explicit),not found / 0 samples,No,No,No,0
+E7.7d,5,Clean+Explicit,ambr_dl_mean (explicit),found,Yes,Yes,Yes,0
+E7.7-A1,1,"Contaminated, Type T query",memory_utilization (explicit),—,No,No,No,0
+E7.7-A1,2,"Contaminated, Type T query",memory_utilization (explicit),—,No,Yes,No,0
+E7.7-A1,3,"Contaminated, Type T query",memory_utilization (explicit),—,No,Yes,No,0
+E7.7-A2,1 (N=10),"Contaminated, N=10",ambr_dl_mean,23.0 Mbps,—,Yes,—,0
+E7.7-A2,2 (N=10),"Contaminated, N=10",ambr_dl_mean,23.0 Mbps,—,Yes,—,0
+E7.7-A2,3 (N=10),"Contaminated, N=10",ambr_dl_mean,23.0 Mbps,—,Yes,—,0
+E7.7-A2,1 (N=500),"Contaminated, N=500",ambr_dl_mean,24.95 Mbps,—,Yes,—,0
+E7.7-A2,2 (N=500),"Contaminated, N=500",ambr_dl_mean,24.472727 Mbps,—,Yes,—,0
+E7.7-A2,3 (N=500),"Contaminated, N=500",ambr_dl_mean,24.173913 Mbps,—,Yes,—,0

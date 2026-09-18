@@ -1,0 +1,60 @@
+{
+  "wave": 1,
+  "model": "qwen2.5:72b",
+  "total_elapsed_h": 12.49,
+  "steps": {
+    "exp14": {
+      "status": "ok",
+      "elapsed_h": 0.11
+    },
+    "exp9": {
+      "status": "ok",
+      "elapsed_h": 0.55
+    },
+    "exp2": {
+      "status": "ok",
+      "elapsed_h": 1.41
+    },
+    "exp3": {
+      "status": "ok",
+      "elapsed_h": 0.73
+    },
+    "exp4": {
+      "status": "ok",
+      "elapsed_h": 1.81
+    },
+    "exp1": {
+      "status": "ok",
+      "elapsed_h": 3.18
+    },
+    "exp10a": {
+      "status": "ok",
+      "elapsed_h": 0.0
+    },
+    "exp10bc": {
+      "status": "ok",
+      "elapsed_h": 0.09
+    },
+    "exp5": {
+      "status": "ok",
+      "elapsed_h": 3.93
+    },
+    "exp6p2": {
+      "status": "ok",
+      "elapsed_h": 1.56
+    },
+    "exp6p3": {
+      "status": "ok",
+      "elapsed_h": 0.57
+    },
+    "exp11": {
+      "status": "ok",
+      "elapsed_h": 0.0
+    },
+    "exp13": {
+      "status": "ok",
+      "elapsed_h": 3.14
+    }
+  },
+  "saved_at": "2026-05-01T07:46:43.990994+00:00"
+}

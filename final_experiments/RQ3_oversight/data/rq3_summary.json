@@ -1,0 +1,73 @@
+{
+  "families": [
+    {
+      "label": "Qwen 2.5:72b",
+      "n": 30,
+      "decomposed": 11,
+      "mean_pc": 0.45318,
+      "mean_cum": 0.74583,
+      "se_pc": 0.05393,
+      "se_cum": 0.0676,
+      "pc_lo": 0.49685,
+      "pc_hi": 0.66047,
+      "cum_lo": 0.83462,
+      "cum_hi": 0.93769,
+      "delta_pp": 29.26533,
+      "wilcoxon_p": 1e-05,
+      "cohen_h": 0.60778,
+      "both_block": 15,
+      "only_pc": 15,
+      "only_cum": 0,
+      "neither": 0
+    },
+    {
+      "label": "Mistral-large",
+      "n": 30,
+      "decomposed": 17,
+      "mean_pc": 0.50497,
+      "mean_cum": 0.78482,
+      "se_pc": 0.0471,
+      "se_cum": 0.06005,
+      "pc_lo": 0.54419,
+      "pc_hi": 0.69241,
+      "cum_lo": 0.85198,
+      "cum_hi": 0.94273,
+      "delta_pp": 27.985,
+      "wilcoxon_p": 1e-05,
+      "cohen_h": 0.59613,
+      "both_block": 17,
+      "only_pc": 13,
+      "only_cum": 0,
+      "neither": 0
+    },
+    {
+      "label": "Llama 3.1:70b",
+      "n": 30,
+      "decomposed": 11,
+      "mean_pc": 0.50262,
+      "mean_cum": 0.7874,
+      "se_pc": 0.04115,
+      "se_cum": 0.05564,
+      "pc_lo": 0.51196,
+      "pc_hi": 0.66543,
+      "cum_lo": 0.81534,
+      "cum_hi": 0.91958,
+      "delta_pp": 28.47833,
+      "wilcoxon_p": 1e-05,
+      "cohen_h": 0.60713,
+      "both_block": 17,
+      "only_pc": 13,
+      "only_cum": 0,
+      "neither": 0
+    }
+  ],
+  "cross_family_pc_range": [
+    45.3,
+    50.5
+  ],
+  "cross_family_cum_range": [
+    74.6,
+    78.7
+  ],
+  "zero_only_cum_sessions": "0/30 across all families"
+}

@@ -1,0 +1,78 @@
+{
+  "rq4": "defense_efficacy",
+  "exp5": {
+    "full_chain_fl": {
+      "n": 20,
+      "corrected": 15,
+      "rate": 0.75
+    },
+    "as2_only_fl": {
+      "n": 20,
+      "corrected": 0,
+      "rate": 0.0
+    },
+    "as4_only_fl": {
+      "n": 20,
+      "corrected": 0,
+      "rate": 0.0,
+      "raw": 9
+    },
+    "as2_and_as4_fl": {
+      "n": 20,
+      "corrected": 0,
+      "rate": 0.0
+    },
+    "as5_only_fl": {
+      "n": 20,
+      "corrected": 13,
+      "rate": 0.65
+    },
+    "fisher_p_corrected": {
+      "p_as2_only_vs_full_chain": 1e-06,
+      "p_as4_only_vs_full_chain": 1e-06,
+      "p_as2_and_as4_vs_full_chain": 1e-06,
+      "p_as5_only_vs_full_chain": 0.731094
+    }
+  },
+  "exp6": {
+    "k_star": 1,
+    "mean_k_dagger": 1.429,
+    "cv": 0.401,
+    "ci_95": [
+      1.216,
+      1.641
+    ],
+    "n_calib": 28,
+    "kd_counts": {
+      "1": 17,
+      "2": 10,
+      "3": 1
+    },
+    "phase2_q_drop_at_kstar": -0.0146,
+    "phase3_false_rejection": 0.1333
+  },
+  "exp15": {
+    "n_star": 1,
+    "root_found": false,
+    "a1_fl": 13,
+    "a1_rate": 0.65,
+    "a2_fl": 14,
+    "a2_rate": 0.7,
+    "a3_fl": 0,
+    "a3_rate": 0.0,
+    "fisher_p_a1_a2": 1.0
+  },
+  "cohen_h": {
+    "iso": 1.7845504626515682,
+    "ht": 1.7845504626515682,
+    "both": 1.7845504626515682,
+    "bon": 0.11208192953081064,
+    "as5": 0.2189061215829009
+  },
+  "bh_q": {
+    "bon": 1.0,
+    "iso": 1.3333333333333332e-06,
+    "ht": 1.3333333333333332e-06,
+    "both": 1.3333333333333332e-06
+  }
+}

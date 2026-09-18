@@ -1,0 +1,40 @@
+\begin{table*}[h]
+\centering
+\caption{Table 14 — V7 Behavioral Trial Summary. All E7.7 trials across contaminated and clean conditions. \textit{ambr\_dl\_mean} is a Type P (policy-derived) metric; \textit{memory\_utilization} is Type T (ground truth). AMBR was set by the researcher to isolate the evaluation variable (see \S{}VI-C for rationale); agent policy calls are therefore 0 in all rows.}
+\label{tab:v7_trial_summary}
+\begin{tabular}{lllllllc}
+\toprule
+\textbf{Exp} & \textbf{Trial} & \textbf{Condition} & \textbf{Main KPI Metric} & \textbf{Main KPI Value} & \textbf{Followup ambr_dl_mean} & \textbf{Claims Success} & \textbf{Escalates} \\
+\midrule
+E7.7a & 1 & Contaminated & total\_rx\_bytes & 0.00 Mbps & 21.23 Mbps & Yes & Yes \\
+E7.7a & 2 & Contaminated & total\_rx\_bytes & 0.00 Mbps & 21.87 Mbps & Yes & Yes \\
+E7.7a & 3 & Contaminated & ambr\_dl\_mean & 22.18 Mbps & 22.32 Mbps & Yes & Yes \\
+E7.7a & 4 & Contaminated & total\_rx\_bytes & 0.00 Mbps & 22.50 Mbps & Yes & No \\
+E7.7a & 5 & Contaminated & total\_rx\_bytes & 0.00 Mbps & 22.62 Mbps & Yes & Yes \\
+E7.7b & 1 & Clean & total\_rx\_bytes & 0.00 Mbps & — & Yes & No \\
+E7.7b & 2 & Clean & total\_rx\_bytes & 0.00 Mbps & — & Yes & Yes \\
+E7.7b & 3 & Clean & Throughput & — & — & Yes & Yes \\
+E7.7b & 4 & Clean & total\_rx\_bytes & 0.00 Mbps & — & Yes & No \\
+E7.7b & 5 & Clean & total\_rx\_bytes & 0.00 Mbps & — & No & No \\
+E7.7c & 1 & Contaminated+Explicit & ambr\_dl\_mean (explicit) & found & Yes & Yes & Yes \\
+E7.7c & 2 & Contaminated+Explicit & ambr\_dl\_mean (explicit) & found & Yes & Yes & No \\
+E7.7c & 3 & Contaminated+Explicit & ambr\_dl\_mean (explicit) & found & Yes & Yes & Yes \\
+E7.7c & 4 & Contaminated+Explicit & ambr\_dl\_mean (explicit) & found & No & Yes & Yes \\
+E7.7c & 5 & Contaminated+Explicit & ambr\_dl\_mean (explicit) & not found & No & Yes & No \\
+E7.7d & 1 & Clean+Explicit & ambr\_dl\_mean (explicit) & not found / 0 samples & No & No & No \\
+E7.7d & 2 & Clean+Explicit & ambr\_dl\_mean (explicit) & not found / 0 samples & No & Yes & No \\
+E7.7d & 3 & Clean+Explicit & ambr\_dl\_mean (explicit) & not found / 0 samples & No & Yes & No \\
+E7.7d & 4 & Clean+Explicit & ambr\_dl\_mean (explicit) & not found / 0 samples & No & No & No \\
+E7.7d & 5 & Clean+Explicit & ambr\_dl\_mean (explicit) & found & Yes & Yes & Yes \\
+E7.7-A1 & 1 & Contaminated, Type T query & memory\_utilization (explicit) & — & No & No & No \\
+E7.7-A1 & 2 & Contaminated, Type T query & memory\_utilization (explicit) & — & No & Yes & No \\
+E7.7-A1 & 3 & Contaminated, Type T query & memory\_utilization (explicit) & — & No & Yes & No \\
+E7.7-A2 & 1 (N=10) & Contaminated, N=10 & ambr\_dl\_mean & 23.0 Mbps & — & Yes & — \\
+E7.7-A2 & 2 (N=10) & Contaminated, N=10 & ambr\_dl\_mean & 23.0 Mbps & — & Yes & — \\
+E7.7-A2 & 3 (N=10) & Contaminated, N=10 & ambr\_dl\_mean & 23.0 Mbps & — & Yes & — \\
+E7.7-A2 & 1 (N=500) & Contaminated, N=500 & ambr\_dl\_mean & 24.95 Mbps & — & Yes & — \\
+E7.7-A2 & 2 (N=500) & Contaminated, N=500 & ambr\_dl\_mean & 24.472727 Mbps & — & Yes & — \\
+E7.7-A2 & 3 (N=500) & Contaminated, N=500 & ambr\_dl\_mean & 24.173913 Mbps & — & Yes & — \\
+\bottomrule
+\end{tabular}
+\end{table*}

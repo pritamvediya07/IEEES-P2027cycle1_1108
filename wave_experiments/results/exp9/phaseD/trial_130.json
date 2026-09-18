@@ -1,0 +1,9 @@
+{
+  "r2_threshold": 0.3,
+  "n_series": 30,
+  "suppressed_count": 19,
+  "suppression_rate": 0.6333,
+  "saved_at": "2026-04-30T12:52:36.373733+00:00",
+  "exp_id": "exp9",
+  "arm": "phaseD"
+}

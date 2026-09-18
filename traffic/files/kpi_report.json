@@ -1,0 +1,31 @@
+{
+  "report_id": "NWDAF-2026-04-13-001",
+  "generated_at": "2026-04-13T10:00:00Z",
+  "network": "Open5GS-NWDAF-Testbed",
+  "slices": [
+    {
+      "dnn": "internet",
+      "sst": 1,
+      "active_ues": 10,
+      "avg_dl_throughput_mbps": 42.7,
+      "avg_ul_throughput_mbps": 11.3,
+      "avg_latency_ms": 8.4,
+      "packet_loss_pct": 0.01,
+      "session_count": 10
+    }
+  ],
+  "ues": [
+    {"imsi": "999700000000001", "ip": "10.45.0.16", "dl_mbps": 45.1, "ul_mbps": 12.2, "rsrp_dbm": -82},
+    {"imsi": "999700000000002", "ip": "10.45.0.17", "dl_mbps": 41.3, "ul_mbps": 10.8, "rsrp_dbm": -85},
+    {"imsi": "999700000000003", "ip": "10.45.0.18", "dl_mbps": 44.0, "ul_mbps": 11.5, "rsrp_dbm": -80},
+    {"imsi": "999700000000004", "ip": "10.45.0.19", "dl_mbps": 38.7, "ul_mbps": 9.9,  "rsrp_dbm": -88},
+    {"imsi": "999700000000005", "ip": "10.45.0.20", "dl_mbps": 43.5, "ul_mbps": 12.1, "rsrp_dbm": -83},
+    {"imsi": "999700000000006", "ip": "10.45.0.21", "dl_mbps": 40.2, "ul_mbps": 10.3, "rsrp_dbm": -86},
+    {"imsi": "999700000000007", "ip": "10.45.0.22", "dl_mbps": 46.8, "ul_mbps": 13.0, "rsrp_dbm": -79},
+    {"imsi": "999700000000008", "ip": "10.45.0.23", "dl_mbps": 39.4, "ul_mbps": 10.1, "rsrp_dbm": -87},
+    {"imsi": "999700000000009", "ip": "10.45.0.24", "dl_mbps": 42.1, "ul_mbps": 11.7, "rsrp_dbm": -84},
+    {"imsi": "999700000000010", "ip": "10.45.0.25", "dl_mbps": 44.9, "ul_mbps": 11.9, "rsrp_dbm": -81}
+  ],
+  "anomalies": [],
+  "recommendations": ["No action required. All KPIs within normal range."]
+}

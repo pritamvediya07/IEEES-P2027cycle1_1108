@@ -1,0 +1,12 @@
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Operator profile} & \textbf{Weights $(v_\tau,v_\lambda,v_\rho,v_\sigma)$} & \textbf{$n$} & \textbf{Strict Def~4} & \textbf{$\Delta$ vs equal} & \textbf{Cohen's $h$} & \textbf{BH $q$} \\
+\midrule
+\textbf{Equal (baseline)} & \texttt{(0.25, 0.25, 0.25, 0.25)} & 28 & 16/28 (57.1\%) & — & — & — \\
+Throughput-heavy (eMBB) & \texttt{(0.50, 0.17, 0.17, 0.16)} & 28 & 21/28 (75.0\%) & +17.9 pp & +0.38 & 1.000 \\
+Latency-heavy (URLLC) & \texttt{(0.17, 0.50, 0.17, 0.16)} & 28 & 15/28 (53.6\%) & -3.6 pp & -0.07 & 1.000 \\
+Loss-sensitive & \texttt{(0.17, 0.17, 0.50, 0.16)} & 28 & 16/28 (57.1\%) & +0.0 pp & +0.00 & 1.000 \\
+Stability-heavy & \texttt{(0.17, 0.17, 0.16, 0.50)} & 28 & 16/28 (57.1\%) & +0.0 pp & +0.00 & 1.000 \\
+Stability-removed & \texttt{(0.33, 0.33, 0.34, 0.00)} & 28 & 16/28 (57.1\%) & +0.0 pp & +0.00 & 1.000 \\
+\bottomrule
+\end{tabular}

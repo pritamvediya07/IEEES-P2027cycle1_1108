@@ -1,0 +1,16 @@
+Collection,Field,Provenance,Sample Value
+upf_metrics,timestamp,unknown,2026-04-13 09:00:22.495000
+upf_metrics,tun_interfaces,unknown,"{'uesimtun0': {'rx_bytes': 0, 'rx_packets': 0, 'tx_bytes': 159696, 'tx"
+upf_metrics,total_rx_bytes,T,0
+upf_metrics,total_tx_bytes,T,1538820
+upf_metrics,active_ue_count,T,10
+upf_metrics,db_session_count,T,10
+upf_metrics,memory_util_pct,T,4.8242
+upf_metrics,active_bearers,unknown,10
+smf_metrics,timestamp,unknown,2026-04-13 09:00:22.495000
+smf_metrics,session_count,T,10
+smf_metrics,sessions,mixed (contains Type P: ambr_dl per subscriber),"[{'imsi': '999700000000001', 'dnn': 'internet', 'ambr_dl': 20, 'ambr_u"
+smf_metrics,ambr_dl_mean,P,20.0
+pcf_metrics,timestamp,unknown,2026-04-13 09:00:22.495000
+pcf_metrics,policy_count,P,0
+pcf_metrics,policies,P,[]

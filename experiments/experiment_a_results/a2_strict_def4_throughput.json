@@ -1,0 +1,38 @@
+{
+  "experiment": "A.2",
+  "runs": [
+    {
+      "run": 1,
+      "R_base": 20.0,
+      "R_after": 71.0,
+      "tau_base": 16.568251043337927,
+      "tau_after": 11.87148195840766,
+      "R_up": true,
+      "tau_down": true,
+      "strict_def4": true
+    },
+    {
+      "run": 2,
+      "R_base": 20.0,
+      "R_after": 71.0,
+      "tau_base": 16.655666463495123,
+      "tau_after": 11.973260023356923,
+      "R_up": true,
+      "tau_down": true,
+      "strict_def4": true
+    },
+    {
+      "run": 3,
+      "R_base": 20.0,
+      "R_after": 71.0,
+      "tau_base": 16.710420815301063,
+      "tau_after": 11.848378085388212,
+      "R_up": true,
+      "tau_down": true,
+      "strict_def4": true
+    }
+  ],
+  "strict_count": 3,
+  "strict_rate": 1.0,
+  "accepted": true
+}

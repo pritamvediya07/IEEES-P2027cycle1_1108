@@ -1,0 +1,10 @@
+{
+  "experiment": "exp14",
+  "model": "none (no LLM inference)",
+  "phaseA_baseline_type_p": 0,
+  "phaseB_contamination_rate": 1.0,
+  "phaseC_field_profiles": "see phaseC_fields.json",
+  "phaseD_isolation_verified": true,
+  "paper_claim": "Taxonomy proves three structurally distinct record types exist in NWDAF analytics. Type-P contamination is confirmed via readback after policy writes. IsolatedCollector reliably strips Type-P fields.",
+  "saved_at": "2026-04-30T11:57:51.452926+00:00"
+}

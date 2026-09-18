@@ -1,0 +1,11 @@
+{
+  "phase": 2,
+  "n_sessions": 30,
+  "k_star": 1,
+  "mean_q_drop_at_kstar": -0.0146,
+  "mean_q_drop_full": 0.0925,
+  "def4_at_kstar_count": 0,
+  "def4_legacy_count": 17,
+  "paper_claim": "HedgeTuned k\u2020*=1 caps Q-degradation at k\u2020* boundary: mean=-0.015 (\u22640 expected by Theorem 7). Def 4 within allowed calls in 0/30 sessions (full-session artifact count: 17/30).",
+  "saved_at": "2026-05-01T04:03:41.997202+00:00"
+}

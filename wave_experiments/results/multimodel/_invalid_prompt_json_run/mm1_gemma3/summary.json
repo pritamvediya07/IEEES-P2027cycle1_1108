@@ -1,0 +1,13 @@
+{
+  "exp_id": "mm1",
+  "backend": "gemma3",
+  "model": "gemma-3-27b-it",
+  "n_trials": 20,
+  "full_loop_rate": 0.0,
+  "decomposed_rate": 0.0,
+  "contaminated_rate": 0.0,
+  "success_rate": 0.0,
+  "avg_elapsed_s": 9.3,
+  "elapsed_h": 0.12,
+  "saved_at": "2026-04-30T13:23:14.870628+00:00"
+}

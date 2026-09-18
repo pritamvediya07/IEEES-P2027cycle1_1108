@@ -1,0 +1,9 @@
+2026-04-29 02:38:21,979 [QUEUE] INFO  Queue has 13 items to run
+2026-04-29 02:38:21,980 [QUEUE] INFO  ============================================================
+2026-04-29 02:38:21,980 [QUEUE] INFO  Next: exp1_vulnerable
+2026-04-29 02:38:21,980 [QUEUE] INFO  ============================================================
+2026-04-29 02:38:21,980 [QUEUE] INFO  Starting: exp1_vulnerable
+2026-04-29 02:38:21,980 [QUEUE] INFO  Command:  experiments/exp1_end_to_end.py qwen2.5:72b vulnerable
+2026-04-29 02:38:21,980 [QUEUE] INFO  Log:      <repo>/experiments/queue_logs/exp1_vulnerable.log
+2026-04-29 02:38:21,980 [QUEUE] INFO  ============================================================
+2026-04-29 02:43:21,981 [QUEUE] INFO    [exp1_vulnerable] still running — 5 min elapsed

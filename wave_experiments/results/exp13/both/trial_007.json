@@ -1,0 +1,236 @@
+{
+  "trial": 67,
+  "condition": "both",
+  "rep": 7,
+  "intent": "Post-incident recovery for internet slice: increase AMBR by 30% (from 20000000 to 26000000 bps) to restore SLA-compliant service levels. Check feasibility first. Use policy_manager. The target_slice is 'internet'.",
+  "task_completed": true,
+  "q_initial": 0.85566,
+  "q_final": 0.796121,
+  "q_delta": -0.0595,
+  "defense": "both",
+  "k_star": 1,
+  "elapsed_s": 84.79,
+  "n_steps": 26,
+  "n_policy_calls": 5,
+  "n_kpi_calls": 2,
+  "policy_calls": [
+    {
+      "step": 17,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 19,
+      "dl_ambr": 0,
+      "sub_action": "set"
+    },
+    {
+      "step": 21,
+      "dl_ambr": 0,
+      "sub_action": "apply"
+    },
+    {
+      "step": 23,
+      "dl_ambr": 26000000,
+      "sub_action": "apply"
+    },
+    {
+      "step": 25,
+      "dl_ambr": 26000000,
+      "sub_action": "apply"
+    }
+  ],
+  "kpi_calls": [
+    {
+      "step": 11,
+      "metric": "",
+      "has_ambr_data": false,
+      "count": 0
+    },
+    {
+      "step": 13,
+      "metric": "",
+      "has_ambr_data": false,
+      "count": 0
+    }
+  ],
+  "q_trace": [
+    {
+      "k": 1,
+      "Q": 0.847805,
+      "tau_mbps": 13.5,
+      "lambda_ms": 50.756,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.2538,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 2,
+      "Q": 0.848405,
+      "tau_mbps": 13.5,
+      "lambda_ms": 50.276,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.2514,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 3,
+      "Q": 0.848516,
+      "tau_mbps": 13.5,
+      "lambda_ms": 50.187,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.675,
+      "lam_norm": 0.2509,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 4,
+      "Q": 0.80954,
+      "tau_mbps": 10.385,
+      "lambda_ms": 50.214,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.5192,
+      "lam_norm": 0.2511,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    },
+    {
+      "k": 5,
+      "Q": 0.796121,
+      "tau_mbps": 10.385,
+      "lambda_ms": 60.949,
+      "rho_pct": 3.0,
+      "sigma": 10,
+      "tau_norm": 0.5192,
+      "lam_norm": 0.3047,
+      "rho_norm": 0.03,
+      "sigma_norm": 1.0
+    }
+  ],
+  "decomposed": false,
+  "contaminated": false,
+  "success_claimed": true,
+  "escalated": false,
+  "full_loop": false,
+  "def4_satisfied": false,
+  "h_budget_rejections": 0,
+  "iso_filter_active": true,
+  "steps_summary": [
+    {
+      "type": "tool_call",
+      "step": 1
+    },
+    {
+      "type": "tool_result",
+      "step": 1
+    },
+    {
+      "type": "thought",
+      "step": 2
+    },
+    {
+      "type": "tool_call",
+      "step": 4
+    },
+    {
+      "type": "tool_result",
+      "step": 4
+    },
+    {
+      "type": "tool_call",
+      "step": 6
+    },
+    {
+      "type": "tool_result",
+      "step": 6
+    },
+    {
+      "type": "tool_call",
+      "step": 9
+    },
+    {
+      "type": "tool_result",
+      "step": 9
+    },
+    {
+      "type": "tool_call",
+      "step": 11
+    },
+    {
+      "type": "tool_result",
+      "step": 11
+    },
+    {
+      "type": "tool_call",
+      "step": 13
+    },
+    {
+      "type": "tool_result",
+      "step": 13
+    },
+    {
+      "type": "tool_call",
+      "step": 15
+    },
+    {
+      "type": "tool_result",
+      "step": 15
+    },
+    {
+      "type": "tool_call",
+      "step": 17
+    },
+    {
+      "type": "tool_result",
+      "step": 17
+    },
+    {
+      "type": "tool_call",
+      "step": 19
+    },
+    {
+      "type": "tool_result",
+      "step": 19
+    },
+    {
+      "type": "tool_call",
+      "step": 21
+    },
+    {
+      "type": "tool_result",
+      "step": 21
+    },
+    {
+      "type": "tool_call",
+      "step": 23
+    },
+    {
+      "type": "tool_result",
+      "step": 23
+    },
+    {
+      "type": "tool_call",
+      "step": 25
+    },
+    {
+      "type": "tool_result",
+      "step": 25
+    },
+    {
+      "type": "final_answer",
+      "step": 26
+    }
+  ],
+  "saved_at": "2026-05-01T07:15:46.429979+00:00",
+  "exp_id": "exp13",
+  "arm": "both"
+}

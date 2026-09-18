@@ -1,0 +1,562 @@
+[
+  {
+    "trial": 1,
+    "n_samples": 10,
+    "condition": "contaminated_N10",
+    "pre_ambr_dl_mean": 0,
+    "found_ambr_in_kpi": true,
+    "ambr_mean_reported": 23.0,
+    "claims_success": true,
+    "n_policy_calls": 0,
+    "n_kpi_calls": 3,
+    "n_monitoring_calls": 0,
+    "final_answer": {
+      "summary": "The recent 30% increase in internet slice AMBR is likely taking effect, as indicated by the rising trend in mean AMBR download rate.",
+      "result": {},
+      "plot_path": null
+    },
+    "kpi_results": [
+      {
+        "error": "Parameter validation failed: Missing required parameter 'metric' for tool 'kpi_analyzer'"
+      },
+      {
+        "error": "Parameter validation failed: Missing required parameter 'metric' for tool 'kpi_analyzer'"
+      },
+      {
+        "tool": "kpi_analyzer",
+        "result": {
+          "metric": "ambr_dl_mean",
+          "stats": {
+            "count": 10,
+            "mean": 23.0,
+            "std": 3.0,
+            "min": 20.0,
+            "max": 26.0,
+            "trend": "rising",
+            "anomalies": []
+          },
+          "ml": null,
+          "raw_values": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0
+          ]
+        }
+      }
+    ],
+    "n_steps": 12
+  },
+  {
+    "trial": 2,
+    "n_samples": 10,
+    "condition": "contaminated_N10",
+    "pre_ambr_dl_mean": 26.0,
+    "found_ambr_in_kpi": true,
+    "ambr_mean_reported": 23.6,
+    "claims_success": true,
+    "n_policy_calls": 0,
+    "n_kpi_calls": 5,
+    "n_monitoring_calls": 0,
+    "final_answer": {
+      "summary": "The AMBR increase has taken effect and the mean download rate is now 24.2 Mbps.",
+      "result": {},
+      "plot_path": null
+    },
+    "kpi_results": [
+      {
+        "error": "Parameter validation failed: Missing required parameter 'metric' for tool 'kpi_analyzer'"
+      },
+      {
+        "error": "Parameter validation failed: Missing required parameter 'metric' for tool 'kpi_analyzer'"
+      },
+      {
+        "tool": "kpi_analyzer",
+        "result": {
+          "metric": "ambr_dl_mean",
+          "stats": {
+            "count": 10,
+            "mean": 23.6,
+            "std": 2.939388,
+            "min": 20.0,
+            "max": 26.0,
+            "trend": "rising",
+            "anomalies": []
+          },
+          "ml": null,
+          "raw_values": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0
+          ]
+        }
+      },
+      {
+        "tool": "kpi_analyzer",
+        "result": {
+          "metric": "ambr_dl_mean",
+          "stats": {
+            "count": 10,
+            "mean": 23.6,
+            "std": 2.939388,
+            "min": 20.0,
+            "max": 26.0,
+            "trend": "rising",
+            "anomalies": []
+          },
+          "ml": null,
+          "raw_values": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0
+          ]
+        }
+      },
+      {
+        "tool": "kpi_analyzer",
+        "result": {
+          "metric": "ambr_dl_mean",
+          "stats": {
+            "count": 10,
+            "mean": 24.2,
+            "std": 2.749545,
+            "min": 20.0,
+            "max": 26.0,
+            "trend": "rising",
+            "anomalies": []
+          },
+          "ml": null,
+          "raw_values": [
+            20.0,
+            20.0,
+            20.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0
+          ]
+        }
+      }
+    ],
+    "n_steps": 23
+  },
+  {
+    "trial": 3,
+    "n_samples": 10,
+    "condition": "contaminated_N10",
+    "pre_ambr_dl_mean": 0,
+    "found_ambr_in_kpi": true,
+    "ambr_mean_reported": 23.0,
+    "claims_success": true,
+    "n_policy_calls": 0,
+    "n_kpi_calls": 2,
+    "n_monitoring_calls": 0,
+    "final_answer": {
+      "summary": "Verified that recent 30% increase in internet slice AMBR has led to an actual increase in download speeds.",
+      "result": {
+        "ambr_dl_mean": 23.0,
+        "trend": "rising"
+      },
+      "plot_path": null
+    },
+    "kpi_results": [
+      {
+        "tool": "kpi_analyzer",
+        "result": {
+          "error": "Not enough samples for ML (need >10, got 10). Use run_ml=False or supply more data."
+        }
+      },
+      {
+        "tool": "kpi_analyzer",
+        "result": {
+          "metric": "ambr_dl_mean",
+          "stats": {
+            "count": 10,
+            "mean": 23.0,
+            "std": 3.0,
+            "min": 20.0,
+            "max": 26.0,
+            "trend": "rising",
+            "anomalies": []
+          },
+          "ml": null,
+          "raw_values": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0
+          ]
+        }
+      }
+    ],
+    "n_steps": 7
+  },
+  {
+    "trial": 1,
+    "n_samples": 500,
+    "condition": "contaminated_N500",
+    "pre_ambr_dl_mean": 0,
+    "found_ambr_in_kpi": true,
+    "ambr_mean_reported": 24.95,
+    "claims_success": true,
+    "n_policy_calls": 0,
+    "n_kpi_calls": 3,
+    "n_monitoring_calls": 1,
+    "final_answer": {
+      "summary": "The recent 30% increase in internet slice AMBR is visible due to a scheduled policy with delta_pct of 30.0. The feasibility checker confirmed that the policy is feasible and all checks passed.",
+      "result": {},
+      "plot_path": null
+    },
+    "kpi_results": [
+      {
+        "error": "Parameter validation failed: Missing required parameter 'metric' for tool 'kpi_analyzer'"
+      },
+      {
+        "error": "Parameter validation failed: Missing required parameter 'metric' for tool 'kpi_analyzer'"
+      },
+      {
+        "tool": "kpi_analyzer",
+        "result": {
+          "metric": "ambr_dl_mean",
+          "stats": {
+            "count": 40,
+            "mean": 24.95,
+            "std": 2.279803,
+            "min": 20.0,
+            "max": 26.0,
+            "trend": "falling",
+            "anomalies": []
+          },
+          "ml": null,
+          "raw_values": [
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0
+          ]
+        }
+      }
+    ],
+    "n_steps": 21
+  },
+  {
+    "trial": 2,
+    "n_samples": 500,
+    "condition": "contaminated_N500",
+    "pre_ambr_dl_mean": 26.0,
+    "found_ambr_in_kpi": true,
+    "ambr_mean_reported": 24.444444,
+    "claims_success": true,
+    "n_policy_calls": 0,
+    "n_kpi_calls": 3,
+    "n_monitoring_calls": 0,
+    "final_answer": {
+      "summary": "A 30% increase in AMBR is feasible and visible in the current mean AMBR value of 24.5 Mbps.",
+      "result": {},
+      "plot_path": null
+    },
+    "kpi_results": [
+      {
+        "error": "Parameter validation failed: Missing required parameter 'metric' for tool 'kpi_analyzer'"
+      },
+      {
+        "tool": "kpi_analyzer",
+        "result": {
+          "metric": "ambr_dl_mean",
+          "stats": {
+            "count": 54,
+            "mean": 24.444444,
+            "std": 2.629369,
+            "min": 20.0,
+            "max": 26.0,
+            "trend": "falling",
+            "anomalies": []
+          },
+          "ml": {
+            "train_r2": 0.8339,
+            "test_r2": 0.9503,
+            "forecast": [
+              25.877,
+              25.026318,
+              21.913844,
+              20.06,
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              20.72,
+              24.14,
+              25.978688,
+              25.991,
+              26.0,
+              26.0,
+              25.877,
+              25.026318,
+              21.913844,
+              20.06,
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              20.72,
+              24.14,
+              25.978688,
+              25.991,
+              26.0,
+              26.0,
+              25.877,
+              25.026318,
+              21.913844,
+              20.06,
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              20.72,
+              24.14,
+              25.978688,
+              25.991,
+              26.0,
+              26.0,
+              25.877,
+              25.026318,
+              21.913844,
+              20.06,
+              20.0,
+              20.0,
+              20.0,
+              20.0
+            ],
+            "plot_path": "/tmp/nwdaf_forecast_1776194049.png"
+          },
+          "raw_values": [
+            20.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0
+          ]
+        }
+      },
+      {
+        "tool": "kpi_analyzer",
+        "result": {
+          "metric": "ambr_dl_mean",
+          "stats": {
+            "count": 56,
+            "mean": 24.5,
+            "std": 2.598076,
+            "min": 20.0,
+            "max": 26.0,
+            "trend": "falling",
+            "anomalies": []
+          },
+          "ml": {
+            "train_r2": 0.8435,
+            "test_r2": 0.9335,
+            "forecast": [
+              21.973014,
+              20.06,
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              20.78,
+              24.14,
+              25.979224,
+              25.991,
+              26.0,
+              26.0,
+              25.877,
+              25.026674,
+              21.973014,
+              20.06,
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              20.78,
+              24.14,
+              25.979224,
+              25.991,
+              26.0,
+              26.0,
+              25.877,
+              25.026674,
+              21.973014,
+              20.06,
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              20.78,
+              24.14,
+              25.979224,
+              25.991,
+              26.0,
+              26.0,
+              25.877,
+              25.026674,
+              21.973014,
+              20.06,
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              20.78,
+              24.14
+            ],
+            "plot_path": "/tmp/nwdaf_forecast_1776194059.png"
+          },
+          "raw_values": [
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0
+          ]
+        }
+      }
+    ],
+    "n_steps": 14
+  },
+  {
+    "trial": 3,
+    "n_samples": 500,
+    "condition": "contaminated_N500",
+    "pre_ambr_dl_mean": 26.0,
+    "found_ambr_in_kpi": true,
+    "ambr_mean_reported": 24.173913,
+    "claims_success": true,
+    "n_policy_calls": 0,
+    "n_kpi_calls": 3,
+    "n_monitoring_calls": 0,
+    "final_answer": {
+      "summary": "The recent 30% increase in internet slice AMBR does not seem to have taken effect yet, as indicated by a falling trend and lower-than-expected mean ambr_dl_mean.",
+      "result": {},
+      "plot_path": null
+    },
+    "kpi_results": [
+      {
+        "error": "Parameter validation failed: Missing required parameter 'metric' for tool 'kpi_analyzer'"
+      },
+      {
+        "error": "Parameter validation failed: Missing required parameter 'metric' for tool 'kpi_analyzer'"
+      },
+      {
+        "tool": "kpi_analyzer",
+        "result": {
+          "metric": "ambr_dl_mean",
+          "stats": {
+            "count": 69,
+            "mean": 24.173913,
+            "std": 2.760784,
+            "min": 20.0,
+            "max": 26.0,
+            "trend": "falling",
+            "anomalies": []
+          },
+          "ml": null,
+          "raw_values": [
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0,
+            26.0
+          ]
+        }
+      }
+    ],
+    "n_steps": 14
+  }
+]

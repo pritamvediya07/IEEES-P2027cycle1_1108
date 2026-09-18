@@ -1,0 +1,13 @@
+{
+  "experiment": "E4.7a",
+  "baseline_ambr_mbps": 20.0,
+  "new_ambr_mbps": 50.0,
+  "test_rate_mbps": 35.0,
+  "baseline_throughput_mbps": 15.998897608488416,
+  "pre_reestablishment_throughput_mbps": 34.99727002074784,
+  "post_reestablishment_throughput_mbps": 34.9972735204486,
+  "throughput_change_fraction": 9.999925017655007e-08,
+  "reestablishment_attempted": true,
+  "enforcement_detected": false,
+  "interpretation": "UPF enforces AMBR only after PDU session re-establishment if enforcement_detected=True; enforcement is immediate if False."
+}

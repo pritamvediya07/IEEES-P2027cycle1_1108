@@ -1,0 +1,117 @@
+{
+  "experiment": "E0.5",
+  "purpose": "separate 'rho~0 is real (RLC-AM)' from 'rho~0 is a measurement artifact', and test whether sigma can vary at all",
+  "started_at": "2026-08-23T05:45:20.287346+00:00",
+  "arms": {
+    "am": {
+      "rho": {
+        "m1_iperf_mean_pct": 30.8145,
+        "m2_counter_mean_pct": null,
+        "offered_mbps_per_ue": 25.0,
+        "per_ue": {
+          "ue1": {
+            "iperf_lost": 5919,
+            "iperf_total": 18867,
+            "iperf_pct": 31.37223723962474,
+            "server_sent_bytes": null,
+            "client_recv_bytes": 25432716,
+            "tun_rx_delta": 8854263
+          },
+          "ue2": {
+            "iperf_lost": 5754,
+            "iperf_total": 18976,
+            "iperf_pct": 30.322512647554806,
+            "server_sent_bytes": null,
+            "client_recv_bytes": 25579648,
+            "tun_rx_delta": 8540550
+          },
+          "ue3": {
+            "iperf_lost": 5950,
+            "iperf_total": 18913,
+            "iperf_pct": 31.459842436419393,
+            "server_sent_bytes": null,
+            "client_recv_bytes": 25494724,
+            "tun_rx_delta": 8815736
+          },
+          "ue4": {
+            "iperf_lost": 5713,
+            "iperf_total": 18978,
+            "iperf_pct": 30.103277479186428,
+            "server_sent_bytes": null,
+            "client_recv_bytes": 25582344,
+            "tun_rx_delta": 8496521
+          }
+        }
+      },
+      "sigma": 4,
+      "attached": {
+        "ue1": "10.45.0.56",
+        "ue2": "10.45.0.58",
+        "ue3": "10.45.0.57",
+        "ue4": "10.45.0.59"
+      }
+    },
+    "um": {
+      "rho": {
+        "m1_iperf_mean_pct": 31.3782,
+        "m2_counter_mean_pct": null,
+        "offered_mbps_per_ue": 25.0,
+        "per_ue": {
+          "ue1": {
+            "iperf_lost": 6037,
+            "iperf_total": 19089,
+            "iperf_pct": 31.625543506731624,
+            "server_sent_bytes": null,
+            "client_recv_bytes": 25731972,
+            "tun_rx_delta": 9571174
+          },
+          "ue2": {
+            "iperf_lost": 6005,
+            "iperf_total": 19101,
+            "iperf_pct": 31.438144599759173,
+            "server_sent_bytes": null,
+            "client_recv_bytes": 25748148,
+            "tun_rx_delta": 9521624
+          },
+          "ue3": {
+            "iperf_lost": 5956,
+            "iperf_total": 19094,
+            "iperf_pct": 31.19304493558186,
+            "server_sent_bytes": null,
+            "client_recv_bytes": 25738712,
+            "tun_rx_delta": 9145976
+          },
+          "ue4": {
+            "iperf_lost": 5968,
+            "iperf_total": 19094,
+            "iperf_pct": 31.25589190321567,
+            "server_sent_bytes": null,
+            "client_recv_bytes": 25738712,
+            "tun_rx_delta": 9177640
+          }
+        }
+      },
+      "sigma": 4,
+      "attached": {
+        "ue1": "10.45.0.60",
+        "ue2": "10.45.0.62",
+        "ue3": "10.45.0.61",
+        "ue4": "10.45.0.63"
+      }
+    }
+  },
+  "sigma_test": {
+    "sessions_before": 4,
+    "sessions_after": 4,
+    "live_tunnels_after": 3,
+    "sigma_can_vary": false
+  },
+  "verdict": {
+    "AM_iperf_pct": 30.8145,
+    "UM_iperf_pct": 31.3782,
+    "AM_counter_pct": null,
+    "UM_counter_pct": null,
+    "conclusion": "INCONCLUSIVE: neither arm shows appreciable loss by either method. Report rho as not discriminating in this regime."
+  },
+  "finished_at": "2026-08-23T05:47:09.997018+00:00"
+}

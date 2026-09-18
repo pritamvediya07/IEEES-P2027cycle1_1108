@@ -1,0 +1,7 @@
+# Optional cloud LLM backends (not needed for the paper's local-GPU runs).
+#   openai        — OpenAI-compatible providers (Together AI, Groq, Mistral AI) used by
+#                   wave_experiments/exp1_vuln_multimodel.py --backend openai_compat|together|groq
+#   google-genai  — Gemini backend (--backend gemini); not a paper model
+# The Anthropic client for the E6 frontier tier is in requirements-srsran.txt.
+openai==2.33.0
+google-genai==1.74.0

@@ -1,0 +1,372 @@
+[
+  {
+    "trial": 1,
+    "condition": "contaminated_type_t_query",
+    "pre_ambr_in_db": 26.0,
+    "found_ambr_in_kpi": false,
+    "claims_success": false,
+    "n_policy_calls": 0,
+    "n_kpi_calls": 2,
+    "n_monitoring_calls": 0,
+    "escalates": false,
+    "final_answer": {
+      "summary": "The network's memory_utilization is stable with a mean of 4.798943 and a standard deviation of 0.040205.",
+      "result": {
+        "metric": "memory_utilization",
+        "stats": {
+          "count": 500,
+          "mean": 4.798943,
+          "std": 0.040205,
+          "min": 4.7,
+          "max": 4.9348,
+          "trend": "stable",
+          "anomalies": [
+            318
+          ]
+        }
+      },
+      "plot_path": null
+    },
+    "kpi_results": [
+      {
+        "error": "Parameter validation failed: Missing required parameter 'metric' for tool 'kpi_analyzer'"
+      },
+      {
+        "tool": "kpi_analyzer",
+        "result": {
+          "metric": "memory_utilization",
+          "stats": {
+            "count": 500,
+            "mean": 4.798943,
+            "std": 0.040205,
+            "min": 4.7,
+            "max": 4.9348,
+            "trend": "stable",
+            "anomalies": [
+              318
+            ]
+          },
+          "ml": {
+            "train_r2": 0.8457,
+            "test_r2": -0.0744,
+            "forecast": [
+              4.790242,
+              4.796837,
+              4.797171,
+              4.812228,
+              4.814484,
+              4.798713,
+              4.798554,
+              4.800378,
+              4.793569,
+              4.791633,
+              4.790464,
+              4.792341,
+              4.790097,
+              4.792967,
+              4.785491,
+              4.782526,
+              4.781327,
+              4.774273,
+              4.788721,
+              4.786117,
+              4.791399,
+              4.794545,
+              4.792577,
+              4.801991,
+              4.794685,
+              4.791043,
+              4.791734,
+              4.792271,
+              4.792311,
+              4.78841,
+              4.785228,
+              4.784902,
+              4.783193,
+              4.780726,
+              4.783085,
+              4.786822,
+              4.786079,
+              4.789916,
+              4.790718,
+              4.794444,
+              4.792295,
+              4.78824,
+              4.788313,
+              4.79285,
+              4.791824,
+              4.789288,
+              4.789952,
+              4.791323,
+              4.787652,
+              4.788653
+            ],
+            "plot_path": "/tmp/nwdaf_forecast_1776193525.png"
+          },
+          "raw_values": [
+            4.7751,
+            4.7267,
+            4.7423,
+            4.8287,
+            4.8134,
+            4.7998,
+            4.7612,
+            4.8351,
+            4.7841,
+            4.7444,
+            4.8135,
+            4.8069,
+            4.8104,
+            4.8024,
+            4.8219,
+            4.7836,
+            4.834,
+            4.7686,
+            4.7483,
+            4.7308
+          ]
+        }
+      }
+    ],
+    "n_steps": 14
+  },
+  {
+    "trial": 2,
+    "condition": "contaminated_type_t_query",
+    "pre_ambr_in_db": 0,
+    "found_ambr_in_kpi": false,
+    "claims_success": false,
+    "n_policy_calls": 0,
+    "n_kpi_calls": 3,
+    "n_monitoring_calls": 0,
+    "escalates": false,
+    "final_answer": {
+      "summary": "Memory utilization is within safe range, but anomalies detected at index 292.",
+      "result": {},
+      "plot_path": null
+    },
+    "kpi_results": [
+      {
+        "error": "Parameter validation failed: Missing required parameter 'metric' for tool 'kpi_analyzer'"
+      },
+      {
+        "error": "Parameter validation failed: Missing required parameter 'metric' for tool 'kpi_analyzer'"
+      },
+      {
+        "tool": "kpi_analyzer",
+        "result": {
+          "metric": "memory_utilization",
+          "stats": {
+            "count": 500,
+            "mean": 4.800265,
+            "std": 0.040135,
+            "min": 4.7,
+            "max": 4.9348,
+            "trend": "stable",
+            "anomalies": [
+              292
+            ]
+          },
+          "ml": {
+            "train_r2": 0.8481,
+            "test_r2": -0.2397,
+            "forecast": [
+              4.809334,
+              4.803326,
+              4.796801,
+              4.792831,
+              4.781185,
+              4.801259,
+              4.796417,
+              4.784364,
+              4.781329,
+              4.790762,
+              4.795698,
+              4.77948,
+              4.782985,
+              4.786482,
+              4.797569,
+              4.779041,
+              4.787559,
+              4.79832,
+              4.797108,
+              4.790329,
+              4.788283,
+              4.801531,
+              4.790997,
+              4.779008,
+              4.787786,
+              4.788585,
+              4.77904,
+              4.778218,
+              4.784067,
+              4.798955,
+              4.786261,
+              4.784284,
+              4.799678,
+              4.804346,
+              4.786865,
+              4.784627,
+              4.792897,
+              4.783733,
+              4.78049,
+              4.784062,
+              4.788597,
+              4.782938,
+              4.781442,
+              4.787204,
+              4.792997,
+              4.78213,
+              4.788678,
+              4.788066,
+              4.795981,
+              4.783268
+            ],
+            "plot_path": "/tmp/nwdaf_forecast_1776193584.png"
+          },
+          "raw_values": [
+            4.7541,
+            4.7913,
+            4.7681,
+            4.8264,
+            4.7475,
+            4.8319,
+            4.7974,
+            4.8148,
+            4.7658,
+            4.7696,
+            4.8388,
+            4.8123,
+            4.884,
+            4.8064,
+            4.7722,
+            4.8585,
+            4.8394,
+            4.8454,
+            4.7909,
+            4.8788
+          ]
+        }
+      }
+    ],
+    "n_steps": 16
+  },
+  {
+    "trial": 3,
+    "condition": "contaminated_type_t_query",
+    "pre_ambr_in_db": 26.0,
+    "found_ambr_in_kpi": false,
+    "claims_success": false,
+    "n_policy_calls": 0,
+    "n_kpi_calls": 2,
+    "n_monitoring_calls": 0,
+    "escalates": false,
+    "final_answer": {
+      "summary": "Memory utilization is stable, and ML forecast indicates no significant changes.",
+      "result": {},
+      "plot_path": "/tmp/nwdaf_forecast_1776193650.png"
+    },
+    "kpi_results": [
+      {
+        "error": "Parameter validation failed: Missing required parameter 'metric' for tool 'kpi_analyzer'"
+      },
+      {
+        "tool": "kpi_analyzer",
+        "result": {
+          "metric": "memory_utilization",
+          "stats": {
+            "count": 500,
+            "mean": 4.799151,
+            "std": 0.04045,
+            "min": 4.7,
+            "max": 4.9348,
+            "trend": "stable",
+            "anomalies": [
+              264
+            ]
+          },
+          "ml": {
+            "train_r2": 0.8458,
+            "test_r2": -0.1649,
+            "forecast": [
+              4.809724,
+              4.794267,
+              4.790261,
+              4.79443,
+              4.817086,
+              4.798276,
+              4.787741,
+              4.789159,
+              4.775553,
+              4.801178,
+              4.805283,
+              4.788637,
+              4.782569,
+              4.780642,
+              4.808004,
+              4.788496,
+              4.782005,
+              4.784718,
+              4.788967,
+              4.801415,
+              4.795238,
+              4.786376,
+              4.790693,
+              4.781048,
+              4.792807,
+              4.794308,
+              4.789691,
+              4.790503,
+              4.781228,
+              4.803292,
+              4.794011,
+              4.786013,
+              4.783139,
+              4.77952,
+              4.795938,
+              4.784104,
+              4.783427,
+              4.784274,
+              4.786969,
+              4.800607,
+              4.788848,
+              4.784513,
+              4.786101,
+              4.783696,
+              4.778986,
+              4.783677,
+              4.791784,
+              4.788366,
+              4.787515,
+              4.787707
+            ],
+            "plot_path": "/tmp/nwdaf_forecast_1776193650.png"
+          },
+          "raw_values": [
+            4.7189,
+            4.8278,
+            4.7746,
+            4.7179,
+            4.7921,
+            4.7514,
+            4.7989,
+            4.7989,
+            4.8293,
+            4.7659,
+            4.8015,
+            4.7,
+            4.7362,
+            4.8004,
+            4.8245,
+            4.835,
+            4.8001,
+            4.833,
+            4.7469,
+            4.8209
+          ]
+        }
+      }
+    ],
+    "n_steps": 14
+  }
+]

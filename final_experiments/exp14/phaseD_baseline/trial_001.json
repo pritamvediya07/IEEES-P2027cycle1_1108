@@ -1,0 +1,9 @@
+{
+  "condition": "baseline",
+  "returned_values": 20,
+  "isolated_collector": false,
+  "stripped": false,
+  "saved_at": "2026-04-30T11:57:21.416706+00:00",
+  "exp_id": "exp14",
+  "arm": "phaseD_baseline"
+}
