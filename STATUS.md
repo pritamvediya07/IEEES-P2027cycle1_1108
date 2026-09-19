@@ -9,8 +9,9 @@
 
 ### Artifacts Available ✅
 
-The artifact will be archived on Zenodo with a DOI after evaluation, before the
-camera-ready deadline (14 Oct 2026), as the Available badge requires; the paper
+The artifact is archived on Zenodo, DOI 10.5281/zenodo.22843385 (release `v1.0-ae`); the
+version after evaluation is deposited as a new Zenodo version before the camera-ready
+deadline (14 Oct 2026), as the Available badge requires; the paper
 (IEEE_S_P.pdf) links this GitHub repository, and the camera-ready will also cite the DOI. The GitHub
 repository (https://github.com/pritamvediya07/IEEES-P2027cycle1_1108) is the evaluation
 copy.

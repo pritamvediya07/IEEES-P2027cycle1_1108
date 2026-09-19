@@ -2,8 +2,8 @@
 
 **IEEE S&P 2027 — Cycle 1 Artifact**
 
-Repository: <https://github.com/pritamvediya07/IEEES-P2027cycle1_1108> (evaluation copy;
-the artifact will be archived on Zenodo with a DOI after evaluation, before 14 Oct 2026)
+Repository: <https://github.com/pritamvediya07/IEEES-P2027cycle1_1108> · Archived on Zenodo:
+<https://doi.org/10.5281/zenodo.22843385> (release `v1.0-ae`; the final version is deposited there before 14 Oct 2026)
 
 ---
 
@@ -169,7 +169,7 @@ This artifact reproduces the paper's results except the items listed in [CLAIMS.
 
 ## Claimed Artifact Badges
 
-- **Available** — Complete source code, Docker testbed, and all stored trial data are included. GitHub is the evaluation copy; after evaluation, and before the camera-ready deadline (14 Oct 2026), the artifact will be archived on Zenodo with a DOI, which replaces the paper's anonymous link in the camera-ready.
+- **Available** — Complete source code, Docker testbed, and all stored trial data are included. Archived on Zenodo, DOI 10.5281/zenodo.22843385 (release `v1.0-ae`); the version after evaluation is deposited as a new Zenodo version before the camera-ready deadline (14 Oct 2026). GitHub is the working copy.
 - **Functional** — `./run_artifact.sh` (Tracks A and C1) recomputes the paper's statistics from the stored trial logs and raw srsRAN results.
 - **Reproduced** — Track B instructions reproduce the headline numbers in Tables 2–4 and Figures 3–4; Track C reproduces the radio-side validation and supplementary results (§6.1–6.6, Appendices E–F).
 
