@@ -10,8 +10,8 @@
 ### Artifacts Available ✅
 
 The artifact will be archived on Zenodo with a DOI after evaluation, before the
-camera-ready deadline (14 Oct 2026), as the Available badge requires; the paper's
-anonymous.4open.science link is replaced by that DOI in the camera-ready. The GitHub
+camera-ready deadline (14 Oct 2026), as the Available badge requires; the paper
+(IEEE_S_P.pdf) links this GitHub repository, and the camera-ready will also cite the DOI. The GitHub
 repository (https://github.com/pritamvediya07/IEEES-P2027cycle1_1108) is the evaluation
 copy.
 
