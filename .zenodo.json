@@ -1,0 +1,41 @@
+{
+  "title": "Artifact for \"Architecture-Induced Reward Hacking in NWDAF-Integrated LLM Control Loops\" (IEEE S&P 2027)",
+  "upload_type": "software",
+  "version": "v1.0-ae",
+  "description": "Research artifact for the IEEE Symposium on Security and Privacy 2027 paper \"Architecture-Induced Reward Hacking in NWDAF-Integrated LLM Control Loops\". It contains the PALA implementation (LLM agent, NWDAF tools, collector and IsolatedCollector, HedgeTuned session budget), the Docker Open5GS/UERANSIM testbed, the Open5GS/srsRAN (ZeroMQ) radio-side testbed, all experiment scripts, the stored trial results, and verification scripts. <code>./run_artifact.sh</code> recomputes the paper's main-evaluation statistics and every srsRAN number printed in the paper from the stored results; the README describes the live reproduction and its hardware requirements. CLAIMS.md maps each paper claim to its data and lists the known differences between the paper and the stored data.",
+  "creators": [
+    {
+      "name": "Vediya, Pritam",
+      "affiliation": "Malaviya National Institute of Technology Jaipur"
+    },
+    {
+      "name": "Awasthi, Avinash",
+      "affiliation": "Malaviya National Institute of Technology Jaipur"
+    },
+    {
+      "name": "Singh, Deependra",
+      "affiliation": "Malaviya National Institute of Technology Jaipur"
+    },
+    {
+      "name": "Battula, Ramesh Babu",
+      "affiliation": "Malaviya National Institute of Technology Jaipur"
+    },
+    {
+      "name": "Tyagi, Dinesh Kumar",
+      "affiliation": "Malaviya National Institute of Technology Jaipur"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "5G",
+    "6G",
+    "NWDAF",
+    "LLM agents",
+    "reward hacking",
+    "Open5GS",
+    "srsRAN",
+    "network security",
+    "artifact"
+  ],
+  "notes": "Third-party configuration files (Open5GS, UERANSIM, srsRAN) remain under their upstream AGPL-3.0 licenses; see NOTICE."
+}
