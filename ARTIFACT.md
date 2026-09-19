@@ -26,22 +26,15 @@ for the full walkthrough and the one-day evaluation plan see [README.md](README.
 |---|---|
 | **Artifacts Available** | Archived on Zenodo with a DOI after evaluation, before the camera-ready deadline (14 Oct 2026); the paper's anonymous.4open.science link is replaced by that DOI in the camera-ready. The GitHub repository (https://github.com/pritamvediya07/IEEES-P2027cycle1_1108) is the evaluation copy. Contents: complete PALA source, the Docker UERANSIM testbed, the srsRAN testbed configuration and experiment scripts, 1,418 stored UERANSIM result files (JSON/JSONL under `final_experiments/`), all srsRAN results with per-trial LLM traces, and the figure, table, and verification scripts |
 | **Artifacts Functional** | `./run_artifact.sh` runs every offline check from a fresh clone; 26 unit tests pass on an in-memory database (no MongoDB, Open5GS or Ollama); the verifiers run on any machine with Python 3.10–3.12 |
-| **Results Reproduced** | Tracks B and C2 re-run the experiments; `reproduce_results.py --fresh` and `analysis/verify_paper.py --fresh` judge the fresh results against the paper's claims (see the README's [one-day plan](README.md#artifact-evaluation-plan-fits-in-one-day) and [Evaluator access](#evaluator-access) below). Offline, `reproduce_results.py` recomputes the main-evaluation statistics from the stored trial logs (54 checks) and `analysis/verify_paper.py` recomputes all 79 registered srsRAN numbers from raw results and checks the 41 printed in the paper |
+| **Results Reproduced** | Tracks B and C2 re-run the experiments; `reproduce_results.py --fresh` and `analysis/verify_paper.py --fresh` judge the fresh results against the paper's claims (see the README's [one-day plan](README.md#artifact-evaluation-plan-fits-in-one-day) and [hardware requirements](README.md#hardware-for-the-reproduced-badge)). Offline, `reproduce_results.py` recomputes the main-evaluation statistics from the stored trial logs (54 checks) and `analysis/verify_paper.py` recomputes all 79 registered srsRAN numbers from raw results and checks the 41 printed in the paper |
 
-### Evaluator access
+### Hardware for the Reproduced badge
 
-For the Reproduced badge the authors provide SSH (public-key) access to the reference
-workstation on which the paper's experiments ran (2× Intel Xeon Gold 6538Y+, 503 GiB RAM,
-1× NVIDIA RTX PRO 6000 Blackwell 96 GB, Ubuntu 22.04.5, Docker, Ollama with all paper
-models pulled, native Open5GS 2.7.6, srsRAN built at
-`/home/user/Desktop/pritam/srsran_build`).
-
-- Send an SSH public key through HotCRP; the connection details are returned there.
-- Work in a separate checkout of the repository and set
-  `export SRSRAN_BUILD=/home/user/Desktop/pritam/srsran_build`.
-- `./run_artifact.sh env` reports both live tracks ready on this machine.
-- Only one evaluator should run live experiments at a time: the experiments share the GPU
-  and the testbed database. Coordinate the schedule through HotCRP.
+The live experiments run on the evaluator's own machine: one GPU with ≥ 48 GB (80 GB+ for
+Mistral-Large), Docker and Ollama for the UERANSIM track; root, native Open5GS, an srsRAN
+build with ZeroMQ and GNU Radio for the srsRAN track. `./run_artifact.sh env` reports whether
+each live track is ready. Details: README,
+[Hardware for the Reproduced badge](README.md#hardware-for-the-reproduced-badge).
 
 ---
 
@@ -383,9 +376,7 @@ and contact no database; no Open5GS or Ollama is required.
 
 ## Contact
 
-Reproducibility questions can be raised through HotCRP. Request SSH access to the
-reference workstation through HotCRP as well (send an SSH public key; see
-[Evaluator access](#evaluator-access)).
+Reproducibility questions can be raised through HotCRP.
 
 ---
 

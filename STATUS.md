@@ -95,10 +95,9 @@ registered numbers).
 - validating with a different LLM backend or model version
 - the srsRAN measurements (root access, an srsRAN build with ZeroMQ, and GNU Radio)
 
-**Evaluator access:** the authors provide SSH (public-key) access to the reference
-workstation, with Docker, Ollama (all paper models pulled), native Open5GS 2.7.6 and an
-srsRAN build; send an SSH public key through HotCRP and coordinate live runs there (one
-evaluator at a time on the GPU). Details: [ARTIFACT.md](ARTIFACT.md#evaluator-access).
+**Hardware for live runs:** the evaluator's own machine with one GPU ≥ 48 GB, Docker and
+Ollama; root, native Open5GS, srsRAN (ZeroMQ) and GNU Radio for the srsRAN track. Details:
+[README](README.md#hardware-for-the-reproduced-badge).
 
 **Not included:**
 - USRP-2953R hardware-RF traces for the single-configuration confirmation in Appendix E;
@@ -126,4 +125,4 @@ system with one GPU. The one-day evaluation plan is in the README's
 | Track B — RQ1 only (exp1 Qwen 3.1 h + exp1_multimodel 3.1 h) | ≈ 6.2 h | GPU server + Docker testbed |
 | Track B — all paper experiments (exp1 3.1, exp1_multimodel 3.1, exp2 2.1, exp3 0.7, exp3_multimodel 2.4, exp5 3.9, exp6 5.5, exp7 7.7, exp8 4.6, exp9 0.9, exp13 3.1 h; exp10/11/14 < 0.2 h each; exp15) | ≈ 38 h | GPU server + Docker testbed |
 | Track C2 — srsRAN live track (`live-srsran`) | ≈ 5–6 h | root, srsRAN build, GNU Radio, local GPU for the LLM tiers (`ANTHROPIC_API_KEY` only for the E6 frontier tier) |
-| One-day plan — rq1 + rq2 + rq3 + rq4-core (≈ 16 h) + Track C2 | ≈ 21–22 h | the reference workstation (evaluator access) |
+| One-day plan — rq1 + rq2 + rq3 + rq4-core (≈ 16 h) + Track C2 | ≈ 21–22 h | GPU ≥ 48 GB, Docker, root, srsRAN build |

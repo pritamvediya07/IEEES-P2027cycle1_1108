@@ -20,7 +20,7 @@ There are three evaluation tracks. Track C (srsRAN radio-side validation) is doc
 | **B: Full Testbed** | ≈ 38 h (all UERANSIM experiments); one-day subset ≈ 16 h | GPU server with local Ollama | Re-run experiments from scratch |
 | **C: srsRAN** | C1 ~1 min · C2 ≈ 5–6 h | C1 any laptop · C2 root + srsRAN build | Verify and re-run the radio-side validation and supplementary experiments |
 
-Start with Track A. Track B is only needed if you want to generate new trial data; for a one-day live evaluation (≈ 21–22 h including the srsRAN track), use the subset in the README's *Artifact Evaluation Plan (fits in one day)*. The authors provide SSH access to the reference system for the live tracks; see the README's *Evaluator access (Reproduced badge)*.
+Start with Track A. Track B is only needed if you want to generate new trial data; for a one-day live evaluation (≈ 21–22 h including the srsRAN track), use the subset in the README's *Artifact Evaluation Plan (fits in one day)*. The live tracks need the hardware listed in the README's *Hardware for the Reproduced badge*.
 
 ---
 

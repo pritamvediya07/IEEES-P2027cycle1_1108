@@ -195,7 +195,7 @@ python wave_experiments/exp1_vuln_multimodel.py \
 | gemma3-12b-it-q8 | `ollama pull gemma3-12b-it-q8:latest` | — (srsRAN E6, Ollama only) |
 | claude-sonnet-4-5 | — | Anthropic API, `ANTHROPIC_API_KEY` (srsRAN E6 frontier tier; client in `requirements-srsran.txt`) |
 
-**Recommendation for evaluators without a GPU:** Track B cannot run without a local GPU. Use Track A and C1 (offline), or request SSH access to the reference system through HotCRP (see the README's *Evaluator access (Reproduced badge)*).
+**Recommendation for evaluators without a GPU:** Track B cannot run without a local GPU. Use Track A and C1 (offline); the live tracks need the hardware listed in the README's *Hardware for the Reproduced badge*.
 
 ---
 

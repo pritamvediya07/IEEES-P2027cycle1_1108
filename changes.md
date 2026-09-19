@@ -131,8 +131,8 @@ documentation against the final paper and the code.
   srsRAN numbers; stored-mode and fresh-mode tolerances stated as implemented; measured
   live times (≈ 38 h for all UERANSIM experiments, ≈ 5–6 h for the srsRAN live track,
   ≈ 21–22 h for the one-day plan); cloud backends limited to the Table 2 cross-family rows;
-  GNU Radio listed as required for Track C2; evaluator SSH access to the reference
-  workstation; the Zenodo DOI after evaluation for the Available badge.
+  GNU Radio listed as required for Track C2; hardware requirements for running the live
+  tracks on the evaluator's own machine; the Zenodo DOI after evaluation for the Available badge.
 
 ---
 
