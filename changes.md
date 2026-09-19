@@ -191,7 +191,7 @@ radio-side validation and the supplementary experiments.
   as 18/30; incorrect `run_experiments.sh` phase names, missing figure paths, and fabricated
   pre-computed table paths corrected; the RQ3 claim corrected (the cumulative-threshold rule
   is *more* permissive than per-call review).
-- `IEEE_S_P.pdf` — replaced with the accepted paper (clean copy, no revision highlighting; its artifact link points to this repository).
+- `IEEE_S_P.pdf` — replaced with the accepted paper (clean copy, no revision highlighting; its artifact sentence links this repository and the Zenodo DOI 10.5281/zenodo.22843385).
 - `requirements.txt` — adds `pytest`, which the unit tests need and was missing.
 - `README.md` — one-command Quick Start; a **Reference System** section with the measured
   hardware and software of the machine the experiments ran on. The hardware table previously
