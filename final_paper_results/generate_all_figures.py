@@ -2,6 +2,17 @@
 """
 PALA — Complete Figure & Table Generation Suite (v2)
 ═══════════════════════════════════════════════════════════════════════════
+SUPERSEDED. This script belongs to an earlier experiment layout and reads
+result files named e3_*/e4_*/e7_* from final_paper_results/results/. Those
+experiments were reorganised into final_experiments/exp1..exp15 and the files no
+longer exist under these names, so most outputs here are skipped.
+
+None of the figures in the paper come from this script. Figures 3 and 4 are built
+by final_experiments/RQ1_realization/figures/gen_fig1_hq.py and
+final_experiments/RQ2_mechanism/figures/gen_fig2_hq.py, which reproduce_results.py
+runs. This file is kept for reference only.
+
+═══════════════════════════════════════════════════════════════════════════
 Reads saved experimental JSON files and produces publication-ready figures
 (PNG + PDF) and LaTeX-ready tables (CSV).
 
@@ -73,10 +84,17 @@ C_LIGHT_GREEN = "#C8E6C9"
 C_LIGHT_BLUE  = "#BBDEFB"
 
 
+# Inputs that were absent, so the summary can name what was skipped instead of
+# reporting a clean run with figures silently missing (AE #59, reviewer B).
+MISSING_INPUTS: list[str] = []
+
+
 def load_json(fname):
     p = RESULTS_DIR / fname
     if not p.exists():
         print(f"  [SKIP] {fname} not found")
+        if fname not in MISSING_INPUTS:
+            MISSING_INPUTS.append(fname)
         return None
     with open(p) as f:
         return json.load(f)
@@ -974,6 +992,16 @@ def generate_all():
     print("All outputs:")
     print(f"  Figures : {FIG_DIR}/")
     print(f"  Tables  : {TBL_DIR}/")
+    if MISSING_INPUTS:
+        print("-"*70)
+        print(f"  {len(MISSING_INPUTS)} input file(s) missing; the outputs that "
+              f"depend on them were SKIPPED:")
+        for name in MISSING_INPUTS:
+            print(f"    - {name}")
+        print("  Re-run the experiments that produce them, or treat the "
+              "corresponding figures/tables as not regenerated.")
+    else:
+        print("  All required inputs were present; nothing skipped.")
     print("="*70)
 
 

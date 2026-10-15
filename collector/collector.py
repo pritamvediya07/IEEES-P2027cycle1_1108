@@ -33,6 +33,7 @@ from config.settings import (
     OPEN5GS_DB,
 )
 from config.db import get_client, ping
+from tools.open5gs_schema import SESSION_PROJECTION, iter_sessions
 
 logging.basicConfig(
     level=logging.INFO,
@@ -116,12 +117,17 @@ def _read_smf_sessions(open5gs_db) -> list[dict]:
     try:
         # Open5GS stores SMF sessions in the 'subscribers' collection
         # (the same one the WebUI manages). Active sessions have a 'session' sub-doc.
+        # Match either schema: the legacy top-level `session` array or the
+        # `slice[].session[]` layout used by Open5GS 2.7+.
         for doc in open5gs_db["subscribers"].find(
-            {"session": {"$exists": True, "$ne": []}},
-            {"imsi": 1, "session": 1, "_id": 0},
+            {"$or": [
+                {"session": {"$exists": True, "$ne": []}},
+                {"slice.session": {"$exists": True, "$ne": []}},
+            ]},
+            {**SESSION_PROJECTION, "_id": 0},
         ):
             imsi = doc.get("imsi", "unknown")
-            for sess in doc.get("session", []):
+            for sess in iter_sessions(doc):
                 sessions.append(
                     {
                         "imsi":      imsi,
@@ -216,9 +222,34 @@ def _simulate_upf_counters(tun_stats: dict, session_count: int) -> dict:
 class Collector:
     """Periodic data-collection service."""
 
-    def __init__(self) -> None:
+    def __init__(
+        self,
+        mongo_uri: str | None = None,
+        db_name: str | None = None,
+        interval_sec: int | None = None,
+    ) -> None:
+        """
+        All three arguments are optional and default to the values in
+        ``config.settings`` (which read the MONGO_URI / NWDAF_DB environment
+        variables the testbed compose file already sets).  They are accepted
+        explicitly so that callers which pass them — such as the nwdaf service
+        in docker-compose.testbed.yml — construct a working collector instead
+        of raising TypeError (AE #59, reviewers A and C).
+        """
         self._stop_event = threading.Event()
         self._thread: threading.Thread | None = None
+        self._mongo_uri = mongo_uri
+        self._nwdaf_db_name = db_name or NWDAF_DB
+        self._interval_sec = (
+            interval_sec if interval_sec is not None else COLLECTOR_INTERVAL_SEC
+        )
+
+    def _client(self):
+        """Mongo client honouring an explicit mongo_uri when one was given."""
+        if self._mongo_uri:
+            from pymongo import MongoClient
+            return MongoClient(self._mongo_uri)
+        return get_client()
 
     # ── public API ──────────────────────────────────────────────────────────
 
@@ -226,7 +257,7 @@ class Collector:
         self._stop_event.clear()
         self._thread = threading.Thread(target=self._run, daemon=True)
         self._thread.start()
-        log.info("Collector started (interval=%ds)", COLLECTOR_INTERVAL_SEC)
+        log.info("Collector started (interval=%ds)", self._interval_sec)
 
     def stop(self) -> None:
         self._stop_event.set()
@@ -245,9 +276,9 @@ class Collector:
             log.error("MongoDB not reachable — collector cannot start")
             return
 
-        client      = get_client()
+        client      = self._client()
         open5gs_db  = client[OPEN5GS_DB]
-        nwdaf_db    = client[NWDAF_DB]
+        nwdaf_db    = client[self._nwdaf_db_name]
         _ensure_ttl_indexes(client)
 
         while not self._stop_event.is_set():
@@ -255,14 +286,14 @@ class Collector:
                 self._collect(open5gs_db, nwdaf_db)
             except Exception as exc:
                 log.error("Collection cycle failed: %s", exc, exc_info=True)
-            self._stop_event.wait(COLLECTOR_INTERVAL_SEC)
+            self._stop_event.wait(self._interval_sec)
 
     def _collect(self, open5gs_db=None, nwdaf_db=None) -> dict:
         """One full collection + write cycle."""
         if open5gs_db is None or nwdaf_db is None:
-            client     = get_client()
+            client     = self._client()
             open5gs_db = client[OPEN5GS_DB]
-            nwdaf_db   = client[NWDAF_DB]
+            nwdaf_db   = client[self._nwdaf_db_name]
             _ensure_ttl_indexes(client)
 
         now      = datetime.now(timezone.utc)

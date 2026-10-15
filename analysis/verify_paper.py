@@ -32,6 +32,15 @@ sys.path.insert(0, str(ROOT))
 
 from analysis.registry import build                        # noqa: E402
 
+# Printing ✓/✗/Δ fails under a non-UTF-8 locale (AE #59, reviewer A); make the
+# stream UTF-8 regardless of what LANG the caller has set.
+try:  # pragma: no cover - depends on the caller's locale
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+except (AttributeError, ValueError):
+    pass
+
+
 COMMITTED = ROOT / "analysis" / "paper_numbers.json"
 TOL = 1e-9
 

@@ -260,8 +260,15 @@ main() {
         source "$VENV/bin/activate"
         ok "Activated venv: $VENV"
     else
-        warn "No .venv found. Using system Python. Run: python3.12 -m venv .venv && pip install -r requirements.txt"
+        warn "No .venv found. Falling back to system Python."
         PYTHON="$(command -v python3)"
+        # Check the imports up front. Falling through with a bare warning
+        # produced four confusing module-not-found failures several phases
+        # later (AE #59, reviewer C).
+        if ! "$PYTHON" -c "import pymongo, numpy, scipy, pandas" 2>/dev/null; then
+            die "System Python is missing required packages. Run: python3.12 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt"
+        fi
+        warn "System Python has the required packages; continuing without a venv."
     fi
 
     mkdir -p "$LOG_DIR"

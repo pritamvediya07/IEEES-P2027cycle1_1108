@@ -9,12 +9,11 @@
 
 ### Artifacts Available ✅
 
-The artifact is archived on Zenodo, DOI 10.5281/zenodo.22843385 (release `v1.0-ae`); the
-version after evaluation is deposited as a new Zenodo version before the camera-ready
-deadline (14 Oct 2026), as the Available badge requires; the paper
-(IEEE_S_P.pdf) links this GitHub repository, and the camera-ready will also cite the DOI. The GitHub
-repository (https://github.com/pritamvediya07/IEEES-P2027cycle1_1108) is the evaluation
-copy.
+The artifact is archived on Zenodo, DOI 10.5281/zenodo.22843385 (release `v1.0-ae`), which
+is the version the artifact evaluation assessed. The fixes arising from that evaluation are
+deposited as a new Zenodo version before the camera-ready deadline, as the Available badge
+requires. The paper cites the DOI alongside this GitHub repository
+(https://github.com/pritamvediya07/IEEES-P2027cycle1_1108), which is the evaluation copy.
 
 - Complete PALA source (`agent/`, `tools/`, `collector/`, `mcp_server/`, `config/`)
 - Docker Open5GS + UERANSIM testbed (`docker/testbed/`)

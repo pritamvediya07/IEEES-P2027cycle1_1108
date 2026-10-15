@@ -21,6 +21,12 @@ import requests
 from pydantic import BaseModel, Field
 
 from config.db import get_open5gs_db, get_nwdaf_db
+from tools.open5gs_schema import (
+    SESSION_PROJECTION,
+    iter_sessions,
+    session_update_doc,
+    subscriber_query,
+)
 from config.settings import NF_ADDRESSES, NWDAF_SCHEDULED_TASKS
 
 log = logging.getLogger(__name__)
@@ -62,19 +68,17 @@ class SessionManager:
         """
         try:
             db    = get_open5gs_db()
-            query = {}
-            if dnn_filter:
-                query["session.name"] = dnn_filter
+            query = subscriber_query(dnn_filter) if dnn_filter else {}
 
             subs = list(db["subscribers"].find(
                 query,
-                {"imsi": 1, "session": 1, "_id": 0},
+                {**SESSION_PROJECTION, "_id": 0},
             ))
 
             sessions: list[dict] = []
             for sub in subs:
                 imsi = sub["imsi"]
-                for sess in sub.get("session", []):
+                for sess in iter_sessions(sub):
                     if dnn_filter and sess.get("name") != dnn_filter:
                         continue
                     ambr = sess.get("ambr", {})
@@ -106,7 +110,7 @@ class SessionManager:
                 return {"error": f"IMSI {imsi} not found."}
 
             result = []
-            for sess in sub.get("session", []):
+            for sess in iter_sessions(sub):
                 if dnn and sess.get("name") != dnn:
                     continue
                 ambr = sess.get("ambr", {})
@@ -204,9 +208,8 @@ class SessionManager:
                     imsi=imsi, dnn=dnn,
                 ).model_dump()
 
-            sessions = sub.get("session", [])
             modified = False
-            for sess in sessions:
+            for sess in iter_sessions(sub):
                 if sess.get("name") == dnn:
                     sess.setdefault("qos", {})
                     sess["qos"]["index"] = new_qos_index
@@ -224,7 +227,7 @@ class SessionManager:
 
             db["subscribers"].update_one(
                 {"_id": sub["_id"]},
-                {"$set": {"session": sessions}},
+                {"$set": session_update_doc(sub)},
             )
             self._audit("modify_qos", imsi, dnn, {"qos_index": new_qos_index, "arp": new_arp})
 

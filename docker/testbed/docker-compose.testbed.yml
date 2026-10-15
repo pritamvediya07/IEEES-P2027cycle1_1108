@@ -1,4 +1,3 @@
-version: "3.9"
 
 # ─────────────────────────────────────────────────────────────────────────────
 #  PALA Testbed — Open5GS 5G SA Core + UERANSIM + NWDAF Collector
@@ -346,7 +345,7 @@ services:
       ueransim:
         condition: service_started
     restart: unless-stopped
-    command: >
+    command: |
       python -c "
       import sys, time, signal
       sys.path.insert(0, '/app')

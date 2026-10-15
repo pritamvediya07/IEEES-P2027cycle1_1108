@@ -196,7 +196,8 @@ configure_env() {
   echo -e "${BOLD}Which LLM backend will you use?${NC}"
   echo ""
   echo "  1) Ollama (local GPU — qwen2.5:72b, ~48 GB VRAM, NO API key needed)"
-  echo "  2) Google AI Studio / Gemini (cloud, free API key, no GPU)"
+  echo "  2) Google AI Studio / Gemini (cloud, free API key, no GPU) — NOT a paper model;"
+  echo "     no result in the paper uses it. Choose 1 to reproduce paper numbers."
   echo "  3) Skip — I'll configure .env manually later"
   echo ""
   read -rp "  Enter choice [1/2/3]: " llm_choice
@@ -323,7 +324,19 @@ start_testbed() {
 
   # Initialize subscribers (idempotent)
   info "Initializing subscriber database (synthetic test UEs)..."
-  $compose_cmd run --rm init-db 2>/dev/null || warn "init-db may have already run (normal on repeat starts)"
+  $compose_cmd run --rm init-db || warn "init-db returned non-zero (normal on repeat starts)"
+
+  # Verify rather than assume. A silent init-db failure used to surface much
+  # later as an empty database during preflight (AE #59, reviewer C).
+  local sub_count
+  sub_count=$(docker compose -f "$COMPOSE_FILE" exec -T mongo-testbed \
+      mongosh open5gs --quiet --eval "db.subscribers.countDocuments({})" 2>/dev/null | tr -dc '0-9')
+  if [[ -z "$sub_count" || "$sub_count" -eq 0 ]]; then
+    err "Subscriber database is empty after init-db — preflight would fail later."
+    err "Re-run manually: docker compose -f $COMPOSE_FILE run --rm init-db"
+    exit 1
+  fi
+  ok "Subscriber database initialised ($sub_count subscribers)"
 
   # Wait for Open5GS NFs
   info "Waiting 20s for Open5GS NFs to register with NRF..."

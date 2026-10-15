@@ -17,6 +17,7 @@ from typing import Any
 from pydantic import BaseModel, Field
 
 from config.db import get_nwdaf_db, get_open5gs_db
+from tools.open5gs_schema import subscriber_query
 from config.settings import (
     MAX_DL_AMBR_BPS, MAX_UL_AMBR_BPS, MIN_AMBR_BPS,
     NWDAF_SMF_METRICS, NWDAF_SCHEDULED_TASKS,
@@ -175,7 +176,7 @@ class FeasibilityChecker:
         try:
             db    = get_open5gs_db()
             count = db["subscribers"].count_documents(
-                {"session.name": slice_name}
+                subscriber_query(slice_name)
             )
             if count > 0:
                 return {"ok": True}

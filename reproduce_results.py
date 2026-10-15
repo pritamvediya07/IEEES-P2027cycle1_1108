@@ -34,9 +34,17 @@ from pathlib import Path
 
 from scipy.stats import fisher_exact, wilcoxon
 
+# Printing ✓/✗/Δ fails under a non-UTF-8 locale (AE #59, reviewer A); make the
+# stream UTF-8 regardless of what LANG the caller has set.
+try:  # pragma: no cover - depends on the caller's locale
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+except (AttributeError, ValueError):
+    pass
+
+
 ROOT        = Path(__file__).parent
 EXP_DIR     = ROOT / "final_experiments"
-FIG_SCRIPT  = ROOT / "final_paper_results" / "generate_all_figures.py"
 OUT_DIR     = ROOT / "final_paper_results"
 
 # Paper-reported reference values for pass/fail comparison
@@ -454,10 +462,14 @@ def summary(all_results: list[bool]) -> None:
 
 # ── Figure generation ─────────────────────────────────────────────────────────
 
+# Only the two scripts that build the figures the paper actually prints.
+# final_paper_results/generate_all_figures.py is NOT run here: it belongs to a
+# superseded experiment layout (e3_*/e4_*/e7_* result files) whose inputs no
+# longer exist under those names, and none of its outputs appears in the paper.
+# It is kept in the repository for reference and can be run by hand.
 PAPER_FIGURES = [   # (generator, what it produces)
     (EXP_DIR / "RQ1_realization" / "figures" / "gen_fig1_hq.py", "Figure 3 (RQ1 trajectory)"),
     (EXP_DIR / "RQ2_mechanism" / "figures" / "gen_fig2_hq.py",   "Figure 4 (RQ2 mechanism)"),
-    (FIG_SCRIPT,                                                  "supplementary figures and tables"),
 ]
 
 

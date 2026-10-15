@@ -6,6 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # We build from source so the image works on any machine without pre-compiled
 # binaries (which are platform-specific and gitignored).
 RUN apt-get update && apt-get install -y --no-install-recommends \
+        ca-certificates \
         git cmake make g++ pkg-config \
         libsctp-dev lksctp-tools \
         libssl-dev \

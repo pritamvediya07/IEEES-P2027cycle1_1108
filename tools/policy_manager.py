@@ -25,6 +25,12 @@ import requests
 from pydantic import BaseModel, Field, field_validator
 
 from config.db import get_nwdaf_db, get_open5gs_db
+from tools.open5gs_schema import (
+    SESSION_PROJECTION,
+    iter_named_sessions,
+    session_update_doc,
+    subscriber_query,
+)
 from config.settings import (
     WEBUI_URL, NWDAF_SCHEDULED_TASKS,
     MAX_DL_AMBR_BPS, MAX_UL_AMBR_BPS, MIN_AMBR_BPS,
@@ -157,15 +163,13 @@ class PolicyManager:
         try:
             db   = get_open5gs_db()
             subs = list(db["subscribers"].find(
-                {"session.name": target_slice},
-                {"imsi": 1, "session": 1, "_id": 0},
+                subscriber_query(target_slice),
+                {**SESSION_PROJECTION, "_id": 0},
             ))
 
             results = []
             for doc in subs:
-                for sess in doc.get("session", []):
-                    if sess.get("name") != target_slice:
-                        continue
+                for sess in iter_named_sessions(doc, target_slice):
                     ambr = sess.get("ambr", {})
                     results.append({
                         "imsi":     doc["imsi"],
@@ -190,11 +194,9 @@ class PolicyManager:
         Unit 3 = Mbps in Open5GS.  We store bps in our model but convert.
         """
         db    = get_open5gs_db()
-        query = {"session.name": req.target_slice}
-        if req.target_imsi:
-            query["imsi"] = req.target_imsi
+        query = subscriber_query(req.target_slice, req.target_imsi)
 
-        subscribers = list(db["subscribers"].find(query, {"imsi": 1, "session": 1}))
+        subscribers = list(db["subscribers"].find(query, SESSION_PROJECTION))
         if not subscribers:
             return PolicyResult(
                 success=False,
@@ -209,24 +211,42 @@ class PolicyManager:
         old_dl = old_ul = None
 
         for sub in subscribers:
-            imsi     = sub["imsi"]
-            sessions = sub.get("session", [])
-            updated  = []
-            for sess in sessions:
-                if sess.get("name") == req.target_slice:
-                    if old_dl is None:
-                        old_dl = sess.get("ambr", {}).get("downlink", {}).get("value", 0)
-                        old_ul = sess.get("ambr", {}).get("uplink",   {}).get("value", 0)
-                    sess.setdefault("ambr", {})
-                    sess["ambr"]["downlink"] = {"value": dl_mbps, "unit": 3}
-                    sess["ambr"]["uplink"]   = {"value": ul_mbps, "unit": 3}
-                updated.append(sess)
+            imsi    = sub["imsi"]
+            touched = False
+            # iter_named_sessions walks both the legacy top-level `session`
+            # array and the `slice[].session[]` layout used by Open5GS 2.7+,
+            # mutating the session dicts in place.
+            for sess in iter_named_sessions(sub, req.target_slice):
+                if old_dl is None:
+                    old_dl = sess.get("ambr", {}).get("downlink", {}).get("value", 0)
+                    old_ul = sess.get("ambr", {}).get("uplink",   {}).get("value", 0)
+                sess.setdefault("ambr", {})
+                sess["ambr"]["downlink"] = {"value": dl_mbps, "unit": 3}
+                sess["ambr"]["uplink"]   = {"value": ul_mbps, "unit": 3}
+                touched = True
+
+            # Only count a subscriber as affected when a session actually
+            # changed.  Reporting success for a write that matched nothing let
+            # a vacuous apply pass the `accepted` gate in agent_runner, which
+            # then moved the enforcement point for a policy the core never
+            # applied (AE #59, reviewer C).
+            if not touched:
+                continue
 
             db["subscribers"].update_one(
                 {"_id": sub["_id"]},
-                {"$set": {"session": updated}},
+                {"$set": session_update_doc(sub)},
             )
             affected.append(imsi)
+
+        if not affected:
+            return PolicyResult(
+                success=False,
+                message=(
+                    f"No session named '{req.target_slice}' found on the "
+                    f"{len(subscribers)} matched subscriber(s); AMBR unchanged."
+                ),
+            )
 
         return PolicyResult(
             success=True,

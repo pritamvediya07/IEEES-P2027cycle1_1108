@@ -18,6 +18,12 @@
 # ══════════════════════════════════════════════════════════════════════════════
 set -uo pipefail
 
+# The verifier scripts print Unicode (✓, ✗, ≈, Δ).  Under a non-UTF-8 locale —
+# e.g. LANG=en_US, which is what AE #59 reviewer A hit — Python defaults stdout
+# to iso8859-1 and the run dies with UnicodeEncodeError.  Force UTF-8 for every
+# child process rather than relying on the caller's locale.
+export PYTHONIOENCODING=utf-8
+
 ROOT="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
 cd "$ROOT"
 LOG="$ROOT/artifact_logs"
@@ -155,7 +161,7 @@ do_env() {
   have mongod || have mongosh || docker ps 2>/dev/null | grep -q mongo && ok "MongoDB available" || { bad "MongoDB not found"; rc=0; }
   have open5gs-amfd && ok "Open5GS $(dpkg -l 2>/dev/null | awk '$2 ~ /^open5gs(:|$)/{print $3; exit}')" || { bad "Open5GS not installed natively"; rc=0; }
   for m in llama3.1:latest gemma3-12b-it-q8:latest qwen2.5:72b; do ollama_has "$m" && ok "ollama: $m (E3/E5/E6)" || warn "ollama: $m missing (LLM experiments)"; done
-  [ -n "${ANTHROPIC_API_KEY:-}" ] && ok "ANTHROPIC_API_KEY set (E6 frontier tier)" || warn "ANTHROPIC_API_KEY unset — E6 runs local tiers only"
+  [ -n "${ANTHROPIC_API_KEY:-}" ] && ok "ANTHROPIC_API_KEY set (E6 frontier tier runs live)" || ok "ANTHROPIC_API_KEY unset — E6 frontier tier is recomputed from archived trial records (no key needed)"
   [ "$(id -u)" = 0 ] && ok "running as root" || warn "not root — live-srsran must be run with sudo"
 
   hdr "Readiness"
@@ -251,7 +257,13 @@ do_live_srsran() {
   if [ -n "${ANTHROPIC_API_KEY:-}" ]; then
     run_stage "C2_E6_frontier_tier" chk_rc -- "$PY" srsran/e6_capability_sweep.py --n 20 --only-frontier --frontier-backend anthropic --frontier-model claude-sonnet-4-5
   else
-    warn "ANTHROPIC_API_KEY unset — skipping the E6 frontier tier"
+    # No paid API key needed to reproduce the frontier tier. The 66 per-trial
+    # records from the paper's run are archived under
+    # srsran/results/llm_trials/E6/, and --summarise-only recomputes the tier
+    # statistics from them without issuing a single API call. Reviewers who
+    # want a *fresh* frontier run can still supply their own key above.
+    info "ANTHROPIC_API_KEY unset — recomputing the E6 frontier tier from the archived trial records (no API calls, no key required)"
+    run_stage "C2_E6_frontier_tier_archived" chk_rc -- "$PY" srsran/e6_capability_sweep.py --summarise-only
   fi
   run_stage "C2_E6_local_tiers"         chk_rc -- "$PY" srsran/e6_capability_sweep.py --n 20 --tiers 7-8B,12-15B
   run_stage "C2_E8_gate_replay"         chk_rc -- "$PY" srsran/e8_gate_replay.py
