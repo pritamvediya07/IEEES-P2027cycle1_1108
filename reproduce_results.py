@@ -34,8 +34,8 @@ from pathlib import Path
 
 from scipy.stats import fisher_exact, wilcoxon
 
-# Printing ✓/✗/Δ fails under a non-UTF-8 locale (AE #59, reviewer A); make the
-# stream UTF-8 regardless of what LANG the caller has set.
+# Printing ✓/✗/Δ fails under a non-UTF-8 locale; make the stream UTF-8
+# regardless of what LANG the caller has set.
 try:  # pragma: no cover - depends on the caller's locale
     sys.stdout.reconfigure(encoding="utf-8")
     sys.stderr.reconfigure(encoding="utf-8")

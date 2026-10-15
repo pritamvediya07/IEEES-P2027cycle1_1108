@@ -85,7 +85,7 @@ C_LIGHT_BLUE  = "#BBDEFB"
 
 
 # Inputs that were absent, so the summary can name what was skipped instead of
-# reporting a clean run with figures silently missing (AE #59, reviewer B).
+# reporting a clean run with figures silently missing.
 MISSING_INPUTS: list[str] = []
 
 

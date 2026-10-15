@@ -327,7 +327,7 @@ start_testbed() {
   $compose_cmd run --rm init-db || warn "init-db returned non-zero (normal on repeat starts)"
 
   # Verify rather than assume. A silent init-db failure used to surface much
-  # later as an empty database during preflight (AE #59, reviewer C).
+  # later as an empty database during preflight.
   local sub_count
   sub_count=$(docker compose -f "$COMPOSE_FILE" exec -T mongo-testbed \
       mongosh open5gs --quiet --eval "db.subscribers.countDocuments({})" 2>/dev/null | tr -dc '0-9')

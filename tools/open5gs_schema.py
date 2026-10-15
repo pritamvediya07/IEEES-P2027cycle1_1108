@@ -9,10 +9,9 @@ both arrays at once.
 Every tool in this artifact reads and writes subscriber sessions through the
 helpers below, so one traversal covers either layout.
 
-Background: artifact evaluation (AE #59, reviewers A and C) found the tools
-querying only the legacy top-level path.  On an Open5GS 2.8.0 testbed that
-matched zero documents, so policy writes moved nothing and the collector read
-empty AMBR values — while the write still reported success.  See
+Querying only the legacy top-level path matches zero documents on an Open5GS
+2.8.0 testbed, so policy writes move nothing and the collector reads empty AMBR
+values while the write still reports success.  See
 ``PolicyManager._apply_via_direct_mongo`` for the matching success-reporting
 fix.
 """

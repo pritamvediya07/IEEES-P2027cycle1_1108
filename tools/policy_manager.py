@@ -229,7 +229,7 @@ class PolicyManager:
             # changed.  Reporting success for a write that matched nothing let
             # a vacuous apply pass the `accepted` gate in agent_runner, which
             # then moved the enforcement point for a policy the core never
-            # applied (AE #59, reviewer C).
+            # applied.
             if not touched:
                 continue
 

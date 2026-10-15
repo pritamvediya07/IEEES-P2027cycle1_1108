@@ -18,10 +18,9 @@
 # ══════════════════════════════════════════════════════════════════════════════
 set -uo pipefail
 
-# The verifier scripts print Unicode (✓, ✗, ≈, Δ).  Under a non-UTF-8 locale —
-# e.g. LANG=en_US, which is what AE #59 reviewer A hit — Python defaults stdout
-# to iso8859-1 and the run dies with UnicodeEncodeError.  Force UTF-8 for every
-# child process rather than relying on the caller's locale.
+# The verifier scripts print Unicode (✓, ✗, ≈, Δ).  Under a non-UTF-8 locale
+# Python defaults stdout to iso8859-1 and the run dies with UnicodeEncodeError.
+# Force UTF-8 for every child process rather than relying on the caller's locale.
 export PYTHONIOENCODING=utf-8
 
 ROOT="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"

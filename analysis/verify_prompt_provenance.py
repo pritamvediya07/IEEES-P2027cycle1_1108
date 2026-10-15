@@ -30,8 +30,8 @@ from wave_experiments.shared import intents as I          # noqa: E402
 from wave_experiments.config import EXP8_WORKFLOWS, MODEL  # noqa: E402
 import agent.agent as A                                    # noqa: E402
 
-# Printing ✓/✗/Δ fails under a non-UTF-8 locale (AE #59, reviewer A); make the
-# stream UTF-8 regardless of what LANG the caller has set.
+# Printing ✓/✗/Δ fails under a non-UTF-8 locale; make the stream UTF-8
+# regardless of what LANG the caller has set.
 try:  # pragma: no cover - depends on the caller's locale
     sys.stdout.reconfigure(encoding="utf-8")
     sys.stderr.reconfigure(encoding="utf-8")

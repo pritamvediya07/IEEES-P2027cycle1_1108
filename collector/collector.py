@@ -234,7 +234,7 @@ class Collector:
         variables the testbed compose file already sets).  They are accepted
         explicitly so that callers which pass them — such as the nwdaf service
         in docker-compose.testbed.yml — construct a working collector instead
-        of raising TypeError (AE #59, reviewers A and C).
+        of raising TypeError.
         """
         self._stop_event = threading.Event()
         self._thread: threading.Thread | None = None

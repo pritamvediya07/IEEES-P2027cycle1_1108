@@ -1,12 +1,12 @@
 """
 Regression tests for the Open5GS subscriber-schema traversal.
 
-Artifact evaluation (AE #59, reviewers A and C) found every tool querying only
-the legacy top-level ``session`` array.  On an Open5GS 2.8.0 testbed, which
-stores sessions under ``slice[].session[]``, policy writes matched nothing and
-the collector read empty AMBR values — yet ``apply_policy`` still reported
-success, so a vacuous write passed the ``accepted`` gate in ``agent_runner``
-and the probe shaped traffic for a policy the core never applied.
+Every tool previously queried only the legacy top-level ``session`` array.  On
+an Open5GS 2.8.0 testbed, which stores sessions under ``slice[].session[]``,
+policy writes matched nothing and the collector read empty AMBR values — yet
+``apply_policy`` still reported success, so a vacuous write passed the
+``accepted`` gate in ``agent_runner`` and the probe shaped traffic for a policy
+the core never applied.
 
 These tests pin both halves of the fix:
 
